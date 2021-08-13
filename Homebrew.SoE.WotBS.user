@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="mwSBCorona" name="Corona" description="{b}Property:{/b} All damage dealt by this weapon is radiant damage. Damage dealt with this weapon ignores the first 10 points of radiant resistance.\n{b}Property:{/b} You can use this weapon as a holy symbol.\n{b}Property:{/b} When you use this weapon to damage a creature which has radiant vulnerability, you get an item bonus to damage rolls equal to the weapon&apos;s enhancement bonus.\n{b}Property:{/b} This weapon sheds bright light in a 5-square radius, preventing its wielder from gaining concealment or becoming hidden. You can suppress the light to a dim glow if you wish, but this does not negate the penalty." compset="MagicWep" uniqueness="unique">
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgLevel" value="15"/>
+    <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d10 radiant damage"/>
+    <fieldval field="mgFlavor" value="This simple sparr axe appears to be formed of bone, and constantly radiates a gentle warmth. When called to battle it becomes a blazing streak of sunlight, searing your foes and stirring your blood with whispers of a birthright long past due."/>
+    <usesource source="srcHWotBS" parent="UserParent" name="Campaign - War of the Burning Sky"/>
+    <tag group="Rarity" tag="Unique" name="Unique" abbrev="Unique"/>
+    <tag group="ReqWep" tag="wpExecuaxe"/>
+    </thing>
+  <thing id="pwWpCorona" name="Corona" description="You can use your landfall racial power one additional time during this encounter." compset="Power">
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="PowerClass" tag="MagicItem" name="Magic Item" abbrev="Magic Item"/>
+    <tag group="PowerLink" tag="ItemDailyX" name="Magic Item Daily" abbrev="Magic Item Daily"/>
+    <tag group="PowerType" tag="Daily" name="Daily Power" abbrev="Daily"/>
+    </thing>
+  <thing id="mwSBCoron4" name="Corona" description="{b}Property:{/b} All damage dealt by this weapon is radiant damage. Damage dealt with this weapon ignores the first 10 points of radiant resistance.\n{b}Property:{/b} You can use this weapon as a holy symbol.\n{b}Property:{/b} When you use this weapon to damage a creature which has radiant vulnerability, you get an item bonus to damage rolls equal to the weapon&apos;s enhancement bonus.\n{b}Property:{/b} This weapon sheds bright light in a 5-square radius, preventing its wielder from gaining concealment or becoming hidden. You can suppress the light to a dim glow if you wish, but this does not negate the penalty." compset="MagicWep" uniqueness="unique">
+    <fieldval field="mgFlavor" value="​This simple sparr axe appears to be formed of bone, and constantly radiates a gentle warmth. When called to battle it becomes a blazing streak of sunlight, obliterating foes who seek refuge in false righteousness."/>
+    <fieldval field="mgBonus" value="4"/>
+    <fieldval field="mgLevel" value="20"/>
+    <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d10 radiant damage"/>
+    <usesource source="srcHWotBS" parent="UserParent" name="Campaign - War of the Burning Sky"/>
+    <tag group="ReqWep" tag="wpExecuaxe" name="Execution axe" abbrev="Execution axe"/>
+    <tag group="Rarity" tag="Unique" name="Unique" abbrev="Unique"/>
+    </thing>
+  <thing id="mwSBCoron5" name="Corona" description="{b}Property:{/b} All damage dealt by this weapon is radiant damage. Damage dealt with this weapon ignores the first 10 points of radiant resistance.\n{b}Property:{/b} You can use this weapon as a holy symbol.\n{b}Property:{/b} When you use this weapon to damage a creature which has radiant vulnerability, you get an item bonus to damage rolls equal to the weapon&apos;s enhancement bonus.\n{b}Property:{/b} This weapon sheds bright light in a 5-square radius, preventing its wielder from gaining concealment or becoming hidden. You can suppress the light to a dim glow if you wish, but this does not negate the penalty." compset="MagicWep" uniqueness="unique">
+    <fieldval field="mgFlavor" value="This simple sparr axe appears to be formed of bone, and constantly radiates a gentle warmth. When called to battle it becomes a blazing streak of sunlight, searing your foes and stirring your blood with whispers of a birthright long past due."/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgLevel" value="25"/>
+    <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d10 radiant damage"/>
+    <usesource source="srcHWotBS" parent="UserParent" name="Campaign - War of the Burning Sky"/>
+    <tag group="ReqWep" tag="wpExecuaxe" name="Execution axe" abbrev="Execution axe"/>
+    <tag group="Rarity" tag="Unique" name="Unique" abbrev="Unique"/>
+    </thing>
+  <thing id="mwSBCoron6" name="Corona" description="{b}Property:{/b} All damage dealt by this weapon is radiant damage. Damage dealt with this weapon ignores the first 10 points of radiant resistance.\n{b}Property:{/b} You can use this weapon as a holy symbol.\n{b}Property:{/b} When you use this weapon to damage a creature which has radiant vulnerability, you get an item bonus to damage rolls equal to the weapon&apos;s enhancement bonus.\n{b}Property:{/b} This weapon sheds bright light in a 5-square radius, preventing its wielder from gaining concealment or becoming hidden. You can suppress the light to a dim glow if you wish, but this does not negate the penalty." compset="MagicWep" uniqueness="unique">
+    <fieldval field="mgFlavor" value="This simple sparr axe appears to be formed of bone, and constantly radiates a gentle warmth. When called to battle it becomes a blazing streak of sunlight, searing your foes and stirring your blood with whispers of a birthright long past due."/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgLevel" value="30"/>
+    <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d10 radiant damage"/>
+    <usesource source="srcHWotBS" parent="UserParent" name="Campaign - War of the Burning Sky"/>
+    <tag group="ReqWep" tag="wpExecuaxe" name="Execution axe" abbrev="Execution axe"/>
+    <tag group="Rarity" tag="Unique" name="Unique" abbrev="Unique"/>
+    </thing>
+  </document>

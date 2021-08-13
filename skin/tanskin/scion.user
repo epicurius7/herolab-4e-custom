@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document signature="Hero Lab Data">
+  <thing id="clsScionPl" name="Scion" description="Born to inherit the wild places of Alm, Scions are indomitable warriors who combine the ferocity of nature with the nobility of a higher purpose. Like their Paladin contemporaries, these mighty warriors stand as exemplars of their chosen ideal, though it is the might of the land that gives them their blessed strength. Like the wilderness they are honest, brutal and inevitable, fearsome and fearless in pursuit of their birthright." compset="Class" uniqueness="unique">
+    <fieldval field="clsRoleTxt" value="You are a warrior of virtue, a champion of the righteous, and a defender of the weak. With your sword and your faith, you will shield the world from evil."/>
+    <fieldval field="clsSkills" value="4"/>
+    <fieldval field="clsFort" value="1"/>
+    <fieldval field="clsRef" value="1"/>
+    <fieldval field="clsWill" value="1"/>
+    <fieldval field="clsStartHP" value="15"/>
+    <fieldval field="clsHPLev" value="6"/>
+    <fieldval field="clsSurges" value="10"/>
+    <usesource source="SkEscarnun"/>
+    <tag group="ClassName" tag="Paladin" name="Paladin" abbrev="Paladin"/>
+    <tag group="ClassRole" tag="Defender" name="Defender" abbrev="Defender"/>
+    <tag group="KeyAbility" tag="attrCha" name="Charisma" abbrev="Charisma"/>
+    <tag group="KeyAbility" tag="attrStr" name="Strength" abbrev="Strength"/>
+    <tag group="PowerSrc" tag="Primal" name="Primal" abbrev="Primal"/>
+    <tag group="Skill" tag="skAthletic" name="Athletics" abbrev="Athletics"/>
+    <tag group="Skill" tag="skDiplomac" name="Diplomacy" abbrev="Diplomacy"/>
+    <tag group="Skill" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
+    <tag group="Skill" tag="skHeal" name="Heal" abbrev="Heal"/>
+    <tag group="Skill" tag="skInsight" name="Insight" abbrev="Insight"/>
+    <tag group="Skill" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
+    <tag group="Skill" tag="skReligion" name="Religion" abbrev="Religion"/>
+    <tag group="WpCatRqMel" tag="wcMilitary" name="Military" abbrev="Military"/>
+    <tag group="WpCatRqMel" tag="wcSimple" name="Simple" abbrev="Simple"/>
+    <tag group="WpCatRqRng" tag="wcSimple" name="Simple" abbrev="Simple"/>
+    <tag group="ArmorProf" tag="apChain" name="Chainmail" abbrev="Chainmail"/>
+    <tag group="ArmorProf" tag="apCloth" name="Cloth Armor" abbrev="Cloth Armor"/>
+    <tag group="ArmorProf" tag="apHide" name="Hide Armor" abbrev="Hide Armor"/>
+    <tag group="ArmorProf" tag="apLeather" name="Leather Armor" abbrev="Leather Armor"/>
+    <tag group="ArmorProf" tag="apPlate" name="Plate Armor" abbrev="Plate Armor"/>
+    <tag group="ArmorProf" tag="apScale" name="Scale Armor" abbrev="Scale Armor"/>
+    <tag group="Class" tag="clsCavalie"/>
+    <tag group="Skill" tag="skNature"/>
+    <tag group="Class" tag="clsPaladin" name="Paladin" abbrev="Paladin"/>
+    <tag group="Hero" tag="HidePwrEnc"/>
+    <bootstrap thing="fCavExHol3"></bootstrap>
+    <bootstrap thing="fSciBloBec"></bootstrap>
+    <bootstrap thing="fCavImpShi"></bootstrap>
+    <bootstrap thing="fCavImpVal"></bootstrap>
+    <bootstrap thing="pwSciPriDv"></bootstrap>
+    <bootstrap thing="fCavEHol13"></bootstrap>
+    <bootstrap thing="fCavEncPre"></bootstrap>
+    <bootstrap thing="fCavRigRes"></bootstrap>
+    <bootstrap thing="fCavDivGra"></bootstrap>
+    <bootstrap thing="pPalAvaVir"></bootstrap>
+    <bootstrap thing="pFtrDefAur">
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pPalHolSmi"></bootstrap>
+    <bootstrap thing="CavPwrEnc"></bootstrap>
+    <bootstrap thing="pwSciRiRad"></bootstrap>
+    <bootstrap thing="mScionUtil"></bootstrap>
+    <bootstrap thing="CavPwrDai"></bootstrap>
+    <bootstrap thing="pPalRigShi"></bootstrap>
+    <bootstrap thing="fCavSpiVir"></bootstrap>
+    <bootstrap thing="fCavSpiSac"></bootstrap>
+    <bootstrap thing="fCavSpiVal"></bootstrap>
+    <bootstrap thing="mSciAtWill"></bootstrap>
+    <bootstrap thing="fSciRagGrc"></bootstrap>
+    <eval phase="Setup"><![CDATA[
+      ~replace the level on our "Avatar of Virtue" power
+      perform hero.childfound[pPalAvaVir].delete[ReqLevel.?]
+      perform hero.childfound[pPalAvaVir].assign[ReqLevel.30]]]></eval>
+    </thing>
+  <thing id="fSciBloBec" name="Blood Beckons Blood" description="As long as there is a bloodied ally in your Defender Aura, you gain a +1 bonus to AC. As long as there is a bloodied enemy in your Defender Aura, you gain a +1 bonus to AC." compset="ClassFeat" uniqueness="unique">
+    <usesource source="SkEscarnun"/>
+    <tag group="AtLevel" tag="4" name="4" abbrev="4"/>
+    </thing>
+  <thing id="pwSciPriDv" name="Primal Divinity" description="{b}Effect{/b}: You gain a +2 power bonus to speed. You also gain a power bonus to damage rolls with opportunity attacks equal to your Charisma modifier. These effects last until the end of the encounter.\nLevel 18: You also gain a +2 bonus to attack rolls with opportunity attacks.\nLevel 28: This power can also target each ally within 2 squares of you." compset="Power">
+    <fieldval field="pwFlavor" value="You let the spirit of the land flow through you, empowering you like a force of nature."/>
+    <usesource source="PlEsForKin" parent="Supplement" name="Heroes of the Forgotten Kingdoms"/>
+    <tag group="PowerClass" tag="clsPaladin" name="Paladin" abbrev="Paladin"/>
+    <tag group="PowerSrc" tag="Divine" name="Divine" abbrev="Divine"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Daily" name="Daily Power" abbrev="Daily"/>
+    <tag group="ReqLevel" tag="8" name="8" abbrev="8"/>
+    <tag group="ActionType" tag="Minor" name="Minor Action" abbrev="Minor Action"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    </thing>
+  <thing id="pwSciRiRad" name="Righteous Radiance" description="{b}Effect{/b}: An enemy subject to your defender aura either shifts or makes an attack that targets an ally of yours but not you or an ally who has an active defender aura.\n{b}Effect{/b}: The target takes radiant damage equal to 3 + your Charisma modifier.\nLevel 11: 6 + Charisma modifier radiant damage.\nLevel 21: 9 + Charisma modifier radiant damage.\n{b}Special{/b}: Feats and abilities that apply to damage caused by Divine Sanction or Divine Challenge also apply to damage caused by Righteous Radiance." compset="Power">
+    <fieldval field="pwTarget" value="The triggering enemy"/>
+    <fieldval field="pwFlavor" value="You exact divine punishment on a foe that ignores your challenge."/>
+    <fieldval field="pwRange1" value="1"/>
+    <usesource source="PlEsForKin" parent="Supplement" name="Heroes of the Forgotten Kingdoms"/>
+    <tag group="PowerSrc" tag="Divine" name="Divine" abbrev="Divine"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ActionType" tag="Opportun" name="Opportunity Action" abbrev="Opportunity Action"/>
+    <tag group="AttackType" tag="Melee" name="Melee" abbrev="Melee"/>
+    <tag group="DamageType" tag="Radiant" name="Radiant" abbrev="Radiant"/>
+    <tag group="PowerClass" tag="clsPaladin" name="Paladin" abbrev="Paladin"/>
+    </thing>
+  <thing id="mSciAtWill" name="Scion At-Will Mechanics" compset="Mechanics" uniqueness="unique">
+    <arrayval field="ClPwrTable" index="1" value="1"/>
+    <arrayval field="ClPwrTable" index="1" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="2" value="1"/>
+    <arrayval field="ClPwrTable" index="2" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="3" value="1"/>
+    <arrayval field="ClPwrTable" index="3" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="4" value="1"/>
+    <arrayval field="ClPwrTable" index="4" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="5" value="1"/>
+    <arrayval field="ClPwrTable" index="5" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="6" value="1"/>
+    <arrayval field="ClPwrTable" index="6" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="7" value="1"/>
+    <arrayval field="ClPwrTable" index="7" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="8" value="1"/>
+    <arrayval field="ClPwrTable" index="8" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="9" value="1"/>
+    <arrayval field="ClPwrTable" index="9" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="10" value="1"/>
+    <arrayval field="ClPwrTable" index="10" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="11" value="1"/>
+    <arrayval field="ClPwrTable" index="11" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="12" value="1"/>
+    <arrayval field="ClPwrTable" index="12" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="13" value="1"/>
+    <arrayval field="ClPwrTable" index="13" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="14" value="1"/>
+    <arrayval field="ClPwrTable" index="14" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="15" value="1"/>
+    <arrayval field="ClPwrTable" index="15" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="16" value="1"/>
+    <arrayval field="ClPwrTable" index="16" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="17" value="1"/>
+    <arrayval field="ClPwrTable" index="17" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="18" value="1"/>
+    <arrayval field="ClPwrTable" index="18" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="19" value="1"/>
+    <arrayval field="ClPwrTable" index="19" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="20" value="1"/>
+    <arrayval field="ClPwrTable" index="20" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="21" value="1"/>
+    <arrayval field="ClPwrTable" index="21" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="22" value="1"/>
+    <arrayval field="ClPwrTable" index="22" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="23" value="1"/>
+    <arrayval field="ClPwrTable" index="23" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="24" value="1"/>
+    <arrayval field="ClPwrTable" index="24" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="25" value="1"/>
+    <arrayval field="ClPwrTable" index="25" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="26" value="1"/>
+    <arrayval field="ClPwrTable" index="26" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="27" value="1"/>
+    <arrayval field="ClPwrTable" index="27" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="28" value="1"/>
+    <arrayval field="ClPwrTable" index="28" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="29" value="1"/>
+    <arrayval field="ClPwrTable" index="29" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="30" value="1"/>
+    <arrayval field="ClPwrTable" index="30" column="1" value="1"/>
+    <tag group="User" tag="NoBootMech"/>
+    <tag group="Mechanics" tag="PwrAtWill" name="At-Will Power Mechanics" abbrev="At-Will Power Mechanics"/>
+    </thing>
+  <thing id="mScionUtil" name="Scion Utility Mechanics" compset="Mechanics" uniqueness="unique">
+    <arrayval field="ClPwrTable" index="2" value="2"/>
+    <arrayval field="ClPwrTable" index="3" value="2"/>
+    <arrayval field="ClPwrTable" index="4" value="2"/>
+    <arrayval field="ClPwrTable" index="5" value="2"/>
+    <arrayval field="ClPwrTable" index="6" value="2"/>
+    <arrayval field="ClPwrTable" index="6" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="7" value="2"/>
+    <arrayval field="ClPwrTable" index="7" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="8" value="2"/>
+    <arrayval field="ClPwrTable" index="8" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="9" value="2"/>
+    <arrayval field="ClPwrTable" index="9" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="10" value="2"/>
+    <arrayval field="ClPwrTable" index="10" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="10" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="11" value="2"/>
+    <arrayval field="ClPwrTable" index="11" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="11" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="12" value="2"/>
+    <arrayval field="ClPwrTable" index="12" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="12" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="13" value="2"/>
+    <arrayval field="ClPwrTable" index="13" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="13" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="14" value="2"/>
+    <arrayval field="ClPwrTable" index="14" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="14" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="15" value="2"/>
+    <arrayval field="ClPwrTable" index="15" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="15" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="16" value="2"/>
+    <arrayval field="ClPwrTable" index="16" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="16" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="16" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="17" value="2"/>
+    <arrayval field="ClPwrTable" index="17" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="17" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="17" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="18" value="2"/>
+    <arrayval field="ClPwrTable" index="18" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="18" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="18" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="19" value="2"/>
+    <arrayval field="ClPwrTable" index="19" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="19" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="19" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="20" value="2"/>
+    <arrayval field="ClPwrTable" index="20" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="20" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="20" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="21" value="2"/>
+    <arrayval field="ClPwrTable" index="21" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="21" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="21" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="22" value="2"/>
+    <arrayval field="ClPwrTable" index="22" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="22" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="22" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="22" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="23" value="2"/>
+    <arrayval field="ClPwrTable" index="23" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="23" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="23" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="23" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="24" value="2"/>
+    <arrayval field="ClPwrTable" index="24" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="24" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="24" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="24" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="25" value="2"/>
+    <arrayval field="ClPwrTable" index="25" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="25" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="25" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="25" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="26" value="2"/>
+    <arrayval field="ClPwrTable" index="26" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="26" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="26" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="26" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="27" value="2"/>
+    <arrayval field="ClPwrTable" index="27" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="27" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="27" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="27" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="28" value="2"/>
+    <arrayval field="ClPwrTable" index="28" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="28" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="28" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="28" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="29" value="2"/>
+    <arrayval field="ClPwrTable" index="29" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="29" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="29" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="29" column="4" value="22"/>
+    <arrayval field="ClPwrTable" index="30" value="2"/>
+    <arrayval field="ClPwrTable" index="30" column="1" value="6"/>
+    <arrayval field="ClPwrTable" index="30" column="2" value="10"/>
+    <arrayval field="ClPwrTable" index="30" column="3" value="16"/>
+    <arrayval field="ClPwrTable" index="30" column="4" value="22"/>
+    <tag group="User" tag="NoBootMech" name="NoBootMech" abbrev="NoBootMech"/>
+    <tag group="Mechanics" tag="PwrUtility" name="Utility Power Mechanics" abbrev="Utility Power Mechanics"/>
+    </thing>
+  <thing id="fSciRagGrc" name="Rage and  Grace" description="Your Scion class powers have the Primal power source instead of the Divine power source.\n\nAs long as you wield a two-handed weapon and are not using a shield, you gain a +2 bonus to AC and Reflex." compset="ClassFeat" uniqueness="unique">
+    <usesource source="SkEscarnun"/>
+    <tag group="AtLevel" tag="1" name="1" abbrev="1"/>
+    <eval phase="Setup" priority="1000"><![CDATA[
+      ~+2 AC and Ref while wielding a two-handed weapon
+      foreach pick in hero from WeaponBase where "Equipment.TwoHand"
+        #traitmodify[defAC,trtBonus,2,""]
+        #traitmodify[defRef,trtBonus,2,""]
+        nexteach]]></eval>
+    </thing>
+  <thing id="ftSavCount" name="Right Makes Might" description="{b}Benefit{/b}: When you hit an enemy in your Defender Aura with a Cavalier or Scion At-Will attack power, and that enemy attacks you before the start of your next turn, that enemy takes radiant damage equal to your Charisma modifier." compset="Feat" uniqueness="unique">
+    <fieldval field="reqText" value="Cavalier or Scion"/>
+    <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqClass" tag="clsScionPl"/>
+    </thing>
+  <thing id="ftBldFearl" name="Blood of the Fearless" description="{b}Benefit{/b}: Whenever you attack or are attacked by an enemy in your Defender Aura, you gain temporary hit points equal to your charisma modifier." compset="Feat" uniqueness="unique">
+    <fieldval field="reqText" value="Cavalier or Scion, Jotun"/>
+    <fieldval field="reqCon" value="13"/>
+    <tag group="ReqClass" tag="clsCavalie"/>
+    <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqRace" tag="rSoEJotun"/>
+    </thing>
+  <thing id="ftSavaVirt" name="Savage Virtue" description="{b}Benefit{/b}: Whenever you spend a healing surge, you gain temporary Hit Points equal to 2 + your Charisma modifier until the start of your next turn. This amount increases by +2 at Paragon tier and again at Epic tier." compset="Feat" uniqueness="unique">
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="pwScionBld" name="Scion&apos;s Blade" description="{b}Hit{/b}: 1[W] + Strength modifier radiant damage. You gain temporary hit points equal to your Charisma modifier.\nLevel 21: 2[W] + Strength modifier radiant damage." compset="Power">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="You are toughened as you prove your superiority."/>
+    <usesource source="PlEsShadow" parent="Supplement" name="Heroes of Shadow"/>
+    <tag group="AttackVs" tag="defAC" name="Armor Class" abbrev="AC"/>
+    <tag group="Damage" tag="Weapon1" name="1[W]" abbrev="1[W]"/>
+    <tag group="DamageAttr" tag="attrStr" name="Strength" abbrev="Strength"/>
+    <tag group="PowerAcc" tag="Weapon" name="Weapon" abbrev="Weapon"/>
+    <tag group="PowerClass" tag="clsPaladin"/>
+    <tag group="PowerSrc" tag="Divine" name="Primal" abbrev="Primal"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrStr" name="Strength" abbrev="Strength"/>
+    <tag group="AttackType" tag="MeleeWep" name="Melee Weapon" abbrev="Melee Weapon"/>
+    <tag group="DamageType" tag="Radiant"/>
+    </thing>
+  <thing id="ftScioDomn" name="Scion&apos;s Dominion" description="As long as you have temporary hit points, your Scion and Cavalier At-Will attack powers also deal additional damage equal to your Strength modifier to one other creature in your Defender Aura." compset="Feat" uniqueness="unique">
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  </document>

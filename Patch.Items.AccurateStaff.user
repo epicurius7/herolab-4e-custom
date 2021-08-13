@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document signature="Hero Lab Data">
+  <thing id="mgAccStaf2" name="Accurate Magic Staff" compset="MagicStaff">
+    <fieldval field="mgFlavor" value="A basic staff, enchanted to channel arcane energy."/>
+    <fieldval field="mgBonus" value="2"/>
+    <fieldval field="mgLevel" value="6"/>
+    <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+2d6 damage"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="1000"><![CDATA[      doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgAccStaf2"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgAccStaf1" name="Accurate Magic Staff" compset="MagicStaff">
+    <fieldval field="mgFlavor" value="A basic staff, enchanted to channel arcane energy."/>
+    <fieldval field="mgBonus" value="1"/>
+    <fieldval field="mgLevel" value="1"/>
+    <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+1d6 damage"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgAccStaf1"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgAccStaf3" name="Accurate Magic Staff" compset="MagicStaff">
+    <fieldval field="mgFlavor" value="A basic staff, enchanted to channel arcane energy."/>
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgLevel" value="11"/>
+    <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d6 damage"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgAccStaf3"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgAccStaf4" name="Accurate Magic Staff" compset="MagicStaff">
+    <fieldval field="mgFlavor" value="A basic staff, enchanted to channel arcane energy."/>
+    <fieldval field="mgBonus" value="4"/>
+    <fieldval field="mgLevel" value="16"/>
+    <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d6 damage"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgAccStaf4"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgAccStaf5" name="Accurate Magic Staff" compset="MagicStaff">
+    <fieldval field="mgFlavor" value="A basic staff, enchanted to channel arcane energy."/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgLevel" value="21"/>
+    <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d6 damage"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgAccStaf5"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgAccStaf6" name="Accurate Magic Staff" compset="MagicStaff">
+    <fieldval field="mgFlavor" value="A basic staff, enchanted to channel arcane energy."/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgLevel" value="26"/>
+    <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d6 damage"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgAccStaf6"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgStaffRu1" name="Accurate Staff of Ruin" description="Property: Whenever you make an attack using this staff, you gain an item bonus to the attack&apos;s damage rolls equal to the staff&apos;s enhancement bonus." compset="MagicStaff">
+    <fieldval field="mgFlavor" value="This gnarled, jagged staff fits the hand of any wizard seeking to devastate her opponent."/>
+    <fieldval field="mgBonus" value="1"/>
+    <fieldval field="mgItemDam" value="1"/>
+    <fieldval field="mgLevel" value="3"/>
+    <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+1d10 damage"/>
+    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
+    <tag group="Rarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgStaffRu1"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgStafRu2" name="Accurate Staff of Ruin" description="Property: Whenever you make an attack using this staff, you gain an item bonus to the attack&apos;s damage rolls equal to the staff&apos;s enhancement bonus." compset="MagicStaff">
+    <fieldval field="mgFlavor" value="This gnarled, jagged staff fits the hand of any wizard seeking to devastate her opponent."/>
+    <fieldval field="mgBonus" value="2"/>
+    <fieldval field="mgItemDam" value="2"/>
+    <fieldval field="mgLevel" value="8"/>
+    <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+2d10 damage"/>
+    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
+    <tag group="Rarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgStafRu2"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgStafRu3" name="Accurate Staff of Ruin" description="Property: Whenever you make an attack using this staff, you gain an item bonus to the attack&apos;s damage rolls equal to the staff&apos;s enhancement bonus." compset="MagicStaff">
+    <fieldval field="mgFlavor" value="This gnarled, jagged staff fits the hand of any wizard seeking to devastate her opponent."/>
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgItemDam" value="3"/>
+    <fieldval field="mgLevel" value="13"/>
+    <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d10 damage"/>
+    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
+    <tag group="Rarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgStafRu3"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgStafRu4" name="Accurate Staff of Ruin" description="Property: Whenever you make an attack using this staff, you gain an item bonus to the attack&apos;s damage rolls equal to the staff&apos;s enhancement bonus." compset="MagicStaff">
+    <fieldval field="mgFlavor" value="This gnarled, jagged staff fits the hand of any wizard seeking to devastate her opponent."/>
+    <fieldval field="mgBonus" value="4"/>
+    <fieldval field="mgItemDam" value="4"/>
+    <fieldval field="mgLevel" value="18"/>
+    <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d10 damage"/>
+    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
+    <tag group="Rarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgStafRu4"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgStafRu5" name="Accurate Staff of Ruin" description="Property: Whenever you make an attack using this staff, you gain an item bonus to the attack&apos;s damage rolls equal to the staff&apos;s enhancement bonus." compset="MagicStaff">
+    <fieldval field="mgFlavor" value="This gnarled, jagged staff fits the hand of any wizard seeking to devastate her opponent."/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgItemDam" value="5"/>
+    <fieldval field="mgLevel" value="23"/>
+    <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d10 damage"/>
+    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
+    <tag group="Rarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <eval phase="Setup" priority="1000"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgStafRu5"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  <thing id="mgStafRu6" name="Accurate Staff of Ruin" description="Property: Whenever you make an attack using this staff, you gain an item bonus to the attack&apos;s damage rolls equal to the staff&apos;s enhancement bonus." compset="MagicStaff">
+    <fieldval field="mgFlavor" value="This gnarled, jagged staff fits the hand of any wizard seeking to devastate her opponent."/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgItemDam" value="6"/>
+    <fieldval field="mgLevel" value="28"/>
+    <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d10 damage"/>
+    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
+    <tag group="Rarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <eval phase="Initialize"><![CDATA[   doneif (tagis[Equipped.Equipped] = 0)
+
+      foreach pick in hero where "EquipIndex.? & thingid.mgStafRu6"
+        var i as number
+          perform eachpick.assign[Helper.AttBonus]
+        nexteach]]></eval>
+    <pickreq thing="ftSuperImp"/>
+    </thing>
+  </document>

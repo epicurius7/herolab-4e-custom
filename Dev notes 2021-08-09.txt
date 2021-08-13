@@ -1,0 +1,23 @@
+DEV NOTES 2021-08-09
+From user files conversion
+
+	- Patch.Items.EagleEye.user
+		Not applied. Need to evaluate whether this is the correct behaviour for basic attack boosting items
+		
+	- Patch.Items.BracersMightyStriking.user
+		Not applied ENeed to evaluate whether this is the correct behaviour for basic attack boosting items
+	
+	- Patch.Feats.MordenkainenProficiencies.user
+		Partially applied. Charlie patch works correctly for improving base armour values, user patche works correctly for basic armour but not for magic armour. There may be now way to have exotic armours count as basic armour without breaking the proficiency requirement—may instead need to add exotic types to enchantment spec?
+	
+	- Patch.Themes.FeyBeastTamer.user
+		Partially applied; fey beast pets are added to mounts file. I never did work out how to handle the bootstraps though, so not pushing the rest to live for now.
+		
+	- Patch.Items.Weapons.user
+		Partially applied; updates to the Weapon of Defense have been applied but streamlined (removed property from power, removed unnecessary duplicates of power). Not applied: this wants to add a power to the Challenge-Seeking Weapon, which only has a property and should not have a power attached.
+	
+	- Patch.Items.DragontoothWand.user
+		This is complicated; because implements do not follow the base weapon + enchantment layering template that weapons do, magical superior implements cannot be modelled correctly. It would be ideal to fix the underlying mechanics completely, but can we actually manage such a major change?
+	
+	- Patch.Items.AccurateStaff.user
+		See previous.

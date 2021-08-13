@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document signature="Hero Lab Data">
+  <thing id="pwPsiKinTr" name="Kinetic Trawl" description="{b}Hit{/b}: 1d8 + Intelligence modifier force damage, and you pull the target 1 square.\n\n{b}Augment 1{/b}\n{b}Hit:{/b} 1d10 + Intelligence modifier force damage, and you pull the target a number of squares equal to your Wisdom modifier.\n\n{b}Augment 2{/b}\n{b}Hit:{/b} 2d10 + Intelligence modifier force damage, and you pull the target a number of squares equal to your Wisdom modifier." compset="Power" replaces="pPsiKinTra">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwSpecial" value="You can use this power unaugmented as a ranged basic attack."/>
+    <fieldval field="pwFlavor" value="You catch your foe in a net of constricting force and draw the foe toward you."/>
+    <fieldval field="pwRange1" value="10"/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    <tag group="DamageAttr" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="DamageType" tag="Force" name="Force" abbrev="Force"/>
+    </thing>
+  <thing id="pwPsiFrcSh" name="Force Shard" description="{b}Effect:{/b} You conjure a force shard in an unoccupied square within range. The shard lasts until the end of your next turn or until expended. Any enemy that enters the shard&#146;s space or ends its turn there takes force damage equal to your Charisma modifier. An enemy can take this damage only once per turn. In addition, you can use the Force Shard Attack power using the shard.\n\n{b}Augment 1{/b}\n{b}Effect:{/b} You conjure a force shard as above, and you can also move the force shard 5 squares as a move action.\n\n{b}Augment 2{/b}\n{b}Hit:{/b} 2d8 + Intelligence modifier force damage." compset="Power" replaces="pPsiForSha">
+    <fieldval field="pwFlavor" value="A shard of pure force appears in the air at your mental command, creating a hazard for your foes."/>
+    <fieldval field="pwRange1" value="5"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="EffectType" tag="Conjur" name="Conjuration" abbrev="Conjuration"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <tag group="DamageType" tag="Force"/>
+    <bootstrap thing="pwPsiFrShA"></bootstrap>
+    </thing>
+  <thing id="pwPsiFrShA" name="Force Shard Attack" description="{b}Hit{/b}: 1d8 + Intelligence modifier force damage.{br}{br}{b}Effect{/b}: The force shard is expended." compset="Power">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwRequire" value="The power Force Shard must be active in order to use this power."/>
+    <fieldval field="pwFlavor" value="A shard of pure force appears in the air at your mental command, creating a hazard for your foes."/>
+    <fieldval field="pwRange1" value="5"/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <tag group="EffectType" tag="Conjur" name="Conjuration" abbrev="Conjuration"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    <tag group="DamageAttr" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="DamageType" tag="Force" name="Force" abbrev="Force"/>
+    </thing>
+  <thing id="pwPsiMnThr" name="Mind Thrust" description="{b}Hit{/b}: 1d10 + Intelligence modifier psychic damage.\n\n{b}Augment 1{/b}\n{b}Hit:{/b} As above, and the target takes a penalty to Will equal to your Charisma modifier until the end of your next turn.\n\n{b}Augment 2{/b}\n{b}Hit:{/b} 2d10 + Intelligence modifier psychic damage, and the target takes a penalty to all defenses equal to your Charisma modifier until the end of your next turn." compset="Power" replaces="pPsiMinThr">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwSpecial" value="You can use this power unaugmented as a ranged basic attack."/>
+    <fieldval field="pwFlavor" value="You unleash a psychic assault on your foe&apos;s mental pathways. You can increase the assault&apos;s intensity to weaken your foe&apos;s defenses."/>
+    <fieldval field="pwRange1" value="10"/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="AttackVs" tag="defWill" name="Will" abbrev="Will"/>
+    <tag group="DamageAttr" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="DamageType" tag="Psychic" name="Psychic" abbrev="Psychic"/>
+    </thing>
+  <thing id="pwPsiStaMo" name="Static Mote" description="{b}Effect:{/b} You conjure a static mote in an unoccupied square within range. Any creature that starts its turn adjacent to the mote is slowed until the end of its turn. At the start of your next turn, the mote disappears and you use the Static Mote Attack power." compset="Power" replaces="pPsiStaMot">
+    <fieldval field="pwFlavor" value="A mote of roiling lightning hinders your foes before exploding in a devastating burst."/>
+    <fieldval field="pwRange1" value="10"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="EffectType" tag="Conjur" name="Conjuration" abbrev="Conjuration"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="DamageType" tag="Lightning" name="Lightning" abbrev="Lightning"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <bootstrap thing="pwPsiStMoA"></bootstrap>
+    </thing>
+  <thing id="pwPsiStMoA" name="Static Mote Attack" description="{b}Hit{/b}: 1d6 + Intelligence modifier lightning damage.{br}{br}{b}Augment 1{/b}{br}{b}Hit{/b}: As above, and one target is pulled 1 square toward the center of the burst.{br}{br}{b}Augment 2{/b}{br}{b}Hit{/b}: 2d6 + Intelligence modifier lightning damage." compset="Power">
+    <fieldval field="pwTarget" value="Each creature in the burst"/>
+    <fieldval field="pwRequire" value="This power follows the use of the power Static Mote."/>
+    <fieldval field="pwFlavor" value="A mote of roiling lightning hinders your foes before exploding in a devastating burst."/>
+    <fieldval field="pwRange1" value="3"/>
+    <fieldval field="pwDamBase" value="1d6"/>
+    <fieldval field="pwRange2" value=" centered on the square the mote occupied"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="EffectType" tag="Conjur" name="Conjuration" abbrev="Conjuration"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ActionType" tag="None"/>
+    <tag group="Attack" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="AttackType" tag="CloseBurst"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    <tag group="DamageAttr" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <tag group="DamageType" tag="Lightning" name="Lightning" abbrev="Lightning"/>
+    </thing>
+  <thing id="pwPsiLivMA" name="Living Missile Attack" description="{b}Effect{/b}: Before the secondary attack, you slide the primary target 10 squares.{br}{br}{b}Secondary Target{/b}: One creature adjacent to the primary target at any point during the slide{br}{br}{b}Secondary Attack{/b}: Intelligence vs. Reflex{br}{br}{b}Hit{/b}: 2d6 + Intelligence modifier damage, and the secondary target falls prone. The primary target takes half damage and falls prone.{br}{br}{b}Miss{/b}: Half damage, and the primary target falls prone." compset="Power">
+    <fieldval field="pwRequire" value="The power Living Missile must be active in order to use this power.  This power may be used once per round."/>
+    <fieldval field="pwFlavor" value="You bind an enemy with a thought, then hurl it into another foe."/>
+    <fieldval field="pwRange1" value="10"/>
+    <fieldval field="pwDamBase" value="2d6"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Daily" name="Daily Power" abbrev="Daily"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="DamageAttr" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <tag group="PowerUse" tag="AtWill"/>
+    </thing>
+  <thing id="pwPsiLivMi" name="Living Missile" description="{b}Primary Target:{/b} One creature\n\n{b}Primary Attack:{/b} Intelligence vs. Fortitude\n\n{b}Hit:{/b} The target is immobilized (save ends).\n\n{b}Miss:{/b} The target is slowed (save ends).\n\n{b}Effect:{/b} While the target is immobilized or slowed by this power, you can use the Living Missile Attack power once per round." compset="Power" replaces="pPsiLivMis">
+    <fieldval field="pwRequire" value="The power Living Missile must be active in order to use this power.  This power may be used once per round."/>
+    <fieldval field="pwFlavor" value="You bind an enemy with a thought, then hurl it into another foe."/>
+    <fieldval field="pwRange1" value="10"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Daily" name="Daily Power" abbrev="Daily"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="AttackType" tag="Range" name="Ranged" abbrev="Ranged"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsPsion" name="Psion" abbrev="Psion"/>
+    <bootstrap thing="pwPsiLivMA"></bootstrap>
+    </thing>
+  </document>
