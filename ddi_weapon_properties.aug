@@ -12,4 +12,7 @@
   <extgroup group="WepProp" tag="Mounted" name="Mounted"></extgroup>
   <extgroup group="WepProp" tag="Blinking" name="Blinking"></extgroup>
   <extgroup group="WepProp" tag="Reaching" name="Reaching"></extgroup>
+  
+  <!-- This belongs to the Hunters Dream framework. Comment these lines to eliminate them -->
+  <extgroup group="WepProp" tag="VersReach" name="Versatile Reach"></extgroup>
   </document>

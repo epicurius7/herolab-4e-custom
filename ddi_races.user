@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document signature="Hero Lab Data">
   <thing id="rBladeling" name="Bladeling" description="{b}Acid Resistance{/b}: You have resist acid 5 + one-half your level.{br}{b}Razor Storm{/b}: You can use razor storm as an encounter power." compset="Race" uniqueness="unique">
     <fieldval field="racDex" value="2"/>
@@ -103,22 +103,21 @@
     <fieldval field="racHtMax" value="80"/>
     <fieldval field="racWtMin" value="220"/>
     <fieldval field="racWtMax" value="320"/>
-    <fieldval field="racSpeed" value="6"/>
-    <tag group="User" tag="StdRace"/>
-    <tag group="Size" tag="Medium"/>
-    <tag group="SkillBonus" tag="skHistory"/>
-    <tag group="SkillBonus" tag="skIntimida"/>
+    <tag group="SkillBonus" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
+    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
+    <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
+    <tag group="SkillBonus" tag="skHistory" name="History" abbrev="History"/>
     <bootstrap thing="lanDraconi"></bootstrap>
     <bootstrap thing="fRPlusAb">
       <autotag group="RaceBonus" tag="attrCon"/>
       <autotag group="RaceBonus" tag="attrStr"/>
       </bootstrap>
     <bootstrap thing="lanCommon"></bootstrap>
-    <bootstrap thing="pRacDraBre"></bootstrap>
-    <bootstrap thing="pRacDragon"></bootstrap>
     <bootstrap thing="fRDrDraHer"></bootstrap>
     <bootstrap thing="fRDrDraFur"></bootstrap>
-    <bootstrap thing="fRDrDraRac"></bootstrap>
+    <bootstrap thing="fRDrDraBre"></bootstrap>
+    <bootstrap thing="fRDrDraFea"></bootstrap>
+    <bootstrap thing="fDrRacePow"></bootstrap>
     <bootstrap thing="drgBrthTyp"></bootstrap>
     </thing>
   <thing id="rDrow" name="Drow" description="{b}Fey Origin{/b}: Your ancestors were native to the Feywild, so you are considered a fey creature for the purpose of effects that relate to creature origin.{br}{b}Lolthtouched{/b}: You have your choice of either the cloud of darkness or darkfire power.{br}{b}Trance (Drow){/b}: Rather than sleep, drow enter a meditative state known as trance. You need to spend 4 hours in this state to gain the same benefits other races gain from taking a 6-hour extended rest. While in a trance, you are fully aware of your surroundings and notice approaching enemies and other events as normal." compset="Race" uniqueness="unique">
@@ -833,7 +832,7 @@
     <tag group="Size" tag="Tiny"/>
     <tag group="SkillBonus" tag="skNature"/>
     <tag group="SkillBonus" tag="skStealth"/>
-    <bootstrap thing="lanElven"></bootstrap>
+    <tag group="Vision" tag="Lowlight"/>
     <bootstrap thing="fRPlusAb">
       <autotag group="RaceBonus" tag="attrDex"/>
       <autotag group="RaceBonus" tag="attrInt"/>
@@ -845,6 +844,7 @@
     <bootstrap thing="fRPiPixMag"></bootstrap>
     <bootstrap thing="fRPiSpewit"></bootstrap>
     <bootstrap thing="fRPiWeeWar"></bootstrap>
+    <bootstrap thing="lanElven"></bootstrap>
     </thing>
   <thing id="rShifteRaz" name="Razorclaw Shifter" description="{b}Razorclaw Shifting{/b}: You have the razorclaw shifting power." compset="Race" uniqueness="unique">
     <fieldval field="racFlavor" value="Ferocious heirs of the wild, the perfect fusion of civilized race and wild beast"/>
@@ -972,7 +972,7 @@
     <fieldval field="racHtMax" value="74"/>
     <fieldval field="racWtMin" value="180"/>
     <fieldval field="racWtMax" value="230"/>
-    <fieldval field="racSpeed" value="6"/>
+	 <fieldval field="racSpeed" value="6"/>
     <fieldval field="racLang" value="1"/>
     <usesource source="PHB3"/>
     <tag group="User" tag="StdRace"/>
@@ -990,6 +990,7 @@
     <bootstrap thing="fRShImmOri"></bootstrap>
     <bootstrap thing="fRShLivCon"></bootstrap>
     <bootstrap thing="fRShTelepa"></bootstrap>
+    <bootstrap thing="fRSMSkill"></bootstrap>
     </thing>
   <thing id="rShieldDwa" name="Shield Dwarf" description="A long history of internecine war has made the once clannish society of shield dwarves more open. Shield dwarves actively seek out friends and forge alliances against enemies. They judge others by their skill and bravery, not merely the honor of a bloodline or the number of beard hairs gone gray. Tradition, respect for elders, and the bonds of kinship are strong forces in shield dwarf culture. However, no shield dwarf would be thought dishonorable for seeking his or her own destiny, whether doing so involves battling orcs alongside elf allies or becoming a master crafter in a human city.{br}The history of the shield dwarves can be traced back through millennia. The sons of Taark Shanat the Crusader founded eight kingdoms, which fought, made alliances, rose to greatness as one nation, and then fell into separate states before vanishing from the face of the world. The last great dwarven kingdom of the North was Delzoun, and few are the shield dwarves who do not claim a connection to the bloodline of that realm.{br}{br}Roleplaying a Shield DwarfEven mountains change. Although you honor the past and strive to see the good of the present preserved, you know that nothing lasts forever. This impermanency is a reminder that one should never be too complacent or too proud. The ruins of cultures that fell to false pride litter the North. Only those who develop and guard a true greatness can maintain that greatness.{br}Even the strongest steel can break. Among the dwarves, it is said that allies are like axes - despite their strength, both can fail when you need them most. Though you strive to make alliances and return friendship in kind, you always remain wary of others. Your closest comrades are noteworthy exceptions, but you remain on the lookout for disloyalty, greed, and cowardice, particularly from other races.{br}A stout shield can both guard and smash. The clan cannot defend itself by hiding in the mountains. Neither can the warrior win merely by blocking attacks. When you face a foe, you must strike out at it. Never fear a challenge so much that you shy away from it.{br}{br}Shield Dwarf Benefits{b}Shield Dwarf Weapon Proficiency: {/b}Shield dwarves spend more time aboveground and in forested areas than their gold dwarf cousins. This has led to them relying on axes as tools and weapons.{br}{i}Benefits: {/i}You gain proficiency with the handaxe and the battleaxe. This benefit replaces Dwarven Weapon Proficiency.{br}{b}Shield Proficiency: {/b}Besieged by numerous threats such as orcs and goblins, the shield dwarves take the name of their people seriously. Many are trained to use a shield regardless of duty or station.{br}{i}Benefits: {/i}You gain proficiency with the light shield. This benefit replaces Dwarven Weapon Proficiency.{br}Published in Neverwinter Campaign Setting, page(s) 47." compset="Race" uniqueness="unique">
     <fieldval field="racFlavor" value="Stout warriors, master artisans, lords of the mountain peaks"/>
@@ -1305,7 +1306,7 @@
     </thing>
   <thing id="fRDrDraFur" name="Dragonborn Fury" description="While you are bloodied, you gain a +1 racial bonus to attack rolls." compset="RaceFeat"></thing>
   <thing id="fRDrDraRac" name="Dragonborn Racial Power" description="When you select dragonborn as your character&apos;s race, choose one of the following powers. Your dragonborn character gains that power." compset="RaceFeat">
-    <fieldval field="usrCandid1" value="thingid.pRacDraBre | thingid.pRacDragon"/>
+    <fieldval field="usrCandid1" value="thingid.pRacDraBre | thingid.pRacDraFea"/>
     <tag group="Hide" tag="Special"/>
     </thing>
   <thing id="fRDrFeyOri" name="Fey Origin" description="Your ancestors were native to the Feywild, so you are considered a fey creature for the purpose of effects that relate to creature origin." compset="RaceFeat"></thing>
@@ -1928,5 +1929,32 @@ perform focus.assignstr["DamageType." & field[usrSelect].text]]]></eval>
         <after name="Build option final"/>
         </containerreq>
       </bootstrap>
+    </thing>
+  <thing id="fRSMSkill" name="Shardmind Skill Bonus" description="Gives a +2 bonus to the selected skill." compset="RaceFeat">
+    <fieldval field="usrCandid1" value="component.Skill"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+      perform field[usrChosen1].chosen.field[trtRacial].modify[+,2,"Shardmind"]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
+    </thing>
+	   <thing id="fRDrDraFea" name="Dragonfear" description="{b}Target:{/b} Each enemy in the burst\n\n{b}Attack:{/b} Strength +2 vs. Will or Charisma +2 vs. Will\n\n{b}Level 11:{/b} Strength + 4 vs. Will or Charisma + 4 vs. Will.\n{b}Level 21:{/b} Strength + 6 vs. Will or Charisma + 6 vs. Will.\n\n{b}Hit:{/b} The target takes a -2 penalty to attack rolls and grants combat advantage until the end of your next turn." compset="BuildOpt">
+    <tag group="BuildOpt" tag="fDrRacePow" name="Racial 2" abbrev="Racial 2"/>
+    <bootstrap thing="pRacDraFea">
+      <containerreq phase="Setup" priority="500"><![CDATA[fieldval:boActive <> 0]]>
+        <after name="Build option final"/>
+        </containerreq>
+      </bootstrap>
+    </thing>
+  <thing id="fRDrDraBre" name="Dragon Breath" description="{b}Attack:{/b} Strength, Constitution or Dexterity vs. Reflex. You gain a +2 bonus to the attack roll.\n\n{b}Hit{/b}: 1d6 + Constitution modifier damage.\n\n{b}Level 11:{/b} 2d6 + Constitution modifier damage, the bonus increases to +4.\n{b}Level 21:{/b} 3d6 + Constitution modifier damage, the bonus increases to +6." compset="BuildOpt">
+    <tag group="BuildOpt" tag="fDrRacePow" name="Racial" abbrev="Racial"/>
+    <bootstrap thing="pRacDraBre">
+      <containerreq phase="Setup" priority="500"><![CDATA[fieldval:boActive <> 0]]>
+        <after name="Build option final"/>
+        </containerreq>
+      </bootstrap>
+    </thing>
+  <thing id="fDrRacePow" name="Racial Power" description="When you select dragonborn as your character&apos;s race, choose the Dragon Breath or Dragonfear power. Your dragonborn character gains that power." compset="RaceFeat">
+    <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fDrRacePow)"/>
     </thing>
   </document>

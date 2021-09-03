@@ -2384,7 +2384,7 @@
     ~ Get the appropriate cost table - potions and other consumables use a
     ~ different table from other items
     var findmech as string
-    if (tagexpr[ItemSlot.isAlchemic | ItemSlot.isPotion | ItemSlot.isAmmo] <> 0) then
+    if (tagexpr[ItemSlot.isAlchemic | ItemSlot.isPotion | ItemSlot.isAmmo | ItemSlot.isConsumab] <> 0) then
       findmech = "ConsumCost"
     else
       findmech = "ItemCost"

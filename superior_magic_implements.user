@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="mgForbTom2" name="Forbidden Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. "/>
+    <fieldval field="mgBonus" value="2"/>
+    <fieldval field="mgLevel" value="6"/>
+    <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+2d6 damage"/>
+    <usesource source="PHB3"/>
+    <usesource source="MordensEmp"/>
+    <tag group="WepProp" tag="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl"/>
+    <tag group="EquipType" tag="Superior"/>
+    <tag group="Equipment" tag="SuperImpl"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgFTUndMi2" name="Forbidden Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. {br}This plain, leather-bound tome appears to be a simple treatise on arcane magic, but at your touch, it gives your powers the ability to affect creatures not of the world."/>
+    <fieldval field="mgBonus" value="2"/>
+    <fieldval field="mgLevel" value="8"/>
+    <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+2d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="WepProp" tag="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl"/>
+    <tag group="EquipType" tag="Superior"/>
+    <tag group="Equipment" tag="SuperImpl"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgFTUndMi3" name="Forbidden Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly  implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n - {i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. {br}This plain, leather-bound tome appears to be a simple treatise on arcane magic, but at your touch, it gives your powers the ability to affect creatures not of the world."/>
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgLevel" value="13"/>
+    <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl"/>
+    <tag group="EquipType" tag="Superior"/>
+    <tag group="Equipment" tag="SuperImpl"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgFTUndMi4" name="Forbidden Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. \nThis plain, leather-bound tome appears to be a simple treatise on arcane magic, but at your touch, it gives your powers the ability to affect creatures not of the world."/>
+    <fieldval field="mgBonus" value="4"/>
+    <fieldval field="mgLevel" value="18"/>
+    <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgFTUndMi5" name="Forbidden Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. \nThis plain, leather-bound tome appears to be a simple treatise on arcane magic, but at your touch, it gives your powers the ability to affect creatures not of the world."/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgLevel" value="23"/>
+    <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgFTUndMi6" name="Forbidden Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. \nThis plain, leather-bound tome appears to be a simple treatise on arcane magic, but at your touch, it gives your powers the ability to affect creatures not of the world."/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgLevel" value="28"/>
+    <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgForbTom3" name="Forbidden Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. "/>
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgLevel" value="11"/>
+    <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgForbTom4" name="Forbidden Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. "/>
+    <fieldval field="mgBonus" value="4"/>
+    <fieldval field="mgLevel" value="16"/>
+    <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgForbTom5" name="Forbidden Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. "/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgLevel" value="21"/>
+    <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgForbTom6" name="Forbidden Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. "/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgLevel" value="26"/>
+    <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgForbTom1" name="Forbidden Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n -  {i}Deadly{/i}: You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level. \n -{i} Unstoppable{/i}: You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="A forbidden tome has a heavy cover and binding, with a lock to keep it closed to prying eyes. "/>
+    <fieldval field="mgBonus" value="1"/>
+    <fieldval field="mgLevel" value="1"/>
+    <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+1d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
+    <tag group="WepProp" tag="Deadly" name="Deadly" abbrev="Deadly"/>
+    <tag group="WepProp" tag="Unstoppabl" name="Unstoppable" abbrev="Unstoppable"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgEchoTom1" name="Echo Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="1"/>
+    <fieldval field="mgLevel" value="1"/>
+    <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+1d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgEchoTom2" name="Echo Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="2"/>
+    <fieldval field="mgLevel" value="6"/>
+    <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+2d6 damage"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgEchoTom3" name="Echo Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgLevel" value="11"/>
+    <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgEchoTom4" name="Echo Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgLevel" value="16"/>
+    <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d6 damage"/>
+    <fieldval field="mgBonus" value="4"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgEchoTom5" name="Echo Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgLevel" value="21"/>
+    <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgEchoTom6" name="Echo Magic Tome" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgLevel" value="26"/>
+    <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgETUndMi2" name="Echo Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="2"/>
+    <fieldval field="mgLevel" value="6"/>
+    <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+2d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgETUndMi3" name="Echo Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="3"/>
+    <fieldval field="mgLevel" value="13"/>
+    <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+3d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgETUndMi4" name="Echo Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="4"/>
+    <fieldval field="mgLevel" value="18"/>
+    <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+4d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgETUndMi5" name="Echo Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="5"/>
+    <fieldval field="mgLevel" value="23"/>
+    <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+5d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  <thing id="mgETUndMi6" name="Echo Tome of Undeniable Might" description="{b}Category:{/b} Superior\n\n{b}Properties:{/b} \n - {i}Distant{/i}: The range of your area and ranged attack powers increases by 2 when they&apos;re used through adistant implement.\n - {i}Unerring{/i}: You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement.\n\nWhen you gain this tome, choose acid, cold, fire, lightning, necrotic, psychic, or thunder. Your arcane attacks made with this tome ignore the insubstantial quality if they have the chosen damage keyword. You can change your choice at the end of an extended rest." compset="MagicItem">
+    <fieldval field="mgFlavor" value="The cover of an echo tome is a plate of iron inlaid with silver, and its pages are thin sheets of mithral engraved with arcane secrets."/>
+    <fieldval field="mgBonus" value="6"/>
+    <fieldval field="mgLevel" value="28"/>
+    <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
+    <fieldval field="mgCrit" value="+6d6 damage"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <usesource source="MordensEmp" parent="Supplement" name="Mordenkainen&apos;s Magnificent Emporium"/>
+    <tag group="Equipment" tag="SuperImpl" name="Superior Implement" abbrev="Superior Implement"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="Rarity" tag="Common" name="Common " abbrev="Common "/>
+    <tag group="WepProp" tag="Distant" name="Distant" abbrev="Distant"/>
+    <tag group="WepProp" tag="Unerring" name="Unerring" abbrev="Unerring"/>
+    <tag group="EquipType" tag="Superior" name="Superior" abbrev="Superior"/>
+    <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
+
+perform assign[Helper.Proficient]
+perform assign[ImplemType.itTome]
+      <before name="Magic Weapon Copy"/>
+      <after name="Superior implement training"/>
+      </eval>
+    </thing>
+  </document>

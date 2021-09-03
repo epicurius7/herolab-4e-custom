@@ -1160,4 +1160,6 @@
     <tag group="Alignment" tag="Evil"/>
     <tag group="Gender" tag="Male"/>
     </thing>
+  <thing id="dtyNone" name="None" description="You have no allegiance to any god." compset="Deity" uniqueness="unique">
+    </thing>
   </document>
