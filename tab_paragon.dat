@@ -338,7 +338,7 @@
 
       ~position the paragon features table under the paragon chooser, taking up
       ~the rest of the tab
-      portal[ppFeatures].width = width * 9 / 10
+      portal[ppFeatures].width = width * 4 / 5
       perform portal[ppFeatures].centerhorz
       portal[ppFeatures].top = portal[ppPath].bottom + 20
       portal[ppFeatures].height = height - portal[ppFeatures].top

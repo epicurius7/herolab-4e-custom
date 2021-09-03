@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <document signature="Hero Lab Data">
   <thing id="clsWizard" name="Arcanist" description="An arcanist is a powerful wizard who forgoes specialization to explore and use all that arcane magic has to offer. Rather than bind themselves to a particular school, as mages do, arcanists experiment with a wide range of magical effects from evocation to necromancy and everything in between. Considered dilettantes by their mage counterparts, arcanists see diverse study as a boon because it broadens their ability to deal with a variety of situations, by always having the proper spell on hand." compset="Class" uniqueness="unique">
     <fieldval field="clsRoleTxt" value="You command eldritch forces, shaping them into spells designed to blast your enemies, bring them under your thumb, twist their senses, and impede their movement."/>
-    <fieldval field="clsSkills" value="3"/>
-    <fieldval field="clsWill" value="2"/>
     <fieldval field="clsStartHP" value="10"/>
     <fieldval field="clsHPLev" value="4"/>
     <fieldval field="clsSurges" value="6"/>
+    <fieldval field="clsWill" value="2"/>
+    <fieldval field="clsSkills" value="3"/>
     <fieldval field="clsRituals" value="3"/>
     <fieldval field="clsUtilMl" value="2"/>
     <fieldval field="clsDailyMl" value="2"/>
-    <tag group="KeyAbility" tag="attrDex"/>
     <tag group="ArmorProf" tag="apCloth"/>
     <tag group="WeaponProf" tag="wpDagger"/>
     <tag group="WeaponProf" tag="wpQuarters"/>
+    <tag group="KeyAbility" tag="attrDex"/>
     <tag group="ImplemType" tag="itOrb"/>
     <tag group="ImplemType" tag="itStaff"/>
     <tag group="ImplemType" tag="itWand"/>
@@ -38,18 +38,10 @@
     <bootstrap thing="fWizRitCas"></bootstrap>
     <bootstrap thing="fWizArcSpe"></bootstrap>
     <bootstrap thing="fWizCantri"></bootstrap>
-    <bootstrap thing="pWizGhoSou">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizLight">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizMagHan">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizPresti">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
+    <bootstrap thing="pWizGhoSou"></bootstrap>
+    <bootstrap thing="pWizLight"></bootstrap>
+    <bootstrap thing="pWizMagHan"></bootstrap>
+    <bootstrap thing="pWizPresti"></bootstrap>
     <bootstrap thing="fWizArcImp"></bootstrap>
     <bootstrap thing="fWizOrbDec"></bootstrap>
     <bootstrap thing="fWizOrbImp"></bootstrap>
@@ -62,9 +54,6 @@
     <bootstrap thing="pWizSugges">
       <autotag group="User" tag="FeatureChk"/>
       </bootstrap>
-    <bootstrap thing="fWizStaDef">
-      <autotag group="User" tag="FeatureChk"/>
-	 </bootstrap>
     <bootstrap thing="pWizDisUnd">
       <autotag group="User" tag="FeatureChk"/>
       </bootstrap>
@@ -448,37 +437,37 @@
     <fieldval field="clsRef" value="1"/>
     <fieldval field="clsWill" value="1"/>
     <fieldval field="clsSkills" value="4"/>
-    <usesource source="PlEsForKin" parent="Supplement" name="Heroes of the Forgotten Kingdoms"/>
-    <tag group="ArmorProf" tag="apCloth" name="Cloth Armor" abbrev="Cloth Armor"/>
-    <tag group="ArmorProf" tag="apLeather" name="Leather Armor" abbrev="Leather Armor"/>
-    <tag group="ArmorProf" tag="apHide" name="Hide Armor" abbrev="Hide Armor"/>
-    <tag group="ArmorProf" tag="apChain" name="Chainmail" abbrev="Chainmail"/>
-    <tag group="ArmorProf" tag="apScale" name="Scale Armor" abbrev="Scale Armor"/>
-    <tag group="ArmorProf" tag="apPlate" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorProf" tag="apShieldHv" name="Heavy Shields" abbrev="Heavy Shields"/>
-    <tag group="ArmorProf" tag="apShieldLg" name="Light Shields" abbrev="Light Shields"/>
-    <tag group="WpCatRqMel" tag="wcSimple" name="Simple" abbrev="Simple"/>
-    <tag group="WpCatRqMel" tag="wcMilitary" name="Military" abbrev="Military"/>
-    <tag group="WpCatRqRng" tag="wcSimple" name="Simple" abbrev="Simple"/>
-    <tag group="WpCatRqRng" tag="wcMilitary" name="Military" abbrev="Military"/>
-    <tag group="KeyAbility" tag="attrCha" name="Charisma" abbrev="Charisma"/>
+    <usesource source="PlEsForKin"/>
+    <tag group="ArmorProf" tag="apCloth"/>
+    <tag group="ArmorProf" tag="apLeather"/>
+    <tag group="ArmorProf" tag="apHide"/>
+    <tag group="ArmorProf" tag="apChain"/>
+    <tag group="ArmorProf" tag="apScale"/>
+    <tag group="ArmorProf" tag="apPlate"/>
+    <tag group="ArmorProf" tag="apShieldHv"/>
+    <tag group="ArmorProf" tag="apShieldLg"/>
+    <tag group="WpCatRqMel" tag="wcSimple"/>
+    <tag group="WpCatRqMel" tag="wcMilitary"/>
+    <tag group="WpCatRqRng" tag="wcSimple"/>
+    <tag group="WpCatRqRng" tag="wcMilitary"/>
+    <tag group="KeyAbility" tag="attrCha"/>
     <tag group="ClassRole" tag="Defender"/>
-    <tag group="PowerSrc" tag="Divine" name="Divine" abbrev="Divine"/>
-    <tag group="ImplemType" tag="itHolySym" name="Holy Symbol" abbrev="Holy Symbol"/>
-    <tag group="KeyAbility" tag="attrStr" name="Strength" abbrev="Strength"/>
-    <tag group="Skill" tag="skAthletic" name="Athletics" abbrev="Athletics"/>
-    <tag group="Skill" tag="skDiplomac" name="Diplomacy" abbrev="Diplomacy"/>
-    <tag group="Skill" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
-    <tag group="Skill" tag="skHeal" name="Heal" abbrev="Heal"/>
-    <tag group="Skill" tag="skHistory" name="History" abbrev="History"/>
-    <tag group="Skill" tag="skInsight" name="Insight" abbrev="Insight"/>
-    <tag group="Skill" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
-    <tag group="Skill" tag="skReligion" name="Religion" abbrev="Religion"/>
+    <tag group="PowerSrc" tag="Divine"/>
+    <tag group="ImplemType" tag="itHolySym"/>
+    <tag group="KeyAbility" tag="attrStr"/>
+    <tag group="Skill" tag="skAthletic"/>
+    <tag group="Skill" tag="skDiplomac"/>
+    <tag group="Skill" tag="skEnduranc"/>
+    <tag group="Skill" tag="skHeal"/>
+    <tag group="Skill" tag="skHistory"/>
+    <tag group="Skill" tag="skInsight"/>
+    <tag group="Skill" tag="skIntimida"/>
+    <tag group="Skill" tag="skReligion"/>
     <tag group="ClassName" tag="Paladin"/>
-    <tag group="Class" tag="clsPaladin" name="Paladin" abbrev="Paladin"/>
-    <tag group="User" tag="RecomPower" name="RecomPower" abbrev="RecomPower"/>
-    <tag group="Hero" tag="HidePwrAtW" name="No At-Will Powers" abbrev="No At-Will Powers"/>
-    <tag group="Hero" tag="HidePwrEnc" name="No Encounter Powers" abbrev="No Encounter Powers"/>
+    <tag group="Class" tag="clsPaladin"/>
+    <tag group="User" tag="RecomPower"/>
+    <tag group="Hero" tag="HidePwrAtW"/>
+    <tag group="Hero" tag="HidePwrEnc"/>
     <bootstrap thing="pPalRigShi"></bootstrap>
     <bootstrap thing="fCavSpiVir"></bootstrap>
     <bootstrap thing="fCavSpiSac"></bootstrap>
@@ -487,7 +476,6 @@
     <bootstrap thing="pPalResVit"></bootstrap>
     <bootstrap thing="fCavExHol3"></bootstrap>
     <bootstrap thing="fCavPacVir"></bootstrap>
-    <bootstrap thing="fCavSumSte"></bootstrap>
     <bootstrap thing="fCavImpShi"></bootstrap>
     <bootstrap thing="fCavImpVal"></bootstrap>
     <bootstrap thing="pPalSpiVir"></bootstrap>
@@ -1048,6 +1036,9 @@
     <bootstrap thing="MagPwrUti"></bootstrap>
     <bootstrap thing="MagPwrDai"></bootstrap>
     <bootstrap thing="fMagEncApp"></bootstrap>
+    <bootstrap thing="pWizGhoSou">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
     <bootstrap thing="pWizLight">
       <autotag group="User" tag="FeatureChk"/>
       </bootstrap>
@@ -1060,27 +1051,6 @@
     <bootstrap thing="MagMemEnc"></bootstrap>
     <bootstrap thing="MagMemUti"></bootstrap>
     <bootstrap thing="MagMemDai"></bootstrap>
-    <bootstrap thing="pWizGhoSou">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizWatStr">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizChaMas">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizSugges">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizDisUnd">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizSpook">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
-    <bootstrap thing="pWizWhiWin">
-      <autotag group="User" tag="FeatureChk"/>
-      </bootstrap>
     <eval phase="Setup" priority="5" index="5" name="Daily powers multiplied"><![CDATA[
       ~make sure all our appropriate powers can be memorized
       foreach pick in hero from Power where "Helper.PwrClass & !PowerType.AtWill"
@@ -1173,6 +1143,7 @@
     <tag group="KeyAbility" tag="attrWis"/>
     <tag group="ClassRole" tag="Striker"/>
     <tag group="PowerSrc" tag="Psionic"/>
+    <tag group="ImplemType" tag="itKiFocus"/>
     <tag group="KeyAbility" tag="attrDex"/>
     <tag group="Skill" tag="skAcrobati"/>
     <tag group="Skill" tag="skAthletic"/>
@@ -1191,8 +1162,9 @@
     <tag group="ImplemType" tag="wpShuriken"/>
     <tag group="ImplemType" tag="wpSling"/>
     <tag group="ImplemType" tag="wpSpear"/>
-	 <!-- How to add weapliment proficiencies we get from feat, race etc.?  -->
     <bootstrap thing="fMnkUnaDef"></bootstrap>
+    <bootstrap thing="pMnkDesWin"></bootstrap>
+    <bootstrap thing="pMnkEteTid"></bootstrap>
     <bootstrap thing="fMnkMonTra"></bootstrap>
     <bootstrap thing="fMnkCenBre"></bootstrap>
     <bootstrap thing="fMnkDesWin"></bootstrap>
@@ -1282,7 +1254,6 @@
     <bootstrap thing="mePsionAtW"></bootstrap>
     <bootstrap thing="mePsionEnc"></bootstrap>
     <bootstrap thing="fPsiShaFoc"></bootstrap>
-    <bootstrap thing="fPsiRit6"></bootstrap>
     </thing>
   <thing id="clsRanger" name="Ranger" description="Rangers are watchful warriors who roam past the horizon to safeguard a region, a principle, or a way of life. Masters of bow and blade, rangers excel at hit-and-run assaults and can quickly and silently eliminate foes. Rangers lay superb ambushes and excel at avoiding danger." compset="Class" uniqueness="unique">
     <fieldval field="clsRoleTxt" value="You concentrate on either ranged attacks or two-weapon melee fighting to deal a lot of damage to one enemy at a time. Your attacks rely on speed and mobility, since you prefer to use hit-and-run tactics whenever possible."/>
@@ -2593,14 +2564,25 @@
     <bootstrap thing="fAsnNigSta"></bootstrap>
     </thing>
   <thing id="clsAvengHy" name="Hybrid Avenger" description="You blend secret monastic training with other talents to become  a unique servant of the gods. Do your vows represent an earlier stage of your life, all but left behind, or a newfound mission?" compset="Class" uniqueness="unique">
-    <fieldval field="clsFort" value="1"/>
-    <fieldval field="clsRef" value="1"/>
-    <fieldval field="clsWill" value="1"/>
     <fieldval field="clsStartHP" value="7"/>
     <fieldval field="clsHPLev" value="3"/>
     <fieldval field="clsSurges" value="3.5"/>
+    <fieldval field="clsFort" value="1"/>
+    <fieldval field="clsRef" value="1"/>
+    <fieldval field="clsWill" value="1"/>
     <usesource source="PHB3"/>
+    <tag group="KeyAbility" tag="attrInt"/>
+    <tag group="User" tag="Hybrid"/>
+    <tag group="Class" tag="clsAvenger"/>
     <tag group="PowerSrc" tag="Divine"/>
+    <tag group="ArmorProf" tag="apCloth"/>
+    <tag group="WpCatRqMel" tag="wcSimple"/>
+    <tag group="WpCatRqMel" tag="wcMilitary"/>
+    <tag group="WpCatRqRng" tag="wcSimple"/>
+    <tag group="ClassRole" tag="Striker"/>
+    <tag group="KeyAbility" tag="attrWis"/>
+    <tag group="KeyAbility" tag="attrDex"/>
+    <tag group="ImplemType" tag="itHolySym"/>
     <tag group="Skill" tag="skAcrobati"/>
     <tag group="Skill" tag="skAthletic"/>
     <tag group="Skill" tag="skEnduranc"/>
@@ -2610,25 +2592,13 @@
     <tag group="Skill" tag="skReligion"/>
     <tag group="Skill" tag="skStealth"/>
     <tag group="Skill" tag="skStreetwi"/>
-    <tag group="User" tag="Hybrid"/>
-    <tag group="WpCatRqMel" tag="wcMilitary"/>
-    <tag group="WpCatRqMel" tag="wcSimple"/>
-    <tag group="WpCatRqRng" tag="wcSimple"/>
-    <tag group="ArmorProf" tag="apCloth"/>
-    <tag group="ClassRole" tag="Striker"/>
-    <tag group="ImplemType" tag="itHolySym"/>
-    <tag group="KeyAbility" tag="attrDex"/>
-    <tag group="KeyAbility" tag="attrInt"/>
-    <tag group="KeyAbility" tag="attrWis"/>
-    <tag group="Class" tag="clsAvenger"/>
-    <bootstrap thing="fAveCenPur"></bootstrap>
-    <bootstrap thing="fAveCenRet"></bootstrap>
-    <bootstrap thing="fAveCenUni"></bootstrap>
     <bootstrap thing="tAveHArFai"></bootstrap>
-    <bootstrap thing="fAveHOatEn"></bootstrap>
     <bootstrap thing="tAveHAvCen"></bootstrap>
     <bootstrap thing="tAveHChDiv"></bootstrap>
     <bootstrap thing="tAveHChDiD"></bootstrap>
+    <bootstrap thing="fAveCenPur"></bootstrap>
+    <bootstrap thing="fAveCenRet"></bootstrap>
+    <bootstrap thing="fAveCenUni"></bootstrap>
     </thing>
   <thing id="clsBarbaHy" name="Hybrid Barbarian" description="In your heart, you know the power of rage. However, your link to the primal spirits that unleash these rages isn&apos;t quite as strong as a typical barbarian&apos;s. Perhaps you&apos;ve been away from the tribe for too long, or maybe you have only begun to harness primal power. Regardless of the reason, as a hybrid barbarian you can&apos;t unleash the burning rage in your heart quite as easily as a full member of that class, but you remain capable of occasional frenzied bursts of energy." compset="Class" uniqueness="unique">
     <fieldval field="clsStartHP" value="7.5"/>
@@ -3493,22 +3463,22 @@
     <tag group="BuildOpt" tag="fWizArcImp"/>
     <tag group="PowerUse" tag="Encounter"/>
     <tag group="ChooseSrc1" tag="Thing"/>
-    <eval phase="Setup" priority="1000"><![CDATA[doneif (activated = 0)
+    <eval phase="Setup" priority="1000"><![CDATA[
+      doneif (activated = 0)
 
-~ Build our tag expression for selecting a wizard encounter power of 
-~ our level or less
-var level as number
-level = hero.tagvalue[Level.?]
-var expr as string
-expr = "PowerType.Encounter & (val:ReqLevel.? <= " & level & ")"
-expr &= " & PowerClass.clsWizard"
+      ~build our tag expression for selecting a lower-level power we don't know
+      var level as number
+      level = hero.tagvalue[Level.?]
+      var expr as string
+      expr = "PowerType.Encounter & (val:ReqLevel.? <= " & level & ")"
+      expr &= " & PowerClass.clsWizard"
 
-~ Now specifically exclude all powers we know
-foreach pick in hero from Power where "PowerType.Encounter & PowerClass.clsWizard"
-  expr &= " & !thingid." & eachpick.idstring
-nexteach
+      ~now specifically exclude all powers we know
+      foreach pick in hero from Class where "PowerType.Encounter & PowerClass.clsWizard"
+        expr &= " & !thingid." & eachpick.idstring
+        nexteach
 
-field[usrCandid1].text = expr]]>
+      field[usrCandid1].text = expr]]>
       <after name="Level final"/>
       <after name="Disable class feature"/>
       </eval>
@@ -3782,28 +3752,14 @@ perform hero.assign[Hero.ChannelDiv]</eval>
       #traitmodify[trInit,trtBonus,4,""]
       #traitmodify[trSurgeVal,trtBonus,2,""]]]></eval>
     </thing>
-  <thing id="fCavExHol3" name="Extra Holy Smite" description="You gain one more use of holy smite per encounter, but you can still use it only once per turn." compset="ClassFeat">
-    <tag group="AtLevel" tag="3" name="3" abbrev="3"/>
-    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+  <thing id="fCavExHol3" name="Extra Holy Smite" description="You gain one more use of holy smite per encounter, but you can still use it only once per turn.{br}{br}Level 4:{b}PACE OF THE VIRTUOUS CHARGER{/b}{br}While you are riding a mount, that creature and each allied mount within 20 squares of you gain a +2 power bonus to speed. This bonus applies only outside combat.{br}{br}Level 5:{b}LEVEL 5 CAVALIER DAILY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+    <tag group="AtLevel" tag="3"/>
+    <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000">doneif (activated = 0)
       hero.childfound[pPalHolSmi].field[spcMax].value += 1</eval>
     </thing>
-  <thing id="fCavPacVir" name="Pace Of The Virtuous Charger" description="While you are riding a mount, that creature and each allied mount within 20 squares of you gain a +2 power bonus to speed. This bonus applies only outside combat." compset="ClassFeat">
-    <tag group="AtLevel" tag="4" name="4" abbrev="4"/>
-    </thing>
-	<thing id="fCavSumSte" name="Summoned Steed" description="Galloping through the planar mists to answer the cavalier’s call, the celestial steed takes on the appearance and solidity of a living, breathing beast for as long as the cavalier requires its service. When dismissed, it canters off into cloud and mist, returning to the celestial domains from whence it came. If slain, the steed can be summoned again at full strength the next day.\n\n{b}Benefit:{/b} Instead of your Pace of the Virtuous Charger class feature, you gain the call celestial steed power." compset="ClassFeat">
-    <tag group="Hide" tag="Special"/>
-    <tag group="User" tag="FeatureChk" name="FeatureChk" abbrev="FeatureChk"/>
-    <tag group="AtLevel" tag="4" name="4" abbrev="4"/>
-    <bootstrap thing="pPalCalCel">
-      <containerreq phase="Setup" priority="500">HasFeature.fCavSumSte
-        <after name="Build option final"/>
-        </containerreq>
-      </bootstrap>
-    <evalrule phase="Setup" priority="98" message="Class feature error" summary="Class feature error">perform hero.child[fCavPacVir].setfocus
-call FeatureDis
-      <before name="Disable class feature"/>
-      </evalrule>
+  <thing id="fCavPacVir" name="Pace Of The Virtuous Charger" description="While you are riding a mount, that creature and each allied mount within 20 squares of you gain a +2 power bonus to speed. This bonus applies only outside combat.{br}{br}Level 5:{b}LEVEL 5 CAVALIER DAILY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+    <tag group="AtLevel" tag="4"/>
     </thing>
   <thing id="fCavImpRig" name="Improved Righteous Shield" description="Your righteous shield power gains an additional effect associated with your virtue." compset="ClassFeat">
     <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fCavImpRig)"/>
@@ -3832,21 +3788,21 @@ call FeatureDis
       <after name="Build option activated"/>
       </eval>
     </thing>
-  <thing id="fCavEHol13" name="Extra Holy Smite" description="You gain one more use of holy smite per encounter, but you can still use it only once per turn." compset="ClassFeat">
-    <tag group="AtLevel" tag="13" name="13" abbrev="13"/>
-    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+  <thing id="fCavEHol13" name="Extra Holy Smite" description="You gain one more use of holy smite per encounter, but you can still use it only once per turn.{br}{br}Level 15:{b}LEVEL 15 CAVALIER DAILY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+    <tag group="AtLevel" tag="13"/>
+    <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000">doneif (activated = 0)
       hero.childfound[pPalHolSmi].field[spcMax].value += 1</eval>
     </thing>
-  <thing id="fCavEncPre" name="Encouraging Presence" description="Whenever an ally adjacent to you spends a healing surge, he or she gains temporary hit points equal to your Charisma modifier." compset="ClassFeat">
-    <tag group="AtLevel" tag="17" name="17" abbrev="17"/>
+  <thing id="fCavEncPre" name="Encouraging Presence" description="Whenever an ally adjacent to you spends a healing surge, he or she gains temporary hit points equal to your Charisma modifier.{br}{br}Level 19:{b}LEVEL 19 CAVALIER DAILY POWER{/b}{br}You gain one of the following powers of your choice. This new power replaces the daily attack power you gained at 5th level." compset="ClassFeat">
+    <tag group="AtLevel" tag="17"/>
     </thing>
-  <thing id="fCavRigRes" name="Righteous Rescue" description="Immediately after you use your righteous shield, you can take a free action to teleport up to 5 squares to a square adjacent to the target." compset="ClassFeat">
-    <tag group="AtLevel" tag="23" name="23" abbrev="23"/>
+  <thing id="fCavRigRes" name="Righteous Rescue" description="Immediately after you use your righteous shield, you can take a free action to teleport up to 5 squares to a square adjacent to the target.{br}{br}Level 25:{b}LEVEL 25 CAVALIER DAILY POWER{/b}{br}You gain one of the following powers of your choice. This new power replaces the daily attack power you gained at 9th level." compset="ClassFeat">
+    <tag group="AtLevel" tag="23"/>
     </thing>
-  <thing id="fCavDivGra" name="Divine Grace" description="You gain resist 20 necrotic and resist 20 poison." compset="ClassFeat">
-    <tag group="AtLevel" tag="27" name="27" abbrev="27"/>
-    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+  <thing id="fCavDivGra" name="Divine Grace" description="You gain resist 20 necrotic and resist 20 poison.{br}{br}Level 29:{b}AVATAR OF VIRTUE{/b}{br}You gain the avatar of virtue power. It replaces the daily attack power you gained at 15th level." compset="ClassFeat">
+    <tag group="AtLevel" tag="27"/>
+    <tag group="Hide" tag="Special"/>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
       #traitmodify[rsNecrotic,rsTotal,20,""]
@@ -4792,7 +4748,7 @@ perform hero.assign[Hero.ChannelDiv]</eval>
     <bootstrap thing="ftShielFin"></bootstrap>
     </thing>
   <thing id="fKngSpiDef" name="Spinning Deflection" description="While you are wielding a quarterstaff, you are considered to be wielding a shield for powers and effects that require you to wield one, and you gain a +1 shield bonus to AC and Reflex." compset="ClassFeat"></thing>
-  <thing id="fKngWeaTal" name="Weapon Talent" description="You gain a +1 bonus to the attack rolls of weapon attacks." compset="ClassFeat">
+  <thing id="fKngWeaTal" name="Weapon Talent" description="You gain a +1 bonus to the attack rolls of weapon attacks.{br}{br}Level 2:{b}LEVEL 2 KNIGHT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
     <tag group="AtLevel" tag="1"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000"><![CDATA[
@@ -4803,19 +4759,19 @@ perform hero.assign[Hero.ChannelDiv]</eval>
         perform eachpick.field[wpBonus].modify[+,1,""]
         nexteach]]></eval>
     </thing>
-  <thing id="fKngImPow3" name="Improved Power Strike" description="You gain one more use of power strike per encounter, but you can still use it only once per turn." compset="ClassFeat">
+  <thing id="fKngImPow3" name="Improved Power Strike" description="You gain one more use of power strike per encounter, but you can still use it only once per turn.{br}{br}Level 4:{b}KNIGHT COMBAT READINESS{/b}{br}You gain a +2 bonus to initiative.{br}{br}Level 5:{b}WEAPON MASTERY{/b}{br}You gain a +1 bonus to the damage rolls of weapon attacks.{br}{br}Level 6:{b}LEVEL 6 KNIGHT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
     <tag group="AtLevel" tag="3"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000">doneif (activated = 0)
       hero.childfound[pFtrPowStr].field[spcMax].value += 1</eval>
     </thing>
-  <thing id="fKngKniCom" name="Knight Combat Readiness" description="You gain a +2 bonus to initiative." compset="ClassFeat">
+  <thing id="fKngKniCom" name="Knight Combat Readiness" description="You gain a +2 bonus to initiative.{br}{br}Level 5:{b}WEAPON MASTERY{/b}{br}You gain a +1 bonus to the damage rolls of weapon attacks.{br}{br}Level 6:{b}LEVEL 6 KNIGHT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
     <tag group="AtLevel" tag="4"/>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
       #traitmodify[trInit,trtBonus,2,""]]]></eval>
     </thing>
-  <thing id="fKngWeaMas" name="Weapon Mastery" description="You gain a +1 bonus to the damage rolls of weapon attacks." compset="ClassFeat">
+  <thing id="fKngWeaMas" name="Weapon Mastery" description="You gain a +1 bonus to the damage rolls of weapon attacks.{br}{br}Level 6:{b}LEVEL 6 KNIGHT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
     <tag group="AtLevel" tag="5"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000"><![CDATA[
@@ -4843,19 +4799,19 @@ perform hero.assign[Hero.ChannelDiv]</eval>
     <tag group="BuildOpt" tag="fKngKniWea"/>
     <tag group="AtLevel" tag="7"/>
     </thing>
-  <thing id="fKngGreCom" name="Greater Combat Readiness" description="The bonus to initiative provided by your Combat Readiness class feature increases to +4." compset="ClassFeat">
+  <thing id="fKngGreCom" name="Greater Combat Readiness" description="The bonus to initiative provided by your Combat Readiness class feature increases to +4.{br}{br}Level 10:{b}LEVEL 10 KNIGHT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
     <tag group="AtLevel" tag="9"/>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
       #traitmodify[trInit,trtBonus,2,""]]]></eval>
     </thing>
-  <thing id="fKngIPow13" name="Improved Power Strike" description="You gain one more use of power strike per encounter, but you can still use it only once per turn." compset="ClassFeat">
+  <thing id="fKngIPow13" name="Improved Power Strike" description="You gain one more use of power strike per encounter, but you can still use it only once per turn.{br}{br}Level 15:{b}PARAGON WEAPON MASTERY{/b}{br}The bonus to damage rolls granted by your Weapon Mastery class feature increases to +2.{br}{br}Level 16:{b}BOLSTERING STRIDE{/b}{br}You gain the bolstering stride power." compset="ClassFeat">
     <tag group="AtLevel" tag="13"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000">doneif (activated = 0)
       hero.childfound[pFtrPowStr].field[spcMax].value += 1</eval>
     </thing>
-  <thing id="fKngParWea" name="Paragon Weapon Mastery" description="The bonus to damage rolls granted by your Weapon Mastery class feature increases to +2." compset="ClassFeat">
+  <thing id="fKngParWea" name="Paragon Weapon Mastery" description="The bonus to damage rolls granted by your Weapon Mastery class feature increases to +2.{br}{br}Level 16:{b}BOLSTERING STRIDE{/b}{br}You gain the bolstering stride power." compset="ClassFeat">
     <tag group="AtLevel" tag="15"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000"><![CDATA[
@@ -4866,7 +4822,7 @@ perform hero.assign[Hero.ChannelDiv]</eval>
         perform eachpick.field[wpDamage].modify[+,1,""]
         nexteach]]></eval>
     </thing>
-  <thing id="fKngDevKni" name="Devoted Knight" description="When you use your second wind or take the total defense action, you activate an aura 1 that lasts until the end of your next turn. While in the aura, each ally gains a +2 power bonus to all defenses." compset="ClassFeat">
+  <thing id="fKngDevKni" name="Devoted Knight" description="When you use your second wind or take the total defense action, you activate an aura 1 that lasts until the end of your next turn. While in the aura, each ally gains a +2 power bonus to all defenses.{br}{br}Level 22:{b}KNIGHT&apos;S VALOR{/b}{br}You gain the knight&apos;s valor power." compset="ClassFeat">
     <tag group="AtLevel" tag="19"/>
     </thing>
   <thing id="fKngRelKni" name="Relentless Knight" description="When you use your second wind, you can spend an additional healing surge." compset="ClassFeat">
@@ -6423,7 +6379,7 @@ call FeatureDis
       <before name="Disable class feature"/>
       </evalrule>
     </thing>
-  <thing id="fRogSneAtt" name="Sneak Attack" description="When you make an attack with a light blade, a hand crossbow, a shortbow, or a sling and hit an enemy granting combat advantage to you, that enemy takes extra damage based on your level (see the Sneak Attack table). You can deal this extra damage only once per turn.\n\nSNEAK ATTACK\nLevel - Extra Damage\n1-10 2d6\n11-20 3d6\n21-30 5d6" compset="ClassFeat"></thing>
+  <thing id="fRogSneAtt" name="Sneak Attack" description="When you make an attack with a light blade, a hand crossbow, a shortbow, or a sling and hit an enemy granting combat advantage to you, that enemy takes extra damage based on your level (see the Sneak Attack table). You can deal this extra damage only once per turn." compset="ClassFeat"></thing>
   <thing id="fSctAspWil" name="Aspects Of The Wild (scout)" description="You gain two of the following powers of your choice." compset="ClassFeat"></thing>
   <thing id="fSctAttFin" name="Attack Finesse" description="When you make a melee basic attack, you can use your Dexterity modifier instead of your Strength modifier for the attack roll and the damage roll." compset="ClassFeat">
     <tag group="AtLevel" tag="1"/>
@@ -8401,10 +8357,6 @@ perform hero.assign[Hero.ChannelDiv]</eval>
   <thing id="fWprTorDom" name="Torm Domain" description="You cannot be forced to attack an ally under any circumstances. Such an attempt automatically fails, although damage or conditions associated with the effect that would cause you to attack your ally can still affect you. You can attack an ally if you choose to do so.{br}In addition, when you use healing word, the target of the power gains a +2 power bonus to all defenses until the end of your next turn.{br}You also gain the following powers." compset="BuildOpt">
     <tag group="BuildOpt" tag="fWprDomFea"/>
     <tag group="AtLevel" tag="1"/>
-    <bootstrap thing="pClrTruStr"></bootstrap>
-    <bootstrap thing="pClrShiStr"></bootstrap>
-    <bootstrap thing="pClrBleLaw"></bootstrap>
-    <bootstrap thing="pClrRinBlo"></bootstrap>
     </thing>
   <thing id="fWprDoEnc3" name="Domain Encounter Power" description="You gain an encounter attack power associated with your domain." compset="ClassFeat">
     <tag group="AtLevel" tag="3"/>
@@ -8828,10 +8780,9 @@ perform hero.assign[Hero.ChannelDiv]</eval>
     <tag group="User" tag="NoBootMech"/>
     </thing>
   <thing id="fFtrComAgi" name="Combat Agility" description="This class feature replaces the Combat Superiority class feature. You gain the power Combat Agility." compset="ClassFeat">
-     <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
-    <tag group="User" tag="FeatureChk" name="FeatureChk" abbrev="FeatureChk"/>
-    <bootstrap thing="pFtrComAgi"></bootstrap>
-    <evalrule phase="Setup" priority="98" message="Class feature error" summary="Class feature error">perform hero.child[fFtrComSup].setfocus
+    <tag group="User" tag="FeatureChk"/>
+    <tag group="Hide" tag="Special"/>
+    <evalrule phase="Setup" priority="98" message="Class feature error">perform hero.child[fFtrComSup].setfocus
 call FeatureDis
       <before name="Disable class feature"/>
       </evalrule>
@@ -8911,12 +8862,8 @@ call FeatureDis
           mainhand = 1
           endif
         if (eachpick.tagis[Helper.EqpOff] <> 0) then
-	  if (eachpick.tagis[ImplemType.wgUnarmed] <> 0) then
-            offhand = 0
-          else
-            offhand = 1
+          offhand = 1
           endif
-        endif
         nexteach
       doneif (mainhand + !offhand <> 2)
 
@@ -9359,22 +9306,12 @@ call FeatureDis
     <tag group="Hide" tag="Special"/>
     </thing>
   <thing id="fPsiHTeFoc" name="Telekinesis Focus (Hybrid)" description="You gain the power far hand." compset="BuildOpt">
-    <tag group="BuildOpt" tag="fPsiHDiFoc" name="Discipline Focus (hybrid)" abbrev="Discipline Focus (hybrid)"/>
-    <tag group="HasFeature" tag="fPsiTelFoc" name="Telekinesis Focus" abbrev="Telekinesis Focus"/>
-    <bootstrap thing="pPsiFarHan">
-      <containerreq phase="Setup" priority="500"><![CDATA[fieldval:boActive <> 0]]>
-        <after name="Build option final"/>
-        </containerreq>
-      </bootstrap>
+    <tag group="BuildOpt" tag="fPsiHDiFoc"/>
+    <tag group="HasFeature" tag="fPsiTelFoc"/>
     </thing>
   <thing id="fPsiHTeHyb" name="Telepathy Focus (Hybrid)" description="You gain the power send thoughts." compset="BuildOpt">
-    <tag group="BuildOpt" tag="fPsiHDiFoc" name="Discipline Focus (hybrid)" abbrev="Discipline Focus (hybrid)"/>
-    <tag group="HasFeature" tag="fPsiTptFoc" name="Telepathy Focus" abbrev="Telepathy Focus"/>
-    <bootstrap thing="pPsiSenTho">
-      <containerreq phase="Setup" priority="500"><![CDATA[fieldval:boActive <> 0]]>
-        <after name="Build option final"/>
-        </containerreq>
-      </bootstrap>
+    <tag group="BuildOpt" tag="fPsiHDiFoc"/>
+    <tag group="HasFeature" tag="fPsiTptFoc"/>
     </thing>
   <thing id="fPsiHPsAug" name="Psionic Augmentation (hybrid)" description="This class feature functions as the class feature, except that your power point total varies depending on your selection of powers. See &quot;Psionic Augmentation and Hybrid Characters&quot; in the glossary to determine the number of power points you have." compset="ClassFeat">
     <tag group="HasFeature" tag="fArdPsiAug"/>
@@ -10254,7 +10191,7 @@ call FeatureDis
  nexteach]]></eval>
     </thing>
   <thing id="fSkaMasSto" name="Master of Story and Song" description="When you make a melee basic attack with a one-handed weapon, you can use Charisma instead of Strength for the attack roll and the damage roll." compset="ClassFeat"></thing>
-  <thing id="fSkaSkaAur" name="Skald&apos;s Aura" description="You gain the skaldâ€™s aura power." compset="ClassFeat">
+  <thing id="fSkaSkaAur" name="Skald&apos;s Aura" description="You gain the skald&#146;s aura power." compset="ClassFeat">
     <usesource source="HeroFeywil"/>
     <tag group="Hide" tag="Special"/>
     <bootstrap thing="pBrdSkaAur"></bootstrap>
@@ -10546,109 +10483,6 @@ call FeatureDis
 		endif
 	  nexteach]]>
       <after name="Build option activated"/>
-      </eval>
-    </thing>
-  <thing id="fPsiRit6" name="Psion Level 6 Ritual" description="At 6th level Psions gain their choice of either the Sending or Tenser&apos;s Floating Disk ritual, which you may cast free of cost once per day." compset="ClassFeat">
-    <tag group="ReqLevel" tag="6"/>
-    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
-    <eval phase="Setup" priority="2500"><![CDATA[doneif ( activated = 0 )
-doneif (hero.tagvalue[Level.?] < 6)
-
-#resmax[resRituals] += 1
-
-~ Component.ritual & (rtTenseFlo | rtSending)]]></eval>
-    </thing>
-  <thing id="fAveHOatEn" name="Oath of Enmity (hybrid)" description="You gain the avenger power oath of enmity. The power functions as normal, except that you can apply the effect only when you make a melee attack using an avenger power or an avenger paragon path power." compset="ClassFeat">
-    <bootstrap thing="pAveHOatEn"></bootstrap>
-    </thing>
-  <thing id="clsSorceEl" name="Elementalist" description="Disdaining the framework of theories of magic and sympathetic principles, elementalists seize the raw stuff of creation with simple force of will, bending the elements to their whim. Elementalist sorcerers might fashion whips or darts out of fire, create shields and armor from living rock, or inundate their enemies beneath torrents of water.\n\n Since elementalists arise from very different magic-using traditions, other users of arcane power shun them. These sorcerers practice their arts in isolated monasteries, secretive cabals, and occasionally elemental cults. Often accused of being more reckless and destructive than other kinds of sorcerers, elementalists in turn sneer at spellcasters who seek to create tools and systems for shaping magic at a safe distance. To elementalists, the only right way to wield magic is to dive in headlong and seize power with both hands. Some believe that elementalists are prone to evil or that they revel in reckless destruction, but neither assertion is necessarily true. Like more conventional arcane magic, the elementalist&apos;s magic is a tool—and like any tool, it can be turned to evil ends or to good." compset="Class" uniqueness="unique">
-    <fieldval field="clsRoleTxt" value="Elementalists who specialize in air or fire magic scour their foes with destructive energy, hurling blasts of flame or bolts of lightning. Those who specialize in earth or water magic hinder enemies, catching them in tides and quakes. Few can withstand an elementalist&apos;s wrath for long."/>
-    <fieldval field="clsSkills" value="3"/>
-    <fieldval field="clsWill" value="2"/>
-    <fieldval field="clsStartHP" value="12"/>
-    <fieldval field="clsHPLev" value="5"/>
-    <fieldval field="clsSurges" value="6"/>
-    <usesource source="HeroElemCh"/>
-    <tag group="PowerSrc" tag="Arcane" name="Arcane" abbrev="Arcane"/>
-    <tag group="Skill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
-    <tag group="Skill" tag="skAthletic" name="Athletics" abbrev="Athletics"/>
-    <tag group="Skill" tag="skBluff" name="Bluff" abbrev="Bluff"/>
-    <tag group="Skill" tag="skDiplomac" name="Diplomacy" abbrev="Diplomacy"/>
-    <tag group="Skill" tag="skDungeone" name="Dungeoneering" abbrev="Dungeoneering"/>
-    <tag group="Skill" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
-    <tag group="Skill" tag="skHistory" name="History" abbrev="History"/>
-    <tag group="Skill" tag="skInsight" name="Insight" abbrev="Insight"/>
-    <tag group="Skill" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
-    <tag group="Skill" tag="skNature" name="Nature" abbrev="Nature"/>
-    <tag group="TrainSkill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
-    <tag group="WpCatRqMel" tag="wcSimple" name="Simple" abbrev="Simple"/>
-    <tag group="WpCatRqRng" tag="wcSimple" name="Simple" abbrev="Simple"/>
-    <tag group="ArmorProf" tag="apCloth" name="Cloth Armor" abbrev="Cloth Armor"/>
-    <tag group="ClassRole" tag="Striker" name="Striker" abbrev="Striker"/>
-    <tag group="ImplemType" tag="itStaff" name="Staff" abbrev="Staff"/>
-    <tag group="ImplemType" tag="wpDagger" name="Dagger" abbrev="Dagger"/>
-    <tag group="KeyAbility" tag="attrCha" name="Charisma" abbrev="Charisma"/>
-    <tag group="KeyAbility" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
-    <tag group="KeyAbility" tag="attrStr" name="Strength" abbrev="Strength"/>
-    <bootstrap thing="fSorDraMag"></bootstrap>
-    <bootstrap thing="fSorStoMag"></bootstrap>
-    <bootstrap thing="fSorWilMag"></bootstrap>
-    <bootstrap thing="fSorSpeSou"></bootstrap>
-    <bootstrap thing="fSorCosMag"></bootstrap>
-    </thing>
-  <thing id="fSorElAir" name="Air Elementalist" description="You gain the following features.\n{b}Attack Power:{/b} You gain either the howling zephyr or the static charge power.\n{b}Enhanced Elemental Bolt:{/b} Your elemental bolt deals lightning damage. On a hit, its target gains vulnerable 3 to your elemental attacks until the end of your next turn.\n{b}Elemental Soul:{/b} At 5th level, you gain resist 10 lightning. At 15th level, you gain a +2 bonus to saving throws against ongoing lightning damage. At 25th level, choose either cold or thunder. You gain resist 10 to the chosen damage type and a +2 bonus to saving throws against ongoing damage of that type.\n{b}Fly:{/b} At 23rd level, you can fly up to half your speed as a move action." compset="BuildOpt">
-    <tag group="BuildOpt" tag="fSorSpeSou" name="Spell Source" abbrev="Spell Source"/>
-    <eval phase="Traits" priority="10000"><![CDATA[
-      doneif (activated = 0)
-
-      ~can use str/dex/int for AC if not in heavy armor
-      perform hero.findchild[Armor,"Equipped.Equipped & ArmorCat.Heavy"].setfocus
-      if (state.isfocus = 0) then
-        perform hero.child[defAC].assign[LinkAttr.attrStr]
-        endif
-
-      var damage as number
-      var resist as number
-      if (hero.tagvalue[Level.?] <= 10) then
-        damage = 0
-
-         if (hero.childlives[ftImproDra]<>0) then
-           resist = 7
-         else
-           resist = 5
-         endif
-      elseif (hero.tagvalue[Level.?] <= 20) then
-        damage = 2
-         if (hero.childlives[ftImproDra]<>0) then
-           resist = 15
-        else
-        resist = 10
-         endif
-      else
-        damage = 4
-         if (hero.childlives[ftImproDra]<>0) then
-           resist = 25
-        else
-        resist = 15
-         endif
-        endif
-      damage += #attrbasebonus[attrStr]
-
-      ~Armored Sorcerer feat
-      if (hero.childlives[ftArmorSor] <> 0) then
-        if (hero.haschild[Armor,"Equipped.Equipped & ArmorType.arLeathArm"] <> 0) then
-          resist += 2
-          endif
-        endif
-
-      ~+str to arcane power damage (+2 at 11, +4 at 21)
-      foreach pick in hero from Power where "PowerSrc.Arcane"
-        perform eachpick.field[pwDamBonus].modify[+,damage,""]
-        nexteach
-
-      ~resist 5/10/15
-      perform field[usrChosen1].chosen.field[rsTotal].modify[+,resist,""]]]>
-      <after name="Calc attrBonus"/>
       </eval>
     </thing>
   </document>

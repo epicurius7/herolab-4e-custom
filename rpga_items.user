@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <document signature="Hero Lab Data">
   <thing id="mgAmuPas2" name="Amulet of Passage" description="{b}Property{/b}: You gain a +2 item bonus to Acrobatics and Athletics checks to escape, and to Thievery checks to open locks.{br}{br}{b}Power (At-Will):{/b} Standard Action. You attune an ally to the Amulet. While attuned and within 10 squares of you, an ally can use the Amulet&apos;s powers (but not its enhancement bonus or properties) as if he or she were wearing it.{br}{br}{b}Power (Daily * Teleportation):{/b} Move Action. You and each attuned ally can each use this power once per day. You teleport a number of squares equal to your speed." compset="MagicItem">
     <fieldval field="mgFlavor" value="This fine silver chain is unassuming, bearing a single arrowhead- shaped jewel. While you wear this amulet, it stirs thoughts of legendary battles and heroic deeds."/>
@@ -55,7 +55,7 @@
     <bootstrap thing="pMIAmuPas2"></bootstrap>
     <bootstrap thing="pMIAmuPas1"></bootstrap>
     </thing>
-  <thing id="mwLesSB3" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 10 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword.\n\n{b}Power (Encounter): Minor Action.{/b} The next attack you make with Lesser Shadowbane before the end of your next turn ignores all forms of cover and concealment.\n\n{b}Power (Daily · Radiant, Weapon): Standard Action.{/b}\n{b}Attack: {/b}Close burst 3 (creatures with the shadow origin in the burst);\nYour highest ability modifier vs. Reflex: \nHit: 1d8 radiant damage per plus, and the target cannot benefit from concealment or total concealment (save ends).\nEffect: The target loses the insubstantial and/or phasing qualities until the end of your next turn." compset="MagicWep">
+  <thing id="mwLesSB3" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 10 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword.\n{b}Power (Encounter): Minor Action.{/b} The next attack you make with Lesser Shadowbane before the end of your next turn ignores all forms of cover and concealment.\n{b}Power (Daily &#183; Radiant, Weapon): Standard Action.{/b}\n{b}Attack: {/b}Close burst 3 (creatures with the shadow origin in the burst);\nYour highest ability modifier vs. Reflex: \nHit: 1d8 radiant damage per plus, and the target cannot benefit from concealment or total concealment (save ends).\nEffect: The target loses the insubstantial and/or phasing qualities until the end of your next turn." compset="MagicWep">
     <fieldval field="mgLevel" value="14"/>
     <fieldval field="mgCrit" value="+1d6 Radiant per plus, +1d12 radiant per plus vs shadow creatures"/>
     <fieldval field="mgBonus" value="3"/>
@@ -64,8 +64,6 @@
     <tag group="Rarity" tag="Rare" name="Rare" abbrev="Rare"/>
     <bootstrap thing="pwLsSBDay"></bootstrap>
     <bootstrap thing="pwLsSBEnc"></bootstrap>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,10,""]]]></eval>
     </thing>
   <thing id="pwLsSBEnc" name="Lesser Shadowbane (Encounter)" description="The next attack you make with {i}Lesser Shadowbane{/i} before the end of your next turn ignores all forms of cover and concealment." compset="Power">
     <tag group="PowerType" tag="Encounter"/>
@@ -78,41 +76,29 @@ perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,
     <tag group="PowerLink" tag="ItemDailyX"/>
     <tag group="PowerClass" tag="MagicItem"/>
     </thing>
-  <thing id="mwLesSB4" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 10 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword.\n\n{b}Power (Encounter): Minor Action.{/b} The next attack you make with Lesser Shadowbane before the end of your next turn ignores all forms of cover and concealment.\n\n{b}Power (Daily · Radiant, Weapon): Standard Action.{/b}\n{b}Attack: {/b}Close burst 3 (creatures with the shadow origin in the burst);\nYour highest ability modifier vs. Reflex: \nHit: 1d8 radiant damage per plus, and the target cannot benefit from concealment or total concealment (save ends).\nEffect: The target loses the insubstantial and/or phasing qualities until the end of your next turn." compset="MagicWep">
+  <thing id="mwLesSB4" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 10 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword." compset="MagicWep">
     <fieldval field="mgLevel" value="19"/>
     <fieldval field="mgCrit" value="+1d6 Radiant per plus, +1d12 radiant per plus vs shadow creatures"/>
     <fieldval field="mgBonus" value="4"/>
     <fieldval field="mgEnhance" value="4"/>
     <tag group="ReqWep" tag="AnyMelee" name="Any Melee" abbrev="Any Melee"/>
     <tag group="Rarity" tag="Rare" name="Rare" abbrev="Rare"/>
-    <bootstrap thing="pwLsSBDay"></bootstrap>
-    <bootstrap thing="pwLsSBEnc"></bootstrap>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,10,""]]]></eval>
     </thing>
-  <thing id="mwLesSB5" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 20 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword.\n\n{b}Power (Encounter): Minor Action.{/b} The next attack you make with Lesser Shadowbane before the end of your next turn ignores all forms of cover and concealment.\n\n{b}Power (Daily · Radiant, Weapon): Standard Action.{/b}\n{b}Attack: {/b}Close burst 3 (creatures with the shadow origin in the burst);\nYour highest ability modifier vs. Reflex: \nHit: 1d8 radiant damage per plus, and the target cannot benefit from concealment or total concealment (save ends).\nEffect: The target loses the insubstantial and/or phasing qualities until the end of your next turn." compset="MagicWep">
+  <thing id="mwLesSB5" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 10 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword." compset="MagicWep">
     <fieldval field="mgLevel" value="24"/>
     <fieldval field="mgCrit" value="+1d6 Radiant per plus, +1d12 radiant per plus vs shadow creatures"/>
     <fieldval field="mgBonus" value="5"/>
     <fieldval field="mgEnhance" value="5"/>
     <tag group="ReqWep" tag="AnyMelee" name="Any Melee" abbrev="Any Melee"/>
     <tag group="Rarity" tag="Rare" name="Rare" abbrev="Rare"/>
-    <bootstrap thing="pwLsSBDay"></bootstrap>
-    <bootstrap thing="pwLsSBEnc"></bootstrap>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,20,""]]]></eval>
     </thing>
-  <thing id="mwLesSB6" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 20 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword.\n\n{b}Power (Encounter): Minor Action.{/b} The next attack you make with Lesser Shadowbane before the end of your next turn ignores all forms of cover and concealment.\n\n{b}Power (Daily · Radiant, Weapon): Standard Action.{/b}\n{b}Attack: {/b}Close burst 3 (creatures with the shadow origin in the burst);\nYour highest ability modifier vs. Reflex: \nHit: 1d8 radiant damage per plus, and the target cannot benefit from concealment or total concealment (save ends).\nEffect: The target loses the insubstantial and/or phasing qualities until the end of your next turn." compset="MagicWep">
+  <thing id="mwLesSB6" name="Lesser ShadowBane" description="{b}Property{/b}: You gain resist 10 necrotic.\n{b}Property{/b}: You are immune to fear. (This means you ignore the non-damaging effects of powers witht he fear keyword." compset="MagicWep">
     <fieldval field="mgLevel" value="29"/>
     <fieldval field="mgCrit" value="+1d6 Radiant per plus, +1d12 radiant per plus vs shadow creatures"/>
     <fieldval field="mgBonus" value="6"/>
     <fieldval field="mgEnhance" value="6"/>
     <tag group="ReqWep" tag="AnyMelee" name="Any Melee" abbrev="Any Melee"/>
     <tag group="Rarity" tag="Rare" name="Rare" abbrev="Rare"/>
-    <bootstrap thing="pwLsSBDay"></bootstrap>
-    <bootstrap thing="pwLsSBEnc"></bootstrap>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,20,""]]]></eval>
     </thing>
   <thing id="pwmaglmp1" name="Magic Lamp: Wish for Luck" description="{i}Requirement: You must have at least one unspent wish.{/i}\n{b}Effect:{/b} Reroll one die that you just rolled and use either the original roll or the new roll as your result (whichever you prefer). This power may only be used once on any die roll." compset="Power">
     <tag group="PowerSrc" tag="None" name="None" abbrev="None"/>
@@ -138,7 +124,7 @@ perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,
     <tag group="PowerType" tag="AtWill"/>
     <tag group="ActionType" tag="Standard"/>
     </thing>
-  <thing id="mgmaglamp" name="Magic Lamp" description="You rub the lamp, and your wish is fulfilled!\nWondrous Item\nProperty\nTo activate one of the lamp’s powers, you must void the number of wishes specified by that power. Multiple characters with magic lamps may not pool their unspent wishes." compset="MagicItem">
+  <thing id="mgmaglamp" name="Magic Lamp" description="You rub the lamp, and your wish is fulfilled!\nWondrous Item\nProperty\nTo activate one of the lamp&#146;s powers, you must void the number of wishes specified by that power. Multiple characters with magic lamps may not pool their unspent wishes." compset="MagicItem">
     <usesource source="LFRItem" parent="UserParent" name="Living Forgotten Realms Item"/>
     <tag group="ItemSlot" tag="isWondrous"/>
     <bootstrap thing="pwmaglmp1"></bootstrap>

@@ -84,28 +84,28 @@
     </thing>
   <thing
     id="apFullPlat"
-    name="Full Plate Armor proficiency"
+    name="Full Plate Armor"
     compset="ArmorProf">
     <tag group="ArmorCat" tag="Heavy"/>
     <tag group="ArmorType" tag="arFullPla"/>
     </thing>
   <thing
     id="apRing"
-    name="Ring Mail proficiency"
+    name="Ring Mail"
     compset="ArmorProf">
     <tag group="ArmorCat" tag="Heavy"/>
     <tag group="ArmorType" tag="arRingMai"/>
     </thing>
   <thing
     id="apSpiked"
-    name="Spiked Plate proficiency"
+    name="Spiked Plate"
     compset="ArmorProf">
     <tag group="ArmorCat" tag="Heavy"/>
     <tag group="ArmorType" tag="arSpikePla"/>
     </thing>
   <thing
     id="apSplint"
-    name="Splint Mail proficiency"
+    name="Splint Mail"
     compset="ArmorProf">
     <tag group="ArmorCat" tag="Heavy"/>
     <tag group="ArmorType" tag="arSplinMai"/>
@@ -131,7 +131,7 @@
     </thing>
   <thing
     id="apShieldBr"
-    name="Barbed Shields proficiency"
+    name="Barbed Shields"
     compset="ArmorProf">
     <tag group="ArmorType" tag="arBarbShi"/>
     </thing>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <document signature="Hero Lab Data">
   <thing id="ppAbidiRea" name="Abiding Reaper" description="Regardless of your religious bent, the traditions of your people run strong in your veins. Those veins have spilled your own dark blood for fated deeds; and those deeds have, in turn, moved you along the road to fulfilling the dream almost every shadar-kai holds in mind and heart. The natural course of your life seems to be to fulfill your people&apos;s ancient pact against all those who stand in opposition to departing creation. Whether through your intentional strengthening of your shadar-kai nature or by happy chance, your body has grown strong in death. You are drawn to those who defy death and fate, especially creatures that have immortality - natural or otherwise. To such ones you deliver the sweet freedom of death, sending them into the arms they sought to avoid. Their resistance is for naught. You are a representative of the inevitable. In your terrifying strength you abide - perhaps one day in immortality justly granted, but certainly in legend.{br}{br}ABIDING REAPER  PATH FEATURES{b}Blood Calling (11th level){/b}: Whenever you bloody a target, that target grants you combat advantage until it is no longer bloodied.{br}{b}Deathly Action (11th level){/b}: When you spend an action point to make an attack, that attack ignores all resistances and insubstantial and shuts down the target&apos;s regeneration (if any) until the end of your next turn.{br}{b}Hardened Spirit (16th level){/b}: Whenever a creature makes an attack against your Fortitude or Will and misses, you gain temporary hit points equal to 1/2 your level + your Constitution modifier." compset="Paragon" uniqueness="unique">
     <fieldval field="pptFlavor" value="&amp;quot;You&apos;ve evaded death long enough. Now it has found you.&amp;quot;"/>
@@ -130,70 +130,8 @@
     <bootstrap thing="pParDesGre"></bootstrap>
     <bootstrap thing="pParBloGre"></bootstrap>
     </thing>
-  <thing id="fParAmbEff" name="Ambitious Effort" description="Choose an encounter attack power of 7th level or lower from your class. You gain that power. If you choose an encounter attack power that you already know, you now have two uses of that power per encounter. At 21st level, you can replace this power with an encounter attack power of 13th level or lower from your class.\n\n{b}NOTE{/b} : If choosing  a new power, you need to add it on the Class Tab after selecting it off the menu." compset="ClassFeat">
-    <arrayval field="usrArray" index="0" value="2nd use"/>
-    <arrayval field="usrArray" index="1" value="New power"/>
+  <thing id="fParAmbEff" name="Ambitious Effort" description="Choose an encounter attack power of 7th level or lower from your class. You gain that power. If you choose an encounter attack power that you already know, you now have two uses of that power per encounter. At 21st level, you can replace this power with an encounter attack power of 13th level or lower from your class." compset="ClassFeat">
     <tag group="ReqLevel" tag="11"/>
-    <tag group="ChooseSrc1" tag="Thing"/>
-    <eval phase="Initialize" priority="150" name="AmbEff MakeChoice"><![CDATA[doneif (activated = 0)
-
-var lev1 as number
-lev1 = 7
-if (hero.tagvalue[Level.?] >= 21) then
-  lev1 = 13
-endif
-
-var expr as string
-var classid as string
-var cnt as number
-classid = ""
-cnt = 0
-
-foreach pick in hero from Class where "PowerClass.?"
-  if (cnt = 0) then 
-    classid = eachpick.idstring
-  else
-    classid &= " | PowerClass." & eachpick.idstring
-  endif
-  cnt += 1
-nexteach
-expr = "(PowerType.Encounter) & PowerClass." & classid
-
-~ Values for AEPwrChTyp: 0=2nd use, 1=New power
-
-~ 2nd use wanted
-if (compare(field[usrSelect].text, "2nd use") = 0) then
-  hero.child[ppAdroiExp].field[AEPwrChTyp].value = 0
-  cnt = 0
-  foreach pick in hero from Power where "(PowerType.Encounter) & PowerClass." & classid
-    if (cnt = 0) then
-      expr &= " & (thingid." & eachpick.idstring
-    else
-      expr &= " | thingid." & eachpick.idstring
-    endif    
-    cnt += 1
-  nexteach
-  expr &= ")"
-  field[usrCandid1].text = expr
-
-~ A new power wanted
-else
-  hero.child[ppAdroiExp].field[AEPwrChTyp].value = 1
-  cnt = 0
-  expr &= " & (val:ReqLevel.? <= " & lev1 & ")"
-  foreach pick in hero from Power where "(PowerType.Encounter) & PowerClass." & classid
-    perform setfocus
-    expr &= " & !thingid." & eachpick.idstring
-  nexteach 
-  field[usrCandid1].text = expr
-endif]]></eval>
-    <eval phase="Initialize" index="4" name="AmbEff Init"><![CDATA[doneif (activated = 0)
-
-if (compare(field[usrSelect].text, "2nd use") = 0) then
-  hero.child[ppAdroiExp].field[AEPwrChTyp].value = 0
-else
-  hero.child[ppAdroiExp].field[AEPwrChTyp].value = 1
-endif]]></eval>
     </thing>
   <thing id="fParBloDet" name="Bloody Determination" description="The first time you are bloodied during an encounter, you gain a +5 power bonus to your next attack roll before the end of your next turn against the enemy that bloodied you." compset="ClassFeat">
     <tag group="ReqLevel" tag="11"/>
@@ -2859,7 +2797,7 @@ call ReqPower</validate>
     <tag group="ReqLevel" tag="16"/>
     </thing>
   <thing id="ppDarkRec" name="Dark Reckoner" description="You deter creatures with physical and psychological threats when they intend to harm you, your allies, or other things important to you. You believe that threats mean nothing, though, if you are not willing to deliver on them. When intimidation fails, you visit vengeance swiftly and fully upon the offending party.{br}In your mind, vengeance is a virtue. As a warlock of the dark pact, you viscerally understand the concept of vengeance. Many of the entities with which you make pacts are consumed by revenge. In the Underdark, slights and rivalries fester and give birth to bouts of ruthless skulduggery and sinister schemes.{br}As a dark reckoner, you have internalized your baleful emotions and feelings of injustice. From dark alleyways and unlighted tunnels, you draw inspiration and purpose. You understand that vengeance is a potent source of power.{br}{br}DARK RECKONER  PATH FEATURES{b}Dark Shadow Action (11th level){/b}: When you spend an action point to take an extra action, you and any allies within 5 squares of you when you spend the action point gain concealment until the start of your next turn.{br}{b}Shadow and Threat (11th level){/b}: When you score a critical hit with an attack that deals necrotic damage, you become invisible until the end of your next turn or until you attack.{br}{b}Death Curse (16th level){/b}: When you apply your Warlock&apos;s Curse extra damage, you can choose to apply 1d6 extra necrotic damage." compset="Paragon" uniqueness="unique">
-    <fieldval field="pptFlavor" value="&amp;quot;There is an old drow saying: â€˜Vengeance is sweeter when exacted in darkness.&apos; &amp;quot;"/>
+    <fieldval field="pptFlavor" value="&amp;quot;There is an old drow saying: &#226;&#128;&#152;Vengeance is sweeter when exacted in darkness.&apos; &amp;quot;"/>
     <fieldval field="reqText" value="Warlock, dark pact"/>
     <usesource source="Arcane"/>
     <tag group="ReqClass" tag="clsWarlock"/>
@@ -4949,7 +4887,7 @@ call ReqFeature]]></validate>
     <bootstrap thing="pParDraOve"></bootstrap>
     <bootstrap thing="pParWavTer"></bootstrap>
     <prereq message="&apos;Dragonfear&apos; feature required">
-      <validate>perform hero.childfound[pRacDraFea].setfocus
+      <validate>perform hero.childfound[pRacDragon].setfocus
 call ReqPower</validate>
       </prereq>
     </thing>
@@ -6475,8 +6413,8 @@ call ReqFeature]]></validate>
   <thing id="fParPriHel" name="Prince of Hell" description="Your arcane attack powers ignore resistance to fire." compset="ClassFeat">
     <tag group="ReqLevel" tag="16"/>
     </thing>
-  <thing id="ppHeralMad" name="Herald of Madness" description="You are intimately familiar with the power that comes with controlling your enemy&apos;s emotions. Fear is a good start, but you go even further, pushing fear into madness. You have chosen to draw upon the power of the aberrant creature that brings madness by its mere presence: the gibbering mouther. Your warcry carries the sound of a thousand voices, all shouting different things. Those who hear you claw at their ears, your voice infecting their thoughts and filling their hearts with terror.{br}With this power comes a change. Your mindâ€¦ is different, somehow. Some thoughts come only with difficulty, but at times, you know things that your friends and allies believe you had no way of knowing. You may sometimes try to share your unique viewpoint with others, but even your most innocuous comment brings pain.{br}{br}HERALD OF MADNESS  PATH FEATURES{b}Befouled Mind (11th level){/b}: When an enemy attacks your Will, it takes psychic damage equal to your Dexterity or Strength modifier.{br}{b}Infectious Madness Action (11th level){/b}: When you spend an action point to make an attack, choose one creature hit by that attack. That creature must make a melee basic attack against a creature of your choice as a free action.{br}{b}Recovery through Pain (16th level){/b}: Whenever an ally within 5 squares of you fails a saving throw, that ally may take psychic damage equal to his or her level to reroll the saving throw, with a +2 bonus against charm, fear, or psychic effects. The ally must use the second result." compset="Paragon" uniqueness="unique">
-    <fieldval field="pptFlavor" value="&amp;quot;I â€¦ it&apos;s hard for me to focusâ€¦ but it&apos; ll be even harder for you.&amp;quot;"/>
+  <thing id="ppHeralMad" name="Herald of Madness" description="You are intimately familiar with the power that comes with controlling your enemy&apos;s emotions. Fear is a good start, but you go even further, pushing fear into madness. You have chosen to draw upon the power of the aberrant creature that brings madness by its mere presence: the gibbering mouther. Your warcry carries the sound of a thousand voices, all shouting different things. Those who hear you claw at their ears, your voice infecting their thoughts and filling their hearts with terror.{br}With this power comes a change. Your mind&#226;&#128;&#166; is different, somehow. Some thoughts come only with difficulty, but at times, you know things that your friends and allies believe you had no way of knowing. You may sometimes try to share your unique viewpoint with others, but even your most innocuous comment brings pain.{br}{br}HERALD OF MADNESS  PATH FEATURES{b}Befouled Mind (11th level){/b}: When an enemy attacks your Will, it takes psychic damage equal to your Dexterity or Strength modifier.{br}{b}Infectious Madness Action (11th level){/b}: When you spend an action point to make an attack, choose one creature hit by that attack. That creature must make a melee basic attack against a creature of your choice as a free action.{br}{b}Recovery through Pain (16th level){/b}: Whenever an ally within 5 squares of you fails a saving throw, that ally may take psychic damage equal to his or her level to reroll the saving throw, with a +2 bonus against charm, fear, or psychic effects. The ally must use the second result." compset="Paragon" uniqueness="unique">
+    <fieldval field="pptFlavor" value="&amp;quot;I &#226;&#128;&#166; it&apos;s hard for me to focus&#226;&#128;&#166; but it&apos; ll be even harder for you.&amp;quot;"/>
     <fieldval field="reqText" value="Barbarian, monk, or ranger"/>
     <usesource source="Dragon"/>
     <tag group="ReqClass" tag="clsBarbari"/>
@@ -7400,7 +7338,7 @@ call ReqFeature]]></validate>
       var expr as string
       expr = "thingid." & field[usrChosen1].chosen.idstring
       foreach pick in hero from WeaponBase where expr
-        perform eachpick.field[wpBonus].modify[+,1,""]
+        perform eachpick.field[wpDamage].modify[+,1,""]
         nexteach]]>
       <before name="Weapon proficiencies final"/>
       </eval>
@@ -9168,7 +9106,7 @@ call ReqFeature]]></validate>
     <tag group="ReqLevel" tag="16"/>
     </thing>
   <thing id="ppOmanGia" name="Oman Giantkiller" description="You were trained by a clan of Northlanders who have developed specialized tactics for giantslaying. Although their purpose in training you was to aid them in liberating the isle of Oman, you&apos;ve found that their techniques are very applicable to other enemies as well. In addition to learning how to effectively fight giants, the Northlanders taught you a bit about sailing and the sea.{br}In a group, you stay out front, confounding your brutish enemies until you are ready to strike a killing blow. You are willing to take calculated risks to obtain advantage over your larger foes, and with enough support, you keep your enemies&apos; attention focused on you. It&apos;s a challenge to go toe-to-toe with heavy hitters all the time, but it&apos;s one you relish.{br}{br}OMAN GIANTKILLER  PATH FEATURES{b}In the Thick of the Action (11th level){/b}: When you spend an action point to take an extra action, you deal 4 extra damage against Large or larger enemies and gain +2 speed until the start of your next turn.{br}{b}Northlander Persistence (11th level){/b}: When you take the second wind action, you can spend one additional healing surge.{br}{b}One More Time (16th level){/b}: Whenever you designate a target that is not currently your quarry as your quarry, that target is marked by you until the end of your next turn." compset="Paragon" uniqueness="unique">
-    <fieldval field="pptFlavor" value="&amp;quot;They bleed right? Then we can kill â€˜em. That&apos;s all you need to know.&amp;quot;"/>
+    <fieldval field="pptFlavor" value="&amp;quot;They bleed right? Then we can kill &#226;&#128;&#152;em. That&apos;s all you need to know.&amp;quot;"/>
     <fieldval field="reqText" value="Fighter and hunter&apos;s quarry class feature, Moonshae Isles regional benefit"/>
     <usesource source="Dragon"/>
     <tag group="ReqBackgr" tag="bgMoonsIsl"/>
@@ -13041,19 +12979,15 @@ call ReqFeature]]></validate>
     <tag group="ReqLevel" tag="11"/>
     </thing>
   <thing id="fParRidCon" name="Riddle of Conversation" description="You gain a +2 bonus to Bluff, Diplomacy, Insight, and Intimidate checks. You also gain training in one of those skills. In addition, whenever you use your Flurry of Blows power, one ally adjacent to you or to a target of that power can shift as a free action." compset="ClassFeat">
-    <fieldval field="usrCandid1" value="component.Skill &amp; (thingid.skBluff | thingid.skDiplomac | thingid.skInsight | thingid.skIntimida)"/>
+    <fieldval field="usrCandid1" value="component.Skill"/>
     <tag group="ReqLevel" tag="11"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (activated = 0)
+    <eval phase="Traits" priority="1000"><![CDATA[
+      doneif (activated = 0)
 
-~ add bonuses
-#traitmodify[skBluff,trtBonus,2,""]
-#traitmodify[skDiplomac,trtBonus,2,""]
-#traitmodify[skInsight,trtBonus,2,""]
-#traitmodify[skIntimida,trtBonus,2,""]
-
-~ if a skill is selected, make it trained
-doneif (field[usrChosen1].ischosen = 0)
-perform field[usrChosen1].chosen.assign[Helper.TrainedAut]]]>
+      #traitmodify[skBluff,trtBonus,2,""]
+      #traitmodify[skDiplomac,trtBonus,2,""]
+      #traitmodify[skInsight,trtBonus,2,""]
+      #traitmodify[skIntimida,trtBonus,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>

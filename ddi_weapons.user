@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <document signature="Hero Lab Data">
-  <thing id="wpAccurdag" name="Accurate dagger" description="An accurate dagger is a lean weapon with a very narrow blade, resembling a stiletto.\n\n{b}{i}Accurate:{/b}{/i} You gain a +1 bonus to attack rolls made with an accurate implement." compset="Melee">
+  <thing id="wpAccurdag" name="Accurate dagger" compset="Melee">
     <fieldval field="grCost" value="25"/>
     <fieldval field="gearWeight" value="1"/>
     <fieldval field="wpProf" value="3"/>
@@ -17,6 +17,7 @@
     <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
 perform assign[Helper.Proficient]
 perform assign[ImplemType.wpDagger]
+      
       <before name="Magic Weapon Copy"/>
       <after name="Superior implement training"/>
       </eval>
@@ -392,7 +393,6 @@ perform assign[ImplemType.wpDagger]
     <tag group="WepProp" tag="Defensive"/>
     <tag group="WepProp" tag="OffHand"/>
     <tag group="WepGroup" tag="wgAxe"/>
-    <tag group="WepGroup" tag="wgUnarmed"/>
     </thing>
   <thing id="wpGlaive" name="Glaive" compset="Melee">
     <fieldval field="grCost" value="25"/>
@@ -548,7 +548,7 @@ perform assign[ImplemType.wpDagger]
     <tag group="WepCat" tag="wcImprov"/>
     <tag group="Equipment" tag="TwoHand"/>
     </thing>
-  <thing id="wpIncendag" name="Incendiary dagger" description="An incendiary dagger features a wavy blade that was forged by tiefling weapon makers using ancient techniques of Bael Turath.\n\n{b}{i}Energized (fire):{/b}{/i} When you use an attack power through an energized implement, you gain a +2 bonus to damage rolls if the power has the keyword that matches the implement&apos;s damage type. The bonus increases to +3 at 11th level and +4 at 21st level.\n\n{b}{i}Unerring:{/b}{/i} You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement." compset="Melee">
+  <thing id="wpIncendag" name="Incendiary dagger" compset="Melee">
     <fieldval field="grCost" value="22"/>
     <fieldval field="gearWeight" value="1"/>
     <fieldval field="wpProf" value="3"/>
@@ -566,23 +566,9 @@ perform assign[ImplemType.wpDagger]
     <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
 perform assign[Helper.Proficient]
 perform assign[ImplemType.wpDagger]
+      
       <before name="Magic Weapon Copy"/>
       <after name="Superior implement training"/>
-      </eval>
-    <eval phase="Traits" priority="10000" index="2"><![CDATA[doneif (tagis[Equipped.Equipped] = 0)
-var bonus as number
-
-if (#level[] <= 10) then
-  bonus = 2
-elseif (#level[] <= 20) then
-  bonus = 3
-else
-  bonus = 4
-endif
-foreach pick in hero from Power where "DamageType.Fire"
-  perform eachpick.field[pwDamBonus].modify[+,bonus,""]
-nexteach]]>
-      <after name="Calc attrBonus"/>
       </eval>
     </thing>
   <thing id="wpJavelin" name="Javelin" compset="Melee">
@@ -656,7 +642,7 @@ nexteach]]>
     <tag group="WepProp" tag="Versatile"/>
     <tag group="WepGroup" tag="wgSpear"/>
     </thing>
-  <thing id="wpLancidag" name="Lancing dagger" description="A lancing dagger is made of metal drawn from tall mountains and features two jagged edges, giving it the shape of a lightning bolt.\n\n{b}{i}Empowered Crit:{/b}{/i} When you score a critical hit with an empowered crit implement, the attack deals 1d10 extra damage. The extra damage increases to 2d10 at 11th level and 3d10 at 21st level.\n\n{b}{i}Energized (lightning):{/b}{/i} When you use an attack power through an energized implement, you gain a +2 bonus to damage rolls if the power has the keyword that matches the implement&apos;s damage type. The bonus increases to +3 at 11th level and +4 at 21st level." compset="Melee">
+  <thing id="wpLancidag" name="Lancing dagger" compset="Melee">
     <fieldval field="grCost" value="15"/>
     <fieldval field="gearWeight" value="1"/>
     <fieldval field="wpProf" value="3"/>
@@ -674,23 +660,9 @@ nexteach]]>
     <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
 perform assign[Helper.Proficient]
 perform assign[ImplemType.wpDagger]
+      
       <before name="Magic Weapon Copy"/>
       <after name="Superior implement training"/>
-      </eval>
-    <eval phase="Traits" priority="10000" index="2"><![CDATA[doneif (tagis[Equipped.Equipped] = 0)
-var bonus as number
-
-if (#level[] <= 10) then
-  bonus = 2
-elseif (#level[] <= 20) then
-  bonus = 3
-else
-  bonus = 4
-endif
-foreach pick in hero from Power where "DamageType.Lightning"
-  perform eachpick.field[pwDamBonus].modify[+,bonus,""]
-nexteach]]>
-      <after name="Calc attrBonus"/>
       </eval>
     </thing>
   <thing id="wpLightmac" name="Light mace" compset="Melee">
@@ -890,7 +862,7 @@ nexteach]]>
     <tag group="WepProp" tag="LoadFree"/>
     <tag group="WepGroup" tag="wgCrossbow"/>
     </thing>
-  <thing id="wpResondag" name="Resonating dagger" description="A resonating dagger has a thick, wide blade that narrows only slightly as it approaches the tip, and can only be made from the steel of a melted-down warhammer.\n\n{b}{i}Energized (thunder):{/b}{/i} When you use an attack power through an energized implement, you gain a +2 bonus to damage rolls if the power has the keyword that matches the implement&apos;s damage type. The bonus increases to +3 at 11th level and +4 at 21st level.\n\n{b}{i}Forceful:{/b}{/i} Whenever you pull, push, or slide a target with an attack power using a forceful implement, thedistance of the forced movement increases by 1 square." compset="Melee">
+  <thing id="wpResondag" name="Resonating dagger" compset="Melee">
     <fieldval field="grCost" value="25"/>
     <fieldval field="gearWeight" value="1"/>
     <fieldval field="wpProf" value="3"/>
@@ -908,23 +880,9 @@ nexteach]]>
     <eval phase="Setup" priority="75">doneif (hero.isidentity[SuperImpl] = 0)
 perform assign[Helper.Proficient]
 perform assign[ImplemType.wpDagger]
+      
       <before name="Magic Weapon Copy"/>
       <after name="Superior implement training"/>
-      </eval>
-    <eval phase="Traits" priority="10000" index="2"><![CDATA[doneif (tagis[Equipped.Equipped] = 0)
-var bonus as number
-
-if (#level[] <= 10) then
-  bonus = 2
-elseif (#level[] <= 20) then
-  bonus = 3
-else
-  bonus = 4
-endif
-foreach pick in hero from Power where "DamageType.Thunder"
-  perform eachpick.field[pwDamBonus].modify[+,bonus,""]
-nexteach]]>
-      <after name="Calc attrBonus"/>
       </eval>
     </thing>
   <thing id="wpScimitar" name="Scimitar" compset="Melee">

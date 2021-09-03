@@ -36,111 +36,22 @@
     <tag group="ArmorType" tag="arLeathArm"/>
     <tag group="ArmorCat" tag="Light"/>
     </thing>
-  <thing id="arBandeMai" name="Banded Mail" description="Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit&apos;s midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible. A warrior in banded mail moves as quickly as one in leather armor.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
+  <thing id="arBandeMai" name="Banded Mail" description="Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit&apos;s midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible. A warrior in banded mail moves as quickly as one in leather armor." compset="Armor">
     <fieldval field="grCost" value="55"/>
     <fieldval field="gearWeight" value="35"/>
     <fieldval field="arAC" value="6"/>
-    <fieldval field="arMaxBonus" value="2"/>
     <fieldval field="arCheck" value="-1"/>
     <fieldval field="arSpeed" value="-1"/>
     <usesource source="MordensEmp"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apBanded]<>0)]]></validate>
-      </prereq>
     </thing>
-<thing id="arBandeM11" name="Banded Mail" description="Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit&apos;s midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible. A warrior in banded mail moves as quickly as one in leather armor.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="35"/>
-    <fieldval field="arAC" value="8"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apBanded]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-<thing id="arBandeM16" name="Banded Mail" description="Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit&apos;s midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible. A warrior in banded mail moves as quickly as one in leather armor.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="35"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apBanded]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-<thing id="arBandeM21" name="Banded Mail" description="Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit&apos;s midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible. A warrior in banded mail moves as quickly as one in leather armor.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="35"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apBanded]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-<thing id="arBandeM26" name="Banded Mail" description="Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit&apos;s midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible. A warrior in banded mail moves as quickly as one in leather armor.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="35"/>
-    <fieldval field="arAC" value="12"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apBanded]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-  <thing id="arBarbeShi" name="Barbed Shield" description="Although a shield is usually a defensive item, a barbed shield turns the tables on attackers because of the long spikes and blades attached to it. While too awkward to use as a weapon, a barbed shield provides added protection against enemies that attempt to grab you, because the spikes and barbs built into it cut into them.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Shield">
+  <thing id="arBarbeShi" name="Barbed Shield" description="Although a shield is usually a defensive item, a barbed shield turns the tables on attackers because of the long spikes and blades attached to it. While too awkward to use as a weapon, a barbed shield provides added protection against enemies that attempt to grab you, because the spikes and barbs built into it cut into them." compset="Shield">
     <fieldval field="grCost" value="20"/>
     <fieldval field="gearWeight" value="18"/>
     <fieldval field="arAC" value="2"/>
     <fieldval field="arCheck" value="-3"/>
     <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arHeavyShi" name="Heavy Shield" abbrev="Heavy Shield"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apShieldBr]<>0)]]></validate>
-      </prereq>
+    <tag group="ArmorType" tag="arHeavyShi"/>
     </thing>
   <thing id="arBonemArm" name="Bonemail Armor" description="Crafting chainmail without metal is challenging. Still, Athasian armorers have managed. They adorn stiff leather jacks with small disks or squares of horn, bone, or wood. The kank and the cilops have hard body parts ideal for the creation of masterwork mail coats. The greatest suits of mail armor are worn by the elite guards of the sorcerer-kings." compset="Armor">
     <fieldval field="gearWeight" value="40"/>
@@ -188,69 +99,9 @@
     <fieldval field="grCost" value="40"/>
     <fieldval field="gearWeight" value="40"/>
     <fieldval field="arAC" value="6"/>
-    <fieldval field="arMaxBonus" value="2"/>
     <fieldval field="arCheck" value="-1"/>
     <fieldval field="arSpeed" value="-1"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    </thing>
-  <thing id="arChainm11" name="Chainmail" description="Metal rings woven together into a shirt, leggings, and a hood make up a suit of chainmail. Chainmail grants good protection, but it&apos;s cumbersome, so it reduces your mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="40"/>
-    <fieldval field="gearWeight" value="40"/>
-    <fieldval field="arAC" value="8"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arChainmai"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-  <thing id="arChainm16" name="Chainmail" description="Metal rings woven together into a shirt, leggings, and a hood make up a suit of chainmail. Chainmail grants good protection, but it&apos;s cumbersome, so it reduces your mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="40"/>
-    <fieldval field="gearWeight" value="40"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arChainmai"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-  <thing id="arChainm21" name="Chainmail" description="Metal rings woven together into a shirt, leggings, and a hood make up a suit of chainmail. Chainmail grants good protection, but it&apos;s cumbersome, so it reduces your mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="40"/>
-    <fieldval field="gearWeight" value="40"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arChainmai"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
-    </thing>
-  <thing id="arChainm26" name="Chainmail" description="Metal rings woven together into a shirt, leggings, and a hood make up a suit of chainmail. Chainmail grants good protection, but it&apos;s cumbersome, so it reduces your mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="40"/>
-    <fieldval field="gearWeight" value="40"/>
-    <fieldval field="arAC" value="12"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arChainmai"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 11-15 then arAC = 8
-	if mglevel 16-20 then arAC = 9
-	if mglevel 21-25 then arAC = 10
-	if mglevel 26-30 then arAC = 12-->
     </thing>
   <thing id="arChathShe" name="Chathrang Shell Armor" description="Plate armor is made from giant insect or crustacean chitin, or from the shells of creatures such as chathrangs or rare desert tortoises. Braxats and gaj provide the durable shells used to make mid-level masterwork plate armor. The rarest plate armor is derived from drakes and braxat lords. Armorers drill tiny ventilation holes in chitin-plate armor to make it bearable in all but the hottest weather." compset="Armor">
     <fieldval field="gearWeight" value="50"/>
@@ -276,30 +127,8 @@
   <thing id="arClothArm" name="Cloth Armor" description="Jackets, mantles, woven robes, and padded vests don&apos;t, by themselves, provide any significant protection. However, you can imbue them with protective magic. Cloth armor doesn&apos;t slow you down or hinder your movement at all. All characters have proficiency with cloth armor." compset="Armor">
     <fieldval field="grCost" value="1"/>
     <fieldval field="gearWeight" value="4"/>
-    <fieldval field ="arMaxBonus" value="3"/>
     <tag group="ArmorCat" tag="Light"/>
     </thing>
-<thing id="arClothA16" name="Cloth Armor" description="Jackets, mantles, woven robes, and padded vests don&apos;t, by themselves, provide any significant protection. However, you can imbue them with protective magic. Cloth armor doesn&apos;t slow you down or hinder your movement at all. All characters have proficiency with cloth armor." compset="Armor">
-    <fieldval field="grCost" value="1"/>
-    <fieldval field="gearWeight" value="4"/>
-	<fieldval field="arAC" value="1"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="5"/>
-	<tag group="ArmorType" tag="arClothArm"/>
-    <tag group="ArmorCat" tag="Light"/>
-	<!--if mglevel 16-25 then arAC = 1
-	if mglevel 26-30 then arAC = 2-->
-    </thing>
-<thing id="arClothA26" name="Cloth Armor" description="Jackets, mantles, woven robes, and padded vests don&apos;t, by themselves, provide any significant protection. However, you can imbue them with protective magic. Cloth armor doesn&apos;t slow you down or hinder your movement at all. All characters have proficiency with cloth armor." compset="Armor">
-    <fieldval field="grCost" value="1"/>
-    <fieldval field="gearWeight" value="4"/>
-	<fieldval field="arAC" value="2"/>
-	<fieldval field="arMinBonus" value="6"/>
-	<tag group="ArmorType" tag="arClothArm"/>
-    <tag group="ArmorCat" tag="Light"/>
-	<!--if mglevel 16-25 then arAC = 1
-	if mglevel 26-30 then arAC = 2-->	
-    </thing> 
   <thing id="arCrystArm" name="Crysteel Armor" description="Genasi mix steel with magic volcanic glass to create resilient crysteel armor." compset="Armor">
     <fieldval field="gearWeight" value="40"/>
     <fieldval field="arAC" value="8"/>
@@ -461,124 +290,15 @@
     <tag group="ArmorType" tag="arChainmai"/>
     <tag group="ArmorCat" tag="Heavy"/>
     </thing>
-  <thing id="arFullPla" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
+  <thing id="arFullPla" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility." compset="Armor">
     <fieldval field="grCost" value="65"/>
     <fieldval field="gearWeight" value="60"/>
     <fieldval field="arAC" value="8"/>
-    <fieldval field="arMaxBonus" value="1"/>
     <fieldval field="arCheck" value="-1"/>
     <fieldval field="arSpeed" value="-1"/>
     <usesource source="MordensEmp"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apFullPlat]<>0)]]></validate>
-      </prereq>
-    </thing>
-<thing id="arFullP6" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="65"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="2"/>
-	<fieldval field="arMaxBonus" value="2"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apFullPlat]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arFullP11" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="65"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apFullPlat]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arFullP16" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="65"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="11"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apFullPlat]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arFullP21" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="65"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="12"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apFullPlat]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arFullP26" name="Full Plate" description="Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="65"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="14"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-1"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apFullPlat]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
+    <tag group="ArmorType" tag="arFullPlat"/>
     </thing>
   <thing id="arGajCar" name="Gaj Carapace Armor" description="Plate armor is made from giant insect or crustacean chitin, or from the shells of creatures such as chathrangs or rare desert tortoises. Braxats and gaj provide the durable shells used to make mid-level masterwork plate armor. The rarest plate armor is derived from drakes and braxat lords. Armorers drill tiny ventilation holes in chitin-plate armor to make it bearable in all but the hottest weather." compset="Armor">
     <fieldval field="gearWeight" value="50"/>
@@ -665,32 +385,8 @@
     <fieldval field="grCost" value="30"/>
     <fieldval field="gearWeight" value="25"/>
     <fieldval field="arAC" value="3"/>
-    <fieldval field="arMaxBonus" value="3"/>
     <fieldval field="arCheck" value="-1"/>
     <tag group="ArmorCat" tag="Light"/>
-    </thing>
-  <thing id="arHideA16" name="Hide Armor" description="Thicker and heavier than leather, hide armor is composed of skin from any creature that has a tough hide, such as a bear, a griffon, or a dragon. Hide armor can bind and slightly hinder your precision, but it&apos;s light enough that it doesn&apos;t affect your speed." compset="Armor">
-    <fieldval field="grCost" value="30"/>
-    <fieldval field="gearWeight" value="25"/>
-    <fieldval field="arAC" value="4"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-1"/>
-	<tag group="ArmorType" tag="arHideArm"/>
-    <tag group="ArmorCat" tag="Light"/>
-	<!--if mglevel 16-25 then arAC = 4
-	if mglevel 26-30 then arAC = 5-->
-    </thing>
-  <thing id="arHideA26" name="Hide Armor" description="Thicker and heavier than leather, hide armor is composed of skin from any creature that has a tough hide, such as a bear, a griffon, or a dragon. Hide armor can bind and slightly hinder your precision, but it&apos;s light enough that it doesn&apos;t affect your speed." compset="Armor">
-    <fieldval field="grCost" value="30"/>
-    <fieldval field="gearWeight" value="25"/>
-    <fieldval field="arAC" value="5"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-1"/>
-	<tag group="ArmorType" tag="arHideArm"/>
-    <tag group="ArmorCat" tag="Light"/>
-	<!--if mglevel 16-25 then arAC = 4
-	if mglevel 26-30 then arAC = 5-->
     </thing>
   <thing id="arInixLea" name="Inix Leather Armor" description="The leather armors of Athas are made from a variety of desert creatures. The tougher and more dangerous creatures provide skins for masterwork armor. Domesticated animals such as the inix, the baazrag, and the jhakar produce fine leathers. An armorer set on making more fantastic protective gear, such as that from the skin of a cloud ray, a drake, or a floating mantle, is hard-pressed to assemble the necessary materials." compset="Armor">
     <fieldval field="gearWeight" value="10"/>
@@ -793,29 +489,7 @@
     <fieldval field="grCost" value="25"/>
     <fieldval field="gearWeight" value="15"/>
     <fieldval field="arAC" value="2"/>
-    <fieldval field="arMaxBonus" value="3"/>
     <tag group="ArmorCat" tag="Light"/>
-    </thing>
-<thing id="arLeathA16" name="Leather Armor" description="Leather armor is sturdier than cloth armor. It protects vital areas with multiple layers of boiled-leather plates, while covering the limbs with supple leather that provides a small amount of protection." compset="Armor">
-    <fieldval field="grCost" value="25"/>
-    <fieldval field="gearWeight" value="15"/>
-    <fieldval field="arAC" value="3"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="5"/>
-	<tag group="ArmorType" tag="arLeathArm"/>
-    <tag group="ArmorCat" tag="Light"/>
-	<!--if mglevel 16-25 then arAC = 3
-	if mglevel 26-30 then arAC = 4-->
-    </thing>
-<thing id="arLeathA26" name="Leather Armor" description="Leather armor is sturdier than cloth armor. It protects vital areas with multiple layers of boiled-leather plates, while covering the limbs with supple leather that provides a small amount of protection." compset="Armor">
-    <fieldval field="grCost" value="25"/>
-    <fieldval field="gearWeight" value="15"/>
-    <fieldval field="arAC" value="4"/>
-	<fieldval field="arMinBonus" value="6"/>
-	<tag group="ArmorType" tag="arLeathArm"/>
-    <tag group="ArmorCat" tag="Light"/>
-	<!--if mglevel 16-25 then arAC = 3
-	if mglevel 26-30 then arAC = 4-->
     </thing>
   <thing id="arLegioPla" name="Legion Plate Armor" description="Legion plate mimics the forging techniques used in the Nine Hells to armor legion devils." compset="Armor">
     <fieldval field="gearWeight" value="50"/>
@@ -947,89 +621,9 @@
     <fieldval field="grCost" value="50"/>
     <fieldval field="gearWeight" value="50"/>
     <fieldval field="arAC" value="8"/>
-    <fieldval field="arMaxBonus" value="1"/>
     <fieldval field="arCheck" value="-2"/>
     <fieldval field="arSpeed" value="-1"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    </thing>
-<thing id="arPlateA6" name="Plate Armor" description="The heaviest type of armor, made up of shaped plates of metal or similarly resilient material, plate provides the most armor protection. The cost for its superior fortification is mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="50"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="2"/>
-	<fieldval field="arMaxBonus" value="2"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arPlateArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arPlateA11" name="Plate Armor" description="The heaviest type of armor, made up of shaped plates of metal or similarly resilient material, plate provides the most armor protection. The cost for its superior fortification is mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="50"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arPlateArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arPlateA16" name="Plate Armor" description="The heaviest type of armor, made up of shaped plates of metal or similarly resilient material, plate provides the most armor protection. The cost for its superior fortification is mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="50"/>
-    <fieldval field="arAC" value="11"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arPlateArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arPlateA21" name="Plate Armor" description="The heaviest type of armor, made up of shaped plates of metal or similarly resilient material, plate provides the most armor protection. The cost for its superior fortification is mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="50"/>
-    <fieldval field="arAC" value="12"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arPlateArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arPlateA26" name="Plate Armor" description="The heaviest type of armor, made up of shaped plates of metal or similarly resilient material, plate provides the most armor protection. The cost for its superior fortification is mobility and agility." compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="50"/>
-    <fieldval field="arAC" value="14"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arPlateArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
     </thing>
   <thing id="arRampaSca" name="Rampager Scale Armor" description="Heavier Athasian masterwork armor is made from horn, scales, and carapaces, such as those found on mekillots or shed by thri-kreen. Advanced masterwork scale armor is created from the tough, thick hides of terrifying rampagers and drakes. The greatest armor of this type is formed from scales shed by the Dragon as it rampages through a region." compset="Armor">
     <fieldval field="gearWeight" value="45"/>
@@ -1061,54 +655,13 @@
     <tag group="ArmorType" tag="arPlateArm"/>
     <tag group="ArmorCat" tag="Heavy"/>
     </thing>
-  <thing id="arRingMai" name="Ring Mail" description="This flexible but sturdy armor consists of a typical suit of leather armor with a series of metal rings sewn onto its surface. The rings enhance the armor&apos;s sturdiness, improving its protective qualities while still offering the maneuverability of lightweight armor.\n{b}Special:{/b} Durable 2 (The first time you take damage during an encounter, reduce that damage by 2 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
+  <thing id="arRingMai" name="Ring Mail" description="This flexible but sturdy armor consists of a typical suit of leather armor with a series of metal rings sewn onto its surface. The rings enhance the armor&apos;s sturdiness, improving its protective qualities while still offering the maneuverability of lightweight armor." compset="Armor">
     <fieldval field="grCost" value="40"/>
     <fieldval field="gearWeight" value="30"/>
     <fieldval field="arAC" value="3"/>
-    <fieldval field="arMaxBonus" value="3"/>
     <fieldval field="arCheck" value="-1"/>
     <usesource source="MordensEmp"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apRing]<>0)]]></validate>
-      </prereq>
-    </thing>
-<thing id="arRingM16" name="Ring Mail" description="This flexible but sturdy armor consists of a typical suit of leather armor with a series of metal rings sewn onto its surface. The rings enhance the armor&apos;s sturdiness, improving its protective qualities while still offering the maneuverability of lightweight armor.\n{b}Special:{/b} Durable 2 (The first time you take damage during an encounter, reduce that damage by 2 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="40"/>
-    <fieldval field="gearWeight" value="30"/>
-    <fieldval field="arAC" value="4"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arRingMai"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apRing]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 16-25 then arAC = 4
-	if mglevel 26-30 then arAC = 5-->
-    </thing>
-<thing id="arRingM26" name="Ring Mail" description="This flexible but sturdy armor consists of a typical suit of leather armor with a series of metal rings sewn onto its surface. The rings enhance the armor&apos;s sturdiness, improving its protective qualities while still offering the maneuverability of lightweight armor.\n{b}Special:{/b} Durable 2 (The first time you take damage during an encounter, reduce that damage by 2 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="40"/>
-    <fieldval field="gearWeight" value="30"/>
-    <fieldval field="arAC" value="5"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arRingMai"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apRing]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 16-25 then arAC = 4
-	if mglevel 26-30 then arAC = 5-->
     </thing>
   <thing id="arRocHid" name="Roc Hide Armor" description="Hide armors also are formed from the skins of various desert creatures. Less dangerous beasts such as the tembo and the kank provide materials for lower-level masterwork armors. The most advanced armors come from the hides of the Athasian roc and the nightmare beast." compset="Armor">
     <fieldval field="gearWeight" value="25"/>
@@ -1123,83 +676,8 @@
     <fieldval field="grCost" value="45"/>
     <fieldval field="gearWeight" value="45"/>
     <fieldval field="arAC" value="7"/>
-    <fieldval field="arMaxBonus" value="1"/>
     <fieldval field="arSpeed" value="-1"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    </thing>
-	<thing id="arScaleA6" name="Scale Armor" description="Overlapping pieces of highly durable material, such as steel or even dragon scales, make up scale armor. Despite its heaviness, scale is surprisingly easy to wear; its straps and buckles make it adjustable and able to fit snugly on the body, allowing for flexibility and agility." compset="Armor">
-    <fieldval field="grCost" value="45"/>
-    <fieldval field="gearWeight" value="45"/>
-    <fieldval field="arAC" value="8"/>
-	<fieldval field="arMinBonus" value="2"/>
-	<fieldval field="arMaxBonus" value="2"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arScaleArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arScaleA11" name="Scale Armor" description="Overlapping pieces of highly durable material, such as steel or even dragon scales, make up scale armor. Despite its heaviness, scale is surprisingly easy to wear; its straps and buckles make it adjustable and able to fit snugly on the body, allowing for flexibility and agility." compset="Armor">
-    <fieldval field="grCost" value="45"/>
-    <fieldval field="gearWeight" value="45"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arScaleArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arScaleA16" name="Scale Armor" description="Overlapping pieces of highly durable material, such as steel or even dragon scales, make up scale armor. Despite its heaviness, scale is surprisingly easy to wear; its straps and buckles make it adjustable and able to fit snugly on the body, allowing for flexibility and agility." compset="Armor">
-    <fieldval field="grCost" value="45"/>
-    <fieldval field="gearWeight" value="45"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arScaleArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arScaleA21" name="Scale Armor" description="Overlapping pieces of highly durable material, such as steel or even dragon scales, make up scale armor. Despite its heaviness, scale is surprisingly easy to wear; its straps and buckles make it adjustable and able to fit snugly on the body, allowing for flexibility and agility." compset="Armor">
-    <fieldval field="grCost" value="45"/>
-    <fieldval field="gearWeight" value="45"/>
-    <fieldval field="arAC" value="11"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arScaleArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arScaleA26" name="Scale Armor" description="Overlapping pieces of highly durable material, such as steel or even dragon scales, make up scale armor. Despite its heaviness, scale is surprisingly easy to wear; its straps and buckles make it adjustable and able to fit snugly on the body, allowing for flexibility and agility." compset="Armor">
-    <fieldval field="grCost" value="45"/>
-    <fieldval field="gearWeight" value="45"/>
-    <fieldval field="arAC" value="13"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arSpeed" value="-1"/>
-	<tag group="ArmorType" tag="arScaleArm"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
     </thing>
   <thing id="arScorpSca" name="Scorpion Scale Armor" description="Heavier Athasian masterwork armor is made from horn, scales, and carapaces, such as those found on mekillots or shed by thri-kreen. Advanced masterwork scale armor is created from the tough, thick hides of terrifying rampagers and drakes. The greatest armor of this type is formed from scales shed by the Dragon as it rampages through a region." compset="Armor">
     <fieldval field="gearWeight" value="45"/>
@@ -1239,124 +717,14 @@
     <tag group="ArmorType" tag="arClothArm"/>
     <tag group="ArmorCat" tag="Light"/>
     </thing>
-  <thing id="arSpikePla" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Armor">
+  <thing id="arSpikePla" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey." compset="Armor">
     <fieldval field="grCost" value="55"/>
     <fieldval field="gearWeight" value="60"/>
     <fieldval field="arAC" value="8"/>
-    <fieldval field="arMaxBonus" value="1"/>
     <fieldval field="arCheck" value="-3"/>
     <fieldval field="arSpeed" value="-1"/>
     <usesource source="MordensEmp"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSpiked]<>0)]]></validate>
-      </prereq>
-    </thing>
-<thing id="arSpikeP6" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="2"/>
-	<fieldval field="arMaxBonus" value="2"/>
-    <fieldval field="arCheck" value="-3"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSpiked]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arSpikeP11" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-3"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSpiked]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arSpikeP16" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="11"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arCheck" value="-3"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSpiked]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arSpikeP21" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="12"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-3"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSpiked]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
-    </thing>
-<thing id="arSpikeP26" name="Spiked Plate" description="A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.\n{b}Special:{/b} Barbed (A creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn, or when that creature escapes your grab.)" compset="Armor">
-    <fieldval field="grCost" value="55"/>
-    <fieldval field="gearWeight" value="60"/>
-    <fieldval field="arAC" value="14"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-3"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSpiked]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 9
-	if mglevel 11-15 then arAC = 10
-	if mglevel 16-20 then arAC = 11
-	if mglevel 21-25 then arAC = 12
-	if mglevel 26-30 then arAC = 14-->
     </thing>
   <thing id="arSpiritma" name="Spiritmail" description="Spiritmail armor is made with techniques from the divine Dominions." compset="Armor">
     <fieldval field="gearWeight" value="40"/>
@@ -1367,124 +735,14 @@
     <tag group="ArmorType" tag="arChainmai"/>
     <tag group="ArmorCat" tag="Heavy"/>
     </thing>
-  <thing id="arSplinMai" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows.\n{b}Special:{/b} Durable 3 (The first time you take damage during an encounter, reduce that damage by 3 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
+  <thing id="arSplinMai" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows." compset="Armor">
     <fieldval field="grCost" value="50"/>
     <fieldval field="gearWeight" value="55"/>
     <fieldval field="arAC" value="7"/>
-    <fieldval field="arMaxBonus" value="1"/>
     <fieldval field="arCheck" value="-2"/>
     <fieldval field="arSpeed" value="-1"/>
     <usesource source="MordensEmp"/>
     <tag group="ArmorCat" tag="Heavy"/>
-    <tag group="ArmorType" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSplint]<>0)]]></validate>
-      </prereq>
-    </thing>
-<thing id="arSplinM6" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows.\n{b}Special:{/b} Durable 3 (The first time you take damage during an encounter, reduce that damage by 3 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="55"/>
-    <fieldval field="arAC" value="8"/>
-	<fieldval field="arMinBonus" value="2"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSplint]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arSplinM11" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows.\n{b}Special:{/b} Durable 3 (The first time you take damage during an encounter, reduce that damage by 3 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="55"/>
-    <fieldval field="arAC" value="9"/>
-	<fieldval field="arMinBonus" value="3"/>
-	<fieldval field="arMaxBonus" value="3"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSplint]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arSplinM16" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows.\n{b}Special:{/b} Durable 3 (The first time you take damage during an encounter, reduce that damage by 3 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="55"/>
-    <fieldval field="arAC" value="10"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="4"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSplint]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arSplinM21" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows.\n{b}Special:{/b} Durable 3 (The first time you take damage during an encounter, reduce that damage by 3 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="55"/>
-    <fieldval field="arAC" value="11"/>
-	<fieldval field="arMinBonus" value="5"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSplint]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
-    </thing>
-<thing id="arSplinM26" name="Splint Mail" description="First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor&apos;s equal. More important, its rigid construction allows it to absorb some portion of an enemy&apos;s blows.\n{b}Special:{/b} Durable 3 (The first time you take damage during an encounter, reduce that damage by 3 + double the armour's enhancement bonus. The armor then loses this property until you repair it during a short rest or an extended rest.)" compset="Armor">
-    <fieldval field="grCost" value="50"/>
-    <fieldval field="gearWeight" value="55"/>
-    <fieldval field="arAC" value="13"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <fieldval field="arCheck" value="-2"/>
-    <fieldval field="arSpeed" value="-1"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <tag group="ArmorCat" tag="Heavy"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apSplint]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 6-10 then arAC = 8
-	if mglevel 11-15 then arAC = 9
-	if mglevel 16-20 then arAC = 10
-	if mglevel 21-25 then arAC = 11
-	if mglevel 26-30 then arAC = 13-->
     </thing>
   <thing id="arStalkArm" name="Stalkerhide Armor" description="Astral stalker preservation techniques yield stalkerhide." compset="Armor">
     <fieldval field="gearWeight" value="25"/>
@@ -1530,49 +788,12 @@
     <tag group="ArmorType" tag="arScaleArm"/>
     <tag group="ArmorCat" tag="Heavy"/>
     </thing>
-  <thing id="arStuddLea" name="Studded Leather" description="Studded leather is leather armor reinforced with metal studs. It provides a middle ground between hide armor and ring mail. It is more flexible than either, while its reinforced construction gives it a slight edge over hide.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
+  <thing id="arStuddLea" name="Studded Leather" description="Studded leather is leather armor reinforced with metal studs. It provides a middle ground between hide armor and ring mail. It is more flexible than either, while its reinforced construction gives it a slight edge over hide." compset="Armor">
     <fieldval field="grCost" value="35"/>
     <fieldval field="gearWeight" value="28"/>
     <fieldval field="arAC" value="3"/>
-    <fieldval field="arMaxBonus" value="3"/>
     <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arLeathArm" name="Leather Armor" abbrev="Leather Armor"/>
     <tag group="ArmorCat" tag="Light"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apStudded]<>0)]]></validate>
-      </prereq>
-    </thing>
- <thing id="arStuddL16" name="Studded Leather" description="Studded leather is leather armor reinforced with metal studs. It provides a middle ground between hide armor and ring mail. It is more flexible than either, while its reinforced construction gives it a slight edge over hide.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="35"/>
-    <fieldval field="gearWeight" value="28"/>
-    <fieldval field="arAC" value="4"/>
-	<fieldval field="arMinBonus" value="4"/>
-	<fieldval field="arMaxBonus" value="5"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arLeathArm" name="Leather Armor" abbrev="Leather Armor"/>
-    <tag group="ArmorCat" tag="Light"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apStudded]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 16-25 then arAC = 4
-	if mglevel 26-30 then arAC = 5-->
-    </thing>
- <thing id="arStuddL26" name="Studded Leather" description="Studded leather is leather armor reinforced with metal studs. It provides a middle ground between hide armor and ring mail. It is more flexible than either, while its reinforced construction gives it a slight edge over hide.\n{b}Special:{/b} Tough (The first time in each encounter a critical hit is scored against your AC, the critical hit becomes a normal hit.)" compset="Armor">
-    <fieldval field="grCost" value="35"/>
-    <fieldval field="gearWeight" value="28"/>
-    <fieldval field="arAC" value="5"/>
-	<fieldval field="arMinBonus" value="6"/>
-    <usesource source="MordensEmp"/>
-    <tag group="ArmorType" tag="arLeathArm" name="Leather Armor" abbrev="Leather Armor"/>
-    <tag group="ArmorCat" tag="Light"/>
-    <prereq message="Not proficient with this armor.">
-      <validate><![CDATA[
-        validif (hero.tagis[ArmorProf.apStudded]<>0)]]></validate>
-      </prereq>
-	<!--if mglevel 16-25 then arAC = 4
-	if mglevel 26-30 then arAC = 5-->
     </thing>
   <thing id="arSwordArm" name="Swordwing Armor" description="Swordwing leather mimics the way swordwings make their paper spires, creating a light, flexible, and hard leather." compset="Armor">
     <fieldval field="gearWeight" value="10"/>

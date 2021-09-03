@@ -1841,7 +1841,7 @@
     id="Paragon"
     name="Paragon Path"
     autocompset="no">
-	  
+
     <!-- Various informational fields -->
     <field
       id="pptFlavor"
@@ -1849,18 +1849,8 @@
       type="static"
       maxlength="1000">
       </field>
-	
-	<!-- For the Paragon power Ambitious Effort (fParAmbEff) to save the power choice type (0=2nd use, 1=new power) -->
-    <field
-      id="AEPwrChTyp"
-      name="A.E. Choice Type"
-      type="derived"
-	  defvalue="0"
-      minvalue="0"
-      maxvalue="1">
-      </field>
 
-	<!-- Each paragon path needs its own identity tag to configure the hero
+    <!-- Each paragon path needs its own identity tag to configure the hero
         appropriately, and another to attach to powers for that path. -->
     <identity group="Paragon"/>
     <identity group="PowerPath"/>
@@ -2204,7 +2194,7 @@
     <compref component="Requires"/>
     </compset>
 
-  <!-- UserSelect - general compset to let the user configure a thing with a menu -->
+  <!-- UserSelect - general compset to let the user configure a thing wth a menu -->
   <compset
     id="UserSelect">
     <compref component="UserSelect"/>

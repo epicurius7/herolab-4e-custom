@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <document signature="Hero Lab Data">
   <thing id="mwAcidWea1" name="Acidic Weapon" description="Power (Acid) * Encounter (Standard Action): Make a melee basic attack with the weapon against a target within 5 squares of you. All damage dealt by this basic attack is acid damage.{br}{br}Power (Acid) * Daily (Free Action): Use this power when you hit with the weapon. Deal ongoing 5 acid damage (save ends).{br}{br}{i}Level 14 or 19:{/i}  10 acid damage.{br}{br}{i}Level 24 or 29:{/i}  15 acid damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
@@ -3287,7 +3287,7 @@
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     </thing>
-  <thing id="mwChalWea1" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon." compset="MagicWep">
+  <thing id="mwChalWea1" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon.{br}{i}Level 11 or 16:{/i} Deal 2d6 extra damage{br}{i}Level 21 or 26:{/i} Deal 3d6 extra damage" compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="1"/>
     <fieldval field="mgFlavor" value="This weapon is always eager to be introduced to a fresh enemy."/>
@@ -3297,7 +3297,7 @@
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
     </thing>
-  <thing id="mwChalWea2" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon." compset="MagicWep">
+  <thing id="mwChalWea2" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon.{br}{i}Level 11 or 16:{/i} Deal 2d6 extra damage{br}{i}Level 21 or 26:{/i} Deal 3d6 extra damage" compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="6"/>
     <fieldval field="mgFlavor" value="This weapon is always eager to be introduced to a fresh enemy."/>
@@ -3307,7 +3307,7 @@
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
     </thing>
-  <thing id="mwChalWea3" name="Challenge-Seeking Weapon" description="Property: You deal 2d6 extra damage when you hit enemies that are at maximum hit points with this weapon." compset="MagicWep">
+  <thing id="mwChalWea3" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon.{br}{i}Level 11 or 16:{/i} Deal 2d6 extra damage{br}{i}Level 21 or 26:{/i} Deal 3d6 extra damage" compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="11"/>
     <fieldval field="mgFlavor" value="This weapon is always eager to be introduced to a fresh enemy."/>
@@ -3317,7 +3317,7 @@
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
     </thing>
-  <thing id="mwChalWea4" name="Challenge-Seeking Weapon" description="Property: You deal 2d6 extra damage when you hit enemies that are at maximum hit points with this weapon." compset="MagicWep">
+  <thing id="mwChalWea4" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon.{br}{i}Level 11 or 16:{/i} Deal 2d6 extra damage{br}{i}Level 21 or 26:{/i} Deal 3d6 extra damage" compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="16"/>
     <fieldval field="mgFlavor" value="This weapon is always eager to be introduced to a fresh enemy."/>
@@ -3327,7 +3327,7 @@
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
     </thing>
-  <thing id="mwChalWea5" name="Challenge-Seeking Weapon" description="Property: You deal 3d6 extra damage when you hit enemies that are at maximum hit points with this weapon." compset="MagicWep">
+  <thing id="mwChalWea5" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon.{br}{i}Level 11 or 16:{/i} Deal 2d6 extra damage{br}{i}Level 21 or 26:{/i} Deal 3d6 extra damage" compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="21"/>
     <fieldval field="mgFlavor" value="This weapon is always eager to be introduced to a fresh enemy."/>
@@ -3337,7 +3337,7 @@
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
     </thing>
-  <thing id="mwChalWea6" name="Challenge-Seeking Weapon" description="Property: You deal 3d6 extra damage when you hit enemies that are at maximum hit points with this weapon." compset="MagicWep">
+  <thing id="mwChalWea6" name="Challenge-Seeking Weapon" description="Property: You deal 1d6 extra damage when you hit enemies that are at maximum hit points with this weapon.{br}{i}Level 11 or 16:{/i} Deal 2d6 extra damage{br}{i}Level 21 or 26:{/i} Deal 3d6 extra damage" compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="26"/>
     <fieldval field="mgFlavor" value="This weapon is always eager to be introduced to a fresh enemy."/>
@@ -6867,7 +6867,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgFlail"/>
     </thing>
-  <thing id="mwFlamTon2" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to fire damage.\n     Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.\n\nAttack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 1d10 fire damage, and ongoing 5 fire damage (save ends)." compset="MagicWep">
+  <thing id="mwFlamTon2" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to fire damage.{br}Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.{br}Attack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 fire damage, and ongoing 5 fire damage (save ends).{br}{br}{i}Level 15 or 20:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends).{br}{br}{i}Level 25 or 30:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="10"/>
     <fieldval field="mgFlavor" value="This blade spews forth flames that engulf your enemies in fire."/>
@@ -6877,15 +6877,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <bootstrap thing="pMWFlamTon"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFlamTon3" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to fire damage.\n     Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.\n\nAttack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends)." compset="MagicWep">
+  <thing id="mwFlamTon3" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to fire damage.{br}Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.{br}Attack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 fire damage, and ongoing 5 fire damage (save ends).{br}{br}{i}Level 15 or 20:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends).{br}{br}{i}Level 25 or 30:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="15"/>
     <fieldval field="mgFlavor" value="This blade spews forth flames that engulf your enemies in fire."/>
@@ -6895,15 +6888,8 @@ Bonus = 3 + (2*field[mgBonus].value)
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <bootstrap thing="pMWFlamTon"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFlamTon4" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to fire damage.\n     Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.\n\nAttack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends)." compset="MagicWep">
+  <thing id="mwFlamTon4" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to fire damage.{br}Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.{br}Attack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 fire damage, and ongoing 5 fire damage (save ends).{br}{br}{i}Level 15 or 20:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends).{br}{br}{i}Level 25 or 30:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="20"/>
     <fieldval field="mgFlavor" value="This blade spews forth flames that engulf your enemies in fire."/>
@@ -6913,15 +6899,8 @@ Bonus = 3 + (2*field[mgBonus].value)
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <bootstrap thing="pMWFlamTon"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFlamTon5" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to fire damage.\n     Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.\n\nAttack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
+  <thing id="mwFlamTon5" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to fire damage.{br}Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.{br}Attack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 fire damage, and ongoing 5 fire damage (save ends).{br}{br}{i}Level 15 or 20:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends).{br}{br}{i}Level 25 or 30:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="25"/>
     <fieldval field="mgFlavor" value="This blade spews forth flames that engulf your enemies in fire."/>
@@ -6931,15 +6910,8 @@ Bonus = 3 + (2*field[mgBonus].value)
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <bootstrap thing="pMWFlamTon"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFlamTon6" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to fire damage.\n     Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.\n\nAttack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
+  <thing id="mwFlamTon6" name="Flame Tongue Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to fire damage.{br}Once per round when you reduce an enemy to 0 hit points with a weapon attack using this weapon, each of your enemies adjacent to that enemy takes fire damage equal to 5 + the weapon&apos;s enhancement bonus.{br}Attack Power (Fire) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 fire damage, and ongoing 5 fire damage (save ends).{br}{br}{i}Level 15 or 20:{/i} 2d10 fire damage, and ongoing 10 fire damage (save ends).{br}{br}{i}Level 25 or 30:{/i} 3d10 fire damage, and ongoing 15 fire damage (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="30"/>
     <fieldval field="mgFlavor" value="This blade spews forth flames that engulf your enemies in fire."/>
@@ -6949,13 +6921,6 @@ Bonus = 3 + (2*field[mgBonus].value)
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <bootstrap thing="pMWFlamTon"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwFlamWea1" name="Flameburst Weapon" description="Power (Fire) * Daily (Minor Action): The next ranged basic attack you make with this weapon before the end of your turn becomes a burst 1 centered on the target. Use your normal attack bonus for the basic attack, but against Reflex. Instead of normal damage, each target hit takes ongoing 5 fire damage (save ends).{br}{br}{i}Level 13 or 18:{/i} burst 2 ongoing 10 fire damage.{br}{br}{i}Level 23 or 28:{/i} burst 3 ongoing 15 fire damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
@@ -7885,7 +7850,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="mwFrosBra2" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to cold damage.\n\nAttack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).\n\n{i}Level 13 or 18:{/i} 2d10 cold damage.\n\n{i}Level 23 or 28:{/i} 3d10 cold damage.\n\nUtility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
+  <thing id="mwFrosBra2" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to cold damage.{br}Attack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).{br}{br}{i}Level 13 or 18:{/i} 2d10 cold damage.{br}{br}{i}Level 23 or 28:{/i} 3d10 cold damage.{br}{br}Utility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="8"/>
     <fieldval field="mgFlavor" value="Frost forms on your hands as you alter your grip on this icy weapon, but the cold doesn&apos;t harm you as the weapon devours all the heat around you."/>
@@ -7894,16 +7859,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMWFrostB1"></bootstrap>
-    <bootstrap thing="pMWFrostB2"></bootstrap>
-    <eval phase="Traits"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFrosBra3" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to cold damage.\n\nAttack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).\n\n{i}Level 13 or 18:{/i} 2d10 cold damage.\n\n{i}Level 23 or 28:{/i} 3d10 cold damage.\n\nUtility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
+  <thing id="mwFrosBra3" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to cold damage.{br}Attack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).{br}{br}{i}Level 13 or 18:{/i} 2d10 cold damage.{br}{br}{i}Level 23 or 28:{/i} 3d10 cold damage.{br}{br}Utility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="13"/>
     <fieldval field="mgFlavor" value="Frost forms on your hands as you alter your grip on this icy weapon, but the cold doesn&apos;t harm you as the weapon devours all the heat around you."/>
@@ -7912,16 +7869,8 @@ Bonus = 3 + (2*field[mgBonus].value)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMWFrostB1"></bootstrap>
-    <bootstrap thing="pMWFrostB2"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFrosBra4" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to cold damage.\n\nAttack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).\n\n{i}Level 13 or 18:{/i} 2d10 cold damage.\n\n{i}Level 23 or 28:{/i} 3d10 cold damage.\n\nUtility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
+  <thing id="mwFrosBra4" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to cold damage.{br}Attack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).{br}{br}{i}Level 13 or 18:{/i} 2d10 cold damage.{br}{br}{i}Level 23 or 28:{/i} 3d10 cold damage.{br}{br}Utility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="18"/>
     <fieldval field="mgFlavor" value="Frost forms on your hands as you alter your grip on this icy weapon, but the cold doesn&apos;t harm you as the weapon devours all the heat around you."/>
@@ -7930,16 +7879,8 @@ Bonus = 3 + (2*field[mgBonus].value)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMWFrostB1"></bootstrap>
-    <bootstrap thing="pMWFrostB2"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFrosBra5" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to cold damage.\n\nAttack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).\n\n{i}Level 13 or 18:{/i} 2d10 cold damage.\n\n{i}Level 23 or 28:{/i} 3d10 cold damage.\n\nUtility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
+  <thing id="mwFrosBra5" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to cold damage.{br}Attack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).{br}{br}{i}Level 13 or 18:{/i} 2d10 cold damage.{br}{br}{i}Level 23 or 28:{/i} 3d10 cold damage.{br}{br}Utility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="23"/>
     <fieldval field="mgFlavor" value="Frost forms on your hands as you alter your grip on this icy weapon, but the cold doesn&apos;t harm you as the weapon devours all the heat around you."/>
@@ -7948,16 +7889,8 @@ Bonus = 3 + (2*field[mgBonus].value)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMWFrostB1"></bootstrap>
-    <bootstrap thing="pMWFrostB2"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwFrosBra6" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.\n     All untyped damage dealt by weapon attacks using this weapon changes to cold damage.\n\nAttack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex\n\n{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).\n\n{i}Level 13 or 18:{/i} 2d10 cold damage.\n\n{i}Level 23 or 28:{/i} 3d10 cold damage.\n\nUtility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
+  <thing id="mwFrosBra6" name="Frost Brand Weapon" description="Properties: While holding this weapon, you have fire resistance equal to 3 + twice the weapon&apos;s enhancement bonus.{br}All untyped damage dealt by weapon attacks using this weapon changes to cold damage.{br}Attack Power (Cold) * Encounter (Standard Action): {i}Attack:{/i} Close blast 3 (creatures in the blast); the weapon&apos;s level + 3 vs. Reflex{br}{br}{i}Hit:{/i} 1d10 cold damage, and the target is immobilized (save ends).{br}{br}{i}Level 13 or 18:{/i} 2d10 cold damage.{br}{br}{i}Level 23 or 28:{/i} 3d10 cold damage.{br}{br}Utility Power * Encounter (Minor Action): {i}Effect:{/i} Close burst 5. You can extinguish any nonmagical fire in the burst, and each ally in the burst makes a saving throw against ongoing fire damage that a save can end." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="28"/>
     <fieldval field="mgFlavor" value="Frost forms on your hands as you alter your grip on this icy weapon, but the cold doesn&apos;t harm you as the weapon devours all the heat around you."/>
@@ -7966,14 +7899,6 @@ Bonus = 3 + (2*field[mgBonus].value)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMWFrostB1"></bootstrap>
-    <bootstrap thing="pMWFrostB2"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-var Bonus as number
-Bonus = 3 + (2*field[mgBonus].value)
-#traitmodify[rsFire,rsTotal,Bonus,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwFrosFur1" name="Frost Fury Weapon" description="Property: While you&apos;re bloodied, this axe deals extra cold damage equal to your Constitution modifier." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
@@ -11833,7 +11758,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ImplemType" tag="itInstru" name="Instrument" abbrev="Instrument"/>
     <bootstrap thing="pMILiltSon"></bootstrap>
     </thing>
-  <thing id="mwLionHea4" name="Lion&apos;s Heart Hammer" description="Property: Divine characters can use this hammer as a holy symbol implement for divine powers.{br}{br}Power (Fear) * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy bloodies you.{br}{br}{i}Effect:{/i} Make an attack: Close burst 5; targets enemies; Wisdom vs. Will; on a hit, the target is pushed 1 square and takes a âˆ’2 penalty to attack rolls until the end of your next turn." compset="MagicWep">
+  <thing id="mwLionHea4" name="Lion&apos;s Heart Hammer" description="Property: Divine characters can use this hammer as a holy symbol implement for divine powers.{br}{br}Power (Fear) * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy bloodies you.{br}{br}{i}Effect:{/i} Make an attack: Close burst 5; targets enemies; Wisdom vs. Will; on a hit, the target is pushed 1 square and takes a &#226;&#136;&#146;2 penalty to attack rolls until the end of your next turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="17"/>
     <fieldval field="mgFlavor" value="When you wield this hammer, an attack that bloodies you sends your foes stumbling back in fear."/>
@@ -11844,7 +11769,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="wgHammer"/>
     <bootstrap thing="pMILionHea"></bootstrap>
     </thing>
-  <thing id="mwLionHea5" name="Lion&apos;s Heart Hammer" description="Property: Divine characters can use this hammer as a holy symbol implement for divine powers.{br}{br}Power (Fear) * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy bloodies you.{br}{br}{i}Effect:{/i} Make an attack: Close burst 5; targets enemies; Wisdom vs. Will; on a hit, the target is pushed 1 square and takes a âˆ’2 penalty to attack rolls until the end of your next turn." compset="MagicWep">
+  <thing id="mwLionHea5" name="Lion&apos;s Heart Hammer" description="Property: Divine characters can use this hammer as a holy symbol implement for divine powers.{br}{br}Power (Fear) * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy bloodies you.{br}{br}{i}Effect:{/i} Make an attack: Close burst 5; targets enemies; Wisdom vs. Will; on a hit, the target is pushed 1 square and takes a &#226;&#136;&#146;2 penalty to attack rolls until the end of your next turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="22"/>
     <fieldval field="mgFlavor" value="When you wield this hammer, an attack that bloodies you sends your foes stumbling back in fear."/>
@@ -11855,7 +11780,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="wgHammer"/>
     <bootstrap thing="pMILionHea"></bootstrap>
     </thing>
-  <thing id="mwLionHea6" name="Lion&apos;s Heart Hammer" description="Property: Divine characters can use this hammer as a holy symbol implement for divine powers.{br}{br}Power (Fear) * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy bloodies you.{br}{br}{i}Effect:{/i} Make an attack: Close burst 5; targets enemies; Wisdom vs. Will; on a hit, the target is pushed 1 square and takes a âˆ’2 penalty to attack rolls until the end of your next turn." compset="MagicWep">
+  <thing id="mwLionHea6" name="Lion&apos;s Heart Hammer" description="Property: Divine characters can use this hammer as a holy symbol implement for divine powers.{br}{br}Power (Fear) * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy bloodies you.{br}{br}{i}Effect:{/i} Make an attack: Close burst 5; targets enemies; Wisdom vs. Will; on a hit, the target is pushed 1 square and takes a &#226;&#136;&#146;2 penalty to attack rolls until the end of your next turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="27"/>
     <fieldval field="mgFlavor" value="When you wield this hammer, an attack that bloodies you sends your foes stumbling back in fear."/>
@@ -13096,7 +13021,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="wgHammer"/>
     <bootstrap thing="pMIMoraWea"></bootstrap>
     </thing>
-  <thing id="mwMordWea2" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.\n\nPower (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.\n\n{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison and acid damage.\n\n{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison and acid damage." compset="MagicWep">
+  <thing id="mwMordWea2" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.{br}{br}Power (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.{br}{br}{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison.{br}{br}{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="8"/>
     <fieldval field="mgFlavor" value="Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury."/>
@@ -13111,7 +13036,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIMorWea2"></bootstrap>
     <bootstrap thing="pMIMorWea1"></bootstrap>
     </thing>
-  <thing id="mwMordWea3" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.\n\nPower (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.\n\n{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison and acid damage.\n\n{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison and acid damage." compset="MagicWep">
+  <thing id="mwMordWea3" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.{br}{br}Power (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.{br}{br}{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison.{br}{br}{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="13"/>
     <fieldval field="mgFlavor" value="Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury."/>
@@ -13126,7 +13051,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIMorWea2"></bootstrap>
     <bootstrap thing="pMIMorWea1"></bootstrap>
     </thing>
-  <thing id="mwMordWea4" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.\n\nPower (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.\n\n{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison and acid damage.\n\n{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison and acid damage." compset="MagicWep">
+  <thing id="mwMordWea4" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.{br}{br}Power (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.{br}{br}{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison.{br}{br}{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="18"/>
     <fieldval field="mgFlavor" value="Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury."/>
@@ -13141,7 +13066,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIMorWea2"></bootstrap>
     <bootstrap thing="pMIMorWea1"></bootstrap>
     </thing>
-  <thing id="mwMordWea5" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.\n\nPower (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.\n\n{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison and acid damage.\n\n{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison and acid damage." compset="MagicWep">
+  <thing id="mwMordWea5" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.{br}{br}Power (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.{br}{br}{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison.{br}{br}{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="23"/>
     <fieldval field="mgFlavor" value="Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury."/>
@@ -13156,7 +13081,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIMorWea2"></bootstrap>
     <bootstrap thing="pMIMorWea1"></bootstrap>
     </thing>
-  <thing id="mwMordWea6" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.\n\nPower (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.\n\n{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison and acid damage.\n\n{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison and acid damage." compset="MagicWep">
+  <thing id="mwMordWea6" name="Mordant Weapon" description="Power (Acid, Poison) *  (Free Action): All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.{br}{br}Power (Acid, Poison) * Daily (Standard Action): Close blast 3; Strength vs. Fortitude; 2d8 + Strength modifier poison and acid damage.{br}{br}{i}Level 13 or 18:{/i} 3d8 + Strength modifier poison.{br}{br}{i}Level 23 or 28:{/i} 4d8 + Strength modifier poison." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="28"/>
     <fieldval field="mgFlavor" value="Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury."/>
@@ -13845,9 +13770,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     <bootstrap thing="pMIPactSwo"></bootstrap>
-    <eval phase="Traits" priority="2500"><![CDATA[if (hero.tagis[Race.rEladrin] <> 0) then
-  perform assign[ImplemType.itPactBlad]
-endif]]></eval>
     </thing>
   <thing id="mwPactSwo2" name="Pact Sword" description="Property: If you are an eladrin, this longsword functions as a warlock implement for you (but do not apply the weapon&apos;s proficiency bonus to attack rolls for warlock powers).{br}{br}Power (Teleportation) * Daily (Free Action): Use this power when you hit a target affected by your Warlock&apos;s Curse with this weapon. Teleport the target a number of squares equal to 1 + this weapon&apos;s enhancement bonus." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
@@ -13859,9 +13781,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     <bootstrap thing="pMIPactSwo"></bootstrap>
-    <eval phase="Traits" priority="2500"><![CDATA[if (hero.tagis[Race.rEladrin] <> 0) then
-  perform assign[ImplemType.itPactBlad]
-endif]]></eval>
     </thing>
   <thing id="mwPactSwo3" name="Pact Sword" description="Property: If you are an eladrin, this longsword functions as a warlock implement for you (but do not apply the weapon&apos;s proficiency bonus to attack rolls for warlock powers).{br}{br}Power (Teleportation) * Daily (Free Action): Use this power when you hit a target affected by your Warlock&apos;s Curse with this weapon. Teleport the target a number of squares equal to 1 + this weapon&apos;s enhancement bonus." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
@@ -13873,9 +13792,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     <bootstrap thing="pMIPactSwo"></bootstrap>
-    <eval phase="Traits" priority="2500"><![CDATA[if (hero.tagis[Race.rEladrin] <> 0) then
-  perform assign[ImplemType.itPactBlad]
-endif]]></eval>
     </thing>
   <thing id="mwPactSwo4" name="Pact Sword" description="Property: If you are an eladrin, this longsword functions as a warlock implement for you (but do not apply the weapon&apos;s proficiency bonus to attack rolls for warlock powers).{br}{br}Power (Teleportation) * Daily (Free Action): Use this power when you hit a target affected by your Warlock&apos;s Curse with this weapon. Teleport the target a number of squares equal to 1 + this weapon&apos;s enhancement bonus." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
@@ -13887,9 +13803,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     <bootstrap thing="pMIPactSwo"></bootstrap>
-    <eval phase="Traits" priority="2500"><![CDATA[if (hero.tagis[Race.rEladrin] <> 0) then
-  perform assign[ImplemType.itPactBlad]
-endif]]></eval>
     </thing>
   <thing id="mwPactSwo5" name="Pact Sword" description="Property: If you are an eladrin, this longsword functions as a warlock implement for you (but do not apply the weapon&apos;s proficiency bonus to attack rolls for warlock powers).{br}{br}Power (Teleportation) * Daily (Free Action): Use this power when you hit a target affected by your Warlock&apos;s Curse with this weapon. Teleport the target a number of squares equal to 1 + this weapon&apos;s enhancement bonus." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
@@ -13901,9 +13814,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     <bootstrap thing="pMIPactSwo"></bootstrap>
-    <eval phase="Traits" priority="2500"><![CDATA[if (hero.tagis[Race.rEladrin] <> 0) then
-  perform assign[ImplemType.itPactBlad]
-endif]]></eval>
     </thing>
   <thing id="mwPactSwo6" name="Pact Sword" description="Property: If you are an eladrin, this longsword functions as a warlock implement for you (but do not apply the weapon&apos;s proficiency bonus to attack rolls for warlock powers).{br}{br}Power (Teleportation) * Daily (Free Action): Use this power when you hit a target affected by your Warlock&apos;s Curse with this weapon. Teleport the target a number of squares equal to 1 + this weapon&apos;s enhancement bonus." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
@@ -13915,9 +13825,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     <bootstrap thing="pMIPactSwo"></bootstrap>
-    <eval phase="Traits" priority="2500"><![CDATA[if (hero.tagis[Race.rEladrin] <> 0) then
-  perform assign[ImplemType.itPactBlad]
-endif]]></eval>
     </thing>
   <thing id="mwPairWea1" name="Paired Weapon" description="Power *  (Minor Action): Split the weapon into two identical weapons, one in your primary hand and one in your off-hand. You can spend another minor action to recombine the weapons into one. If you have the Quick Draw feat, you can split or recombine the weapon as a free action." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
@@ -14959,10 +14866,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMIQuicBla"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,1,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwQuicBla2" name="Quicksilver Blade" description="Property: You gain an item bonus to initiative checks equal to the blade&apos;s enhancement bonus.{br}{br}Power * Daily (Free Action): {i}Trigger:{/i} You score a critical hit with this weapon.{br}{br}{i}Effect:{/i} You gain a move action that you must use before the end of your turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 attack rolls and damage rolls"/>
@@ -14974,10 +14877,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMIQuicBla"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,2,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwQuicBla3" name="Quicksilver Blade" description="Property: You gain an item bonus to initiative checks equal to the blade&apos;s enhancement bonus.{br}{br}Power * Daily (Free Action): {i}Trigger:{/i} You score a critical hit with this weapon.{br}{br}{i}Effect:{/i} You gain a move action that you must use before the end of your turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
@@ -14989,10 +14888,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMIQuicBla"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,3,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwQuicBla4" name="Quicksilver Blade" description="Property: You gain an item bonus to initiative checks equal to the blade&apos;s enhancement bonus.{br}{br}Power * Daily (Free Action): {i}Trigger:{/i} You score a critical hit with this weapon.{br}{br}{i}Effect:{/i} You gain a move action that you must use before the end of your turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
@@ -15004,10 +14899,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMIQuicBla"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,4,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwQuicBla5" name="Quicksilver Blade" description="Property: You gain an item bonus to initiative checks equal to the blade&apos;s enhancement bonus.{br}{br}Power * Daily (Free Action): {i}Trigger:{/i} You score a critical hit with this weapon.{br}{br}{i}Effect:{/i} You gain a move action that you must use before the end of your turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
@@ -15019,10 +14910,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMIQuicBla"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,5,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwQuicBla6" name="Quicksilver Blade" description="Property: You gain an item bonus to initiative checks equal to the blade&apos;s enhancement bonus.{br}{br}Power * Daily (Free Action): {i}Trigger:{/i} You score a critical hit with this weapon.{br}{br}{i}Effect:{/i} You gain a move action that you must use before the end of your turn." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
@@ -15034,10 +14921,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMIQuicBla"></bootstrap>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,6,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwRadiWea3" name="Radiant Weapon" description="Property: When this weapon is used to deal radiant damage, add its enhancement bonus as an item bonus to damage rolls.{br}{br}Power (Radiant) *  (Free Action): All damage dealt by this weapon is radiant damage. Another free action returns the damage to normal." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
@@ -15903,7 +15786,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <eval phase="Traits" priority="10000"><![CDATA[doneif (parent.tagis[Helper.EqpOff] = 0 )
-#traitmodify[defRef,trtShield,1,""]
 #traitmodify[defAC,trtShield,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
@@ -15918,8 +15800,7 @@ endif]]></eval>
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <eval phase="Traits" priority="10000"><![CDATA[doneif (parent.tagis[Helper.EqpOff] = 0 )
-#traitmodify[defRef,trtShield,1,""]
-#traitmodify[defAC,trtShield,1,""]]]>
+#traitmodify[defAC,trtShield,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15933,8 +15814,7 @@ endif]]></eval>
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <eval phase="Traits" priority="10000"><![CDATA[doneif (parent.tagis[Helper.EqpOff] = 0 )
-#traitmodify[defRef,trtShield,1,""]
-#traitmodify[defAC,trtShield,1,""]]]>
+#traitmodify[defAC,trtShield,3,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15948,8 +15828,7 @@ endif]]></eval>
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <eval phase="Traits" priority="10000"><![CDATA[doneif (parent.tagis[Helper.EqpOff] = 0 )
-#traitmodify[defRef,trtShield,1,""]
-#traitmodify[defAC,trtShield,1,""]]]>
+#traitmodify[defAC,trtShield,4,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15963,8 +15842,7 @@ endif]]></eval>
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <eval phase="Traits" priority="10000"><![CDATA[doneif (parent.tagis[Helper.EqpOff] = 0 )
-#traitmodify[defRef,trtShield,1,""]
-#traitmodify[defAC,trtShield,1,""]]]>
+#traitmodify[defAC,trtShield,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15978,8 +15856,7 @@ endif]]></eval>
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqWep" tag="wgLightBl"/>
     <eval phase="Traits" priority="10000"><![CDATA[doneif (parent.tagis[Helper.EqpOff] = 0 )
-#traitmodify[defRef,trtShield,1,""]
-#traitmodify[defAC,trtShield,1,""]]]>
+#traitmodify[defAC,trtShield,6,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16878,7 +16755,7 @@ endif]]></eval>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
     </thing>
-  <thing id="mwSentMar1" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.\n     When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.\n\nUtility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.\n\n{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
+  <thing id="mwSentMar1" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.{br}Utility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="5"/>
     <fieldval field="mgFlavor" value="Members of House Deneith recognize this bright blade as a badge of respect and a shield against enemies of the law."/>
@@ -16888,12 +16765,8 @@ endif]]></eval>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,1,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwSentMar2" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.\n     When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.\n\nUtility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.\n\n{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
+  <thing id="mwSentMar2" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.{br}Utility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="10"/>
     <fieldval field="mgFlavor" value="Members of House Deneith recognize this bright blade as a badge of respect and a shield against enemies of the law."/>
@@ -16903,12 +16776,8 @@ endif]]></eval>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,2,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwSentMar3" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.\n     When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.\n\nUtility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.\n\n{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
+  <thing id="mwSentMar3" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.{br}Utility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="15"/>
     <fieldval field="mgFlavor" value="Members of House Deneith recognize this bright blade as a badge of respect and a shield against enemies of the law."/>
@@ -16918,12 +16787,8 @@ endif]]></eval>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,3,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwSentMar4" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.\n     When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.\n\nUtility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.\n\n{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
+  <thing id="mwSentMar4" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.{br}Utility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="20"/>
     <fieldval field="mgFlavor" value="Members of House Deneith recognize this bright blade as a badge of respect and a shield against enemies of the law."/>
@@ -16933,12 +16798,8 @@ endif]]></eval>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,4,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwSentMar5" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.\n     When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.\n\nUtility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.\n\n{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
+  <thing id="mwSentMar5" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.{br}Utility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="25"/>
     <fieldval field="mgFlavor" value="Members of House Deneith recognize this bright blade as a badge of respect and a shield against enemies of the law."/>
@@ -16948,12 +16809,8 @@ endif]]></eval>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,5,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
-  <thing id="mwSentMar6" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.\n     When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.\n\nUtility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.\n\n{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
+  <thing id="mwSentMar6" name="Sentinel Marshal Honor Blade" description="Properties: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}When you use this weapon to reduce a nonminion enemy to 0 hit points, you gain temporary hit points equal to 5 + the weapon&apos;s enhancement bonus.{br}Utility Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} Until the end of your next turn, you gain a +2 power bonus to all defenses against the enemy." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="30"/>
     <fieldval field="mgFlavor" value="Members of House Deneith recognize this bright blade as a badge of respect and a shield against enemies of the law."/>
@@ -16963,10 +16820,6 @@ endif]]></eval>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wgHeavyBl"/>
     <tag group="ReqWep" tag="wgLightBl"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,6,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwSentCud1" name="Sentinel&apos;s Cudgel" description="Attack Power * Daily (Free Action): {i}Trigger:{/i} You and an allied beast or summoned creature flank an enemy, and the enemy is hit by the ally.{br}{br}{i}Effect:{/i} You use this weapon to make a melee basic attack against the enemy.{br}{br}Utility Power * Daily (Free Action): {i}Trigger:{/i} You hit an enemy with an attack using this weapon.{br}{br}{i}Effect:{/i} A beast or summoned creature ally adjacent to you or to the enemy can shift up to a number of squares equal to this weapon&apos;s enhancement bonus as a free action." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 Attack rolls and damage rolls"/>
@@ -18749,7 +18602,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wgSpear"/>
-    <bootstrap thing="pMIStinWea"></bootstrap>
     </thing>
   <thing id="mwStinWea3" name="Stinging Weapon" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} Until the end of this turn, attacks made with this weapon against AC can instead be made against Reflex." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
@@ -18761,7 +18613,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wgSpear"/>
-    <bootstrap thing="pMIStinWea"></bootstrap>
     </thing>
   <thing id="mwStinWea4" name="Stinging Weapon" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} Until the end of this turn, attacks made with this weapon against AC can instead be made against Reflex." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
@@ -18773,7 +18624,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wgSpear"/>
-    <bootstrap thing="pMIStinWea"></bootstrap>
     </thing>
   <thing id="mwStinWea5" name="Stinging Weapon" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} Until the end of this turn, attacks made with this weapon against AC can instead be made against Reflex." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
@@ -18785,7 +18635,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wgSpear"/>
-    <bootstrap thing="pMIStinWea"></bootstrap>
     </thing>
   <thing id="mwStinWea6" name="Stinging Weapon" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} Until the end of this turn, attacks made with this weapon against AC can instead be made against Reflex." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
@@ -18797,7 +18646,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wgSpear"/>
-    <bootstrap thing="pMIStinWea"></bootstrap>
     </thing>
   <thing id="mwStorWar1" name="Stormbiter Warblade" description="Power (Lightning) * Daily (Free Action): {i}Trigger:{/i} You hit an enemy with a lightning power or a thunder power using this weapon.{br}{br}{i}Effect:{/i} That enemy is knocked prone. It&apos;s also deafened and takes ongoing 5 lightning damage (save ends both).{br}{br}{i}Level 14 or 19:{/i}  10 lightning damage.{br}{br}{i}Level 24 or 29:{/i}  15 lightning damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
@@ -19598,7 +19446,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpLongswor"/>
     </thing>
-  <thing id="mwSworMel3" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a âˆ’2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
+  <thing id="mwSworMel3" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a &#226;&#136;&#146;2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="14"/>
     <fieldval field="mgFlavor" value="The magic of this well-notched blade fills your foe with a dread malaise that leaves it open to further attack"/>
@@ -19611,7 +19459,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMISworMel"></bootstrap>
     </thing>
-  <thing id="mwSworMel4" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a âˆ’2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
+  <thing id="mwSworMel4" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a &#226;&#136;&#146;2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="19"/>
     <fieldval field="mgFlavor" value="The magic of this well-notched blade fills your foe with a dread malaise that leaves it open to further attack"/>
@@ -19624,7 +19472,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMISworMel"></bootstrap>
     </thing>
-  <thing id="mwSworMel5" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a âˆ’2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
+  <thing id="mwSworMel5" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a &#226;&#136;&#146;2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="24"/>
     <fieldval field="mgFlavor" value="The magic of this well-notched blade fills your foe with a dread malaise that leaves it open to further attack"/>
@@ -19637,7 +19485,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="wgLightBl"/>
     <bootstrap thing="pMISworMel"></bootstrap>
     </thing>
-  <thing id="mwSworMel6" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a âˆ’2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
+  <thing id="mwSworMel6" name="Sword of Melancholy" description="Power (Fear) * Daily (Free Action): {i}Trigger:{/i} You make a melee attack against an enemy using this weapon and miss.{br}{br}{i}Effect:{/i} That enemy takes a &#226;&#136;&#146;2 penalty to all defenses (save ends).{br}{br}{i}Aftereffect:{/i} If you&apos;re adjacent to the enemy when it succeeds on its saving throw against this effect, you can make a melee basic attack using this weapon against that enemy as a free action." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="29"/>
     <fieldval field="mgFlavor" value="The magic of this well-notched blade fills your foe with a dread malaise that leaves it open to further attack"/>
@@ -22710,8 +22558,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <tag group="ReqWep" tag="AnyThrow"/>
     </thing>
   <thing id="mwWeapAcc2" name="Weapon of Accuracy" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} You gain a +2 power bonus to your next attack roll with this weapon during this encounter." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
@@ -22723,8 +22569,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <tag group="ReqWep" tag="AnyThrow"/>
     </thing>
   <thing id="mwWeapAcc3" name="Weapon of Accuracy" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} You gain a +2 power bonus to your next attack roll with this weapon during this encounter." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
@@ -22736,8 +22580,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <tag group="ReqWep" tag="AnyThrow"/>
     </thing>
   <thing id="mwWeapAcc4" name="Weapon of Accuracy" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} You gain a +2 power bonus to your next attack roll with this weapon during this encounter." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
@@ -22749,8 +22591,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <tag group="ReqWep" tag="AnyThrow"/>
     </thing>
   <thing id="mwWeapAcc5" name="Weapon of Accuracy" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} You gain a +2 power bonus to your next attack roll with this weapon during this encounter." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
@@ -22762,8 +22602,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyMelee"/>
-    <tag group="ReqWep" tag="AnyRange"/>
     </thing>
   <thing id="mwWeapAcc6" name="Weapon of Accuracy" description="Utility Power * Encounter (Minor Action): {i}Effect:{/i} You gain a +2 power bonus to your next attack roll with this weapon during this encounter." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
@@ -22775,8 +22613,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="Hide" tag="Special"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <tag group="ReqWep" tag="AnyThrow"/>
     </thing>
   <thing id="mwWeapArc1" name="Weapon of Arcane Bonds" description="Power * Encounter (Free Action): {i}Trigger:{/i} You hit an enemy with an arcane attack power using this weapon.{br}{br}{i}Effect:{/i} That enemy is marked by you (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 attack rolls and damage rolls"/>
@@ -22904,7 +22740,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqWep" tag="AnyMelee"/>
     <bootstrap thing="pMIWeapCru"></bootstrap>
     </thing>
-  <thing id="mwWeapDef1" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
+  <thing id="mwWeapDef1" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{i}Level 14 or 19:{/i} Resist 2 to all damage.{br}{i}Level 24 or 29:{/i} Resist 3 to all damage.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+1 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="4"/>
     <fieldval field="mgFlavor" value="Each of your enemy&apos;s blows finds ready opposition in this parrying weapon."/>
@@ -22913,9 +22749,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMIWeapDef"></bootstrap>
     </thing>
-  <thing id="mwWeapDef2" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
+  <thing id="mwWeapDef2" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{i}Level 14 or 19:{/i} Resist 2 to all damage.{br}{i}Level 24 or 29:{/i} Resist 3 to all damage.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="9"/>
     <fieldval field="mgFlavor" value="Each of your enemy&apos;s blows finds ready opposition in this parrying weapon."/>
@@ -22924,9 +22759,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMIWeapDef"></bootstrap>
     </thing>
-  <thing id="mwWeapDef3" name="Weapon of Defense" description="Property: You gain resist 2 to all damage while you are holding the weapon.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
+  <thing id="mwWeapDef3" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{i}Level 14 or 19:{/i} Resist 2 to all damage.{br}{i}Level 24 or 29:{/i} Resist 3 to all damage.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="14"/>
     <fieldval field="mgFlavor" value="Each of your enemy&apos;s blows finds ready opposition in this parrying weapon."/>
@@ -22935,9 +22769,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMIWeapDef"></bootstrap>
     </thing>
-  <thing id="mwWeapDef4" name="Weapon of Defense" description="Property: You gain resist 2 to all damage while you are holding the weapon.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
+  <thing id="mwWeapDef4" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{i}Level 14 or 19:{/i} Resist 2 to all damage.{br}{i}Level 24 or 29:{/i} Resist 3 to all damage.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="19"/>
     <fieldval field="mgFlavor" value="Each of your enemy&apos;s blows finds ready opposition in this parrying weapon."/>
@@ -22946,9 +22779,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMIWeapDef"></bootstrap>
     </thing>
-  <thing id="mwWeapDef5" name="Weapon of Defense" description="Property: You gain resist 3 to all damage while you are holding the weapon.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
+  <thing id="mwWeapDef5" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{i}Level 14 or 19:{/i} Resist 2 to all damage.{br}{i}Level 24 or 29:{/i} Resist 3 to all damage.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="24"/>
     <fieldval field="mgFlavor" value="Each of your enemy&apos;s blows finds ready opposition in this parrying weapon."/>
@@ -22957,9 +22789,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMIWeapDef"></bootstrap>
     </thing>
-  <thing id="mwWeapDef6" name="Weapon of Defense" description="Property: You gain resist 3 to all damage while you are holding the weapon.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
+  <thing id="mwWeapDef6" name="Weapon of Defense" description="Property: You gain resist 1 to all damage while you are holding the weapon.{br}{i}Level 14 or 19:{/i} Resist 2 to all damage.{br}{i}Level 24 or 29:{/i} Resist 3 to all damage.{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} You take damage from a melee attack that hits you.{br}{br}{i}Effect:{/i} You take only half of the damage." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
     <fieldval field="mgLevel" value="29"/>
     <fieldval field="mgFlavor" value="Each of your enemy&apos;s blows finds ready opposition in this parrying weapon."/>
@@ -22968,7 +22799,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqWep" tag="AnyMelee"/>
-    <bootstrap thing="pMIWeapDef"></bootstrap>
     </thing>
   <thing id="mwWeapDis2" name="Weapon of Disruption" description="Properties: An evil creature that uses this weapon to make an attack takes radiant damage equal to 5 + this weapon&apos;s level.{br}If you attack an undead minion with this weapon, that minion is destroyed, whether the attack hits or misses. If the minion has powers or traits triggered by its destruction, they are not triggered.{br}If you hit an undead creature with this weapon, you gain a power bonus to the damage roll against that creature. The bonus equals the weapon&apos;s enhancement bonus.{br}Attack Power * Encounter (No Action): {i}Trigger:{/i} You hit an undead creature with this weapon.{br}{br}{i}Effect:{/i} You push the creature up to 3 squares, and it is immobilized (save ends)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
@@ -23466,11 +23296,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,1,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwWeapSpe2" name="Weapon of Speed" description="Property: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}{br}Attack Power * Encounter (Minor Action): {i}Effect:{/i} You make a ranged basic attack with this weapon." compset="MagicWep">
     <fieldval field="mgEnhance" value="+2 Attack rolls and damage rolls"/>
@@ -23481,11 +23306,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,2,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwWeapSpe3" name="Weapon of Speed" description="Property: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}{br}Attack Power * Encounter (Minor Action): {i}Effect:{/i} You make a ranged basic attack with this weapon." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
@@ -23496,11 +23316,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,3,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwWeapSpe4" name="Weapon of Speed" description="Property: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}{br}Attack Power * Encounter (Minor Action): {i}Effect:{/i} You make a ranged basic attack with this weapon." compset="MagicWep">
     <fieldval field="mgEnhance" value="+4 Attack rolls and damage rolls"/>
@@ -23511,11 +23326,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,4,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwWeapSpe5" name="Weapon of Speed" description="Property: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}{br}Attack Power * Encounter (Minor Action): {i}Effect:{/i} You make a ranged basic attack with this weapon." compset="MagicWep">
     <fieldval field="mgEnhance" value="+5 Attack rolls and damage rolls"/>
@@ -23526,11 +23336,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,5,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwWeapSpe6" name="Weapon of Speed" description="Property: While holding this weapon, you gain an item bonus to initiative checks equal to the weapon&apos;s enhancement bonus.{br}{br}Attack Power * Encounter (Minor Action): {i}Effect:{/i} You make a ranged basic attack with this weapon." compset="MagicWep">
     <fieldval field="mgEnhance" value="+6 Attack rolls and damage rolls"/>
@@ -23541,11 +23346,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="MordensEmp"/>
     <tag group="Rarity" tag="Rare"/>
     <tag group="ReqWep" tag="wpImproRan"/>
-    <tag group="ReqWep" tag="AnyRange"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtItem,6,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="mwWeapSto3" name="Weapon of Storms" description="Attack Power (Lightning, Thunder) * Encounter (Standard Action): {i}Attack:{/i} Close burst 2 (enemies in the burst); the weapon&apos;s level + 3 vs. Fortitude{br}{br}{i}Hit:{/i} 5 lightning and thunder damage, and the target falls prone.{br}{br}{i}Level 22 or 27:{/i} 10 lightning and thunder damage.{br}{br}{i}Special:{/i} This power deals 2 extra damage for each hammer of storms that is within 10 squares of this weapon (10 extra damage maximum)." compset="MagicWep">
     <fieldval field="mgEnhance" value="+3 Attack rolls and damage rolls"/>
