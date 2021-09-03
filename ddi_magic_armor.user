@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <document signature="Hero Lab Data">
   <thing id="maAbsShi17" name="Absorbing Shield" description="{b}Arms Slot: {/b}Any shield65,000 gp{br}{br}Power *  (Immediate Interrupt): {i}Trigger:{/i} An area attack misses you and hits an ally.{br}{br}{i}Effect:{/i} The triggering attack instead misses the ally." compset="MagicArmor">
     <fieldval field="mgLevel" value="17"/>
@@ -45,7 +45,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAll,rsTotal,2,""]]]>
+#traitmodify[rsAll,rsTotal,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -58,7 +58,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAll,rsTotal,2,""]]]>
+#traitmodify[rsAll,rsTotal,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -71,7 +71,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAll,rsTotal,5,""]]]>
+#traitmodify[rsAll,rsTotal,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -84,11 +84,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAll,rsTotal,5,""]]]>
+#traitmodify[rsAll,rsTotal,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maAddeArm1" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
+  <thing id="maAddeArm1" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+1 AC"/>
     <fieldval field="mgLevel" value="3"/>
     <fieldval field="mgFlavor" value="The worn leather of this armor gleams with toxic grease."/>
@@ -100,7 +100,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMIAddeArm"></bootstrap>
     </thing>
-  <thing id="maAddeArm2" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
+  <thing id="maAddeArm2" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+2 AC"/>
     <fieldval field="mgLevel" value="8"/>
     <fieldval field="mgFlavor" value="The worn leather of this armor gleams with toxic grease."/>
@@ -112,7 +112,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMIAddeArm"></bootstrap>
     </thing>
-  <thing id="maAddeArm3" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
+  <thing id="maAddeArm3" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
     <fieldval field="mgLevel" value="13"/>
     <fieldval field="mgFlavor" value="The worn leather of this armor gleams with toxic grease."/>
@@ -124,7 +124,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMIAddeArm"></bootstrap>
     </thing>
-  <thing id="maAddeArm4" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
+  <thing id="maAddeArm4" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
     <fieldval field="mgLevel" value="18"/>
     <fieldval field="mgFlavor" value="The worn leather of this armor gleams with toxic grease."/>
@@ -136,7 +136,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMIAddeArm"></bootstrap>
     </thing>
-  <thing id="maAddeArm5" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
+  <thing id="maAddeArm5" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
     <fieldval field="mgLevel" value="23"/>
     <fieldval field="mgFlavor" value="The worn leather of this armor gleams with toxic grease."/>
@@ -148,7 +148,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMIAddeArm"></bootstrap>
     </thing>
-  <thing id="maAddeArm6" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
+  <thing id="maAddeArm6" name="Addergrease Armor" description="Power (Poison) * Daily (Immediate Reaction): Use this power when an enemy misses you with a melee attack. The attacker takes ongoing 5 poison damage (save ends), and you shift a number of squares equal to this item&apos;s enhancement bonus.{br}{br}{i}Level 13 or 18:{/i}  10 poison damage.{br}{br}{i}Level 23 or 28:{/i}  15 poison damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
     <fieldval field="mgLevel" value="28"/>
     <fieldval field="mgFlavor" value="The worn leather of this armor gleams with toxic grease."/>
@@ -1496,7 +1496,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIArmoNig"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -1512,9 +1512,57 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIArmoNig"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
+    </thing>
+  <thing id="maArmoRes1" name="Armor of Resistance" description="Property: Resist 5 to a damage type chosen from the following list at the time the armor is created: acid, cold, fire, force, lightning, necrotic, poison, psychic, thunder.{br}{i}Level 12 or 17:{/i} Resist 10{br}{i}Level 22 or 27:{/i} Resist 15" compset="MagicArmor">
+    <fieldval field="mgEnhance" value="+1 AC"/>
+    <fieldval field="mgLevel" value="2"/>
+    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance."/>
+    <fieldval field="mgBonus" value="1"/>
+    <usesource source="AdvenVault"/>
+    <tag group="Rarity" tag="Common"/>
+    </thing>
+  <thing id="maArmoRes2" name="Armor of Resistance" description="Property: Resist 5 to a damage type chosen from the following list at the time the armor is created: acid, cold, fire, force, lightning, necrotic, poison, psychic, thunder.{br}{i}Level 12 or 17:{/i} Resist 10{br}{i}Level 22 or 27:{/i} Resist 15" compset="MagicArmor">
+    <fieldval field="mgEnhance" value="+2 AC"/>
+    <fieldval field="mgLevel" value="7"/>
+    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance."/>
+    <fieldval field="mgBonus" value="2"/>
+    <usesource source="AdvenVault"/>
+    <tag group="Rarity" tag="Common"/>
+    </thing>
+  <thing id="maArmoRes3" name="Armor of Resistance" description="Property: Resist 5 to a damage type chosen from the following list at the time the armor is created: acid, cold, fire, force, lightning, necrotic, poison, psychic, thunder.{br}{i}Level 12 or 17:{/i} Resist 10{br}{i}Level 22 or 27:{/i} Resist 15" compset="MagicArmor">
+    <fieldval field="mgEnhance" value="+3 AC"/>
+    <fieldval field="mgLevel" value="12"/>
+    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance."/>
+    <fieldval field="mgBonus" value="3"/>
+    <usesource source="AdvenVault"/>
+    <tag group="Rarity" tag="Common"/>
+    </thing>
+  <thing id="maArmoRes4" name="Armor of Resistance" description="Property: Resist 5 to a damage type chosen from the following list at the time the armor is created: acid, cold, fire, force, lightning, necrotic, poison, psychic, thunder.{br}{i}Level 12 or 17:{/i} Resist 10{br}{i}Level 22 or 27:{/i} Resist 15" compset="MagicArmor">
+    <fieldval field="mgEnhance" value="+4 AC"/>
+    <fieldval field="mgLevel" value="17"/>
+    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance."/>
+    <fieldval field="mgBonus" value="4"/>
+    <usesource source="AdvenVault"/>
+    <tag group="Rarity" tag="Common"/>
+    </thing>
+  <thing id="maArmoRes5" name="Armor of Resistance" description="Property: Resist 5 to a damage type chosen from the following list at the time the armor is created: acid, cold, fire, force, lightning, necrotic, poison, psychic, thunder.{br}{i}Level 12 or 17:{/i} Resist 10{br}{i}Level 22 or 27:{/i} Resist 15" compset="MagicArmor">
+    <fieldval field="mgEnhance" value="+5 AC"/>
+    <fieldval field="mgLevel" value="22"/>
+    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance."/>
+    <fieldval field="mgBonus" value="5"/>
+    <usesource source="AdvenVault"/>
+    <tag group="Rarity" tag="Common"/>
+    </thing>
+  <thing id="maArmoRes6" name="Armor of Resistance" description="Property: Resist 5 to a damage type chosen from the following list at the time the armor is created: acid, cold, fire, force, lightning, necrotic, poison, psychic, thunder.{br}{i}Level 12 or 17:{/i} Resist 10{br}{i}Level 22 or 27:{/i} Resist 15" compset="MagicArmor">
+    <fieldval field="mgEnhance" value="+6 AC"/>
+    <fieldval field="mgLevel" value="27"/>
+    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance."/>
+    <fieldval field="mgBonus" value="6"/>
+    <usesource source="AdvenVault"/>
+    <tag group="Rarity" tag="Common"/>
     </thing>
   <thing id="maArmoSac1" name="Armor of Sacrifice" description="Power *  (Minor Action): Use this power when you are adjacent to an ally who is subject to an effect that a save can end. The ally is no longer affected, and you now have the effect. You cannot make a saving throw against this effect until the end of your next turn.{br}{br}Power (Healing) * Daily (Minor Action): Spend a healing surge. One ally within 5 squares of you regains hit points as though he or she had spent a healing surge." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+1 AC"/>
@@ -1780,7 +1828,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIArmoSta"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -1795,7 +1843,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIArmoSta"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -2312,10 +2360,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <tag group="ReqArmor" tag="arLeathArm"/>
     <tag group="ReqArmor" tag="arHideArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtPower,1,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="maBattHar2" name="Battle Harness" description="Properties: As a free action, you can draw a sheathed weapon or retrieve a stowed item.{br}You gain a power bonus to initiative equal to the item&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+2 AC"/>
@@ -2327,10 +2371,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <tag group="ReqArmor" tag="arLeathArm"/>
     <tag group="ReqArmor" tag="arHideArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtPower,2,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="maBattHar3" name="Battle Harness" description="Properties: As a free action, you can draw a sheathed weapon or retrieve a stowed item.{br}You gain a power bonus to initiative equal to the item&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
@@ -2342,10 +2382,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <tag group="ReqArmor" tag="arLeathArm"/>
     <tag group="ReqArmor" tag="arHideArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtPower,3,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="maBattHar4" name="Battle Harness" description="Properties: As a free action, you can draw a sheathed weapon or retrieve a stowed item.{br}You gain a power bonus to initiative equal to the item&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
@@ -2357,10 +2393,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <tag group="ReqArmor" tag="arLeathArm"/>
     <tag group="ReqArmor" tag="arHideArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtPower,4,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="maBattHar5" name="Battle Harness" description="Properties: As a free action, you can draw a sheathed weapon or retrieve a stowed item.{br}You gain a power bonus to initiative equal to the item&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
@@ -2372,10 +2404,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <tag group="ReqArmor" tag="arLeathArm"/>
     <tag group="ReqArmor" tag="arHideArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtPower,5,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="maBattHar6" name="Battle Harness" description="Properties: As a free action, you can draw a sheathed weapon or retrieve a stowed item.{br}You gain a power bonus to initiative equal to the item&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
@@ -2387,10 +2415,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <tag group="ReqArmor" tag="arLeathArm"/>
     <tag group="ReqArmor" tag="arHideArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[trInit,trtPower,6,""]]]>
-      <before name="Derived trtFinal"/>
-      </eval>
     </thing>
   <thing id="maBattArm1" name="Battleforged Armor" description="Property: If you use your second wind when you are bloodied, regain an extra 1d10 hit points.{br}{i}Level 15 or 20:{/i} 2d10 hit points{br}{i}Level 25 or 30:{/i} 3d10 hit points" compset="MagicArmor">
     <fieldval field="mgEnhance" value="+1 AC"/>
@@ -2778,8 +2802,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,10,""]
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -2793,8 +2817,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,10,""]
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -2808,8 +2832,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -2823,8 +2847,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -3551,9 +3575,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skIntimida,trtItem,2,""]
-#traitmodify[rsNecrotic,rsTotal,5,""]
-#traitmodify[rsPoison,rsTotal,5,""]]]>
+#traitmodify[skIntimida,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -3567,9 +3589,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skIntimida,trtItem,2,""]
-#traitmodify[rsNecrotic,rsTotal,10,""]
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[skIntimida,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -3583,9 +3603,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skIntimida,trtItem,2,""]
-#traitmodify[rsNecrotic,rsTotal,15,""]
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[skIntimida,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -3599,9 +3617,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skIntimida,trtItem,2,""]
-#traitmodify[rsNecrotic,rsTotal,15,""]
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[skIntimida,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -4557,7 +4573,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDawnWar"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAcid,rsTotal,10,""]
+#traitmodify[rsAcid,rsTotal,10,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
+    <eval phase="Traits" priority="1000" index="2"><![CDATA[
+doneif (parent.tagis[Equipped.Equipped] = 0)
 #traitmodify[rsCold,rsTotal,10,""]
 #traitmodify[rsFire,rsTotal,10,""]
 #traitmodify[rsLightn,rsTotal,10,""]]]>
@@ -4574,7 +4594,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDawnWar"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAcid,rsTotal,10,""]
+#traitmodify[rsAcid,rsTotal,10,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
+    <eval phase="Traits" priority="1000" index="2"><![CDATA[
+doneif (parent.tagis[Equipped.Equipped] = 0)
 #traitmodify[rsCold,rsTotal,10,""]
 #traitmodify[rsFire,rsTotal,10,""]
 #traitmodify[rsLightn,rsTotal,10,""]]]>
@@ -4591,7 +4615,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDawnWar"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAcid,rsTotal,10,""]
+#traitmodify[rsAcid,rsTotal,10,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
+    <eval phase="Traits" priority="1000" index="2"><![CDATA[
+doneif (parent.tagis[Equipped.Equipped] = 0)
 #traitmodify[rsCold,rsTotal,10,""]
 #traitmodify[rsFire,rsTotal,10,""]
 #traitmodify[rsLightn,rsTotal,10,""]]]>
@@ -4898,7 +4926,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -4914,7 +4942,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -4930,7 +4958,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -4946,7 +4974,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -4974,7 +5002,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDeatShi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5027,8 +5055,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDefeArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5045,8 +5073,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDefeArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5705,7 +5733,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragBla"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAcid,rsTotal,15,""]]]>
+#traitmodify[rsAcid,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5720,7 +5748,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragBla"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsAcid,rsTotal,20,""]]]>
+#traitmodify[rsAcid,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5750,7 +5778,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragBlu"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5765,7 +5793,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragBlu"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,20,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5795,7 +5823,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragGre"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[rsPoison,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5810,7 +5838,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragGre"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,20,""]]]>
+#traitmodify[rsPoison,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5840,7 +5868,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragRed"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5855,7 +5883,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragRed"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,20,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5885,7 +5913,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragWhi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5900,7 +5928,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDragWhi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,20,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5959,8 +5987,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDrifArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,10,""]
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -5976,8 +6004,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIDrifArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,10,""]
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -6187,7 +6215,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIEctoArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -6203,7 +6231,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIEctoArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -6219,7 +6247,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIEctoArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -6235,7 +6263,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIEctoArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -6246,8 +6274,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <fieldval field="mgBonus" value="1"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arChainmai"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -6259,8 +6286,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="2"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arChainmai"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -6272,8 +6298,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="3"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arChainmai"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -6285,8 +6310,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="4"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arChainmai"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -6298,8 +6322,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="5"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arChainmai"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -6311,8 +6334,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="6"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arChainmai"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -6326,10 +6348,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arScaleArm"/>
     <bootstrap thing="pMIEldrSer"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maEldrSer2" name="Eldritch Serpent Armor" description="Property: You take no penalty to speed while wearing this armor.{br}{br}Power * Daily (Minor Action): Until the end of your turn, your attacks using the arcane keyword gain a bonus to damage rolls equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+2 AC"/>
@@ -6340,10 +6358,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arScaleArm"/>
     <bootstrap thing="pMIEldrSer"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maEldrSer3" name="Eldritch Serpent Armor" description="Property: You take no penalty to speed while wearing this armor.{br}{br}Power * Daily (Minor Action): Until the end of your turn, your attacks using the arcane keyword gain a bonus to damage rolls equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
@@ -6354,10 +6368,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arScaleArm"/>
     <bootstrap thing="pMIEldrSer"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maEldrSer4" name="Eldritch Serpent Armor" description="Property: You take no penalty to speed while wearing this armor.{br}{br}Power * Daily (Minor Action): Until the end of your turn, your attacks using the arcane keyword gain a bonus to damage rolls equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
@@ -6368,10 +6378,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arScaleArm"/>
     <bootstrap thing="pMIEldrSer"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maEldrSer5" name="Eldritch Serpent Armor" description="Property: You take no penalty to speed while wearing this armor.{br}{br}Power * Daily (Minor Action): Until the end of your turn, your attacks using the arcane keyword gain a bonus to damage rolls equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
@@ -6382,10 +6388,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arScaleArm"/>
     <bootstrap thing="pMIEldrSer"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maEldrSer6" name="Eldritch Serpent Armor" description="Property: You take no penalty to speed while wearing this armor.{br}{br}Power * Daily (Minor Action): Until the end of your turn, your attacks using the arcane keyword gain a bonus to damage rolls equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
@@ -6396,10 +6398,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arScaleArm"/>
     <bootstrap thing="pMIEldrSer"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maElukCla3" name="Elukian Clay Armor" description="Property: You automatically succeed on saving throws against ongoing acid damage.{br}{br}Power * Encounter (Immediate Reaction): Use this power when you gain ongoing acid damage. The ongoing acid damage ends." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
@@ -7225,7 +7223,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFlamArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7239,7 +7237,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFlamArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7267,7 +7265,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFlamShi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,10,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7281,7 +7279,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFlamShi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7309,7 +7307,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFlmwShl"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7699,8 +7697,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFrosArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,10,""]
-#traitmodify[rsFire,rsTotal,10,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]
+#traitmodify[rsFire,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7715,8 +7713,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFrosArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,10,""]
-#traitmodify[rsFire,rsTotal,10,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]
+#traitmodify[rsFire,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7764,7 +7762,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFrozArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,10,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7780,7 +7778,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFrozArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,10,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7796,7 +7794,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFrozArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -7812,7 +7810,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIFrozArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -8023,7 +8021,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIGhosArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -8037,7 +8035,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIGhosArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -8051,7 +8049,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIGhosArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -8390,8 +8388,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHeavyShi"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,10,""]
-#traitmodify[rsThunder,rsTotal,10,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]
+#traitmodify[rsThunder,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -8404,8 +8402,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHeavyShi"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]
-#traitmodify[rsThunder,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]
+#traitmodify[rsThunder,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9103,7 +9101,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIIlliRob"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9118,7 +9116,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIIlliRob"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9410,8 +9408,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIInneWar"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,10,""]
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9426,8 +9424,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIInneWar"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,10,""]
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9442,8 +9440,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIInneWar"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,5,""]
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9754,7 +9752,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILaugDea"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9771,7 +9769,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILaugDea"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9788,7 +9786,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILaugDea"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9805,7 +9803,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILaugDea"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -10065,7 +10063,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILfgivi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -10080,7 +10078,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILfgivi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -10095,7 +10093,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILfgivi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -10110,7 +10108,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMILfgivi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -10887,8 +10885,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <fieldval field="mgBonus" value="1"/>
     <usesource source="EbPG"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -10900,8 +10897,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="2"/>
     <usesource source="EbPG"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -10913,8 +10909,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="3"/>
     <usesource source="EbPG"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -10926,8 +10921,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="4"/>
     <usesource source="EbPG"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -10939,8 +10933,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="5"/>
     <usesource source="EbPG"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -10952,8 +10945,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <fieldval field="mgBonus" value="6"/>
     <usesource source="EbPG"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -11159,7 +11151,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="ReqArmor" tag="arHeavyShi"/>
     <bootstrap thing="pMINethShi"></bootstrap>
     </thing>
-  <thing id="maNighWar1" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15{br}{br}You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
+  <thing id="maNighWar1" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+1 AC"/>
     <fieldval field="mgLevel" value="3"/>
     <fieldval field="mgFlavor" value="The glistening black material of this armor, strangely cold to the touch, reliably deflects mental attacks."/>
@@ -11174,7 +11166,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maNighWar2" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15{br}{br}You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
+  <thing id="maNighWar2" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+2 AC"/>
     <fieldval field="mgLevel" value="8"/>
     <fieldval field="mgFlavor" value="The glistening black material of this armor, strangely cold to the touch, reliably deflects mental attacks."/>
@@ -11189,7 +11181,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maNighWar3" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15{br}{br}You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
+  <thing id="maNighWar3" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
     <fieldval field="mgLevel" value="13"/>
     <fieldval field="mgFlavor" value="The glistening black material of this armor, strangely cold to the touch, reliably deflects mental attacks."/>
@@ -11200,11 +11192,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maNighWar4" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15Yo{br}{br}u gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
+  <thing id="maNighWar4" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
     <fieldval field="mgLevel" value="18"/>
     <fieldval field="mgFlavor" value="The glistening black material of this armor, strangely cold to the touch, reliably deflects mental attacks."/>
@@ -11215,11 +11207,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maNighWar5" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15{br}{br}You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
+  <thing id="maNighWar5" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
     <fieldval field="mgLevel" value="23"/>
     <fieldval field="mgFlavor" value="The glistening black material of this armor, strangely cold to the touch, reliably deflects mental attacks."/>
@@ -11230,11 +11222,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maNighWar6" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15{br}{br}You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
+  <thing id="maNighWar6" name="Nightmare Ward Armor" description="Properties: You gain resist 5 psychic.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15You gain a +2 item bonus to saving throws against charm, fear, or psychic effects." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
     <fieldval field="mgLevel" value="28"/>
     <fieldval field="mgFlavor" value="The glistening black material of this armor, strangely cold to the touch, reliably deflects mental attacks."/>
@@ -11245,7 +11237,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11427,8 +11419,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,10,""]
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11444,8 +11436,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,10,""]
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11461,8 +11453,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11478,8 +11470,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,5,""]
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11622,7 +11614,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIPhreArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11638,7 +11630,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIPhreArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,10,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11654,7 +11646,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIPhreArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -11670,7 +11662,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIPhreArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPsychic,rsTotal,15,""]]]>
+#traitmodify[rsPsychic,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -12902,7 +12894,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arPlateArm"/>
     </thing>
-  <thing id="maRimeArm3" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15{br}{br}Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
+  <thing id="maRimeArm3" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
     <fieldval field="mgLevel" value="12"/>
     <fieldval field="mgFlavor" value="Fashioned from blue-tinted steel, this armor is cool to the touch."/>
@@ -12917,7 +12909,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maRimeArm4" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15{br}{br}Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
+  <thing id="maRimeArm4" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
     <fieldval field="mgLevel" value="17"/>
     <fieldval field="mgFlavor" value="Fashioned from blue-tinted steel, this armor is cool to the touch."/>
@@ -12932,7 +12924,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maRimeArm5" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15{br}{br}Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
+  <thing id="maRimeArm5" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
     <fieldval field="mgLevel" value="22"/>
     <fieldval field="mgFlavor" value="Fashioned from blue-tinted steel, this armor is cool to the touch."/>
@@ -12943,11 +12935,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maRimeArm6" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15{br}{br}Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
+  <thing id="maRimeArm6" name="Rimewrought Armor" description="Properties: Resist 10 cold.{br}{i}Level 22 or 27:{/i} Resist 15Ignore difficult terrain caused by ice or snow." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
     <fieldval field="mgLevel" value="27"/>
     <fieldval field="mgFlavor" value="Fashioned from blue-tinted steel, this armor is cool to the touch."/>
@@ -12958,7 +12950,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arPlateArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13168,7 +13160,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIRobeDef"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13183,7 +13175,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIRobeDef"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsFire,rsTotal,15,""]]]>
+#traitmodify[rsFire,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13228,7 +13220,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIRobeFro"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13243,7 +13235,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIRobeFro"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13290,8 +13282,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIRobeSto"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]
-#traitmodify[rsThunder,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]
+#traitmodify[rsThunder,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13306,12 +13298,12 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIRobeSto"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]
-#traitmodify[rsThunder,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]
+#traitmodify[rsThunder,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maRobeEye1" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
+  <thing id="maRobeEye1" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s  enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+1 AC"/>
     <fieldval field="mgLevel" value="2"/>
     <fieldval field="mgFlavor" value="This fine silk cloth appears to be covered in swirls of color or peacock feather patterns, but in fact depicts dozens of unblinking eyes."/>
@@ -13319,10 +13311,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="AdvenVault"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arClothArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skPercepti,trtItem,1,""]]]></eval>
     </thing>
-  <thing id="maRobeEye2" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
+  <thing id="maRobeEye2" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s  enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+2 AC"/>
     <fieldval field="mgLevel" value="7"/>
     <fieldval field="mgFlavor" value="This fine silk cloth appears to be covered in swirls of color or peacock feather patterns, but in fact depicts dozens of unblinking eyes."/>
@@ -13330,10 +13320,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="AdvenVault"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arClothArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skPercepti,trtItem,2,""]]]></eval>
     </thing>
-  <thing id="maRobeEye3" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
+  <thing id="maRobeEye3" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s  enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
     <fieldval field="mgLevel" value="12"/>
     <fieldval field="mgFlavor" value="This fine silk cloth appears to be covered in swirls of color or peacock feather patterns, but in fact depicts dozens of unblinking eyes."/>
@@ -13341,10 +13329,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="AdvenVault"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arClothArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skPercepti,trtItem,3,""]]]></eval>
     </thing>
-  <thing id="maRobeEye4" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
+  <thing id="maRobeEye4" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s  enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
     <fieldval field="mgLevel" value="17"/>
     <fieldval field="mgFlavor" value="This fine silk cloth appears to be covered in swirls of color or peacock feather patterns, but in fact depicts dozens of unblinking eyes."/>
@@ -13352,10 +13338,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="AdvenVault"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arClothArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skPercepti,trtItem,4,""]]]></eval>
     </thing>
-  <thing id="maRobeEye5" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
+  <thing id="maRobeEye5" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s  enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
     <fieldval field="mgLevel" value="22"/>
     <fieldval field="mgFlavor" value="This fine silk cloth appears to be covered in swirls of color or peacock feather patterns, but in fact depicts dozens of unblinking eyes."/>
@@ -13363,10 +13347,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="AdvenVault"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arClothArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skPercepti,trtItem,5,""]]]></eval>
     </thing>
-  <thing id="maRobeEye6" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s enhancement bonus." compset="MagicArmor">
+  <thing id="maRobeEye6" name="Robe of Eyes" description="Property: You cannot be blinded and gain an item bonus to Perception checks equal to the armor&apos;s  enhancement bonus." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
     <fieldval field="mgLevel" value="27"/>
     <fieldval field="mgFlavor" value="This fine silk cloth appears to be covered in swirls of color or peacock feather patterns, but in fact depicts dozens of unblinking eyes."/>
@@ -13374,8 +13356,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <usesource source="AdvenVault"/>
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arClothArm"/>
-    <eval phase="Traits" priority="1000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skPercepti,trtItem,6,""]]]></eval>
     </thing>
   <thing id="maRobeFor5" name="Robe of Forbearance" description="Power * Daily (Immediate Reaction): Use this power when an enemy hits you. The enemy takes a penalty equal to the enhancement bonus of the armor to attack rolls against you until the end of the encounter. This effect ends if you attack it." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
@@ -13672,8 +13652,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[defFort,trtItem,2,""]
-#traitmodify[defWill,trtItem,2,""]]]>
+#traitmodify[defFort,trtItem,1,""]
+#traitmodify[defWill,trtItem,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -13687,8 +13667,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arClothArm"/>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[defFort,trtItem,2,""]
-#traitmodify[defWill,trtItem,2,""]]]>
+#traitmodify[defFort,trtItem,1,""]
+#traitmodify[defWill,trtItem,1,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14430,7 +14410,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISrpntn"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14445,7 +14425,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISrpntn"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14460,7 +14440,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISrpntn"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14475,7 +14455,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISrpntn"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14869,7 +14849,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShadArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skStealth,trtBonus,4,""]]]>
+#traitmodify[skStealth,trtBonus,3,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14884,7 +14864,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShadArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skStealth,trtBonus,5,""]]]>
+#traitmodify[skStealth,trtBonus,3,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -14899,7 +14879,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShadArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skStealth,trtBonus,6,""]]]>
+#traitmodify[skStealth,trtBonus,3,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15318,6 +15298,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqArmor" tag="arLightShi"/>
     <tag group="ReqArmor" tag="arHeavyShi"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+doneif (parent.tagis[Equipped.Equipped] = 0)
+#traitmodify[defAC,trtBonus,1,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="maShiBar19" name="Shield of the Barrier Sentinels" description="{b}Arms Slot: {/b}Any shield{br}{br}Property: You gain a +1 bonus to AC and Reflex while you are flanked.{br}{i}Level 19:{/i} Gain a +2 bonus to AC{br}{i}Level 29:{/i} Gain a +3 bonus to AC" compset="MagicArmor">
     <fieldval field="mgLevel" value="19"/>
@@ -15326,6 +15311,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqArmor" tag="arLightShi"/>
     <tag group="ReqArmor" tag="arHeavyShi"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+doneif (parent.tagis[Equipped.Equipped] = 0)
+#traitmodify[defAC,trtBonus,1,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="maShiBar29" name="Shield of the Barrier Sentinels" description="{b}Arms Slot: {/b}Any shield{br}{br}Property: You gain a +1 bonus to AC and Reflex while you are flanked.{br}{i}Level 19:{/i} Gain a +2 bonus to AC{br}{i}Level 29:{/i} Gain a +3 bonus to AC" compset="MagicArmor">
     <fieldval field="mgLevel" value="29"/>
@@ -15334,6 +15324,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Common"/>
     <tag group="ReqArmor" tag="arLightShi"/>
     <tag group="ReqArmor" tag="arHeavyShi"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+doneif (parent.tagis[Equipped.Equipped] = 0)
+#traitmodify[defAC,trtBonus,1,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="maShiDoo23" name="Shield of the Doomed" description="{b}Arms Slot: {/b}Heavy shield425,000 gp{br}{br}Utility Power * Daily (Immediate Interrupt): {i}Trigger:{/i} An attack drops you to below 1 hit point.{br}{br}{i}Effect:{/i} You instead have 1 hit point, and you gain temporary hit points equal to the damage dealt by the triggering attack.{br}{br}Utility Power * Daily (Minor Action): {i}Effect:{/i} Choose one enemy within 5 squares of you. The next time you drop below 1 hit point before the end of the encounter, you instead have 1 hit point, but only if the chosen enemy has at least 1 hit point. However, if you are at 1 hit point or lower when that enemy drops below 1 hit point, you must roll a d20. If you roll a 9 or lower, you die." compset="MagicArmor">
     <fieldval field="mgLevel" value="23"/>
@@ -15583,7 +15578,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShoArm1"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,10,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15600,7 +15595,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShoArm1"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,10,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15617,7 +15612,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShoArm1"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15634,7 +15629,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIShoArm1"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15684,8 +15679,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISkalArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skBluff,trtItem,4,""]
-#traitmodify[skDiplomac,trtItem,4,""]]]>
+#traitmodify[skBluff,trtItem,2,""]
+#traitmodify[skDiplomac,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15701,8 +15696,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISkalArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skBluff,trtItem,4,""]
-#traitmodify[skDiplomac,trtItem,4,""]]]>
+#traitmodify[skBluff,trtItem,2,""]
+#traitmodify[skDiplomac,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15718,8 +15713,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISkalArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skBluff,trtItem,6,""]
-#traitmodify[skDiplomac,trtItem,6,""]]]>
+#traitmodify[skBluff,trtItem,2,""]
+#traitmodify[skDiplomac,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15735,8 +15730,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISkalArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[skBluff,trtItem,6,""]
-#traitmodify[skDiplomac,trtItem,6,""]]]>
+#traitmodify[skBluff,trtItem,2,""]
+#traitmodify[skDiplomac,trtItem,2,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15770,7 +15765,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISkelArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -15787,11 +15782,11 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISkelArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
-  <thing id="maSkinAgo3" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a âˆ’2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
+  <thing id="maSkinAgo3" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a &#226;&#136;&#146;2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+3 AC"/>
     <fieldval field="mgLevel" value="13"/>
     <fieldval field="mgFlavor" value="The likeness of a screaming face is etched across this armor, which protects you from your foes&apos; harshest attacks."/>
@@ -15802,7 +15797,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMISkinAgo"></bootstrap>
     </thing>
-  <thing id="maSkinAgo4" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a âˆ’2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
+  <thing id="maSkinAgo4" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a &#226;&#136;&#146;2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+4 AC"/>
     <fieldval field="mgLevel" value="18"/>
     <fieldval field="mgFlavor" value="The likeness of a screaming face is etched across this armor, which protects you from your foes&apos; harshest attacks."/>
@@ -15813,7 +15808,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMISkinAgo"></bootstrap>
     </thing>
-  <thing id="maSkinAgo5" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a âˆ’2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
+  <thing id="maSkinAgo5" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a &#226;&#136;&#146;2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
     <fieldval field="mgLevel" value="23"/>
     <fieldval field="mgFlavor" value="The likeness of a screaming face is etched across this armor, which protects you from your foes&apos; harshest attacks."/>
@@ -15824,7 +15819,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arHideArm"/>
     <bootstrap thing="pMISkinAgo"></bootstrap>
     </thing>
-  <thing id="maSkinAgo6" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a âˆ’2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
+  <thing id="maSkinAgo6" name="Skin of Agonies" description="Property: You automatically succeed on saving throws against untyped ongoing damage.{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy hits you with an attack that deals ongoing damage.{br}{br}{i}Effect:{/i} The ongoing damage ends. One enemy adjacent to you takes the ongoing damage instead, and takes a &#226;&#136;&#146;2 penalty to saving throws against that ongoing damage." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
     <fieldval field="mgLevel" value="28"/>
     <fieldval field="mgFlavor" value="The likeness of a screaming face is etched across this armor, which protects you from your foes&apos; harshest attacks."/>
@@ -16132,7 +16127,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISnakArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16148,7 +16143,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISnakArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16164,7 +16159,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISnakArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16368,11 +16363,6 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arPlateArm"/>
     <bootstrap thing="pMISpecPla"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maSpecPla5" name="Spectral Plate" description="Property: You ignore the speed and skill check penalties for wearing plate armor.{br}{br}Power * Daily (Move Action): You move your speed. In addition, you become insubstantial and gain phasing until the end of your turn." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+5 AC"/>
@@ -16383,11 +16373,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arPlateArm"/>
     <bootstrap thing="pMISpecPla"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maSpecPla6" name="Spectral Plate" description="Property: You ignore the speed and skill check penalties for wearing plate armor.{br}{br}Power * Daily (Move Action): You move your speed. In addition, you become insubstantial and gain phasing until the end of your turn." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+6 AC"/>
@@ -16398,11 +16383,6 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="Rarity" tag="Uncommon"/>
     <tag group="ReqArmor" tag="arPlateArm"/>
     <bootstrap thing="pMISpecPla"></bootstrap>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
-perform hero.assign[Hero.NoArmorSpd]
-      <before name="Armor effects final"/>
-      </eval>
     </thing>
   <thing id="maSpidRob2" name="Spiderweb Robes" description="Property: You gain resist 5 poison.{br}{i}Level 13 or 18:{/i} Resist 10{br}{i}Level 23 or 28:{/i} Resist 15{br}{br}Power * Daily (Immediate Reaction): {i}Trigger:{/i} An enemy adjacent to you hits you with a melee attack.{br}{br}{i}Effect:{/i} The triggering enemy is restrained until the end of its next turn." compset="MagicArmor">
     <fieldval field="mgEnhance" value="+2 AC"/>
@@ -16430,7 +16410,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISpidRob"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16445,7 +16425,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISpidRob"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,10,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16460,7 +16440,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISpidRob"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16475,7 +16455,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISpidRob"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsPoison,rsTotal,15,""]]]>
+#traitmodify[rsPoison,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16686,8 +16666,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISprtArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,10,""]
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -16702,8 +16682,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISprtArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,5,""]
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17060,8 +17040,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIStorShi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,10,""]
-#traitmodify[rsThunder,rsTotal,10,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]
+#traitmodify[rsThunder,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17075,8 +17055,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIStorShi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]
-#traitmodify[rsThunder,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,5,""]
+#traitmodify[rsThunder,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17129,8 +17109,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIStorArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]
-#traitmodify[rsThunder,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]
+#traitmodify[rsThunder,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17147,8 +17127,8 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIStorArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]
-#traitmodify[rsThunder,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]
+#traitmodify[rsThunder,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17176,7 +17156,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIStrmShl"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsLightn,rsTotal,15,""]]]>
+#traitmodify[rsLightn,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17294,7 +17274,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISunlArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17310,7 +17290,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISunlArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -17326,7 +17306,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMISunlArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -18120,7 +18100,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMITombArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -18134,7 +18114,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMITombArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsNecrotic,rsTotal,15,""]]]>
+#traitmodify[rsNecrotic,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -19007,7 +18987,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIWhitArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -19024,7 +19004,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIWhitArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,10,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -19041,7 +19021,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIWhitArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -19058,7 +19038,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIWhitArm"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsRadiant,rsTotal,15,""]]]>
+#traitmodify[rsRadiant,rsTotal,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -19228,7 +19208,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <bootstrap thing="pMIWintShi"></bootstrap>
     <eval phase="Traits" priority="1000"><![CDATA[
 doneif (parent.tagis[Equipped.Equipped] = 0)
-#traitmodify[rsCold,rsTotal,15,""]]]>
+#traitmodify[rsCold,rsTotal,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -19297,8 +19277,7 @@ doneif (parent.tagis[Equipped.Equipped] = 0)
     <tag group="ReqArmor" tag="arScaleArm"/>
     <tag group="ReqArmor" tag="arChainmai"/>
     <tag group="Rarity" tag="Common"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -19312,8 +19291,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="ReqArmor" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
     <tag group="ReqArmor" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
     <tag group="ReqArmor" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -19327,8 +19305,7 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="ReqArmor" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
     <tag group="ReqArmor" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
     <tag group="ReqArmor" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
@@ -19342,550 +19319,9 @@ perform hero.assign[Hero.NoArmorSpd]
     <tag group="ReqArmor" tag="arChainmai" name="Chainmail" abbrev="Chainmail"/>
     <tag group="ReqArmor" tag="arPlateArm" name="Plate Armor" abbrev="Plate Armor"/>
     <tag group="ReqArmor" tag="arScaleArm" name="Scale Armor" abbrev="Scale Armor"/>
-    <eval phase="Traits" priority="1000">doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.assign[Hero.NoArmorChk]
+    <eval phase="Traits" priority="1000">perform hero.assign[Hero.NoArmorChk]
 perform hero.assign[Hero.NoArmorSpd]
       <before name="Armor effects final"/>
       </eval>
-    </thing>
-  <thing id="maArmRsA1" name="Armor of Resistance (Acid)" description="Property: Adds +5 Acid Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to acid."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsAcid"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsA2" name="Armor of Resistance (Acid)" description="Property: Adds +5 Acid Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to acid."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsAcid"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsA3" name="Armor of Resistance (Acid)" description="Property: Adds +10 Acid Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to acid."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsAcid"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsA4" name="Armor of Resistance (Acid)" description="Property: Adds +10 Acid Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to acid."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsAcid"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsA5" name="Armor of Resistance (Acid)" description="Property: Adds +15 Acid Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to acid."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsAcid"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsA6" name="Armor of Resistance (Acid)" description="Property: Adds +15 Acid Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to acid."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsAcid"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsC1" name="Armor of Resistance (Cold)" description="Property: Adds +5 Cold Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to cold."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsCold "].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsC2" name="Armor of Resistance (Cold)" description="Property: Adds +5 Cold Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to cold."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsCold "].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsC3" name="Armor of Resistance (Cold)" description="Property: Adds +10 Cold Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to cold."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsCold"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsC4" name="Armor of Resistance (Cold)" description="Property: Adds +10 Cold Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to cold."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsCold"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsC5" name="Armor of Resistance (Cold)" description="Property: Adds +15 Cold Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to cold."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsCold"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsC6" name="Armor of Resistance (Cold)" description="Property: Adds +15 Cold Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to cold."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsCold"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFi1" name="Armor of Resistance (Fire)" description="Property: Adds +5 Fire Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to fire."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsFire "].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFi2" name="Armor of Resistance (Fire)" description="Property: Adds +5 Fire Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to fire."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsFire "].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFi3" name="Armor of Resistance (Fire)" description="Property: Adds +10 Fire Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to fire."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsFire "].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFi4" name="Armor of Resistance (Fire)" description="Property: Adds +10 Fire Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to fire."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsFire "].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFi5" name="Armor of Resistance (Fire)" description="Property: Adds +15 Fire Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to fire."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsFire "].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFi6" name="Armor of Resistance (Fire)" description="Property: Adds +15 Fire Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance to fire."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsFire"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFo1" name="Armor of Resistance (Force)" description="Property: Adds +5 Force Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. force."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsForce"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFo2" name="Armor of Resistance (Force)" description="Property: Adds +5 Force Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. force."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsForce"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFo3" name="Armor of Resistance (Force)" description="Property: Adds +10 Force Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. force."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsForce"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFo4" name="Armor of Resistance (Force)" description="Property: Adds +10 Force Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. force."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsForce"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFo5" name="Armor of Resistance (Force)" description="Property: Adds +15 Force Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. force."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsForce"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsFo6" name="Armor of Resistance (Force)" description="Property: Adds +15 Force Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. force."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsForce"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsL1" name="Armor of Resistance (Lightning)" description="Property: Adds +5 Lightning Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. lightning."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsLightn"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsL2" name="Armor of Resistance (Lightning)" description="Property: Adds +5 Lightning Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. lightning."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsLightn"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsL3" name="Armor of Resistance (Lightning)" description="Property: Adds +10 Lightning Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. lightning."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsLightn"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsL4" name="Armor of Resistance (Lightning)" description="Property: Adds +10 Lightning Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. lightning."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsLightn"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsL5" name="Armor of Resistance (Lightning)" description="Property: Adds +15 Lightning Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. lightning."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsLightn"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsL6" name="Armor of Resistance (Lightning)" description="Property: Adds +15 Lightning Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. lightning."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsLightn"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsN1" name="Armor of Resistance (Necrotic)" description="Property: Adds +5 Necrotic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. necrotic."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsN2" name="Armor of Resistance (Necrotic)" description="Property: Adds +5 Necrotic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. necrotic."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsN3" name="Armor of Resistance (Necrotic)" description="Property: Adds +10 Necrotic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. necrotic."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsN4" name="Armor of Resistance (Necrotic)" description="Property: Adds +10 Necrotic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. necrotic."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsN5" name="Armor of Resistance (Necrotic)" description="Property: Adds +15 Necrotic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. necrotic."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsN6" name="Armor of Resistance (Necrotic)" description="Property: Adds +15 Necrotic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. necrotic."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsNecrotic"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPo1" name="Armor of Resistance (Poison)" description="Property: Adds +5 Poison Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. poison."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPoison"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPo2" name="Armor of Resistance (Poison)" description="Property: Adds +5 Poison Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. poison."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPoison"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPo3" name="Armor of Resistance (Poison)" description="Property: Adds +10 Poison Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. poison."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPoison"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPo4" name="Armor of Resistance (Poison)" description="Property: Adds +10 Poison Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. poison."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPoison"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPo5" name="Armor of Resistance (Poison)" description="Property: Adds +15 Poison Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. poison."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPoison"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPo6" name="Armor of Resistance (Poison)" description="Property: Adds +15 Poison Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. poison."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPoison"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPs1" name="Armor of Resistance (Psychic)" description="Property: Adds +5 Psychic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. psychic."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPsychic"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPs2" name="Armor of Resistance (Psychic)" description="Property: Adds +5 Psychic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. psychic."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPsychic"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPs3" name="Armor of Resistance (Psychic)" description="Property: Adds +10 Psychic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. psychic."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPsychic"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPs4" name="Armor of Resistance (Psychic)" description="Property: Adds +10 Psychic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. psychic."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPsychic"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPs5" name="Armor of Resistance (Psychic)" description="Property: Adds +15 Psychic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. psychic."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPsychic"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsPs6" name="Armor of Resistance (Psychic)" description="Property: Adds +15 Psychic Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. psychic."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsPsychic"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsT1" name="Armor of Resistance (Thunder)" description="Property: Adds +5 Thunder Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. thunder."/>
-    <fieldval field="mgBonus" value="1"/>
-    <fieldval field="mgLevel" value="2"/>
-    <fieldval field="mgEnhance" value="+1 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsThunder"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsT2" name="Armor of Resistance (Thunder)" description="Property: Adds +5 Thunder Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. thunder."/>
-    <fieldval field="mgBonus" value="2"/>
-    <fieldval field="mgLevel" value="7"/>
-    <fieldval field="mgEnhance" value="+2 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsThunder"].field[rsTotal].modify[+,5,""]]]></eval>
-    </thing>
-  <thing id="maArmRsT3" name="Armor of Resistance (Thunder)" description="Property: Adds +10 Thunder Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. thunder."/>
-    <fieldval field="mgBonus" value="3"/>
-    <fieldval field="mgLevel" value="12"/>
-    <fieldval field="mgEnhance" value="+3 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsThunder"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsT4" name="Armor of Resistance (Thunder)" description="Property: Adds +10 Thunder Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. thunder."/>
-    <fieldval field="mgBonus" value="4"/>
-    <fieldval field="mgLevel" value="17"/>
-    <fieldval field="mgEnhance" value="+4 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsThunder"].field[rsTotal].modify[+,10,""]]]></eval>
-    </thing>
-  <thing id="maArmRsT5" name="Armor of Resistance (Thunder)" description="Property: Adds +15 Thunder Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. thunder."/>
-    <fieldval field="mgBonus" value="5"/>
-    <fieldval field="mgLevel" value="22"/>
-    <fieldval field="mgEnhance" value="+5 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsThunder"].field[rsTotal].modify[+,15,""]]]></eval>
-    </thing>
-  <thing id="maArmRsT6" name="Armor of Resistance (Thunder)" description="Property: Adds +15 Thunder Resistance" compset="MagicArmor">
-    <fieldval field="mgFlavor" value="Special wards in this armor provide extra resistance vs. thunder."/>
-    <fieldval field="mgBonus" value="6"/>
-    <fieldval field="mgLevel" value="27"/>
-    <fieldval field="mgEnhance" value="+6 AC"/>
-    <usesource source="AdvenVault" parent="Supplement" name="Adventurer&apos;s Vault"/>
-    <tag group="Rarity" tag="Common" name="Common" abbrev="Common"/>
-    <eval phase="Setup" priority="5000"><![CDATA[doneif (parent.tagis[Equipped.Equipped] = 0)
-perform hero.findchild[Resistance,"thingid.rsThunder"].field[rsTotal].modify[+,15,""]]]></eval>
     </thing>
   </document>

@@ -76,8 +76,6 @@
     <value id="SklPwrTrnd"/>  <!-- This skill counts as being trained for the purpose of skill powers -->
     <value id="ForceAtW"/>    <!-- This power is forced to an at-will type, instead of whatever type it used to be - this is used for some Essentials classes who add Utility powers through the at-will table -->
     <value id="ChosenLang"/>  <!-- This language was chosen by the hero's background -->
-	<value id="IsResManP1"/>   <!-- Represents the power currently selected as a possible replacement  -->
-    <value id="IsResManP2"/>   <!-- Represents the power currently selected to be replaced (if any)  -->
     </group>
 
   <!-- User group - general helper tags that can be assigned by users via the Editor
@@ -805,9 +803,9 @@
     id="Rarity"
     dynamic="yes"
     maxcount="1">
-    <value id="Common"   name="Common "/>
-    <value id="Uncommon" name="Uncommon "/>
-    <value id="Rare"     name="Rare "/>
+    <value id="Common"/>
+    <value id="Uncommon"/>
+    <value id="Rare"/>
     </group>
 
 
@@ -926,31 +924,5 @@
     visible="no"
     inherit="ChooseSrc1">
     </group>
-
-
-<!-- ============================================= -->
-<!-- CUSTOM GROUP AND TAGS FOR Fey Cantrip feat    -->
-<!-- ============================================= -->
-  <!-- FeyCantrip custom tags -->
-  <group id="FCFchoic" name="Fey Cantrip Choices">
-    <value id="HasChaMas"  name="Chose Chameleon's Mask cantrip"/>
-    <value id="HasDisUnd"  name="Chose Disrupt Undead cantrip"/>
-	<value id="HasGhoSou"  name="Chose Ghost Sound cantrip"/>
-	<value id="HasFCLigh"  name="Chose Light cantrip"/>
-	<value id="HasMagHan"  name="Chose Mage Hand cantrip"/>
-    <value id="HasFCPres"  name="Chose Prestidigitation cantrip"/>
-    <value id="HasFCSpoo"  name="Chose Spook cantrip"/>
-    <value id="HasFCSugg"  name="Chose Suggestion cantrip"/>
-    <value id="HasWatStr"  name="Chose Water Stride cantrip"/>
-    <value id="HasWhiWin"  name="Chose Whispering Wind cantrip"/>
-  </group>
-
-<!-- ============================================== -->
-<!-- CUSTOM GROUPS AND TAGS FOR SCHOLAR THEME       -->
-<!-- ============================================== -->
-  <!-- Scholar Theme custom tags -->
-  <group id="SchlrThm" name="Scholar Theme">
-    <value id="GetXtraLan"  name="Gets an extra language"/>
-  </group>
 
   </document>

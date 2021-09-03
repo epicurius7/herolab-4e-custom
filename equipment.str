@@ -1101,18 +1101,6 @@
         ]]></finalize>
       </field>
 
-    <!-- Maximum bonus to apply to this armor before dropping it from the list in lieu of better grade.
-			This is for the basic armor types that improve by enchantment level.-->
-    <field
-      id="arMaxBonus"
-      name="Maximum Enhancement Bonus"
-      type="static"
-      maxfinal="20">
-      <finalize><![CDATA[
-        @text = signed(@value)
-        ]]></finalize>
-      </field>
-
     <!-- All armor has a "type" id tag, so "Darkhide" can say that it's a type
           of hide armor, etc. -->
     <identity group="ArmorType"/>
@@ -1332,40 +1320,6 @@
         ]]></validate>
       </prereq>
 
-    <!-- Check to see if the magic item chosen is using the best base armor. -->
-    <prereq message="Magic item level too good for the chosen armor. There is a version that gives better bonuses of the same type.">
-
-      <validate><![CDATA[
-        ~if our container is the hero, we're not magic armor, so we're valid.
-        if (ishero <> 0) then
-          @valid = 1
-          done
-          endif
-
-        ~if our magic armor helper has a bonus of 0, we can't really validate
-        ~anything - only applies if it's tagged and marked as 0.
-        if (child[MagicHelp].field[mghBonus].value = 0) then
-          @valid = 1
-          done
-          endif
-		
-		if (altthing.field[arMaxBonus].value = 0) then
-		  @valid = 1
-		  done
-		  endif
-		
-        ~if the bonus is greater than the Max for the armor, it's invalid.
-        if (child[MagicHelp].field[mghBonus].value > altthing.field[arMaxBonus].value) then
-		  @valid = 0
-          done
-		  endif
-
-        ~If it doesn't match one of the above rules, it means it has not Max, so it's good.
-        @valid = 1
-        ]]></validate>
-      </prereq>
-
-	  
     <!-- Check for proficiency if we haven't been added to the hero yet - this
         greys the armor out in the thing list if we're not proficient -->
     <prereq message="Not proficient with armor.">
