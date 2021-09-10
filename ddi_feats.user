@@ -379,6 +379,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Dune trader theme, quick formation power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thDunTrd"/>
+    <pickreq thing="pwDunTrd1"/>
     </thing>
   <thing id="ftAdvanPer" name="Advantageous Perspective" description="{b}Benefit{/b}: When you make a melee weapon attack, you score a critical hit on a natural roll of 19 or 20 against Large or larger creatures granting combat advantage to you." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, fighter, Small size"/>
@@ -879,6 +881,7 @@ call ReqPower</validate>
     <fieldval field="reqText" value="Goblin race"/>
     <usesource source="IntoUnknow"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rGoblin"/>
     </thing>
   <thing id="ftAnkleCut" name="Ankle Cutter" description="{b}Benefit{/b}: When you hit a Large or larger enemy and would deal Sneak Attack damage against that target, you can forgo rolling Sneak Attack damage and instead cause the target to be slowed until the end of your next turn. Using this option counts as using Sneak Attack for the round." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Halfling, rogue, Sneak Attack class feature"/>
@@ -1157,6 +1160,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Any ranger at-will attack power that has a level"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <exprreq message="Does not have a Ranger power"><![CDATA[hero.tagis[Class.clsRanger] + hero.tagis[Class.clsRangeHy] <> 0]]></exprreq>
     </thing>
   <thing id="ftArcinThr" name="Arcing Throw" description="{b}Benefit{/b}: When you use a spear as a thrown weapon, the target doesn&apos;t gain cover from its allies." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, warden"/>
@@ -1258,11 +1262,14 @@ call ReqFeature]]></validate>
     </thing>
   <thing id="ftArkhoHig" name="Arkhosian High Style" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Cha 13 or dragonborn race, any martial class"/>
-    <fieldval field="reqCha" value="13"/>
     <usesource source="Dragon"/>
     <tag group="ftDescript" tag="ArenaFight" name="Arena Fighting"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqPwrSrc" tag="Martial"/>
+    <prereq message="Cha 13 or dragonborn race">
+      <validate><![CDATA[validif (#trait[attrCha] >= 13)
+validif (hero.tagis[Race.rDragonbor] <> 0)]]></validate>
+      </prereq>
     </thing>
   <thing id="ftArmorFin" name="Armor Finesse" description="{b}Benefit{/b}: You ignore the check penalty for wearing armor." compset="Feat" uniqueness="useronce">
     <usesource source="PlEsHeroFa"/>
@@ -1324,13 +1331,14 @@ call ReqFeature]]></validate>
     <eval phase="Setup" priority="5000">perform hero.assign[ArmorProf.apBanded]
       <before name="Armor type proficiencies"/>
       </eval>
+    <pickreq thing="apChain"/>
     <prereq message="Already proficient with this armor.">
       <validate><![CDATA[
         validif (@ispick <> 0)
         @valid = !hero.tagis[ArmorProf.apBanded]]]></validate>
       </prereq>
     </thing>
-  <thing id="ftArPrBrb" name="Armor Proficiency: Barbed Shield" description="{b}Benefit{/b}: You gain proficiency with barbed shields." compset="Feat" uniqueness="useronce">
+  <thing id="ftShielBar" name="Shield Proficiency: Barbed Shield" description="{b}Benefit{/b}: You gain proficiency with barbed shields." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Proficiency with heavy shields"/>
     <usesource source="MordensEmp"/>
     <tag group="Tier" tag="Heroic"/>
@@ -1338,6 +1346,7 @@ call ReqFeature]]></validate>
     <eval phase="Setup" priority="5000">perform hero.assign[ArmorProf.apShieldBr]
       <before name="Armor type proficiencies"/>
       </eval>
+    <pickreq thing="ftShielPro"/>
     <prereq message="Already proficient with this armor.">
       <validate><![CDATA[
         validif (@ispick <> 0)
@@ -1367,6 +1376,7 @@ call ReqFeature]]></validate>
     <eval phase="Setup" priority="5000">perform hero.assign[ArmorProf.apFullPlat]
       <before name="Armor type proficiencies"/>
       </eval>
+    <pickreq thing="apPlate"/>
     <prereq message="Already proficient with this armor.">
       <validate><![CDATA[
         validif (@ispick <> 0)
@@ -1423,6 +1433,7 @@ call ReqFeature]]></validate>
     <eval phase="Setup" priority="5000">perform hero.assign[ArmorProf.apRing]
       <before name="Armor type proficiencies"/>
       </eval>
+    <pickreq thing="apHide"/>
     <prereq message="Already proficient with this armor.">
       <validate><![CDATA[
         validif (@ispick <> 0)
@@ -1452,6 +1463,7 @@ call ReqFeature]]></validate>
     <eval phase="Setup" priority="5000">perform hero.assign[ArmorProf.apSpiked]
       <before name="Armor type proficiencies"/>
       </eval>
+    <pickreq thing="apPlate"/>
     <prereq message="Already proficient with this armor.">
       <validate><![CDATA[
         validif (@ispick <> 0)
@@ -1466,6 +1478,7 @@ call ReqFeature]]></validate>
     <eval phase="Setup" priority="5000">perform hero.assign[ArmorProf.apSplint]
       <before name="Armor type proficiencies"/>
       </eval>
+    <pickreq thing="apSplint"/>
     <prereq message="Already proficient with this armor.">
       <validate><![CDATA[
         validif (@ispick <> 0)
@@ -1969,6 +1982,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Power strike power"/>
     <usesource source="MordensEmp"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="pFtrPowStr"/>
     </thing>
   <thing id="ftBaalzDes" name="Baalzebul&apos;s Desperate Gambit" description="{b}Benefit{/b}: When you first become bloodied in an encounter, you can roll a saving throw, with a bonus equal to the number of enemies adjacent to you. If you succeed, spend a healing surge. If you fail, you lose a healing surge." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, tiefling"/>
@@ -2292,6 +2306,27 @@ call ReqPower</validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsBard"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+      var bonus as number
+      var i as number
+      if (#level[] <= 10) then
+        bonus = 1
+      elseif (#level[] <= 20) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+      var expr as string
+      expr = "WepGroup.wgAxe|WepGroup.wgLightBl|WepGroup.wgHeavyBl|WepGroup.wgBow|WepGroup.wgCrossbow|WepGroup.wgHammer|WepGroup.WgMace|WepGroup.wgPick|WepGroup.wgPolearm|WepGroup.wgSling|WepGroup.wgSpear|WepGroup.wgStaff|WepGroup.wgUnarmed"
+        expr = "(" & expr & ") | Helper.Proficient"
+      foreach pick in hero from WeaponBase where expr
+        perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach
+      foreach pick in hero where "EquipIndex.? & ImplemType.itWand"
+        perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach]]>
+      <before name="Weapon proficiencies final"/>
+      </eval>
     </thing>
   <thing id="ftBattlTra" name="Battle Trample" description="{b}Benefit{/b}: You gain the battle trample power." compset="Feat" uniqueness="useronce">
     <usesource source="Dragon"/>
@@ -2377,6 +2412,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Beast Mastery class feature"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="fRgrBeaMas"/>
     </thing>
   <thing id="ftBeastTra" name="Beast Training" description="{b}Benefit{/b}: Your beast companion gains training in a skill. If you change beast companions, you can also change the skill that this feat grants to your beast companion.{br}{b}Special{/b}: You can take this feat more than once. Each time you select this feat, your beast companion gains training in a skill." compset="Feat">
     <fieldval field="reqText" value="Ranger, Beast Mastery class feature"/>
@@ -2463,6 +2499,7 @@ call ReqFeature]]></validate>
     <usesource source="Psionic"/>
     <tag group="ftDescript" tag="Augment"/>
     <tag group="Tier" tag="Heroic"/>
+    <exprreq message="Must have the Psionic Augmentation Class Feature"><![CDATA[hero.tagis[HasFeature.fArdPsiAug] + hero.tagis[HasFeature.fBmnPsiAug] + hero.tagis[HasFeature.fPsiPsiAug] + hero.tagis[HasFeature.fBmnHPsAug] + hero.tagis[HasFeature.fPsiHPsAug] + hero.tagis[HasFeature.fArdHPsAug] <> 0]]></exprreq>
     </thing>
   <thing id="ftBelsImp" name="Bel&apos;s Impending Victory" description="{b}Benefit{/b}: When you hit a bloodied enemy, your allies gain a +1 bonus to attack rolls against the target until the start of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, tiefling"/>
@@ -2612,6 +2649,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Ritual Caster feat, mastery of Magic Circle and one other binding ritual"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rtMagicCir"/>
     <exprreq message="Feat &apos;Ritual Caster&apos; required"><![CDATA[hero.tagis[Feat.ftRituaCas] <> 0]]></exprreq>
     </thing>
   <thing id="ftBindiSty" name="Binding Style" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess." compset="Feat" uniqueness="useronce">
@@ -2886,7 +2924,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rDragonbor"/>
     <prereq message="&apos;Dragonfear&apos; feature required">
-      <validate>perform hero.childfound[pRacDragon].setfocus
+      <validate>perform hero.childfound[pRacDraFea].setfocus
 call ReqPower</validate>
       </prereq>
     </thing>
@@ -2897,10 +2935,9 @@ call ReqPower</validate>
     <tag group="ReqLevel" tag="11"/>
     <tag group="ReqRace" tag="rTiefling"/>
     <tag group="Hide" tag="Special"/>
-    <eval phase="Traits" priority="1000"><![CDATA[
-      var bonus as number
-      bonus = #halflevel[]
-      #traitmodify[rsCold,rsTotal,bonus,""]]]></eval>
+    <eval phase="Traits" priority="1000"><![CDATA[var bonus as number
+bonus = 5 + #halflevel[]
+#traitmodify[rsCold,rsTotal,bonus,""]]]></eval>
     </thing>
   <thing id="ftBloodPac" name="Blood Pact of Cania" description="{b}Benefit{/b}: You gain a +2 bonus to damage rolls with any warlock power that uses Constitution for attack rolls. The bonus increases to +3 at 11th level and +4 at 21st level." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Tiefling, Cha 13, warlock, Infernal Pact class feature"/>
@@ -4528,6 +4565,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Shardmind or wilden"/>
     <usesource source="PHB3"/>
     <tag group="Tier" tag="Heroic"/>
+    <exprreq message="Must be shardmind or wilden"><![CDATA[hero.tagis[Race.rShardmind] + hero.tagis[Race.rWilden] <> 0]]></exprreq>
     </thing>
   <thing id="ftCleanCha" name="Cleansing Challenge" description="{b}Benefit{/b}: When you use divine challenge to mark an undead creature, you also deal 2 radiant damage to that creature. At 11th level you deal 4 radiant damage, and at 21st level you deal 6 radiant damage." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Cha 15, paladin, divine challenge class feature"/>
@@ -4817,6 +4855,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Veiled Alliance theme, excise from sight power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thVelAll"/>
+    <pickreq thing="pwVelAll1"/>
     </thing>
   <thing id="ftConceSha" name="Concealing Shades" description="{b}Benefit{/b}: When you use dark reaping, you and each ally within 5 squares of you gains concealment until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Revenant, dark reaping racial power, assassin"/>
@@ -5164,6 +5204,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Ritual Caster feat, mastery of Enchant Magic Item and one other creation ritual"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rtEnchaMag"/>
     <exprreq message="Feat &apos;Ritual Caster&apos; required"><![CDATA[hero.tagis[Feat.ftRituaCas] <> 0]]></exprreq>
     </thing>
   <thing id="ftCreatSec" name="Creation Secret" description="{b}Benefit{/b}: You gain the Channel Divinity power creation secret." compset="Feat" uniqueness="useronce">
@@ -5328,6 +5369,7 @@ call ReqFeature]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       #traitmodify[skAthletic,trtFeat,2,""]
       #traitmodify[skAcrobati,trtFeat,2,""]]]></eval>
+    <exprreq message="Must be shifter"><![CDATA[hero.tagis[Race.rShifteLon] + hero.tagis[Race.rShifteRaz] <> 0]]></exprreq>
     </thing>
   <thing id="ftCruelCut" name="Cruel Cut Style" description="{b}Benefit{/b}: You gain a benefit with any of the following powers you possess.{br}Cleave (fighter): If no other enemies are adjacent to the target when you hit the target with this exploit, the target takes ongoing damage equal to your Wisdom modifier (save ends).{br}Furious Smash (warlord): If your ally hits with the attack this exploit provides, the target takes ongoing damage equal to your Wisdom modifier (save ends).{br}Predator&apos;s Strike (ranger): If your beast companion hits with this exploit against a creature granting combat advantage to it, instead of adding your Wisdom modifier to the damage roll, you can have the target take ongoing damage equal to your Wisdom modifier (save ends).{br}Riposte Strike (rogue): If you hit with the riposte this exploit grants, the target takes ongoing damage equal to your Wisdom modifier (save ends)." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Wis 13, any martial class"/>
@@ -5770,6 +5812,8 @@ call ReqPower</validate>
     <fieldval field="reqText" value="Drow ranger or drow rogue"/>
     <usesource source="Martial"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rDrow"/>
+    <exprreq message="Must be ranger or rogue"><![CDATA[hero.tagis[Class.clsRanger] + hero.tagis[Class.clsRogue] <> 0]]></exprreq>
     </thing>
   <thing id="ftDarkfVit" name="Darkfire Vitality" description="{b}Benefit{/b}: When any ally hits an enemy that is under the effect of your darkfire racial power, that ally gains temporary hit points equal to your Charisma modifier." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Drow, cleric"/>
@@ -6135,6 +6179,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Ritual Caster feat, mastery of Change Self and one other deception ritual"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rtChangSel"/>
     <exprreq message="Feat &apos;Ritual Caster&apos; required"><![CDATA[hero.tagis[Feat.ftRituaCas] <> 0]]></exprreq>
     </thing>
   <thing id="ftDecepMin" name="Deceptive Mind" description="{b}Benefit{/b}: You gain a +2 bonus to all defenses while your battle resilience is in effect." compset="Feat" uniqueness="useronce">
@@ -6174,6 +6219,9 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqSkill" tag="skDungeone"/>
     <bootstrap thing="lanDeepSpe"></bootstrap>
+    <eval phase="Traits" priority="1000"><![CDATA[#traitmodify[skDungeone,trtFeat,5,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="ftDeepsBle" name="Deepstone Blessing" description="{b}Benefit{/b}: When you use healing word, the target also gains temporary hit points equal to your Constitution modifier." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Svirfneblin, cleric, healing word power"/>
@@ -6185,14 +6233,21 @@ call ReqPower</validate>
   <thing id="ftDefenWil" name="Defender of the Wild" description="{b}Benefit{/b}: You gain training in one skill from the warden&apos;s class skills list.{br}Once per encounter as a free action, you can mark each enemy adjacent to you until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Str 13"/>
     <fieldval field="reqStr" value="13"/>
+    <fieldval field="usrCandid1" value="component.Skill &amp; (thingid.skNature | thingid.skAthletic | thingid.skDungeone | thingid.skEnduranc | thingid.skHeal | thingid.skIntimida | thingid.skPercepti)"/>
     <usesource source="PHB2"/>
     <tag group="Multiclass" tag="clsWarden"/>
     <tag group="Tier" tag="Heroic"/>
+    <tag group="Multiclass" tag="clsWarden" name="Warden" abbrev="Warden"/>
+    <eval phase="Traits" priority="1000">perform field[usrChosen1].chosen.assign[Helper.TrainedAut]
+      <before name="Calc sklTrained"/>
+      </eval>
     </thing>
   <thing id="ftDefenFri" name="Defender&apos;s Friend" description="{b}Benefit{/b}: When you dismiss the spirit conjured by your spirit of Athas, until the end of your next turn each enemy within 2 squares of the dismissed spirit is marked by one ally you can see and who is within 5 squares of the spirit." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Elemental priest theme, spirit of Athas power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thElePries"/>
+    <pickreq thing="pwElePst1"/>
     </thing>
   <thing id="ftDefenDab" name="Defending Dabbler" description="{b}Benefit{/b}: When you hit with the power you gained from your Dilettante racial trait, you can mark the target until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Half-elf"/>
@@ -6511,6 +6566,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Goblin race, goblin tactics racial power"/>
     <usesource source="IntoUnknow"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rGoblin"/>
     </thing>
   <thing id="ftDespeRen" name="Desperate Renewal" description="{b}Benefit{/b}: If you use your second wind while you are bloodied, you can spend the healing surge to regain 2 power points, instead of regaining hit points." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, psion"/>
@@ -6939,6 +6995,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Gladiator theme, disrupting advance power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thGladiato"/>
+    <pickreq thing="pwGladAdv"/>
     </thing>
   <thing id="ftDissoBre" name="Dissolving Breath" description="{b}Benefit{/b}: Each creature hit by your dragon breath takes a -3 penalty to all defenses until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, dragonborn, dragon breath racial power that deals acid damage, Corrosive Breath feat"/>
@@ -7065,6 +7123,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Ritual Caster feat, mastery of Read Omens and one other divination ritual"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rtReadOme"/>
     <exprreq message="Feat &apos;Ritual Caster&apos; required"><![CDATA[hero.tagis[Feat.ftRituaCas] <> 0]]></exprreq>
     </thing>
   <thing id="ftDivinApp" name="Divine Approval" description="{b}Benefit{/b}: When you use a Channel Divinity power, you can also make a saving throw as a free action." compset="Feat" uniqueness="useronce">
@@ -7418,7 +7477,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rDragonbor"/>
     <prereq message="&apos;Dragonfear&apos; feature required">
-      <validate>perform hero.childfound[pRacDragon].setfocus
+      <validate>perform hero.childfound[pRacDraFea].setfocus
 call ReqPower</validate>
       </prereq>
     </thing>
@@ -7527,6 +7586,8 @@ call ReqPower</validate>
     <fieldval field="reqText" value="Wasteland nomad theme, wasteland fury power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thWstNmd"/>
+    <pickreq thing="pwWstNmd1"/>
     </thing>
   <thing id="ftDraggFla" name="Dragging Flail" description="{b}Benefit{/b}: Whenever you use a flail to knock an enemy prone, you can also slide that enemy 1 square." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Dex 15, fighter"/>
@@ -7623,7 +7684,7 @@ call ReqFeature]]></validate>
     <tag group="ReqLevel" tag="11"/>
     <tag group="ReqRace" tag="rDragonbor"/>
     <prereq message="&apos;Dragonfear&apos; feature required">
-      <validate>perform hero.childfound[pRacDragon].setfocus
+      <validate>perform hero.childfound[pRacDraFea].setfocus
 call ReqPower</validate>
       </prereq>
     </thing>
@@ -7634,7 +7695,7 @@ call ReqPower</validate>
     <tag group="ReqLevel" tag="11"/>
     <tag group="ReqRace" tag="rDragonbor"/>
     <prereq message="&apos;Dragonfear&apos; feature required">
-      <validate>perform hero.childfound[pRacDragon].setfocus
+      <validate>perform hero.childfound[pRacDraFea].setfocus
 call ReqPower</validate>
       </prereq>
     </thing>
@@ -7967,6 +8028,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Wasteland nomad theme, wasteland fury power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thWstNmd"/>
+    <pickreq thing="pwWstNmd1"/>
     </thing>
   <thing id="ftDungeEnc" name="Dungeon Enchanter" description="{b}Benefit{/b}: You can use the Enchant Magic Item and Transfer Enchantment rituals with a casting time of 1 minute." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, artificer, Ritual Caster"/>
@@ -8449,6 +8512,24 @@ call ReqFeature]]></validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsArtific"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+      var bonus as number
+      var i as number
+      if (#level[] <= 10) then
+        bonus = 1
+      elseif (#level[] <= 20) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+      foreach pick in hero from WeaponBase where "WepGroup.wgCrossbow"
+        perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach
+      foreach pick in hero where "EquipIndex.? & ImplemType.itWand"
+        perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach]]>
+      <before name="Weapon proficiencies final"/>
+      </eval>
     <exprreq message="Feat &apos;Crossbow Caster&apos; required"><![CDATA[hero.tagis[Feat.ftCrossCas] <> 0]]></exprreq>
     </thing>
   <thing id="ftEldriMom" name="Eldritch Momentum" description="{b}Benefit{/b}: If you move at least 3 squares away from where you started your turn, you gain combat advantage until the start of your next turn against creatures subject to your Warlock&apos;s Curse." compset="Feat" uniqueness="useronce">
@@ -8631,6 +8712,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Elemental priest theme, spirit of Athas power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thElePries"/>
+    <pickreq thing="pwElePst1"/>
     </thing>
   <thing id="ftElemeReb" name="Elemental Rebuke" description="{b}Benefit{/b}: When you use your preserver&apos;s rebuke power, you also grant a bonus to the ally attacked by the triggering enemy based on your current elemental manifestation.{br}Earthsoul: The ally gains a +1 power bonus to Fortitude and to saving throws until the start of your next turn.{br}Firesoul: The ally gains a +1 power bonus to Reflex and resist 5 fire until the start of your next turn.{br}Stormsoul: The ally gains a +1 power bonus to Fortitude and resist 5 lightning until the start of your next turn.{br}Watersoul: The ally gains a +5 power bonus to saving throws against ongoing damage until the start of your next turn.{br}Windsoul: The ally gains a +1 power bonus to speed and resist 5 cold until the start of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Genasi, invoker, Covenant of Preservation class feature"/>
@@ -9171,7 +9254,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Epic"/>
     <tag group="ReqLevel" tag="21"/>
     <eval phase="Traits" priority="1000"><![CDATA[
-      #traitmodify[defFort,trtFeat,4,""]]]>
+      #traitmodify[defFort,trtBonus,4,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9189,7 +9272,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Epic"/>
     <tag group="ReqLevel" tag="21"/>
     <eval phase="Traits" priority="1000"><![CDATA[
-      #traitmodify[defRef,trtFeat,4,""]]]>
+      #traitmodify[defRef,trtBonus,4,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9211,7 +9294,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Epic"/>
     <tag group="ReqLevel" tag="21"/>
     <eval phase="Traits" priority="1000"><![CDATA[
-      #traitmodify[defWill,trtFeat,4,""]]]>
+      #traitmodify[defWill,trtBonus,4,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -9219,6 +9302,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="swordmage with aegis of assault"/>
     <usesource source="FRPG"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="clsSwordma"/>
+    <pickreq thing="pSmgAegAss"/>
     </thing>
   <thing id="ftEscapArt" name="Escape Artist" description="{b}Benefit{/b}: You can attempt to escape a grab as a minor action, instead of as a move action.{br}You also gain a +2 feat bonus to Acrobatics checks." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Trained in Acrobatics"/>
@@ -9292,6 +9377,8 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Veiled Alliance theme, excise from sight power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thVelAll"/>
+    <pickreq thing="pwVelAll1"/>
     </thing>
   <thing id="ftExpanFra" name="Expanded Fragments" description="{b}Benefit{/b}: While you are not bloodied, the range of your telepathy increases to 15." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, shardmind, Telepathy racial trait"/>
@@ -9339,7 +9426,7 @@ call ReqPower</validate>
       #thingdescappend[pWrlBraAss, "{b}Addition by Expert Chainfighter{/b}: If your target hits you with the attack granted by this power and you are wielding a spiked chain, the target takes necrotic damage equal to your Strength modifier."]
       #thingdescappend[pRgrTwiStr, "{b}Addition by Expert Chainfighter{/b}: If you are wielding a spiked chain, you can treat it as though you are wielding two melee weapons (the spiked chain is considered both your main hand and your off-hand weapon). You can shift 1 square before, between, or after the two attacks."]]]></eval>
     </thing>
-  <thing id="ftExprtChr" name="Expert Charioteer" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess." compset="Feat" uniqueness="useronce">
+  <thing id="ftExprtChr" name="Expert Charioteer" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess.\n\n{i}Careful Attack (ranger, PH 105{/i}): If you are in a moving vehicle and you hit with this exploit, you gain cover against the next attack that targets you until the end of your next turn.\n{i}Commander’s Strike (warlord, PH 145){i/}: If you are in a moving vehicle, the ally can shift 1 square after the granted attack as a free action.\n{i}Reaping Strike (fighter, PH 77){/i}: If you are in a moving vehicle and you hit with this exploit, you gain a bonus to the damage roll equal to your Dexterity modifier." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Dex 13, any martial class"/>
     <fieldval field="reqDex" value="13"/>
     <usesource source="Dragon"/>
@@ -10010,8 +10097,109 @@ call ReqFeature]]></validate>
     </thing>
   <thing id="ftFeyCan" name="Fey Cantrip" description="{b}Benefit{/b}: Choose one wizard cantrip, such as mage hand or prestidigitation. You gain that power." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Fey origin or Fey Bond feat"/>
-    <usesource source="HeroFeywil"/>
-    <tag group="Tier" tag="Heroic"/>
+    <arrayval field="usrArray" index="0" value="- None -"/>
+    <arrayval field="usrArray" index="1" value="Chameleon&apos;s Mask"/>
+    <arrayval field="usrArray" index="2" value="Disrupt Undead"/>
+    <arrayval field="usrArray" index="3" value="Ghost Sound"/>
+    <arrayval field="usrArray" index="4" value="Light"/>
+    <arrayval field="usrArray" index="5" value="Mage Hand"/>
+    <arrayval field="usrArray" index="6" value="Prestidigitation"/>
+    <arrayval field="usrArray" index="7" value="Spook"/>
+    <arrayval field="usrArray" index="8" value="Suggestion"/>
+    <arrayval field="usrArray" index="9" value="Water Stride"/>
+    <arrayval field="usrArray" index="10" value="Whispering Wind"/>
+    <bootstrap thing="pWizLight">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasFCLigh <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizMagHan">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasMagHan <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizPresti">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasFCPres <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizWatStr">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasWatStr <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizChaMas">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasChaMas <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizSugges">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasFCSugg <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizDisUnd">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasDisUnd <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizSpook">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasFCSpoo <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizWhiWin">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasWhiWin <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <bootstrap thing="pWizGhoSou">
+      <containerreq phase="Setup" priority="505"><![CDATA[FCFchoic.HasGhoSou <> 0]]></containerreq>
+      <autotag group="User" tag="ClassOK"/>
+      </bootstrap>
+    <eval phase="Setup" priority="500"><![CDATA[~ To make this work we had to bootstrap all 10 of the Wizard cantrips 
+~ (skipping their class requirement). So now we need to disable all 
+~ except our chosen cantrip. The tags used here are defined in the
+~ file FeyCantripFeat.1st
+doneif (activated = 0)
+
+var CanCh as string
+CanCh = ""
+
+if (compare(field[usrSelect].text, "Chameleon's Mask") = 0) then
+  CanCh = "pWizChaMas"
+  perform hero.assign[FCFchoic.HasChaMas]
+elseif (compare(field[usrSelect].text, "Disrupt Undead") = 0) then
+  CanCh = "pWizDisUnd"
+  perform hero.assign[FCFchoic.HasDisUnd]
+elseif (compare(field[usrSelect].text, "Ghost Sound") = 0) then
+  CanCh = "pWizGhoSou"
+  perform hero.assign[FCFchoic.HasGhoSou]
+elseif (compare(field[usrSelect].text, "Light") = 0) then
+  CanCh = "pWizLight"
+  perform hero.assign[FCFchoic.HasFCLigh]
+elseif (compare(field[usrSelect].text, "Mage Hand") = 0) then
+  CanCh = "pWizMagHan"
+  perform hero.assign[FCFchoic.HasMagHan]
+elseif (compare(field[usrSelect].text, "Prestidigitation") = 0) then
+  CanCh = "pWizPresti"
+  perform hero.assign[FCFchoic.HasFCPres]
+elseif (compare(field[usrSelect].text, "Spook") = 0) then
+  CanCh = "pWizSpook"
+  perform hero.assign[FCFchoic.HasFCSpoo]
+elseif (compare(field[usrSelect].text, "Suggestion") = 0) then
+  CanCh = "pWizSugges"
+  perform hero.assign[FCFchoic.HasFCSugg]
+elseif (compare(field[usrSelect].text, "Water Stride") = 0) then
+  CanCh = "pWizWatStr"
+  perform hero.assign[FCFchoic.HasWatStr]
+elseif (compare(field[usrSelect].text, "Whispering Wind") = 0) then
+  CanCh = "pWizWhiWin"
+  perform hero.assign[FCFchoic.HasWhiWin]
+endif
+
+foreach pick in hero from Power where "PowerClass.clsWizard & PowerType.Utility"
+  perform setfocus
+  if (compare(eachpick.idstring, CanCh) <> 0) then
+    perform eachpick.assign[Hide.Special]
+    perform eachpick.assign[Helper.Disable]
+    perform delete[Helper.Activated]
+  else
+    perform eachpick.assign[Helper.ChosenOpt]
+  endif
+nexteach]]></eval>
+    <exprreq message="Requires Fey origin or Fey Bond feat"><![CDATA[hero.tagis[HasFeature.fRDrFeyOri] + hero.tagis[HasFeature.fRElFeyOri] + hero.tagis[HasFeature.fRGnFeyOri] + hero.tagis[HasFeature.fRHaFeyOri] + hero.tagis[HasFeature.fRHeFeyOri] + hero.tagis[HasFeature.fRElFeyOri] + hero.tagis[HasFeature.fRPiFeyOri] + hero.tagis[HasFeature.fRSaFeyOri] + hero.tagis[HasFeature.fRElFeyOri] + hero.tagis[HasFeature.fRSvFeyOri] + hero.tagis[HasFeature.fRWiFeyOri] + hero.tagis[Feat.ftFeyBon] <> 0]]></exprreq>
     </thing>
   <thing id="ftFeyCha" name="Fey Charge" description="{b}Benefit{/b}: When you charge, you can expend your fey step racial power as a free action to replace up to 5 squares of your charge movement with teleportation.{br}If the charge attack hits, you do not expend fey step." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, eladrin, fighter"/>
@@ -10138,6 +10326,7 @@ call ReqPower</validate>
     <usesource source="HeroFeywil"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqLevel" tag="21"/>
+    <exprreq message="Must have fey origin or Fey Bond feat"><![CDATA[hero.tagis[HasFeature.fRDrFeyOri] +  hero.tagis[HasFeature.fRElFeyOri] + hero.tagis[HasFeature.fRGnFeyOri] + hero.tagis[HasFeature.fRHaFeyOri] + hero.tagis[HasFeature.fRHeFeyOri] + hero.tagis[HasFeature.fRElFeyOri] + hero.tagis[HasFeature.fRPiFeyOri] + hero.tagis[HasFeature.fRSaFeyOri] + hero.tagis[HasFeature.fRElFeyOri] + hero.tagis[HasFeature.fRSvFeyOri] + hero.tagis[HasFeature.fRWiFeyOri] + hero.tagis[Feat.ftFeyBon] <> 0]]></exprreq>
     </thing>
   <thing id="ftFeySte" name="Fey Step Trailblazer" description="{b}Benefit{/b}: When you use your fey step power, you can also teleport one adjacent willing creature that is your size or smaller with you at the same time. When you arrive at your destination, place the creature that traveled with you in any square adjacent to you." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, Eladrin"/>
@@ -10201,6 +10390,7 @@ call ReqPower</validate>
         nexteach]]>
       <before name="Power attack final"/>
       </eval>
+    <exprreq message="Must be eladrin or gnome"><![CDATA[hero.tagis[Race.rEladrin] + hero.tagis[Race.rGnome] <> 0]]></exprreq>
     </thing>
   <thing id="ftFeyboCom" name="Feyborn Companion" description="{b}Benefit{/b}: Your beast companion gains the fey origin, instead of the natural origin, and a +5 bonus to saving throws against charm effects.{br}When you use your fey step racial power, your beast companion can teleport the same distance that you teleport." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Eladrin, ranger, Beast Mastery class feature"/>
@@ -10262,6 +10452,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rEladrin"/>
     <tag group="ReqClass" tag="clsBattlem"/>
+    <pickreq thing="pBmnBluSte"/>
     </thing>
   <thing id="ftFeywiFla" name="Feywild Flanker" description="{b}Benefit{/b}: Whenever you teleport, one enemy that you teleport adjacent to grants combat advantage until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, eladrin, warlord"/>
@@ -10355,7 +10546,7 @@ call ReqPower</validate>
   <thing id="ftFieryBlo" name="Fiery Blood" description="{b}Benefit{/b}: You gain a +3 feat bonus to fire damage rolls. This bonus increases to +4 at 21st level.{br}In addition, whenever you take fire damage from an attack, each enemy adjacent to you takes 5 fire damage. This damage increases to 10 at 21st level." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level"/>
     <usesource source="HeroElemCh"/>
-    <tag group="Tier" tag="Heroic"/>
+    <tag group="Tier" tag="Paragon"/>
     <tag group="ReqLevel" tag="11"/>
     <eval phase="Traits" priority="10000"><![CDATA[     var bonus as number
       if (hero.tagvalue[Level.?] <= 20) then
@@ -10442,6 +10633,7 @@ call ReqPower</validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rGenasi"/>
+    <exprreq message="Must have firesoul manifestation"><![CDATA[hero.tagis[HasFeature.fRGeFiresl] <> 0]]></exprreq>
     </thing>
   <thing id="ftFirepTra" name="Firepulse Transformation" description="{b}Benefit{/b}: Firepulse targets each enemy adjacent to you instead of only the triggering enemy." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Genasi, firepulse racial power"/>
@@ -10530,11 +10722,14 @@ call ReqPower</validate>
     <fieldval field="reqText" value="Power strike power"/>
     <usesource source="MordensEmp"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="pFtrPowStr"/>
     </thing>
   <thing id="ftFlailCla" name="Flailing Claws" description="{b}Benefit{/b}: Your thri-kreen claws gains the reliable keyword." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Thri-kreen race, thri-kreen claws power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqRace" tag="rThriKreen"/>
+    <pickreq thing="pRacThrCla"/>
     </thing>
   <thing id="ftFlameShi" name="Flamespeed Shifting" description="{b}Benefit{/b}: While under the effect of razorclaw shifting, you can shift 2 squares as a move action. If you have the Student of the Plague feat, whenever you shift while under the effect razorclaw shifting, your attacks deal 2 extra fire damage until the end of your turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Razorclaw shifter, razorclaw shifting racial power, you have a spellscar"/>
@@ -10575,6 +10770,7 @@ call ReqFeature]]></validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsRogue"/>
+    <exprreq message="Must have proficiency with rapier"><![CDATA[hero.tagis[WeaponProf.wpRapier] <> 0]]></exprreq>
     </thing>
   <thing id="ftFleetFoo" name="Fleet-Footed" description="{b}Benefit{/b}: You gain a +1 feat bonus to your speed." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level"/>
@@ -10676,6 +10872,8 @@ call ReqPower</validate>
     <fieldval field="reqText" value="Noble adept theme, adept&apos;s insight power"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thNblAdept"/>
+    <pickreq thing="pwAdtInsig"/>
     </thing>
   <thing id="ftFluidMot" name="Fluid Motion" description="{b}Benefit{/b}: You gain a +1 feat bonus to speed. This bonus increases to +2 at 11th level." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Monk"/>
@@ -10699,13 +10897,16 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsMonk"/>
     </thing>
-  <thing id="ftFluttLea" name="Fluttering Leaf Style" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess." compset="Feat" uniqueness="useronce">
+  <thing id="ftFluttLea" name="Fluttering Leaf Style" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess.\n\n{i}Deft Strike (Rogue):{/i} You can move 3 squares before the attack instead of 2.\n{i}Footwork lure (Fighter):{/i} You can shift 2 squares instead of 1, but you must end the shift adjacent to the target.\n{i}Hit and Run (Ranger):{i} If you move after the attack, you can move up to your speed + 2.\n{i}Nimble Strike (Ranger):{/i} If you are an elf and you miss with this attack and use elven accuracy to reroll, you can add a +2 bonus to the reroll.\n{i}Viper&apos;s strike (Warlord):{/i} If the target shifts before the end of your next turn, you can also shift 1 square to a space adjacent to the target." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Wis 13 or elf race, any martial class"/>
-    <fieldval field="reqWis" value="13"/>
     <usesource source="Dragon"/>
     <tag group="ftDescript" tag="ArenaFight" name="Arena Fighting"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqPwrSrc" tag="Martial"/>
+    <prereq message="Prerequisite Wis 13 or elf race">
+      <validate><![CDATA[validif (#trait[attrWis] >= 13)
+validif (hero.tagis[Race.rElf] <> 0)]]></validate>
+      </prereq>
     </thing>
   <thing id="ftFoamgHer" name="Foamgather Heritage" description="{b}Benefit{/b}: You gain the deft diver at-will utility power. Additionally, you gain a +2 feat bonus to Endurance checks and can hold your breath for twice as long as normal." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Human"/>
@@ -10786,6 +10987,7 @@ call ReqPower</validate>
         nexteach]]>
       <before name="opcExpr must be final"/>
       </eval>
+    <exprreq message="Must have  a Multiclass Psion feat"><![CDATA[hero.tagis[Multiclass.clsPsion] > 0]]></exprreq>
     </thing>
   <thing id="ftFocusWiz" name="Focused Wizardry" description="{b}Benefit{/b}: When you use an arcane burst or blast attack power and only one creature is within the area of effect, you gain a +2 bonus to the attack roll." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, wizard"/>
@@ -11304,8 +11506,9 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Gnome, any psionic class, fade away power"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
-    <tag group="ReqRace" tag="rGnome"/>
     <tag group="ReqPwrSrc" tag="Psionic"/>
+    <pickreq thing="rGnome"/>
+    <pickreq thing="pRacFadAwa"/>
     </thing>
   <thing id="ftGhostEye" name="Ghost Eyes" description="{b}Benefit{/b}: You gain a +2 bonus to attack rolls against invisible creatures. In addition, you gain a +5 feat bonus to Perception checks actively made to find creatures that are hidden from you." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Wisdom 13"/>
@@ -11351,6 +11554,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rWilden"/>
     <tag group="ReqClass" tag="clsAssassi"/>
+    <pickreq thing="pRacVoyAnc"/>
     </thing>
   <thing id="ftGhostWin" name="Ghostly Wind" description="{b}Benefit{/b}: If you spend your second wind while your shadow jaunt power remains unexpended, you gain insubstantial until the start of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Shadar-kai, shadow jaunt racial power"/>
@@ -11396,6 +11600,7 @@ call ReqPower</validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rWilden"/>
+    <pickreq thing="fRWiNatAsp"/>
     </thing>
   <thing id="ftGifteDea" name="Gifted Death Dealer" description="{b}Benefit{/b}: When you hit a creature with your eldritch blast, you deal a feat bonus to damage equal to your Intelligence modifier." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Eladrin, warlock, eldritch blast power"/>
@@ -11403,12 +11608,14 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rEladrin"/>
     <tag group="ReqClass" tag="clsWarlock"/>
+    <pickreq thing="fWlkEldBla"/>
     </thing>
   <thing id="ftGithzBea" name="Githzerai Beast Mastery" description="{b}Benefit{/b}: Your beast companion gains a +2 bonus to saving throws against the dazed, dominated, and stunned conditions. When you use your second wind, your beast companion can shift 3 squares as a free action." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Githzerai, Beast Mastery class feature"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rGithzerai"/>
+    <pickreq thing="fRgrBeaMas"/>
     </thing>
   <thing id="ftGithzBla" name="Githzerai Blade Master" description="{b}Benefit{/b}: You gain proficiency with all military heavy blades, as well as the bastard sword and the fullblade. Additionally, you gain a +2 feat bonus to damage rolls with these weapons. This bonus increases to +3 at 11th level and +4 at 21st level." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Githzerai"/>
@@ -11475,6 +11682,7 @@ call ReqPower</validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsWarlock"/>
+    <pickreq thing="pWlkHelReb"/>
     <prereq message="&apos;Infernal Pact&apos; feature required">
       <validate><![CDATA[var featureid as string
 featureid = "fWlkInfPac"
@@ -11600,11 +11808,14 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rGenasi"/>
     <tag group="ReqClass" tag="clsWarden"/>
+    <pickreq thing="pRacSwiftc"/>
     </thing>
   <thing id="ftGobliFei" name="Goblin Feint" description="{b}Benefit{/b}: When you use goblin tactics, you gain combat advantage against the enemy that missed you until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Goblin race, goblin tactics racial power"/>
     <usesource source="IntoUnknow"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="rGoblin"/>
+    <pickreq thing="pRacGobTac"/>
     </thing>
   <thing id="ftGodswAla" name="Godsworn Alacrity" description="{b}Benefit{/b}: You gain a +2 feat bonus to Religion checks. In addition, whenever you score a critical hit, you gain a +2 feat bonus to speed until the end of your next turn as a godsworn boon. You can benefit from only one godsworn boon as a result of any given critical hit." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Avenger, must worship Avandra"/>
@@ -11797,6 +12008,8 @@ call ReqFeature]]></validate>
     <usesource source="Martial2"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsRanger"/>
+    <pickreq thing="clsRanger"/>
+    <pickreq thing="fRgrBeaMas"/>
     </thing>
   <thing id="ftGorinSho" name="Goring Shove" description="{b}Benefit{/b}: Whenever you hit a target with your goring charge, you can also push that target 1 square." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Str 15, minotaur, goring charge racial power"/>
@@ -11850,6 +12063,7 @@ call ReqPower</validate>
     <usesource source="Arcane"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsSwordma"/>
+    <pickreq thing="fSmgAegEns"/>
     </thing>
   <thing id="ftGraspMag" name="Grasping Magpies" description="{b}Benefit{/b}: You gain a +2 feat bonus to Thievery checks. Whenever an ally with this feat successfully aids you on your Thievery check, you gain a +4 bonus instead of the normal +2 bonus." compset="Feat" uniqueness="useronce">
     <usesource source="Dragon"/>
@@ -11866,6 +12080,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsAssassi"/>
     <tag group="ReqRace" tag="rRevenant"/>
+    <pickreq thing="pAsnAssShr"/>
     </thing>
   <thing id="ftGraveAss" name="Grave Dust Assassin" description="{b}Benefit{/b}: When you deal damage with your dark reaping racial power, if the target has at least one of your shrouds on it, it takes damage as if you had invoked your shrouds." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Assassin, revenant, assassin&apos;s shroud power"/>
@@ -11873,6 +12088,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsAssassi"/>
     <tag group="ReqRace" tag="rRevenant"/>
+    <pickreq thing="pAsnAssShr"/>
     </thing>
   <thing id="ftGraveFlu" name="Grave Flurry" description="{b}Benefit{/b}: Whenever you use your Flurry of Blows power, you can choose to forgo dealing damage to negate the target&apos;s resistance to necrotic damage (if any) until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Revenant, monk, Flurry of Blows class feature"/>
@@ -11880,6 +12096,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rRevenant"/>
     <tag group="ReqClass" tag="clsMonk"/>
+    <exprreq message="Requires Flurry of Blows"><![CDATA[hero.tagis[HasFeature.fMnkCenBre] + hero.tagis[HasFeature.fMnkDesWin] + hero.tagis[HasFeature.fMnkEteTid] + hero.tagis[HasFeature.fMnkIroSou] + hero.tagis[HasFeature.fMnkStoFis] <> 0]]></exprreq>
     </thing>
   <thing id="ftGraveFor" name="Grave Fortune" description="{b}Benefit{/b}: When you hit with an attack benefiting from divine fortune, your attack deals extra necrotic damage equal to your Constitution or Dexterity modifier." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Revenant, cleric, divine fortune power"/>
@@ -11887,6 +12104,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rRevenant"/>
     <tag group="ReqClass" tag="clsCleric"/>
+    <pickreq thing="pClrDivFor"/>
     </thing>
   <thing id="ftGraveSpi" name="Grave Spirit" description="{b}Benefit{/b}: When an enemy adjacent to your spirit companion drops to 0 hit points, each ally adjacent to your spirit companion regains 10 hit points." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, shaman, Stalker Spirit class feature"/>
@@ -11959,6 +12177,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Paragon"/>
     <tag group="ReqLevel" tag="11"/>
     <tag group="ReqClass" tag="clsCleric"/>
+    <pickreq thing="pClrDivFor"/>
     </thing>
   <thing id="ftGreatSwo" name="Greater Swordmage Warding" description="{b}Benefit{/b}: While your Swordmage Warding is active, you gain a +1 feat bonus to all defenses.{br}At 21st level, this bonus increases to +2." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, Str 13, Con 13, swordmage, Swordmage Warding class feature"/>
@@ -11976,10 +12195,10 @@ call ReqFeature]]></validate>
     </thing>
   <thing id="ftGreatTur" name="Greater Turning" description="{b}Benefit{/b}: Whenever you miss a target when using turn undead, the target is pushed a number of squares equal to your Charisma modifier. The target takes no damage and is not immobilized." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Cleric, Channel Divinity: turn undead class feature"/>
-    <fieldval field="reqCha" value="0"/>
     <usesource source="Dragon"/>
     <tag group="ReqClass" tag="clsCleric"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="fClrTurUnd"/>
     </thing>
   <thing id="ftGreathor" name="Greathorn" description="{b}Benefit{/b}: The damage dice from your goring charge attack increases from d6s to d8s." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Minotaur, goring charge racial power"/>
@@ -12047,6 +12266,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rHalfElf"/>
     <tag group="ReqClass" tag="clsBattlem"/>
+    <pickreq thing="fBmnSpeTho"/>
     </thing>
   <thing id="ftGroupIns" name="Group Insight" description="{b}Benefit{/b}: You grant allies within 10 squares of you a +1 racial bonus to Insight checks and initiative checks." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Half-elf"/>
@@ -12090,13 +12310,16 @@ call ReqPower</validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rHalfElf"/>
     </thing>
-  <thing id="ftGrudgSty" name="Grudge Style" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess." compset="Feat" uniqueness="useronce">
+  <thing id="ftGrudgSty" name="Grudge Style" description="{b}Benefit{/b}: You gain a benefit with any of the following exploits you possess:\n\n{i}Careful attack (ranger){/i}: If the target dealt you damage since the end of your last turn, you deal extra damage with this exploit equal to your Wisdom modifier.\n\n{i}Furious smash (warlord){/i}: If the target dealt you damage since the end of your last turn, you gain a +2 bonus to the attack roll with this exploit.\n\n{i}Riposte Strike (rogue){/i}: If you hit with the immediate interrupt attack this exploit grants, the target takes a –2 penalty to AC and Reflex defense until the end of your next turn.\n\n{i}Sure strike (fighter){/i}: If the target dealt you damage since the end of your last turn, you deal extra damage with this exploit equal to your Wisdom modifier." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Wis 13 or dwarf race, any martial class"/>
-    <fieldval field="reqWis" value="13"/>
     <usesource source="Dragon"/>
     <tag group="ftDescript" tag="ArenaFight" name="Arena Fighting"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqPwrSrc" tag="Martial"/>
+    <prereq message="Must have Wisdom 13 or dwarf race">
+      <validate><![CDATA[validif (#trait[attrWis] >= 13)
+validif (hero.tagis[Race.rDwarf] <> 0)]]></validate>
+      </prereq>
     </thing>
   <thing id="ftGruumBat" name="Gruumsh&apos;s Battle Fury" description="{b}Benefit{/b}: You gain the power Gruumsh&apos;s battle fury." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Channel Divinity class feature, must worship Gruumsh"/>
@@ -12113,6 +12336,7 @@ call ReqPower</validate>
     <usesource source="PHB2"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsAvenger"/>
+    <pickreq thing="pAveOatEnm"/>
     <prereq message="&apos;Censure of Retribution&apos; feature required">
       <validate><![CDATA[var featureid as string
 featureid = "fAveCenRet"
@@ -12182,6 +12406,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Primal guardian theme"/>
     <usesource source="DarkSun"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="thPrimGrd"/>
     </thing>
   <thing id="ftGuardMis" name="Guardian&apos;s Mishaps" description="{b}Benefit{/b}: When you slide a creature as a result of your mantle of misfortune power, you can mark the target until the end of the creature&apos;s next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Tiefling, Mantle of Misfortune feat, any defender"/>
@@ -12190,6 +12415,7 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rTiefling"/>
     <exprreq message="Feat &apos;Mantle of Misfortune&apos; required"><![CDATA[hero.tagis[Feat.ftMantlMis] <> 0]]></exprreq>
+    <exprreq message="Defender role required"><![CDATA[hero.tagis[ClassRole.Defender] <> 0]]></exprreq>
     </thing>
   <thing id="ftGuideSho" name="Guide the Shot" description="{b}Benefit{/b}: Whenever you grant an ally a ranged basic attack, that ally&apos;s attack ignores cover and concealment (but not superior cover or total concealment)." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Warlord"/>
@@ -12408,6 +12634,7 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Power strike power"/>
     <usesource source="MordensEmp"/>
     <tag group="Tier" tag="Heroic"/>
+    <pickreq thing="pFtrPowStr"/>
     </thing>
   <thing id="ftHammeCon" name="Hammergate Conniver" description="{b}Benefit{/b}: When you succeed on a Bluff check, gain a +3 bonus to your next Diplomacy or Intimidate check in the encounter." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="East Rift regional background"/>
@@ -12431,6 +12658,7 @@ call ReqFeature]]></validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsInvoker"/>
+    <pickreq thing="pInvHanRad"/>
     </thing>
   <thing id="ftHandJus" name="Hand of Justice" description="{b}Benefit{/b}: You can swap one 3rd-level or higher encounter attack power you know for the hand of justice attack power." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="4th level, Noble Indoctrination"/>
@@ -12541,12 +12769,15 @@ call ReqFeature]]></validate>
     <usesource source="Martial2"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsRanger"/>
+    <pickreq thing="fRgrBeaMas"/>
     </thing>
   <thing id="ftHarrySte" name="Harrying Step" description="{b}Benefit{/b}: When you use your blurred step, you can teleport to any square adjacent to the triggering enemy instead of shifting." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Battlemind, blurred step power, persistent harrier power"/>
     <usesource source="Psionic"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqClass" tag="clsBattlem"/>
+    <pickreq thing="pBmnBluSte"/>
+    <pickreq thing="pBmnPerHar"/>
     </thing>
   <thing id="ftHarveSor" name="Harvester of Sorrows" description="{b}Benefit{/b}: Whenever you reduce the target of your oath of enmity to 0 hit points, any enemy you can see within 10 squares grants combat advantage to you until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, avenger, oath of enmity power, must worship the Raven Queen"/>
@@ -12555,6 +12786,7 @@ call ReqFeature]]></validate>
     <tag group="ReqLevel" tag="21"/>
     <tag group="ReqClass" tag="clsAvenger"/>
     <tag group="ReqDeity" tag="dtyRaveQue"/>
+    <pickreq thing="pAveOatEnm"/>
     </thing>
   <thing id="ftHasteRot" name="Hasten the Rot" description="{b}Benefit{/b}: Undead enemies hit by your divine encounter attack powers and daily attack powers that have the necrotic keyword also become slowed until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Any divine class, must worship Vecna"/>
@@ -14195,26 +14427,30 @@ call ReqFeature]]></validate>
     </thing>
   <thing id="ftImproSte" name="Improved Steed (Celestial Battle Tiger)" description="{b}Benefit{/b}: When you use your call celestial steed power, you can choose to summon a celestial battle tiger instead of a celestial warhorse." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Call celestial steed power"/>
-    <usesource source="Dragon"/>
-    <tag group="Tier" tag="Heroic"/>
+    <usesource source="Dragon" parent="Adventure" name="Dragon Magazine"/>
+    <tag group="Tier" tag="Heroic" name="Heroic Tier" abbrev="Heroic Tier"/>
+    <bootstrap thing="eqCelBatTi"></bootstrap>
     </thing>
   <thing id="ftImproCel" name="Improved Steed (Celestial Behemoth)" description="{b}Benefit{/b}: When you use your call celestial steed power, you can choose to summon a celestial behemoth instead of a celestial warhorse." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, call celestial steed power"/>
-    <usesource source="Dragon"/>
-    <tag group="Tier" tag="Heroic"/>
-    <tag group="ReqLevel" tag="11"/>
+    <usesource source="Dragon" parent="Adventure" name="Dragon Magazine"/>
+    <tag group="ReqLevel" tag="11" name="11" abbrev="11"/>
+    <tag group="Tier" tag="Paragon" name="Paragon Tier" abbrev="Paragon Tier"/>
+    <bootstrap thing="eqCeleBehe"></bootstrap>
     </thing>
   <thing id="ftImproPeg" name="Improved Steed (Celestial Pegasus)" description="{b}Benefit{/b}: When you use your call celestial steed power, you can choose to summon a celestial pegasus instead of a celestial warhorse." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, call celestial steed power"/>
-    <usesource source="Dragon"/>
-    <tag group="Tier" tag="Heroic"/>
-    <tag group="ReqLevel" tag="11"/>
+    <usesource source="Dragon" parent="Adventure" name="Dragon Magazine"/>
+    <tag group="ReqLevel" tag="11" name="11" abbrev="11"/>
+    <tag group="Tier" tag="Paragon" name="Paragon Tier" abbrev="Paragon Tier"/>
+    <bootstrap thing="eqCelePega"></bootstrap>
     </thing>
   <thing id="ftImproSil" name="Improved Steed (Silver Dragon)" description="{b}Benefit{/b}: When you use your call celestial steed power, you can choose to summon a celestial dragon mount instead of a celestial warhorse." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, call celestial steed power"/>
-    <usesource source="Dragon"/>
-    <tag group="Tier" tag="Heroic"/>
-    <tag group="ReqLevel" tag="21"/>
+    <usesource source="Dragon" parent="Adventure" name="Dragon Magazine"/>
+    <tag group="ReqLevel" tag="21" name="21" abbrev="21"/>
+    <tag group="Tier" tag="Epic" name="Epic Tier" abbrev="Epic Tier"/>
+    <bootstrap thing="eqSilvDrag"></bootstrap>
     </thing>
   <thing id="ftImproSwo" name="Improved Swordbond" description="{b}Benefit{/b}: You can call your bonded weapon to your hand from up to 20 squares away with a minor action." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Swordmage"/>
@@ -14286,20 +14522,31 @@ call ReqFeature]]></validate>
     <tag group="ReqClass" tag="clsWizard"/>
     <tag group="PowerUse" tag="Encounter"/>
     <tag group="ChooseSrc1" tag="Thing"/>
-    <eval phase="Setup" priority="1000"><![CDATA[
-      ~build our tag expression for selecting a lower-level power we don't know
-      var level as number
-      level = hero.tagvalue[Level.?]
-      var expr as string
-      expr = "(PowerType.Daily | PowerType.Utility) & (val:ReqLevel.? <= " & level & ")"
-      expr &= " & PowerClass.clsWizard"
+    <eval phase="Setup" priority="1000"><![CDATA[~ Build our tag expression for selecting a lower-level daily or 
+~ utility wizard power 
+var level as number
+level = hero.tagvalue[Level.?]
+var tagexpr as string
+tagexpr = "(PowerType.Daily | PowerType.Utility) & (val:ReqLevel.? <= " & level & ")"
+tagexpr &= " & PowerClass.clsWizard"
 
-      ~now specifically exclude all powers we know
-      foreach pick in hero from Power where "(PowerType.Daily | PowerType.Utility) & PowerClass.clsWizard"
-        expr &= " & !thingid." & eachpick.idstring
-        nexteach
+~ Now select those from our spellbook that we didn't prepare
+var chexpr as string
+var cnt as number
+chexpr = ""
+cnt = 0
+foreach pick in hero from Power where tagexpr
+  if (eachpick.field[usrIsCheck].value = 0) then
+    if (cnt = 0) then
+      chexpr &= "thingid." & eachpick.idstring
+    else
+      chexpr &= " | thingid." & eachpick.idstring
+    endif
+    cnt += 1
+  endif
+nexteach
 
-      field[usrCandid1].text = expr]]>
+field[usrCandid1].text = chexpr]]>
       <after name="Level final"/>
       </eval>
     <prereq message="&apos;Tome of Readiness&apos; feature required">
@@ -14917,7 +15164,7 @@ call ReqFeature]]></validate>
       <before name="Derived trtFinal"/>
       </eval>
     <prereq message="&apos;Dragonfear&apos; feature required">
-      <validate>perform hero.childfound[pRacDragon].setfocus
+      <validate>perform hero.childfound[pRacDraFea].setfocus
 call ReqPower</validate>
       </prereq>
     </thing>
@@ -15410,27 +15657,24 @@ call ReqFeature]]></validate>
     <usesource source="PlEsShadow"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ChooseSrc1" tag="Thing"/>
-    <eval phase="Setup" priority="1000"><![CDATA[
-      doneif (field[usrChosen1].ischosen = 0)
+    <eval phase="Traits" priority="2000"><![CDATA[~work out what our attack bonus should be
+var bonus as number
+if (hero.tagvalue[Level.?] < 11) then
+  bonus = 1
+elseif (hero.tagvalue[Level.?] < 21) then
+  bonus = 2
+else
+  bonus = 3
+endif
 
-      ~work out what our attack bonus should be
-      var bonus as number
-      if (hero.tagvalue[Level.?] <= 10) then
-        bonus = 1
-      elseif (hero.tagvalue[Level.?] <= 20) then
-        bonus = 2
-      else
-        bonus = 3
-        endif
-
-      ~add an appropriate number of 'attack bonus' tags to all implements of
-      ~the appropriate type
-      foreach pick in hero where "EquipIndex.? & ImplemType.itKiFocus"
-        var i as number
-        for i = 1 to bonus
-          perform eachpick.assign[Helper.AttBonus]
-          next
-        nexteach]]></eval>
+~add an appropriate number of 'attack bonus' tags to all implements of
+~the appropriate type
+foreach pick in hero where "EquipIndex.? & ImplemType.itKiFocus"
+var i as number
+  for i = 1 to bonus
+    perform eachpick.assign[Helper.AttBonus]
+  next
+nexteach]]></eval>
     </thing>
   <thing id="ftKillein" name="Killer in the Crowd" description="{b}Benefit{/b}: Your enemies do not grant cover to your targets. You gain cover from your enemies." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, assassin"/>
@@ -16054,7 +16298,9 @@ http://hl4e.cryptoknight.org/index.php?topic=262</comment>
     <fieldval field="reqInt" value="13"/>
     <fieldval field="reqText" value="Intelligence 13"/>
     <tag group="Tier" tag="Heroic"/>
-    <eval phase="Traits" priority="10000">hero.child[resLangSta].field[resMax].value += 3</eval>
+    <eval phase="Traits" priority="1000">#resmax[resLangExt] +=3
+      <before name="Calc resLeft"/>
+      </eval>
     </thing>
   <thing id="ftLinkeSpi" name="Linked Spirit" description="{b}Benefit{/b}: You can use telepathy to communicate wordlessly with any creature within 5 squares of you or 5 squares of your spirit companion that has a language.{br}In addition, when you use your shard swarm power, you can teleport to exchange positions with your spirit companion instead of the teleport the power normally grants." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Shardmind, shard swarm racial power, shaman, telepathy, call spirit companion power"/>
@@ -16535,7 +16781,10 @@ http://hl4e.cryptoknight.org/index.php?topic=236.0</comment>
     <usesource source="EbPG"/>
     <tag group="ftDescript" tag="Dragonmark"/>
     <tag group="Tier" tag="Heroic"/>
-    <eval phase="Traits" priority="10000">hero.child[resLangSta].field[resMax].value += 4</eval>
+    <bootstrap thing="ftRituaCas"></bootstrap>
+    <eval phase="Traits" priority="1000">#resmax[resLangExt] +=4
+      <before name="Calc resLeft"/>
+      </eval>
     </thing>
   <thing id="ftMarkSen" name="Mark of Sentinel" description="{b}Benefit{/b}: Whenever an enemy provokes an opportunity attack from you, you can shift 1 square as a free action before or after you make the opportunity attack.{br}You can master and perform the Eye of Alarm, Eye of Warning, and Magic Circle rituals as if you had the Ritual Caster feat." compset="Feat" uniqueness="useronce">
     <usesource source="EbPG"/>
@@ -16849,11 +17098,15 @@ call ReqPower</validate>
   <thing id="ftMasteSto" name="Master of Stories" description="{b}Benefit{/b}: You gain training in a skill of your choice from the bard&apos;s list of class skills.{br}You also gain the skald bard&apos;s skald&apos;s aura power. The aura&apos;s healing benefit can be used only once per day.{br}In addition, you gain proficiency with the wand implement." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Charisma 13"/>
     <fieldval field="reqCha" value="13"/>
+    <fieldval field="usrCandid1" value="component.Skill &amp; !(thingid.skEnduranc | thingid.skStealth | thingid.skThievery)"/>
     <usesource source="HeroFeywil"/>
-    <tag group="Multiclass" tag="clsBard"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="Hide" tag="Special"/>
+    <tag group="Multiclass" tag="clsBard"/>
     <bootstrap thing="pFtSkalAur"></bootstrap>
+    <eval phase="Traits" priority="1000">perform field[usrChosen1].chosen.assign[Helper.TrainedAut]
+
+perform hero.assign[ImplemType.itWand]</eval>
     </thing>
   <thing id="ftMasteCos" name="Master of the Cosmic Cycle" description="{b}Benefit{/b}: Each time you change your phase in the cosmic cycle, you can change it to either of the other two phases." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, sorcerer, Cosmic Magic class feature"/>
@@ -17193,6 +17446,46 @@ call ReqFeature]]></validate>
     <fieldval field="reqText" value="Proficiency with holy symbols"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
+    <eval phase="Traits" priority="1000"><![CDATA[      var offhand as number
+      var bonus as number
+      var bothhand as number
+      var expr as string
+      var i as number
+      if (#level[] <= 10) then
+        bonus = 1
+      elseif (#level[] <= 20) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+      foreach pick in hero from WeaponBase where "Equipment.TwoHand" 
+        perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach
+      offhand = 0
+      bothhand = 0
+      foreach pick in hero from Gear
+        if (eachpick.tagis[Helper.EqpOff] <> 0) then
+          offhand = 1
+        endif
+        if (eachpick.tagis[Helper.EqpBoth] <> 0) then
+          bothhand = 1
+        endif
+      nexteach
+
+
+      foreach pick in hero from WeaponBase where "WepProp.Versatile" 
+          if (bothhand <> 0) then
+            if (offhand <> 1) then
+              perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+            endif
+          endif
+        nexteach
+
+      foreach pick in hero where "EquipIndex.? & ImplemType.itHolySym"
+          perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach]]>
+      <before name="Weapon proficiencies final"/>
+      </eval>
     </thing>
   <thing id="ftMightEnm" name="Mighty Enmity" description="{b}Benefit{/b}: The first time you use oath of enmity during an encounter, you can target two enemies you can see in the burst, instead of one." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, avenger, oath of enmity power"/>
@@ -21536,11 +21829,126 @@ call ReqFeature]]></validate>
     <tag group="Tier" tag="Paragon"/>
     <tag group="ReqLevel" tag="11"/>
     </thing>
-  <thing id="ftReserMan" name="Reserve Maneuver" description="{b}Benefit{/b}: Choose an encounter attack power from your class. The power must be your level or lower and one that you don&apos;t already have. When you regain the use of your powers at the end of any rest, you can gain the use of the chosen power instead of regaining the use of an encounter attack power of the same level or higher.{br}{b}Special{/b}: Each time you gain a level, you can exchange the power you chose for this feat for another encounter attack power from your class. The power must be your level or lower and one that you don&apos;t already have." compset="Feat" uniqueness="useronce">
+  <thing id="ftReserMan" name="Reserve Maneuver" description="{b}Benefit{/b}: Choose an encounter attack power from your class. The power must be your level or lower and one that you don&apos;t already have. When you regain the use of your powers at the end of any rest, you can gain the use of the chosen power instead of regaining the use of an encounter attack power of the same level or higher.\n\n{b}Special{/b}: Each time you gain a level, you can exchange the power you chose for this feat for another encounter attack power from your class. The power must be your level or lower and one that you don&apos;t already have.\n\n{b}HERO LAB NOTE:{/b} The first drop-down box for this Feat can be used to choose which Power can be substituted in, which will cause the second drop-down box to list the Powers it is eligible to be substituted for. When this Feat is in use, the second box can be used to remind you of your choice (and can be reverted to -No Selection- when desired). Since it is not within the capabilities of Hero Lab to make the substitution in the character&apos;s actual Powers, the characteristics of the substituted Power will have to be kept track of manually outside the program, and the Power&apos;s usage on the Special tab will have to be tracked by checking off the Power substituted for." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level"/>
     <usesource source="PHB2"/>
     <tag group="Tier" tag="Paragon"/>
     <tag group="ReqLevel" tag="11"/>
+    <tag group="ChooseSrc1" tag="Thing"/>
+    <eval phase="Traits" priority="1000"><![CDATA[~ For the 1st drop-down, build an expression for selecting a wizard 
+~ encounter power at or lower than our level that we don't already 
+~ have. A choice is mandantory.
+var expr as string
+var lastch1 as string
+var level2 as number
+lastch1 = ""
+level2 = hero.tagvalue[Level.?]
+expr = "(PowerType.Encounter) & (val:ReqLevel.? <= " & level2 & ")"
+expr &= " & PowerClass.clsWizard"
+
+foreach pick in hero from Power where "PowerType.Encounter & PowerClass.clsWizard"
+  expr &= " & !thingid." & eachpick.idstring
+nexteach
+
+foreach thing in Power where expr
+  if (eachthing.tagis[Helper.IsResManP1] <> 0) then
+    lastch1 = eachthing.idstring
+  endif
+nexteach
+debug "lastch1: " & lastch1
+
+field[usrCandid1].text = expr
+
+~ If there is a selection, save it, get its level & assign the tag 
+~ IsResManP1 (defined in ResManFeat.1st) to it so if it's replaced 
+~ by another selection, we'll know what encounter power to remove 
+~ (if it has indeed replaced one)
+var level1 as number
+var ch1 as string
+ch1 = ""
+level1 = 0
+if (field[usrChosen1].ischosen <> 0) then
+  ch1 = "thingid." & field[usrChosen1].chosen.idstring
+  level1 = field[usrChosen1].chosen.tagvalue[ReqLevel.?]
+  debug "Choice1: " & ch1
+  perform field[usrChosen1].chosen.setfocus
+  perform assign[Helper.IsResManP1]
+~  if (field[usrChosen1].chosen.[Helper.IsResManP1] <> 0) then
+~    debug "Tag IsResManP1 set"
+~  else
+~    debug "Tag IsResManP1 set"
+~  endif
+endif
+
+~ For the 2nd selection drop-down, display the encounter powers we 
+~ know that are of equal or greater level than the power selected in 
+~ the 1st drop-down. Here, a choice is optional so the use of "no 
+~ selection" means no substitutions are wanted. 
+var tagexpr as string
+tagexpr = "(PowerType.Encounter)"
+tagexpr &= " & ((val:ReqLevel.? >= " & level1 & ") & (val:ReqLevel.? <= " & level2 & "))"
+tagexpr &= " & PowerClass.clsWizard"
+
+var chgexpr as string
+chgexpr = "thingid.chqNothing"
+foreach pick in hero from Power where tagexpr
+    chgexpr &= " | thingid." & eachpick.idstring
+nexteach
+
+field[usrCandid2].text = chgexpr
+
+~ Finally, if a selection was made in the 2nd drop-down, remove the 
+~ power chosen in the 1st drop-down & replace it with the one chosen 
+~ in the 2nd.
+if (field[usrChosen2].ischosen <> 0) then
+  var ch2 as string
+  ch2 = ""
+  if (compare(field[usrChosen2].chosen.idstring,"chqNothing") <> 0) then
+    ch2 = "thingid." & field[usrChosen2].chosen.idstring
+  endif
+  debug "ch2 = " & ch2
+endif]]>
+      <after name="Level final"/>
+      </eval>
+    <evalrule phase="Validate" priority="10000" message="Make a choice in 1st menu or remove choice in the 2nd" summary="Choice in 2nd menu invalid without making one in the 1st!"><![CDATA[~ A choice is only required in the 1st menu; a choice in the 2nd is 
+~ optional.
+@valid = 0
+var ValChk1 as number
+var ValChk2 as number
+var ch2 as number
+ValChk1 = length(field[usrChosen1].chosen.idstring)
+ValChk2 = 0
+ch2 = length(field[usrChosen2].chosen.idstring)
+if (ch2 = 0) then
+  ValChk2 += 1
+  ~ don't display message if this is the initial entries 
+  if (ValChk1 = 0) then
+    ValChk1 += 1
+  endif
+else
+  ~ No selection is always value as a choice for this menu. When
+  ~ changed back to no selection, it will come in as chqNothing;
+  ~ so if it's been changed back to no selection before making a
+  ~ selection in the 1st menu, treat it as the initial time through.
+  ValChk2 += 1
+  if (ValChk1 = 0) then
+    if (compare(field[usrChosen2].chosen.idstring,"chqNothing") = 0) then
+      ValChk1 += 1
+    endif
+  endif
+endif
+
+if (ValChk1 > 0) then
+  if (ValChk2 > 0) then
+    @valid = 1
+    done
+  endif
+  if (ch2 = 0) then
+    @valid = 1
+    done
+  endif
+  done
+endif]]></evalrule>
     </thing>
   <thing id="ftResilDea" name="Resilience of Death" description="{b}Benefit{/b}: You are immune to disease and you gain resist 10 poison. This increases to resist 15 poison at 21st level." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, revenant, Death&apos;s Blessing feat"/>
@@ -26503,6 +26911,19 @@ call ReqFeature]]></validate>
     <usesource source="HeroElemCh"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqLevel" tag="11"/>
+    <eval phase="Traits" priority="10000"><![CDATA[doneif (activated = 0)
+
+var damage as number
+damage = 3
+if (hero.tagvalue[Level.?] > 20) then
+  damage = 4
+endif
+
+foreach pick in hero from Power where "DamageType.Thunder"
+    perform eachpick.field[pwDamBonus].modify[+,damage,""]
+nexteach]]>
+      <after name="Calc attrBonus"/>
+      </eval>
     </thing>
   <thing id="ftThundRag" name="Thunderborn Rage" description="{b}Benefit{/b}: The thunder damage of your Thunderborn Wrath increases by 5." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Barbarian, Thunderborn Wrath class feature"/>
@@ -26604,6 +27025,24 @@ call ReqFeature]]></validate>
   <thing id="ftTomeExp" name="Tome Expertise" description="{b}Benefit{/b}: You gain a +1 feat bonus to implement attack rolls that you make with a tome. This bonus increases to +2 at 11th level and +3 at 21st level.{br}In addition, enemies adjacent to your conjurations or summoned creatures grant combat advantage. An enemy that is immune to fear is immune to this effect." compset="Feat" uniqueness="useronce">
     <usesource source="HeroElemCh"/>
     <tag group="Tier" tag="Heroic"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+  ~work out what our attack bonus should be
+      var bonus as number
+      if (hero.tagvalue[Level.?] < 11) then
+        bonus = 1
+      elseif (hero.tagvalue[Level.?] < 21) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+
+      ~add an appropriate number of 'attack bonus' tags
+      foreach pick in hero where "EquipIndex.? & ImplemType.itTome"
+        var i as number
+        for i = 1 to bonus
+          perform eachpick.assign[Helper.AttBonus]
+          next
+        nexteach]]></eval>
     </thing>
   <thing id="ftTormsJus" name="Torm&apos;s Justice" description="{b}Benefit{/b}: You can invoke the power of your deity to use Torm&apos;s justice." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Channel Divinity class feature, must worship Torm"/>
@@ -26642,6 +27081,24 @@ call ReqFeature]]></validate>
   <thing id="ftTotemExp" name="Totem Expertise" description="{b}Benefit{/b}: You gain a +1 feat bonus to implement attack rolls you make with a totem. This bonus increases to +2 at 11th level and +3 at 21st level.{br}Also, you ignore partial cover and partial concealment on implement attacks you make with a totem." compset="Feat" uniqueness="useronce">
     <usesource source="HeroFeywil"/>
     <tag group="Tier" tag="Heroic"/>
+    <eval phase="Traits" priority="1000"><![CDATA[
+  ~work out what our attack bonus should be
+      var bonus as number
+      if (hero.tagvalue[Level.?] < 11) then
+        bonus = 1
+      elseif (hero.tagvalue[Level.?] < 21) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+
+      ~add an appropriate number of 'attack bonus' tags
+      foreach pick in hero where "EquipIndex.? & ImplemType.itTotem"
+        var i as number
+        for i = 1 to bonus
+          perform eachpick.assign[Helper.AttBonus]
+          next
+        nexteach]]></eval>
     </thing>
   <thing id="ftTouchFla" name="Touch of Flame" description="{b}Benefit{/b}: When you use a wilden racial power, until the start of your next turn, the first enemy that hits you with a melee attack takes fire damage equal to your Wisdom modifier. The fire damage equals 3 + your Wisdom modifier at 11th level, and it equals 6 + your Wisdom modifier at 21st level.{br}If you are in the aspect of the elements, the enemy is also weakened until the start of its next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Wilden, Nature&apos;s Aspect racial trait"/>
@@ -26999,6 +27456,41 @@ validif (#trait[attrInt] >= 13)]]></validate>
   <thing id="ftTwoHaWea" name="Two-Handed Weapon Expertise" description="{b}Benefit{/b}: You gain a +1 feat bonus to weapon attack rolls you make with a two-handed melee weapon. In addition, you gain a +1 bonus to the damage rolls of charge attacks you make with a two-handed melee weapon. Both of these bonuses increase to +2 at 11th level and +3 at 21st level." compset="Feat" uniqueness="useronce">
     <usesource source="HeroFeywil"/>
     <tag group="Tier" tag="Heroic"/>
+    <eval phase="Traits" priority="1000"><![CDATA[      var offhand as number
+      var bothhand as number
+      var bonus as number
+      var expr as string
+      var i as number
+      if (#level[] <= 10) then
+        bonus = 1
+      elseif (#level[] <= 20) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+      foreach pick in hero from WeaponBase where "Equipment.TwoHand" 
+        perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+      nexteach
+      offhand = 0
+      bothhand = 0
+      foreach pick in hero from Gear
+        if (eachpick.tagis[Helper.EqpOff] <> 0) then
+          offhand = 1
+        endif
+        if (eachpick.tagis[Helper.EqpBoth] <> 0) then
+          bothhand = 1
+        endif
+      nexteach
+
+      foreach pick in hero from WeaponBase where "WepProp.Versatile" 
+        if (bothhand <> 0) then
+          if (offhand <> 1) then
+            perform eachpick.field[wpAtkFeat].modify[+,bonus,""]
+          endif
+        endif
+      nexteach]]>
+      <before name="Weapon proficiencies final"/>
+      </eval>
     </thing>
   <thing id="ftTwoWeAmb" name="Two-Weapon Ambush" description="{b}Benefit{/b}: While you wield two weapons and attack foes that grant you combat advantage, your primary weapon gains the brutal 1 property." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="11th level, Dex 17, Two-Weapon Fighting"/>
@@ -27507,10 +27999,7 @@ call ReqPower</validate>
     <tag group="Tier" tag="Paragon"/>
     <tag group="ReqLevel" tag="11"/>
     <tag group="ReqClass" tag="clsPaladin"/>
-    <prereq message="&apos;Ardent vow&apos; feature required">
-      <validate>perform hero.childfound[pPalArdVow].setfocus
-call ReqPower</validate>
-      </prereq>
+    <exprreq message="Does not have ardent vow, call of virtue (virtue&apos;s touch), or lay on hands power"><![CDATA[hero.tagis[HasFeature.fPalVowArd] + hero.tagis[HasFeature.fPalVowLay] + hero.tagis[HasFeature.fPalVowVir] <> 0]]></exprreq>
     </thing>
   <thing id="ftUntouSha" name="Untouchable Shade" description="{b}Benefit{/b}: When you use shadow step, until the end of your next turn you take only half damage from the attacks of enemies subject to one or more of your shrouds." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="21st level, assassin, shadow step power"/>
@@ -27635,7 +28124,7 @@ call ReqPower</validate>
       perform hero.assign[WeaponProf.wpScimitar]
       perform hero.assign[WeaponProf.wpDoublSci]
       perform hero.assign[WeaponProf.wpFalchion]
-      foreach pick in hero from WeaponBase where "(thingid.ftValenWea | thingid.wpDoublSci | thingid.wpFalchion)"
+      foreach pick in hero from WeaponBase where "(thingid.wpScimitar | thingid.wpDoublSci | thingid.wpFalchion)"
         perform eachpick.field[wpDamFeat].modify[+,bonus,""]
         nexteach]]>
       <before name="Weapon proficiencies final"/>
@@ -27949,9 +28438,9 @@ call ReqPower</validate>
 
       ~work out what our damage bonus should be
       var bonus as number
-      if (hero.tagvalue[Level.?] < 15) then
+      if (hero.tagvalue[Level.?] < 11) then
         bonus = 1
-      elseif (hero.tagvalue[Level.?] < 25) then
+      elseif (hero.tagvalue[Level.?] < 21) then
         bonus = 2
       else
         bonus = 3
@@ -28510,11 +28999,39 @@ featureid = "fWrlComPre"
 call ReqFeature]]></validate>
       </prereq>
     </thing>
-  <thing id="ftWarWiz" name="War Wizard&apos;s Expertise" description="{b}Benefit{/b}: You gain a +1 feat bonus to the attack rolls of arcane powers and basic attacks that you make with a light blade or a heavy blade. This bonus increases to +2 at 11th level and +3 at 21st level.{br}Also, when you use an arcane attack power with a light blade or a heavy blade, your attack rolls take a -5 penalty against your allies." compset="Feat" uniqueness="useronce">
+  <thing id="ftWarWiz" name="War Wizard&apos;s Expertise" description="{b}Benefit{/b}: You gain a +1 feat bonus to the attack rolls of arcane powers and basic attacks that you make with a light blade or a heavy blade. This bonus increases to +2 at 11th level and +3 at 21st level.\nAlso, when you use an arcane attack power with a light blade or a heavy blade, your attack rolls take a -5 penalty against your allies." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Any arcane class"/>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqPwrSrc" tag="Arcane"/>
+    <eval phase="Traits" priority="2300"><![CDATA[var light as number
+var heavy as number
+light = 0
+heavy = 0
+foreach pick in hero from WeapMelee where "Equipped.Equipped"
+  light += eachpick.tagis[WepGroup.wgLightBl]
+  heavy += eachpick.tagis[WepGroup.wgHeavyBl]
+nexteach
+if (light = 0) then
+  if (heavy = 0) then
+    done
+  endif
+endif
+
+var bonus as number
+if (#level[] < 11) then
+  bonus = 1
+elseif (#level[] < 21) then
+  bonus = 2
+else
+  bonus = 3
+endif
+
+foreach pick in hero from Power where "(thingid.pwBasicMel | PowerSrc.Arcane)"
+  perform eachpick.field[pwAtkFeat].modify[+,bonus,""]
+nexteach]]>
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="ftWarWizSt" name="War Wizard&apos;s Staff" description="{b}Benefit{/b}: When you use a close arcane attack with a staff implement, you can slide one adjacent creature to a different square adjacent to you before making the attack." compset="Feat" uniqueness="useronce">
     <usesource source="Dragon"/>
@@ -29014,6 +29531,22 @@ call ReqFeature]]></validate>
     <usesource source="Dragon"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqPwrSrc" tag="Arcane"/>
+	 <!-- Script currently only checks for arcane powers. Not sure how to also check for proficiency. -->
+    <eval phase="Traits" priority="1000"><![CDATA[
+      var bonus as number
+      var i as number
+      if (#level[] <= 10) then
+        bonus = 1
+      elseif (#level[] <= 20) then
+        bonus = 2
+      else
+        bonus = 3
+        endif
+      foreach pick in hero from Power where "PowerSrc.Arcane"
+            perform eachpick.field[pwAtkFeat].modify[+,bonus,""]
+      nexteach]]>
+      <before name="Weapon proficiencies final"/>
+      </eval>
     </thing>
   <thing id="ftWhiteEne" name="White Lotus Enervation" description="{b}Benefit{/b}: When you hit an enemy with an arcane at-will attack power, that enemy takes a -1 penalty to the defense the attack power targeted until the end of your next turn." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Any arcane class"/>
@@ -29366,6 +29899,9 @@ call ReqFeature]]></validate>
     <tag group="ReqRace" tag="rEladrin"/>
     <tag group="Hide" tag="Special"/>
     <bootstrap thing="pFtWintShr"></bootstrap>
+    <eval phase="Traits" priority="1000"><![CDATA[var bonus as number
+bonus = 5 + #halflevel[]
+#traitmodify[rsCold,rsTotal,bonus,""]]]></eval>
     </thing>
   <thing id="ftWinterto" name="Wintertouched" description="{b}Benefit{/b}: When attacking a creature that is vulnerable to cold, you gain combat advantage when you use a power that has the cold keyword." compset="Feat" uniqueness="useronce">
     <tag group="Tier" tag="Heroic"/>

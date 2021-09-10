@@ -130,7 +130,7 @@
       </field>
     <field
       id="trtClass"
-      name="Feat Bonus"
+      name="Class Bonus"
       type="derived"
       history="changes"
       maxfinal="25">
@@ -2377,6 +2377,26 @@
     autocompset="no"
     panellink="theme">
 
+	<!-- Scholar Theme 1st level language choice -->
+    <field 
+      id="Sch1Lang"
+      name="Scholar 1st Lang choice"
+      type="derived"
+	  defvalue="0"
+      minvalue="0"
+      maxvalue="3">
+      </field>
+	
+    <!-- Scholar Theme 5th level language choice -->
+    <field
+      id="Sch5Lang"
+      name="Scholar 5th Lang choice"
+      type="derived"
+	  defvalue="0"
+      minvalue="0"
+      maxvalue="3">
+      </field>
+	
     <!-- This tag is added to the hero if our feature is selected. -->
     <identity group="HasFeature"/>
 
@@ -2423,7 +2443,6 @@
           endif
         endif
       ]]></eval>
-
     </component>
 
   <!-- BuildOpt component

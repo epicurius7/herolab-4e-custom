@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="pwMnkLioDen" name="Lion&apos;s Den [Attack Technique]" description="{b}Hit{/b}: 1d6 + Dexterity modifier damage. Until the start of your next turn, once per turn as a free action, you can deal damage equal to your Constitution modifier to any enemy that enters a square adjacent to you.\nLevel 21: 2d6 + Dexterity modifier damage.\n\n{align center}{b}Lion&apos;s Den [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Minor Action{/b} - {b}Personal{/b}\n\n{b}Effect:{/b} You shift 1 square and gain a +1 power bonus to all defenses until the start of your next turn." compset="Power" replaces="pMnkLioDen">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="You jab, step to the side, then assume an offensive posture from which you can sting any foe that draws near."/>
+    <fieldval field="pwDamBase" value="1d6"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkFalNee" name="Fallen Needle [Attack Technique]" description="{b}Hit{/b}: 1d10 + Dexterity modifier damage, and the target takes a -2 penalty to attack rolls against you until the end of your next turn.\nLevel 21: 2d10 + Dexterity modifier damage.\n\n{align center}{b}Fallen Needle [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Minor Action{/b} - {b}Personal{/b} \n\n{b}Effect{/b}: You shift 1 square or move 3 squares." compset="Power" replaces="pMnkFalNee">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="A single, sharp blow readies you to step away at a moment&apos;s notice."/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="Dragon" parent="Adventure" name="Dragon Magazine"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkBliFlo" name="Blistering Flourish [Attack Technique]" description="{b}Hit{/b}: 1d8 + Dexterity modifier damage. Until the end of your next turn, your melee attacks deal extra fire damage equal to your Charisma modifier.\nLevel 21: 2d8 + Dexterity modifier damage.\n\n{align center}{b}Blistering Flourish [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Elemental, Fire, Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b} \n\n{b}Effect{/b}: You move up to your speed. Enemies that hit you with opportunity attacks provoked by this movement take fire damage equal to 2 + your Charisma modifier." compset="Power" replaces="pMnkBliFlo">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Executing movements in a complex pattern brings forth elemental fire to aid the next attack you make."/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="HeroElemCh" parent="Supplement" name="Heroes of the Elemental Chaos"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="DamageType" tag="Fire" name="Fire" abbrev="Fire"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkCraWin" name="Crane&apos;s Wings [Attack Technique]" description="{b}Hit{/b}: 1d10 + Dexterity modifier damage, and you push the target 1 square.\nLevel 21: 2d10 + Dexterity modifier damage.\n\n{align center}{b}Crane&apos;s Wings [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You make an Athletics check to jump with a +5 power bonus. You are considered to have a running start, and the distance of the jump isn&apos;t limited by your speed." compset="Power" replaces="pMnkCraWin">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="You leap across the battlefield and kick your foe, sending it staggering backward."/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkCraWav" name="Crashing Wave [Attack Technique]" description="{b}Hit{/b}: 1d8 + Dexterity modifier damage, and you can slide the target 1 square.\nLevel 21: 2d8 + Dexterity modifier damage.\n\n{align center}{b}Crashing Wave [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Elemental, Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You shift up to a number of squares equal to half your Strength modifier. You can shift through enemies&apos; spaces during this move." compset="Power" replaces="pMnkCraWav">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Surging forward through your enemies&apos; ranks, you deliver a resounding strike to send an enemy reeling."/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="HeroElemCh" parent="Supplement" name="Heroes of the Elemental Chaos"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkDanCob" name="Dancing Cobra [Attack Technique]" description="{b}Hit{/b}: 1d10 + Dexterity modifier damage. If the target has made an opportunity attack against you during this turn, the target takes extra damage equal to your Wisdom modifier.\nLevel 21: 2d10 + Dexterity modifier damage.\n\n{align center}{b}Dancing Cobra [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You move your speed +2." compset="Power" replaces="pMnkDanCob">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="You dodge and weave like a cobra, confounding your enemy and turning its attacks back against it."/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkDraTai" name="Dragon&apos;s Tail [Attack Technique]" description="{b}Hit{/b}: 1d6 + Dexterity modifier damage, and you knock the target prone.\nLevel 21: 2d6 + Dexterity modifier damage.\n\n{align center}{b}Dragon&apos;s Tail [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Melee{/b} 1\n\n{b}Target{/b}: One ally or one prone enemy\n\n{b}Effect{/b}: You swap places with the target." compset="Power" replaces="pMnkDraTai">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Your hand lashes out like a dragon&apos;s tail, and with the lightest touch unleashes power that knocks your foe to the ground."/>
+    <fieldval field="pwDamBase" value="1d6"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkFivSto" name="Five Storms [Attack Technique]" description="{b}Hit{/b}: 1d8 + Dexterity modifier damage.\nLevel 21: 2d8 + Dexterity modifier damage.\n\n{align center}{b}Five Storms [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You shift 2 squares." compset="Power" replaces="pMnkFivSto">
+    <fieldval field="pwTarget" value="Each enemy you can see in the burst"/>
+    <fieldval field="pwFlavor" value="You move like a whirlwind, spinning as you unleash an array of kicks and punches, which slam into your foes like a storm crashing onto the shore."/>
+    <fieldval field="pwRange1" value="1"/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="CloseBurst" name="Close Burst" abbrev="Close Burst"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    </thing>
+  <thing id="pwMnkSteWin" name="Steel Wind [Attack Technique]" description="{b}Hit{/b}: 1d8 + Dexterity modifier damage.\nLevel 21: 2d8 + Dexterity modifier damage.\n\n{align center}{b}Steel Wind [Movement Technique]{/b}\n{align left}\n{b}At-Will{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You are no longer marked. You move your speed + 2." compset="Power" replaces="pMnkSteWin">
+    <fieldval field="pwTarget" value="Each enemy you can see in the blast"/>
+    <fieldval field="pwFlavor" value="You streak across the battlefield, then channel a multiple assault against foes that thought themselves out of your reach."/>
+    <fieldval field="pwRange1" value="2"/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="AtWill" name="At-Will Power" abbrev="At-Will"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="CloseBlast" name="Close Blast" abbrev="Close Blast"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    </thing>
+  <thing id="pwMnkAwaSlu" name="Awaken the Slumbering Hurt [Attack Technique]" description="{b}Hit{/b}: 2d8 + Dexterity modifier damage. If the target is bloodied, it takes extra damage from both this attack and your next attack against it before the end of your next turn. The extra damage equals your Strength modifier.\n\n{align center}{b}Awaken the Slumbering Hurt [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You move your speed. During this movement, bloodied enemies can&apos;t attack you with opportunity actions or immediate actions." compset="Power" replaces="pMnkAwaSlu">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Your foes&apos; wounds allow you to dodge at just the right angles to foil the enemies&apos; attacks. When you attack, you focus on a single enemy&apos;s injuries and find the perfect place to strike."/>
+    <fieldval field="pwDamBase" value="2d8"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkBalRes" name="Balance Restored [Attack Technique]" description="{b}Hit{/b}: 1d10 + Dexterity modifier damage, and you push the target up to a number of squares equal to half your Strength modifier.\n\n{align center}{b}Balance Restored [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Elemental, Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You shift 1 square. The next time an adjacent enemy hits you before the start of your next turn, you can knock that enemy prone after the attack is resolved." compset="Power" replaces="pMnkBalRes">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Dropping into a wide stance helps you deliver the greatest impact, while also ensuring that you can deal with any counterattacks that follow."/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="HeroElemCh" parent="Supplement" name="Heroes of the Elemental Chaos"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkCalUp" name="Call up the Savage Wind [Attack Technique]" description="{b}Hit{/b}: 1d8 + Dexterity modifier damage.\n\n{b}Effect{/b}: You can slide each target 1 square.\n\n{align center}{b}Call up the Savage Wind [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Elemental, Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You move up to your speed, ignoring difficult terrain." compset="Power" replaces="pMnkCalup">
+    <fieldval field="pwTarget" value="Each creature in the blast"/>
+    <fieldval field="pwFlavor" value="A stiff gust rises up to scatter your enemies and speed you over treacherous terrain."/>
+    <fieldval field="pwRange1" value="3"/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="HeroElemCh" parent="Supplement" name="Heroes of the Elemental Chaos"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="CloseBlast" name="Close Blast" abbrev="Close Blast"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    </thing>
+  <thing id="pwMnkDruMon" name="Drunken Monkey [Attack Technique]" description="{b}Hit{/b}: 1d8 + Dexterity modifier damage, and you slide the target 1 square. The target then makes a melee basic attack as a free action against one enemy of your choice. The target gains a bonus to the attack roll equal to your Wisdom modifier.\n\n{align center}{b}Drunken Monkey [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You move your speed + 2. During this movement, you ignore difficult terrain and gain a power bonus to all defenses against opportunity attacks. The bonus equals your Wisdom modifier." compset="Power" replaces="pMnkDruMon">
+    <fieldval field="pwTarget" value="One enemy"/>
+    <fieldval field="pwFlavor" value="You lurch seemingly out of control. Your enemies are bewildered as they try to hit your swaying form, and with a cunning jab, you cause one of your foes to attack its companion."/>
+    <fieldval field="pwDamBase" value="1d8"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defWill" name="Will" abbrev="Will"/>
+    </thing>
+  <thing id="pwMnkEagCla" name="Eagle Claw Strike [Attack Technique]" description="{b}Hit{/b}: 2d8 + Dexterity modifier damage, and the target takes a penalty to AC equal to your Strength modifier until the end of your next turn. Against an unattended object, this attack deals 2d8 extra damage.\n\n{align center}{b}Eagle Claw Strike [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You fly your speed. If you don&apos;t land at the end of this movement, you fall." compset="Power" replaces="pMnkEagCla">
+    <fieldval field="pwTarget" value="One creature or unattended object"/>
+    <fieldval field="pwFlavor" value="Your leap is so graceful that you seem to hang in the air for a short period. When you land, you deliver a shattering strike."/>
+    <fieldval field="pwDamBase" value="2d8"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkGenRai" name="Gentle Rainfall [Attack Technique]" description="{b}Hit{/b}: 1d10 + Dexterity modifier damage.\n\n{b}Effect{/b}: You shift 1 square for each creature you hit.\n\n{align center}{b}Gentle Rainfall [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Minor Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You shift 1 square or move 3 squares." compset="Power" replaces="pMnkGenRai">
+    <fieldval field="pwTarget" value="Each enemy you can see in the burst"/>
+    <fieldval field="pwFlavor" value="You strike many foes, then evade strikes faster than they thought possible."/>
+    <fieldval field="pwRange1" value="1"/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="Dragon" parent="Adventure" name="Dragon Magazine"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="CloseBurst" name="Close Burst" abbrev="Close Burst"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    </thing>
+  <thing id="pwMnkLauWin" name="Laughing Wind [Attack Technique]" description="{b}Hit{/b}: 2d8 + Dexterity modifier damage. Until the start of your next turn, as a free action, you slide any enemy that ends its turn in a square adjacent to you a number of squares equal to your Wisdom modifier.\n\n{align center}{b}Laughing Wind [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: Until the start of your next turn, you gain a +2 power bonus to all defenses against opportunity attacks. You then move your speed." compset="Power" replaces="pMnkLauWin">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Your attack summons a laughing wind that drags your foes across the battlefield."/>
+    <fieldval field="pwDamBase" value="2d8"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkLigFir" name="Light the Fire [Attack Technique]" description="{b}Hit{/b}: 2d8 + Dexterity modifier fire damage.\n\n{b}Effect{/b}: You activate an aura 1 that lasts until the start of your next turn. Any enemy that starts its turn in the aura takes fire damage equal to 2 + your Charisma modifier.\n\n{align center}{b}Light the Fire [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Aura, Elemental, Fire, Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You shift up to 2 squares." compset="Power" replaces="pMnkLigFir">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Bright flames dance across your body, scorching enemies you strike and swirling around you to immolate foes in your reach."/>
+    <fieldval field="pwDamBase" value="2d8"/>
+    <usesource source="HeroElemCh" parent="Supplement" name="Heroes of the Elemental Chaos"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="DamageType" tag="Fire" name="Fire" abbrev="Fire"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkOpeGat" name="Open the Gate of Battle [Attack Technique]" description="{b}Hit{/b}: 2d10 + Dexterity modifier damage. The target takes 1d10 extra damage if it was at full hit points when you hit it with this attack.\n\n{align center}{b}Open the Gate of Battle [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You move your speed + 2. During this movement, you don&apos;t provoke opportunity attacks from the first enemy you move away from." compset="Power" replaces="pMnkOpeGat">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Your sudden movement catches your foe unprepared, and you launch into your attack."/>
+    <fieldval field="pwDamBase" value="2d10"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkRisSto" name="Rising Storm [Attack Technique]" description="{b}Hit{/b}: 2d8 + Dexterity modifier thunder damage, and each enemy adjacent to the target takes thunder damage equal to your Strength modifier.\n\n{align center}{b}Rising Storm [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You fly your speed. If you don&apos;t land at the end of this movement, you fall." compset="Power" replaces="pMnkRisSto">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="The air around you hums with power as you focus the energy within you into a roar of thunder."/>
+    <fieldval field="pwDamBase" value="2d8"/>
+    <usesource source="PHB3" parent="Supplement" name="Player&apos;s Handbook 3"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="DamageType" tag="Thunder" name="Thunder" abbrev="Thunder"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkScaLea" name="Scattering of Leaves [Attack Technique]" description="{b}Hit{/b}: 1d10 + Dexterity modifier damage, and you push the primary target 1 square. You then shift 1 square and make a secondary attack.\n\n{b}Secondary Target{/b}: One creature other than the primary target\n\n{b}Secondary Attack{/b}: Dexterity vs. Fortitude\n\n{b}Hit{/b}: 1d10 + Dexterity modifier damage, and you slide the secondary target 1 square. You then push each enemy adjacent to the secondary target 1 square from the secondary target.\n\n{align center}{b}Scattering of Leaves [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You make an Athletics check to jump with a +5 power bonus. You are considered to have a running start, and the distance of the jump isn&apos;t limited by your speed." compset="Power" replaces="pMnkScaLea">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="You drive two enemies back with quick strikes, then use the momentum of your attacks to scatter other foes."/>
+    <fieldval field="pwDamBase" value="1d10"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  <thing id="pwMnkStiNet" name="Stinging Nettles [Attack Technique]" description="{b}Hit{/b}: 2d10 + Dexterity modifier damage. Until the start of your next turn, as a free action, you deal damage equal to your Constitution modifier to any enemy adjacent to you that hits you with a melee attack.\n\n{b}Iron Soul{/b}: If you make the attack using a light blade or a spear, the target also cannot make opportunity attacks until the end of your next turn.\n\n{align center}{b}Stinging Nettles [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You swap places with one creature adjacent to you." compset="Power" replaces="pMnkStiNet">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Your attack sets you into an optimal defensive position, allowing you to punish any foe with the temerity to strike at you."/>
+    <fieldval field="pwDamBase" value="2d10"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defFort" name="Fortitude" abbrev="Fort"/>
+    </thing>
+  <thing id="pwMnkSwiRiv" name="Swift River Floods [Attack Technique]" description="{b}Hit{/b}: 2d8 + Dexterity modifier damage, and the target is slowed until the end of your next turn.\n\n{b}Iron Soul{/b}: If you make the attack using a mace or a staff, the target takes extra damage equal to your Constitution modifier.\n\n{align center}{b}Swift River Floods [Movement Technique]{/b}\n{align left}\n{b}Encounter{/b} {font Wingdings}w{font revert} Full Discipline, Psionic\n{b}Move Action{/b} - {b}Personal{/b}\n\n{b}Effect{/b}: You shift 2 squares." compset="Power" replaces="pMnkSwiRiv">
+    <fieldval field="pwTarget" value="One creature"/>
+    <fieldval field="pwFlavor" value="Your crashing attack throws your foe off balance to hinder its movement, letting you slip away like fast-flowing water."/>
+    <fieldval field="pwDamBase" value="2d8"/>
+    <usesource source="Psionic" parent="Supplement" name="Psionic Power"/>
+    <tag group="DamageAttr" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="EffectType" tag="FullDisc" name="Full Discipline" abbrev="Full Discipline"/>
+    <tag group="PowerAcc" tag="Implement" name="Implement" abbrev="Implement"/>
+    <tag group="PowerClass" tag="clsMonk" name="Monk" abbrev="Monk"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="ActionType" tag="Standard" name="Standard Action" abbrev="Standard Action"/>
+    <tag group="Attack" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="AttackType" tag="MeleeTouch" name="Melee Touch" abbrev="Melee Touch"/>
+    <tag group="AttackVs" tag="defRef" name="Reflex" abbrev="Ref"/>
+    </thing>
+  </document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="thFeyBeaTa" name="Fey Beast Tamer" description="{i}&quot;Of course you can domesticate an owlbear! Want me to show you how?&quot;{/i}\nWhen the natural world was young and humanity was in its infancy, callous elf nobles intentionally opened fey crossings between their realm and the natural world, sending dangerous monsters through to terrorize early mortal civilizations. Many of humanity’s oldest folk tales concern these first encounters with creatures such as owlbears and displacer beasts. Although eladrin scholars have tried to disprove the assertion that their ancestors were responsible, there is no doubt that an unusual number of stories passed down by human cultures involve such occurrences.\n    However troublesome or malicious the ancient elves might have been, they inadvertently gave the people of the natural world a familiarity with fey creatures. During these formative years for human culture, contact with Feywild beasts had a great impact; the magic of that plane touched hearts and souls in the mortal world. As a result, some members of mortal races developed an affinity for dealing with creatures from the Feywild. They could command the beasts of the fey realm just as mortal nobles could command their subjects. Renowned fey beast tamers, many of whom have been immortalized in story and song, rode into battle with powerful denizens of the Feywild at their side.\n    Generations passed, empires rose and fell, and wars came and went. Bloodlines that once had been strong were thinned out by centuries of marriage and expansion. The beast tamers who commanded armies of fey creatures died out, and every generation of their offspring grew weaker in their control over fey beasts until the ability was almost forgotten.\n    Once every few generations, however, a mortal is born of parents who still have strong blood ties to the ancient beast lords. Such individuals grow up with the inherent ability to bond with fey creatures. Though many never realize their full potential, some discover—through chance encounters—that they can influence fey beasts by sheer willpower. These special mortals usually bond with a single creature, forming a connection that is as strong as the one shared by soldiers who serve together in battle.\n    You are one of these rare individuals with an ability that reaches back to the dawn of civilization. You have formed a connection with a fey creature and can command it to aid you and protect you from harm. Over time, as you develop this bond further, you will begin to absorb the inherent magic of the creature and find yourself capable of things you never thought possible.\n\n    {b}Fey Beast Tamer Starting Feature (1st level):{/b} Choose one of the following creatures: blink dog, displacer beast, fey panther, or young owlbear. You gain it as your fey beast companion.\n    Your fey beast companion is considered an ally of you and your allies. It can be affected by powers in the same way that any other creature can be. It has animal intelligence, so you can communicate with it only at a basic level (like a trained pet), and it doesn’t understand complex ideas.\n    Your fey beast companion’s level is equal to yours, and its hit points, defenses, and attack values are determined by your level, as noted in its statistics.\n    Your companion shares your healing surge total. Whenever an effect requires your fey beast companion to spend a healing surge, the surge is deducted from your total. Whenever you use your second wind, your companion also regains hit points equal to your healing surge value. At the end of a short rest, your fey beast companion regains all its hit points.\n    If you die or your companion drops below 1 hit point, it retreats back into the Feywild. If that occurs, you can use one of these two ways to call it back.\n    Minor Action: You lose a healing surge, and your companion appears in the nearest unoccupied space, with hit points equal to your healing surge value.\n    Short Rest or Extended Rest: At the end of the rest, you lose a healing surge, and your companion appears in the nearest unoccupied space, with full hit points.\n    {b}Fey Beast Tamer Level 5 Features (5th level):{/b} You have combat advantage against enemies in your fey beast companion’s aura.\n    {b}Fey Beast Tamer Level 10 Feature (10th level):{/b} You can communicate normally with your fey beast companion and other creatures of the same kind." compset="Theme" replaces="thFeyBTamr">
+    <bootstrap thing="fFeyBTmr1"></bootstrap>
+    <bootstrap thing="fFeyBTmr5"></bootstrap>
+    <bootstrap thing="fFeyBTmr10"></bootstrap>
+    <bootstrap thing="fFBTBliDog">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="fFBTYouOwl">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="fFBTDisBea">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="fFBTFeyPan">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <evalrule phase="Validate" priority="10000" message="Choose only one Fey Beast Companion" summary="Choose only one Fey Beast Companion"><![CDATA[
+      ~disable any of our beasts that aren't selected
+
+
+      var total as number
+      foreach pick in hero from ThemeFeat where "User.FeatureChk & PowerLink.FeyBeasTam"
+        if (eachpick.field[usrIsCheck].value <> 0) then
+          total += 1
+        else
+          perform eachpick.assign[Hide.Special]
+          perform eachpick.assign[Helper.Disable]
+          endif
+        nexteach
+
+
+        validif ( total = 1 )
+        if ( total <> 1 ) then
+          @message = "Choose only one Fey Beast Companion"
+        endif]]></evalrule>
+    </thing>
+ 
+  <thing id="fFBTYouOwl" name="Young Owlbear Companion" compset="ThemeFeat">
+    <tag group="Hide" tag="Special"/>
+    <tag group="PowerLink" tag="FeyBeasTam" name="FeyBeasTam" abbrev="FeyBeasTam"/>
+    <bootstrap thing="eqTrYouOwl"></bootstrap>
+    </thing>
+  <thing id="fFBTBliDog" name="Blink Dog Companion" compset="ThemeFeat">
+    <tag group="Hide" tag="Special"/>
+    <tag group="PowerLink" tag="FeyBeasTam" name="FeyBeasTam" abbrev="FeyBeasTam"/>
+    <bootstrap thing="eqTrBliDog"></bootstrap>
+    </thing>
+  <thing id="fFBTFeyPan" name="Fey Panther Companion" compset="ThemeFeat">
+    <tag group="Hide" tag="Special"/>
+    <tag group="PowerLink" tag="FeyBeasTam" name="FeyBeasTam" abbrev="FeyBeasTam"/>
+    <bootstrap thing="eqTrFeyPan"></bootstrap>
+    </thing>
+  <thing id="fFBTDisBea" name="Displacer Beast Companion" compset="ThemeFeat">
+    <tag group="Hide" tag="Special"/>
+    <tag group="PowerLink" tag="FeyBeasTam" name="FeyBeasTam" abbrev="FeyBeasTam"/>
+    <bootstrap thing="eqTrDisBea"></bootstrap>
+    </thing>
+  </document>

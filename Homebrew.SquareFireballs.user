@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="rGenasiPlus" name="Genasi" description="{b}Elemental Manifestation{/b}: Choose one manifestation. That manifestation is part of your nature. Each manifestation offers particular benefits and provides an associated encounter power. Your appearance changes based on the element you are manifesting.\n{i}Firesoul{/i}: You gain +1 Reflex defense, resist 5 fire and the firepulse power. At 11th level, the resistance improves to 10 fire. At 21st level, the resistance improves to 15 fire.\n{i}Earthsoul{/i}: You gain a +1 racial bonus to your Fortitude defense, a +1 racial bonus to saving throws, and the earthshock power.\n{i}Stormsoul{/i}: You gain a +1 racial bonus to your Fortitude defense, resist 5 lightning, and the promise of storm power. At 11th level, the resistance improves to 10 lightning. At 21st level, the resistance improves to 15 lightning.\n{i}Watersoul{/i}: You can breathe underwater. You also gain a +2 racial bonus to saving throws against ongoing damage and the swiftcurrent power.\n{i}Windsoul{/i}: You gain resist 5 cold and the windwalker power. At 11th level, the resistance improves to 10 cold. At 21st level, the resistance improves to 15 cold.\n{i}Causticsoul{/i}: You can breathe underwater. You also gain resist 5 acid and the acid surge power.\nAt 11th level, the resistance improves to 10 acid.\nAt 21st level, the resistance improves to 15 acid.\n{i}Cindersoul{/i}: You gain a +1 racial bonus to Fortitude, resist 5 fire, and the firedeath power.\nAt 11th level, the resistance improves to 10 fire.\nAt 21st level, the resistance improves to 15 fire.\n{i}Plaguesoul{/i}: You gain resist 5 poison, a +5 racial bonus to saving throws against disease, and the plaguebearer power.\nAt 11th level, the resistance improves to 10 poison.\nAt 21st level, the resistance improves to 15 poison.\n{i}Voidsoul{/i}: You gain resist 5 psychic, a +1 racial bonus to Will, and the void assumption power.\nAt 11th level, the resistance improves to 10 psychic.\nAt 21st level, the resistance improves to 15 psychic.\n{i}Embersoul{/i}: You have a +1 racial bonus to Reflex and a +2 racial bonus to saving throws against ongoing fire damage. In addition, you have the ashfall evasion power.\n{i}Magmasoul{/i}: You have a +1 racial bonus to Fortitude. Whenever you take fire damage, your melee attacks deal 1d6 extra fire damage until the end of your next turn. In addition, you have the flowing magma power.\n{i}Sandsoul{/i}: You have a +4 racial bonus to Acrobatics checks and Athletics checks made when taking the escape action. You also have a +2 racial bonus to saving throws against effects that immobilize, restrain, or slow you. In addition, you have the sandslide power.\n{i}Sunsoul{/i}: You have a +2 racial bonus to saving throws against ongoing damage that includes fire or radiant damage. You and your equipment suffer no ill effect from ambient temperatures between -50 and 140 degrees Fahrenheit, and you are immune to sun sickness. In addition, you have the sun flare power.\n{i}Oceansoul{/i}: You can breathe underwater. You also gain resist cold 5 and the sea of calm power.\nAt 11th level, the resistance improves to 10 cold.\nAt 21st level, the resistance improves to 15 cold.\n{b}Elemental Origins{/b}: Your ancestors were native to the Elemental Chaos, so you are considered an elemental creature for the purpose of effects that relate to creature origin." compset="Race" replaces="rGenasi" uniqueness="unique">
+    <fieldval field="racFlavor" value="Energy embodied, chaos and order united - a race of inherent flexibility, passion, and diversity"/>
+    <fieldval field="racInt" value="2"/>
+    <fieldval field="racHtMin" value="67"/>
+    <fieldval field="racHtMax" value="74"/>
+    <fieldval field="racWtMin" value="130"/>
+    <fieldval field="racWtMax" value="225"/>
+    <usesource source="Squareballs"/>
+    <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
+    <tag group="SkillBonus" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
+    <tag group="SkillBonus" tag="skNature" name="Nature" abbrev="Nature"/>
+    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
+    <bootstrap thing="lanCommon"></bootstrap>
+    <bootstrap thing="fRGeEleMan"></bootstrap>
+    <bootstrap thing="fRGeEleOri"></bootstrap>
+    <bootstrap thing="fRGeFiresl"></bootstrap>
+    <bootstrap thing="fRGeEartsl"></bootstrap>
+    <bootstrap thing="fRGeStorsl"></bootstrap>
+    <bootstrap thing="fRGeWatesl"></bootstrap>
+    <bootstrap thing="fRGeWindsl"></bootstrap>
+    <bootstrap thing="fRGeCaussl"></bootstrap>
+    <bootstrap thing="fRGeCindsl"></bootstrap>
+    <bootstrap thing="fRGePlagsl"></bootstrap>
+    <bootstrap thing="fRGeVoidsl"></bootstrap>
+    <bootstrap thing="fRGeEmbesl"></bootstrap>
+    <bootstrap thing="fRGeMagmsl"></bootstrap>
+    <bootstrap thing="fRGeSandsl"></bootstrap>
+    <bootstrap thing="fRGeSunsl"></bootstrap>
+    <bootstrap thing="fRGeOceans"></bootstrap>
+    <bootstrap thing="lanPrimord"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrCon"/>
+      <autotag group="RaceBonus" tag="attrStr"/>
+      </bootstrap>
+    </thing>
+  <thing id="fRGeOceans" name="Oceansoul" description="You can breathe underwater. You also gain resist cold 5 and the sea of calm power.\nAt 11th level, the resistance improves to 10 cold.\nAt 21st level, the resistance improves to 15 cold." compset="BuildOpt">
+    <usesource source="Squareballs"/>
+    <tag group="User" tag="GenasiMan" name="GenasiMan" abbrev="GenasiMan"/>
+    <bootstrap thing="pRacSeaCal">
+      <containerreq phase="Setup" priority="500"><![CDATA[fieldval:boActive <> 0]]>
+        <after name="Build option final"/>
+        </containerreq>
+      </bootstrap>
+    </thing>
+  <thing id="pRacSeaCal" name="Sea of Calm" description="{b}Effect{/b}: Make a saving trhow." compset="Power">
+    <fieldval field="pwFlavor" value="In moments of distress, you draw strength from the ageless resilience of the vast, still ocean."/>
+    <usesource source="Squareballs"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="None"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    </thing>
+  <thing id="fWizOrbGui" name="Orb of Guidance" description="As long as you wield an orb, when one of your implement powers allows you to pull, push, or slide a creature, the maximum distance of the forced movement increases by 2 squares." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizWanDes" name="Wand of Destruction" description="As long as you wield a wand, you gain a +1 bonus to damage rolls with an implement fire attacks. This bonus increases to +2 at 11th level and +3 at 21st level. Additionally, your implement attacks ignore fire resistance." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizTomDis" name="Tome of Distraction" description="As long as you wield a tome, when you hit a target with an implement power, the target takes a -2 penalty to the next attack roll it makes against you before the end of your next turn." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizStaCon" name="Staff of Consumption" description="As long as you wield a staff, when you hit at least one target with an implement attack power, you gain 2 temporary hit points." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizOrbShr" name="Orb of Shrouding" description="As long as you wield an orb, creatures hit by your implement attack powers treat enemies more than 2 squares away from them as having partial concealment until the end of your next turn." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizWanAss" name="Wand of Assurance" description="As long as you wield a wand, when you roll damage for an implement power, if any of the dice come up with a result of 1, pick one of them, reroll it, and use the new result." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizStaGro" name="Staff of Grounding" description="As long as you wield a staff, you and any allies adjacent to you have resistance to lightning equal to your constitution modifier. In addition, if you are subject to forced movement you may make a saving throw to avoid being moved." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="fWizTomStu" name="Tome of Study" description="When you take an extended rest, you can choose one of your level 1 wizard at-will attack powers to prepare in your tome. As long as you wield a tome, you can use that power as a basic attack. Your tome can only store one power at a time, but you can change it whenever you take an extended rest." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fWizArcImp" name="Arcane Implement Mastery" abbrev="Arcane Implement Mastery"/>
+    </thing>
+  <thing id="clsWizardEx" name="Wizard" description="An arcanist is a powerful wizard who forgoes specialization to explore and use all that arcane magic has to offer. Rather than bind themselves to a particular school, as mages do, arcanists experiment with a wide range of magical effects from evocation to necromancy and everything in between. Considered dilettantes by their mage counterparts, arcanists see diverse study as a boon because it broadens their ability to deal with a variety of situations, by always having the proper spell on hand." compset="Class" replaces="clsWizard" uniqueness="unique">
+    <fieldval field="clsRoleTxt" value="You command eldritch forces, shaping them into spells designed to blast your enemies, bring them under your thumb, twist their senses, and impede their movement."/>
+    <fieldval field="clsSkills" value="3"/>
+    <fieldval field="clsWill" value="2"/>
+    <fieldval field="clsStartHP" value="10"/>
+    <fieldval field="clsHPLev" value="4"/>
+    <fieldval field="clsSurges" value="6"/>
+    <fieldval field="clsRituals" value="3"/>
+    <fieldval field="clsUtilMl" value="2"/>
+    <fieldval field="clsDailyMl" value="2"/>
+    <tag group="KeyAbility" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="PowerSrc" tag="Arcane" name="Arcane" abbrev="Arcane"/>
+    <tag group="Skill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="Skill" tag="skDiplomac" name="Diplomacy" abbrev="Diplomacy"/>
+    <tag group="Skill" tag="skDungeone" name="Dungeoneering" abbrev="Dungeoneering"/>
+    <tag group="Skill" tag="skHistory" name="History" abbrev="History"/>
+    <tag group="Skill" tag="skInsight" name="Insight" abbrev="Insight"/>
+    <tag group="Skill" tag="skNature" name="Nature" abbrev="Nature"/>
+    <tag group="Skill" tag="skReligion" name="Religion" abbrev="Religion"/>
+    <tag group="TrainSkill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="WeaponProf" tag="wpDagger" name="Dagger" abbrev="Dagger"/>
+    <tag group="WeaponProf" tag="wpQuarters" name="Quarterstaff" abbrev="Quarterstaff"/>
+    <tag group="ArmorProf" tag="apCloth" name="Cloth Armor" abbrev="Cloth Armor"/>
+    <tag group="ClassName" tag="Wizard" name="Wizard" abbrev="Wizard"/>
+    <tag group="ClassRole" tag="Controller" name="Controller" abbrev="Controller"/>
+    <tag group="ImplemType" tag="itOrb" name="Orb" abbrev="Orb"/>
+    <tag group="ImplemType" tag="itStaff" name="Staff" abbrev="Staff"/>
+    <tag group="ImplemType" tag="itTome" name="Tome" abbrev="Tome"/>
+    <tag group="ImplemType" tag="itWand" name="Wand" abbrev="Wand"/>
+    <tag group="KeyAbility" tag="attrCon" name="Constitution" abbrev="Constitution"/>
+    <tag group="KeyAbility" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <bootstrap thing="fWizTomBin"></bootstrap>
+    <bootstrap thing="fWizTomRea"></bootstrap>
+    <bootstrap thing="fWizWanAcc"></bootstrap>
+    <bootstrap thing="fWizRitCas"></bootstrap>
+    <bootstrap thing="fWizArcSpe"></bootstrap>
+    <bootstrap thing="fWizCantri"></bootstrap>
+    <bootstrap thing="pWizGhoSou">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizLight">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizMagHan">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizPresti">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="fWizArcImp"></bootstrap>
+    <bootstrap thing="fWizOrbDec"></bootstrap>
+    <bootstrap thing="fWizOrbImp"></bootstrap>
+    <bootstrap thing="pWizWatStr">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizChaMas">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizSugges">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="fWizStaDef"></bootstrap>
+    <bootstrap thing="pWizDisUnd">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizSpook">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="pWizWhiWin">
+      <autotag group="User" tag="FeatureChk"/>
+      </bootstrap>
+    <bootstrap thing="fWizOrbShr"></bootstrap>
+    <bootstrap thing="fWizOrbGui"></bootstrap>
+    <bootstrap thing="fWizStaCon"></bootstrap>
+    <bootstrap thing="fWizStaGro"></bootstrap>
+    <bootstrap thing="fWizTomDis"></bootstrap>
+    <bootstrap thing="fWizTomStu"></bootstrap>
+    <bootstrap thing="fWizWanDes"></bootstrap>
+    <bootstrap thing="fWizWanAss"></bootstrap>
+    <eval phase="Setup" priority="1000"><![CDATA[
+      ~we get 2 bonus rituals at levels 5, 11, 15, 21 and 25
+      var level as number
+      level = hero.tagvalue[Level.?]
+      if (level >= 5) then
+        #resmax[resRituals] += 2
+        endif
+      if (level >= 11) then
+        #resmax[resRituals] += 2
+        endif
+      if (level >= 15) then
+        #resmax[resRituals] += 2
+        endif
+      if (level >= 21) then
+        #resmax[resRituals] += 2
+        endif
+      if (level >= 25) then
+        #resmax[resRituals] += 2
+        endif]]>
+      <after name="Level final"/>
+      </eval>
+    <evalrule phase="Initialize" message="Too Many Cantrips" summary="Too Many Cantrips"><![CDATA[
+      ~disable any of our cantrips that aren't selected
+      var total as number
+      foreach pick in hero from Power where "User.FeatureChk & PowerClass.clsWizard & PowerType.Utility"
+        if (eachpick.field[usrIsCheck].value <> 0) then
+          total += 1
+        else
+          perform eachpick.assign[Hide.Special]
+          perform eachpick.assign[Helper.Disable]
+          endif
+        nexteach
+
+      validif (total = 4)
+
+      ~if less than 4 are chosen, that's a warning
+      if (total < 4) then
+        @message = "Choose up to 3 Cantrips from the Class Features table."
+
+      ~if more than 4, that's an error
+      else
+        @message = "Too many Cantrips from the Class Features table chosen."
+        endif]]></evalrule>
+    </thing>
+  <thing id="fSorPhoeMag" name="Phoenix Magic" description="Your blood burns with the elemental might of the phoenix. Your power blazes fast and bright, and dies only to be reborn in brilliance.\n\n{b}Phoenix Power{/b}: When you roll damage for an arcane attack power with the fire or radiant keyword, you can reroll any die showing a 1 until the value shown exceeds 1.\n\n{b}Phoenix Splendour{/b}: Your total number of healing surges increases by 1 per tier. If you use your second wind while you are bloodied, you regain twice the normal amount of hit points.\n\n{b}Phoenix Soul{/b}: When an enemy scores a critical hit against you, each enemy in burst 2 of you takes fire and radiant damage equal to your charisma modifier.\n\n{b}Resurgence of the Phoenix{/b}: The first time you would be reduced to 0 hit points during an encounter, you can spend a healing surge as a free action." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fSorSpeSou" name="Spell Source" abbrev="Spell Source"/>
+    </thing>
+  <thing id="clsSorceEx" name="Sorcerer" description="The sorcerer is the arcane antithesis of the wizard. Wielding raw, barely contained magical power, sorcerers channel bursts and blasts of arcane energy through their bodies. They gain their power not through rigorous study of esoteric tomes, but by harnessing magic in their blood, waiting to be tapped and shaped. If wizards wield magic as fighters wield swords, a sorcerer&apos;s magic is the arcing greataxe of a raging barbarian." compset="Class" replaces="clsSorcere" uniqueness="unique">
+    <fieldval field="clsRoleTxt" value="You channel powerful magical energy through your body, exerting control over wild arcane magic to blast foes. You lean toward controller as a secondary role."/>
+    <fieldval field="clsSrcTxt" value="Arcane magic is in your blood, as a touch of either ancient draconic power or untamed chaos energy, and you unleash it through sheer force of will and physical discipline."/>
+    <fieldval field="clsSkills" value="3"/>
+    <fieldval field="clsWill" value="2"/>
+    <fieldval field="clsStartHP" value="12"/>
+    <fieldval field="clsHPLev" value="5"/>
+    <fieldval field="clsSurges" value="6"/>
+    <usesource source="SkEscarnum"/>
+    <tag group="Skill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="Skill" tag="skAthletic" name="Athletics" abbrev="Athletics"/>
+    <tag group="Skill" tag="skBluff" name="Bluff" abbrev="Bluff"/>
+    <tag group="Skill" tag="skDiplomac" name="Diplomacy" abbrev="Diplomacy"/>
+    <tag group="Skill" tag="skDungeone" name="Dungeoneering" abbrev="Dungeoneering"/>
+    <tag group="Skill" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
+    <tag group="Skill" tag="skHistory" name="History" abbrev="History"/>
+    <tag group="Skill" tag="skInsight" name="Insight" abbrev="Insight"/>
+    <tag group="Skill" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
+    <tag group="Skill" tag="skNature" name="Nature" abbrev="Nature"/>
+    <tag group="TrainSkill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="WpCatRqMel" tag="wcSimple" name="Simple" abbrev="Simple"/>
+    <tag group="WpCatRqRng" tag="wcSimple" name="Simple" abbrev="Simple"/>
+    <tag group="ArmorProf" tag="apCloth" name="Cloth Armor" abbrev="Cloth Armor"/>
+    <tag group="ClassRole" tag="Striker" name="Striker" abbrev="Striker"/>
+    <tag group="ImplemType" tag="itStaff" name="Staff" abbrev="Staff"/>
+    <tag group="ImplemType" tag="wpDagger" name="Dagger" abbrev="Dagger"/>
+    <tag group="KeyAbility" tag="attrCha" name="Charisma" abbrev="Charisma"/>
+    <tag group="KeyAbility" tag="attrDex" name="Dexterity" abbrev="Dexterity"/>
+    <tag group="KeyAbility" tag="attrStr" name="Strength" abbrev="Strength"/>
+    <tag group="PowerSrc" tag="Arcane" name="Arcane" abbrev="Arcane"/>
+    <bootstrap thing="fSorDraMag"></bootstrap>
+    <bootstrap thing="fSorStoMag"></bootstrap>
+    <bootstrap thing="fSorWilMag"></bootstrap>
+    <bootstrap thing="fSorSpeSou"></bootstrap>
+    <bootstrap thing="fSorCosMag"></bootstrap>
+    <bootstrap thing="fSorPhoeMag"></bootstrap>
+    </thing>
+  <thing id="fBrdMulVerOpt" name="Multiclass Versatility" description="You can choose class-specific multiclass feats from more than one class." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fBrdClaVer" name="Class Versatility" abbrev="Class Versatility"/>
+    </thing>
+  <thing id="fBrdImpVer" name="Implement Versatility" description="You can use any weapon with which you are proficient as an implement." compset="BuildOpt">
+    <usesource source="SkEscarnum"/>
+    <tag group="BuildOpt" tag="fBrdClaVer" name="Class Versatility" abbrev="Class Versatility"/>
+    </thing>
+  <thing id="clsBardEx" name="Bard" description="Bards are artists first and foremost, and they practice magic just as they practice song, drama, or poetry. They have a clear sense of how people perceive reality, so they master charm magic and some illusions. Sagas of great heroes are part of a bard&apos;s repertoire, and most bards follow the example of many fables and become skilled in a variety of fields. A bard&apos;s artistic ability, knowledge of lore, and arcane might are widely respected, particularly among the world&apos;s rulers." compset="Class" replaces="clsBard" uniqueness="unique">
+    <fieldval field="clsRoleTxt" value="Your spells inspire and invigorate your allies. Your spells also include significant control elements, making controller a natural secondary role."/>
+    <fieldval field="clsSrcTxt" value="You channel magical power through words and music, studying long and hard to master the power contained in the lore and sagas of old."/>
+    <fieldval field="clsSkills" value="4"/>
+    <fieldval field="clsRef" value="1"/>
+    <fieldval field="clsWill" value="1"/>
+    <fieldval field="clsStartHP" value="12"/>
+    <fieldval field="clsHPLev" value="5"/>
+    <fieldval field="clsSurges" value="7"/>
+    <fieldval field="clsRituals" value="2"/>
+    <usesource source="SkEscarnum"/>
+    <tag group="KeyAbility" tag="attrInt" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="PowerSrc" tag="Arcane" name="Arcane" abbrev="Arcane"/>
+    <tag group="Skill" tag="skAcrobati" name="Acrobatics" abbrev="Acrobatics"/>
+    <tag group="Skill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="Skill" tag="skAthletic" name="Athletics" abbrev="Athletics"/>
+    <tag group="Skill" tag="skBluff" name="Bluff" abbrev="Bluff"/>
+    <tag group="Skill" tag="skDiplomac" name="Diplomacy" abbrev="Diplomacy"/>
+    <tag group="Skill" tag="skDungeone" name="Dungeoneering" abbrev="Dungeoneering"/>
+    <tag group="Skill" tag="skHeal" name="Heal" abbrev="Heal"/>
+    <tag group="Skill" tag="skHistory" name="History" abbrev="History"/>
+    <tag group="Skill" tag="skInsight" name="Insight" abbrev="Insight"/>
+    <tag group="Skill" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
+    <tag group="Skill" tag="skNature" name="Nature" abbrev="Nature"/>
+    <tag group="Skill" tag="skPercepti" name="Perception" abbrev="Perception"/>
+    <tag group="Skill" tag="skReligion" name="Religion" abbrev="Religion"/>
+    <tag group="Skill" tag="skStreetwi" name="Streetwise" abbrev="Streetwise"/>
+    <tag group="TrainSkill" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="WeaponProf" tag="wpLongswor" name="Longsword" abbrev="Longsword"/>
+    <tag group="WeaponProf" tag="wpScimitar" name="Scimitar" abbrev="Scimitar"/>
+    <tag group="WeaponProf" tag="wpShortswo" name="Short sword" abbrev="Short sword"/>
+    <tag group="WpCatRqMel" tag="wcSimple" name="Simple" abbrev="Simple"/>
+    <tag group="WpCatRqRng" tag="wcMilitary" name="Military" abbrev="Military"/>
+    <tag group="WpCatRqRng" tag="wcSimple" name="Simple" abbrev="Simple"/>
+    <tag group="ArmorProf" tag="apChain" name="Chainmail" abbrev="Chainmail"/>
+    <tag group="ArmorProf" tag="apCloth" name="Cloth Armor" abbrev="Cloth Armor"/>
+    <tag group="ArmorProf" tag="apHide" name="Hide Armor" abbrev="Hide Armor"/>
+    <tag group="ArmorProf" tag="apLeather" name="Leather Armor" abbrev="Leather Armor"/>
+    <tag group="ArmorProf" tag="apShieldLg" name="Light Shields" abbrev="Light Shields"/>
+    <tag group="ClassRole" tag="Leader" name="Leader" abbrev="Leader"/>
+    <tag group="ImplemType" tag="itInstru" name="Instrument" abbrev="Instrument"/>
+    <tag group="ImplemType" tag="itWand" name="Wand" abbrev="Wand"/>
+    <tag group="KeyAbility" tag="attrCha" name="Charisma" abbrev="Charisma"/>
+    <tag group="KeyAbility" tag="attrCon" name="Constitution" abbrev="Constitution"/>
+    <bootstrap thing="fBrdVirVal"></bootstrap>
+    <bootstrap thing="pBrdMajWor"></bootstrap>
+    <bootstrap thing="fBrdMulVerOpt"></bootstrap>
+    <bootstrap thing="fBrdSkiVer"></bootstrap>
+    <bootstrap thing="fBrdSonRes"></bootstrap>
+    <bootstrap thing="pBrdWorFri"></bootstrap>
+    <bootstrap thing="fBrdBarTra"></bootstrap>
+    <bootstrap thing="fBrdBarVir"></bootstrap>
+    <bootstrap thing="fBrdVirCun"></bootstrap>
+    <bootstrap thing="fBrdVirPre"></bootstrap>
+    <bootstrap thing="fBrdImpVer"></bootstrap>
+    <bootstrap thing="fBrdClaVer"></bootstrap>
+    </thing>
+  <thing id="fBrdClaVer" name="Class Versatility" description="Bards travel widely and experience much, so they often become more versatile than other characters. Many dabble in the powers and abilities of other classes, but others diversify the tools they can use for their own." compset="ClassFeat">
+    <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fBrdClaVer)"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    </thing>
+  <thing id="rFirbolg" name="Firbolg" description="{b}True Fey:{/b} Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey.\n{b}Giantkin:{/b} You have the giant subtype.\n{b}Feyspeak:{/b} You can converse freely with beasts and plants of fey or natural origin.\n{b}Fade to Green:{/b} You have the fade to green heritage power." compset="Race" uniqueness="unique">
+    <fieldval field="racFlavor" value="Reclusive giants who thrive in the energy of the feywild"/>
+    <fieldval field="racHtMin" value="84"/>
+    <fieldval field="racHtMax" value="96"/>
+    <fieldval field="racWtMin" value="290"/>
+    <fieldval field="racWtMax" value="350"/>
+    <fieldval field="racWis" value="2"/>
+    <usesource source="Squareballs"/>
+    <tag group="SkillBonus" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="Vision" tag="Darkvision" name="Darkvision" abbrev="Darkvision"/>
+    <tag group="SkillBonus" tag="skStealth"/>
+    <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
+    <bootstrap thing="lanSoESylv"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrCon"/>
+      <autotag group="RaceBonus" tag="attrStr"/>
+      </bootstrap>
+    <bootstrap thing="lanCommon"></bootstrap>
+    <bootstrap thing="fFirTruFey"></bootstrap>
+    <bootstrap thing="fFirGiaKin"></bootstrap>
+    <bootstrap thing="fFirFeySpe"></bootstrap>
+    <bootstrap thing="pwFirFadGre"></bootstrap>
+    </thing>
+  <thing id="fFirTruFey" name="True Fey" description="Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey." compset="RaceFeat"></thing>
+  <thing id="fFirGiaKin" name="Giantkin" description="You have the giant subtype." compset="RaceFeat"></thing>
+  <thing id="fFirFeySpe" name="Feyspeak" description="You can converse freely with beasts and plants of fey or natural origin." compset="RaceFeat"></thing>
+  <thing id="pwFirFadGre" name="Fade to Green" description="{b}Trigger:{/b} You would be hit by an attack.\n\n{b}Effect:{/b} You become invisible and insubstantial until the end of your next turn or until you attack, whichever comes first." compset="Power">
+    <fieldval field="pwFlavor" value="Startled, you vanish into your surroundings before your enemy’s attack can reach you."/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="ImmedInt"/>
+    </thing>
+  <thing id="rGruuwar" name="Gruuwar" description="{b}True Fey:{/b} Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey.\n{b}Phantom Luck:{/b} You gain a +1 heritage bonus to saving throws.\n{b}Gruuwar Blink:{/b} You have the gruuwar blink heritage power." compset="Race" uniqueness="unique">
+    <fieldval field="racFlavor" value="Fickle and flighty, the fairy tales of fairy tales"/>
+    <fieldval field="racHtMin" value="30"/>
+    <fieldval field="racHtMax" value="46"/>
+    <fieldval field="racWtMin" value="70"/>
+    <fieldval field="racWtMax" value="90"/>
+    <fieldval field="racInt" value="2"/>
+    <fieldval field="racSpeed" value="7"/>
+    <usesource source="Squareballs"/>
+    <tag group="Size" tag="Small"/>
+    <tag group="SkillBonus" tag="skStealth"/>
+    <tag group="SkillBonus" tag="skAthletic"/>
+    <tag group="Vision" tag="Darkvision" name="Darkvision" abbrev="Darkvision"/>
+    <bootstrap thing="fGruTruFey"></bootstrap>
+    <bootstrap thing="pwGruGruBli"></bootstrap>
+    <bootstrap thing="lanSoESylv"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrCha"/>
+      <autotag group="RaceBonus" tag="attrDex"/>
+      </bootstrap>
+    <bootstrap thing="lanCommon"></bootstrap>
+    <bootstrap thing="fGruPhaLuc"></bootstrap>
+    </thing>
+  <thing id="fGruTruFey" name="True Fey" description="Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey." compset="RaceFeat"></thing>
+  <thing id="fGruPhaLuc" name="Phantom Luck" description="You gain a +1 heritage bonus to saving throws." compset="RaceFeat"></thing>
+  <thing id="pwGruGruBli" name="Gruuwar Blink" description="{b}Effect:{/b} You teleport 2 squares.\n\n{b}Special:{/b} You can only use this power once per turn." compset="Power">
+    <fieldval field="pwFlavor" value="You slip through the feywild for the briefest of moments."/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="AtWill"/>
+    <tag group="ActionType" tag="Move"/>
+    <tag group="EffectType" tag="Teleport"/>
+    </thing>
+  <thing id="rPooka" name="Pooka" description="{b}True Fey:{/b} Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey.\n{b}Phantom Luck:{/b} You have the shapechanger subtype.\n{b}Pooka Tricks:{/b} You have the many masks and pooka’s pursuit heritage powers." compset="Race" uniqueness="unique">
+    <fieldval field="racFlavor" value="Fickle and flighty, the fairy tales of fairy tales"/>
+    <fieldval field="racHtMin" value="50"/>
+    <fieldval field="racHtMax" value="66"/>
+    <fieldval field="racWtMin" value="90"/>
+    <fieldval field="racWtMax" value="110"/>
+    <fieldval field="racCha" value="2"/>
+    <fieldval field="racLang" value="1"/>
+    <usesource source="Squareballs"/>
+    <tag group="Vision" tag="Darkvision" name="Darkvision" abbrev="Darkvision"/>
+    <tag group="Size" tag="Medium"/>
+    <bootstrap thing="lanSoESylv"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrDex"/>
+      <autotag group="RaceBonus" tag="attrWis"/>
+      </bootstrap>
+    <bootstrap thing="lanCommon"></bootstrap>
+    <bootstrap thing="fPooShaCha"></bootstrap>
+    <bootstrap thing="fPooTruFey"></bootstrap>
+    <bootstrap thing="pwPooPooPur"></bootstrap>
+    <bootstrap thing="pwPooManMas"></bootstrap>
+    </thing>
+  <thing id="fPooShaCha" name="Shapechanger" description="You have the shapechanger subtype." compset="RaceFeat"></thing>
+  <thing id="fPooTruFey" name="True Fey" description="Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey." compset="RaceFeat"></thing>
+  <thing id="pwPooPooPur" name="Pooka&apos;s Pursuit" description="{b}Trigger:{/b} A creature in range moves or teleports away from you.\n\n{b}Target:{/b} The triggering creature\n\n{b}Effect:{/b} When the target ends its movement or teleportation, you teleport to a square adjacent to the target." compset="Power">
+    <fieldval field="pwFlavor" value="You dance through the feywild to harry a retreating foe or accompany an advancing ally."/>
+    <fieldval field="pwRange1" value="1"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="ImmedReact"/>
+    <tag group="AttackType" tag="Melee"/>
+    <tag group="EffectType" tag="Teleport"/>
+    </thing>
+  <thing id="pwPooManMas" name="Many Masks" description="{b}Effect:{/b} You take on the form of any natural animal no more than one size category larger than you. The animal form need not be immediately recognisable as you, but it always has some suspicious characteristic that clearly sets it apart from a normal animal (typically, sharing your fur and eye colour). The animal form lasts until you take an extended rest, or until you dismiss it as a free action.\n\nEach time you assume an animal form, choose one of the following movement types. Until you dismiss the form, you gain the benefits associated with that type below.\n\n{i}Terrestrial:{/i} You gain a +2 bonus to speed.\n{i}Aerial:{/i} you gain a fly speed equal to your movement speed. Your land speed then becomes 1.\n{i}Aquatic:{/i} You gain a swim speed equal to your movement speed and can breathe underwater. Your land speed then becomes 1. \n{i}Subterranean:{/i} You gain a burrow speed equal to half your movement speed. You cannot burrow through solid stone or other rock-hard substances.\n{i}Arboreal:{/i} You gain a climb speed equal to your movement speed.\n\nWhile in an animal form, you cannot use any attack powers, although you can sustain such powers. Your equipment becomes part of the form, and you continue to gain the benefits of equipped items, but you cannot activate their item powers. While your equipment is part of the form, it cannot be removed, and anything in a container that is part of the form is inaccessible.\n\nYou otherwise retain your normal game statistics.\n\n{b}Special:{/b} You can only use this power once per round." compset="Power">
+    <fieldval field="pwFlavor" value="In the blink of an eye, you take the shape of a mortal creature—but your true nature shines through in your gleaming golden eyes."/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="AtWill"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="EffectType" tag="Polymorph"/>
+    </thing>
+  <thing id="rSwallow" name="Swallower" description="{b}Affront to Nature:{/b} You have the aberrant origin.\n\n{b}Swallower Stomach:{/b} You cannot equip gear like a normal character. Instead, you consume magical items and memorise their magical essence, allowing you to use them as if they were equipped. This is called ‘tasting’ by swallowers.\nYou can swallow as many items as you could normally carry, including mundane items. Each time you complete an extended rest, you choose which of them you are currently tasting, from which you gain the appropriate benefits. You can also reconfigure your tasted items during a short rest, but you must spend a healing surge to do so.\nItems you have swallowed cannot be forcefully removed from you by any means. However, you can release one or more items by regurgitating them during a reconfiguration. You can also destroy one or more items you have swallowed by digesting them during an extended rest; after the rest, you body sheds a fine dust of residuum, as if you had used a disenchant magic item ritual.\nSwallowing does not allow you to circumvent equipment slots, weapon and armour proficiencies, or load limitations. Even in the bizarre half-reality of a swallower’s gut, items resonate strongly with their intended form and purpose.\n\n{b}Flexible Fangs:{/b} You cannot wield weapons made for conventional bodies. Instead, you have a powerful bite; an unarmed melee weapon which has a +3 proficiency bonus and deals 1d8 damage. When you make a basic attack with your bite, you can use your highest ability modifier for attack and damage rolls.\nEach time you complete an extended rest, you can rearrange your teeth and tongue to add a second weapon type to your bite: stabbing tongue (spear), heavy jaw (axe), fine teeth (light blade), mighty jaw (heavy blade) or crushing molars (hammer). While you are tasting a magic weapon that matches one of your bite’s weapon types, you can transfer the benefit of that enchantment (including its enhancement bonus) onto your bite.\n\n{b}Baleful Beam:{/b} You have the baleful beam heritage power." compset="Race" uniqueness="unique">
+    <fieldval field="racFlavor" value="Floating eye-beasts with big appetites and big enthusiasm"/>
+    <fieldval field="racHtMin" value="31"/>
+    <fieldval field="racHtMax" value="51"/>
+    <fieldval field="racWtMin" value="88"/>
+    <fieldval field="racWtMax" value="132"/>
+    <fieldval field="racSpeed" value="2; fly 6 (altitude limit 1)"/>
+    <fieldval field="racCon" value="2"/>
+    <fieldval field="racLang" value="1"/>
+    <usesource source="Squareballs"/>
+    <tag group="Vision" tag="Darkvision" name="Darkvision" abbrev="Darkvision"/>
+    <tag group="SkillBonus" tag="skDiplomac"/>
+    <tag group="SkillBonus" tag="skInsight"/>
+    <tag group="Size" tag="Small"/>
+    <tag group="WeaponProf" tag="wpSwaStaTon"/>
+    <tag group="WeaponProf" tag="wpSwaCruMol"/>
+    <tag group="WeaponProf" tag="wpSawMigJaw"/>
+    <tag group="WeaponProf" tag="wpSwaNeeFan"/>
+    <tag group="WeaponProf" tag="wpSwaSheTee"/>
+    <bootstrap thing="fSwaFleFan"></bootstrap>
+    <bootstrap thing="pwSwaBalBre"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrInt"/>
+      <autotag group="RaceBonus" tag="attrWis"/>
+      </bootstrap>
+    <bootstrap thing="lanCommon"></bootstrap>
+    <bootstrap thing="fSwaSwaSto"></bootstrap>
+    </thing>
+  <thing id="pwSwaBalBre" name="Baleful Beam" description="{b}Attack:{/b} Highest ability modifier vs. Will. You gain a +2 bonus to the attack roll.\n\n{b}Hit{/b}: 1d6 + highest ability modifier damage.\n\nLevel 11: 2d6 + highest ability modifier damage. The bonus increases to +4.\nLevel 21: 3d6 + highest ability modifier damage. The bonus increases to +6." compset="Power">
+    <fieldval field="pwTarget" value="Each creature in the blast."/>
+    <fieldval field="pwAtkMod" value="2"/>
+    <fieldval field="pwSpecial" value="When you create your character, choose this power’s damage type: psychic, electric, necrotic or radiant. This choice remains throughout your character’s life."/>
+    <fieldval field="pwFlavor" value="You open your central eye wide and emit a powerful magical attack."/>
+    <fieldval field="pwRange1" value="3"/>
+    <fieldval field="pwDamBase" value="1d6"/>
+    <tag group="AttackType" tag="CloseBlast" name="Close Blast" abbrev="Close Blast"/>
+    <tag group="AttackVs" tag="defWill"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Minor" name="Minor Action" abbrev="Minor Action"/>
+    <eval phase="Traits" priority="5000"><![CDATA[var attidstr as string
+var targetScore as number
+
+~ Default to con since that's our natural high
+attidstr = "attrCon"
+targetScore = #attrbonus[attrCon]
+
+~ Check other ability scorers against con
+if (#attrbonus[attrStr] > targetScore) then
+	attidstr = "attrStr"
+	targetScore = #attrbonus[attrStr]
+endif
+if (#attrbonus[attrDex] > targetScore) then
+	attidstr = "attrDex"
+	targetScore = #attrbonus[attrDex]
+endif
+if (#attrbonus[attrCha] > targetScore) then
+	attidstr = "attrCha"
+	targetScore = #attrbonus[attrCha]
+endif
+if (#attrbonus[attrWis] > targetScore) then
+	attidstr = "attrWis"
+	targetScore = #attrbonus[attrWis]
+endif
+if (#attrbonus[attrInt] > targetScore) then
+	attidstr = "attrInt"
+	targetScore = #attrbonus[attrInt]
+endif
+
+~ Use that as the damage and attack attributes
+perform assignstr["DamageAttr." & attidstr]
+perform assignstr["Attack." & attidstr]]]>
+      <before name="Power attack final"/>
+      <after name="Calc attrBonus"/>
+      </eval>
+    </thing>
+  <thing id="fSwaSwaSto" name="Swallower Stomach" description="You cannot equip gear like a normal character. Instead, you consume magical items and memorise their magical essence, allowing you to use them as if they were equipped. This is called ‘tasting’ by swallowers.\n\nYou can swallow as many items as you could normally carry, including mundane items. Each time you complete an extended rest, you choose which of them you are currently tasting, from which you gain the appropriate benefits. You can also reconfigure your tasted items during a short rest, but you must spend a healing surge to do so.\n\nItems you have swallowed cannot be forcefully removed from you by any means. However, you can release one or more items by regurgitating them during a reconfiguration. You can also destroy one or more items you have swallowed by digesting them during an extended rest; after the rest, you body sheds a fine dust of residuum, as if you had used a disenchant magic item ritual.\n\nSwallowing does not allow you to circumvent equipment slots, weapon and armour proficiencies, or load limitations. Even in the bizarre half-reality of a swallower’s gut, items resonate strongly with their intended form and purpose." compset="RaceFeat"></thing>
+  <thing id="fSwaFleFan" name="Flexible Fangs" description="You cannot wield weapons made for conventional bodies. Instead, you have a powerful bite; an unarmed melee weapon which has a +3 proficiency bonus and deals 1d8 damage. When you make a basic attack with your bite, you can use your highest ability modifier for attack and damage rolls.\n\nEach time you complete an extended rest, you can rearrange your teeth and tongue to add a second weapon type to your bite: stabbing tongue (spear), shearing teeth (axe), needle fangs (light blade), mighty jaw (heavy blade) or crushing molars (hammer). While you are tasting a magic weapon that matches one of your bite’s weapon types, you can transfer the benefit of that enchantment (including its enhancement bonus) onto your bite." compset="RaceFeat">
+    <eval phase="Final" priority="4000"><![CDATA[var attidstr as string
+var targetScore as number
+
+~ Default to con since that's our natural high
+attidstr = "attrCon"
+targetScore = #attrbonus[attrCon]
+
+~ Check other ability scorers against con
+if (#attrbonus[attrStr] > targetScore) then
+	attidstr = "attrStr"
+	targetScore = #attrbonus[attrStr]
+endif
+if (#attrbonus[attrDex] > targetScore) then
+	attidstr = "attrDex"
+	targetScore = #attrbonus[attrDex]
+endif
+if (#attrbonus[attrCha] > targetScore) then
+	attidstr = "attrCha"
+	targetScore = #attrbonus[attrCha]
+endif
+if (#attrbonus[attrWis] > targetScore) then
+	attidstr = "attrWis"
+	targetScore = #attrbonus[attrWis]
+endif
+if (#attrbonus[attrInt] > targetScore) then
+	attidstr = "attrInt"
+	targetScore = #attrbonus[attrInt]
+endif
+
+foreach pick in hero where "EquipIndex.?"
+    doneif (eachpick.tagis[WepCat.wgHeritage] = 0)
+    Foreach pick in hero where "thingid.pwBasicMel"
+      perform eachpick.deletestr["DamageAttr.attrStr"]
+      perform eachpick.deletestr["Attack.attrStr"]
+      perform eachpick.assignstr["DamageAttr." & attidstr]
+      perform eachpick.assignstr["Attack." & attidstr]
+    nexteach
+nexteach]]></eval>
+    </thing>
+  <thing id="wpSwaStaTon" name="Stabbing Tongue" description="This is a natural weapon available only to swallowers. Characters without the swallower heritage may not gain proficiency with or wield this weapon." compset="Melee">
+    <fieldval field="wpProf" value="3"/>
+    <usesource source="Squareballs"/>
+    <tag group="WepGroup" tag="wgSpear"/>
+    <tag group="WepDamage" tag="1d8" name="1d8" abbrev="1d8"/>
+    <tag group="WepGroup" tag="wgUnarmed" name="Unarmed" abbrev="Unarmed"/>
+    <tag group="WepCat" tag="wgHeritage"/>
+    </thing>
+  <thing id="wpSwaSheTee" name="Shearing Teeth" description="This is a natural weapon available only to swallowers. Characters without the swallower heritage may not gain proficiency with or wield this weapon." compset="Melee">
+    <fieldval field="wpProf" value="3"/>
+    <usesource source="Squareballs"/>
+    <tag group="WepDamage" tag="1d8" name="1d8" abbrev="1d8"/>
+    <tag group="WepGroup" tag="wgUnarmed" name="Unarmed" abbrev="Unarmed"/>
+    <tag group="WepGroup" tag="wgAxe"/>
+    <tag group="WepCat" tag="wgHeritage"/>
+    </thing>
+  <thing id="wpSwaNeeFan" name="Needle Fangs" description="This is a natural weapon available only to swallowers. Characters without the swallower heritage may not gain proficiency with or wield this weapon." compset="Melee">
+    <fieldval field="wpProf" value="3"/>
+    <usesource source="Squareballs"/>
+    <tag group="WepDamage" tag="1d8" name="1d8" abbrev="1d8"/>
+    <tag group="WepGroup" tag="wgUnarmed" name="Unarmed" abbrev="Unarmed"/>
+    <tag group="WepGroup" tag="wgLightBl"/>
+    <tag group="WepCat" tag="wgHeritage"/>
+    </thing>
+  <thing id="wpSawMigJaw" name="Mighty Jaw" description="This is a natural weapon available only to swallowers. Characters without the swallower heritage may not gain proficiency with or wield this weapon." compset="Melee">
+    <fieldval field="wpProf" value="3"/>
+    <fieldval field="shortname" value="FlexibleFangs"/>
+    <usesource source="Squareballs"/>
+    <tag group="WepGroup" tag="wgUnarmed" name="Unarmed" abbrev="Unarmed"/>
+    <tag group="WepGroup" tag="wgHeavyBl"/>
+    <tag group="WepDamage" tag="1d8" name="1d8" abbrev="1d8"/>
+    <tag group="WepCat" tag="wgHeritage"/>
+    </thing>
+  <thing id="wpSwaCruMol" name="Crushing Molars" description="This is a natural weapon available only to swallowers. Characters without the swallower heritage may not gain proficiency with or wield this weapon." compset="Melee">
+    <fieldval field="wpProf" value="3"/>
+    <usesource source="Squareballs"/>
+    <tag group="WepGroup" tag="wgUnarmed" name="Unarmed" abbrev="Unarmed"/>
+    <tag group="WepGroup" tag="wgHammer"/>
+    <tag group="WepDamage" tag="1d8" name="1d8" abbrev="1d8"/>
+    <tag group="WepCat" tag="wgHeritage" name="Heritage" abbrev="Heritage"/>
+    </thing>
+  <thing id="ftBarTheBon" name="Bare the Bones" description="As long as you wear light or no armour and do not wield a shield, you have resist all 2. This increases to resist all 4 at paragon tier and resist all 6 at epic tier. This stacks with your existing resistances." compset="Feat">
+    <fieldval field="reqText" value="Firbolg, proficient with hide armour"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rFirbolg"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftBeastSpeak" name="Beast Speaker" description="You can converse with natural and fey beasts, and gain a +4 heritage bonus to skill checks made to influence them." compset="Feat">
+    <fieldval field="reqText" value="Pooka"/>
+    <usesource source="Squareballs"/>
+    <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqRace" tag="rPooka"/>
+    </thing>
+  <thing id="ftDreamWeave" name="Dream Weaver" description="You can master and perform rituals in the deception category as if you had the Ritual Caster feat, and without requiring a ritual book. In addition, your enemies take a -2 penalty to saving throws you impose with illusion or charm powers." compset="Feat">
+    <fieldval field="reqText" value="Pooka"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rPooka"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftFeySight" name="Fey Sight" description="You gain a +2 heritage bonus to defences and saving throws against illusion, charm and sleep effects." compset="Feat">
+    <fieldval field="reqText" value="Fey origin"/>
+    <usesource source="Squareballs"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftFlickPhant" name="Flickering Phantom" description="When you make an attack after teleporting, you can use your gruuwar blink power as a free action immediately after the attack. You can do this even if you have already used your gruuwar blink power this turn." compset="Feat">
+    <fieldval field="reqText" value="11th level, gruuwar, gruuwar blink heritage power"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rGruuwar"/>
+    <tag group="Tier" tag="Paragon"/>
+    </thing>
+  <thing id="ftHauntHarr" name="Haunting Harrier" description="When you use your pooka’s pursuit power targeting an enemy, you can make a melee basic attack against the target as a free action after you teleport." compset="Feat">
+    <fieldval field="reqText" value=" Pooka, pooka’s pursuit power, paragon tier"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rPooka"/>
+    <tag group="Tier" tag="Paragon"/>
+    </thing>
+  <thing id="ftPicPocPort" name="Pickpocket’s Portal" description=" You can make thievery checks from up to 2 squares away from your target." compset="Feat">
+    <fieldval field="reqText" value="Gruuwar"/>
+    <usesource source="Squareballs"/>
+    <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqRace" tag="rGruuwar"/>
+    </thing>
+  <thing id="ftRefBlink" name="Reflexive Blink" description="Once per encounter, you can use your gruuwar blink power as an immediate interrupt." compset="Feat">
+    <fieldval field="reqText" value="Gruuwar, Gruuwar blink heritage power"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rGruuwar"/>
+    <tag group="Tier" tag="Heroic"/>
+    <bootstrap thing="pwGruGruBliEx"></bootstrap>
+    </thing>
+  <thing id="ftSecSight" name="Second Sight" description="You can sense the presence of magic as if you were trained in Arcana. You can use Perception instead of Arcana for such checks, and you get a +4 heritage bonus to the check" compset="Feat">
+    <fieldval field="reqText" value="Pooka or Firbolg"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rFirbolg"/>
+    <tag group="ReqRace" tag="rPooka"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftSeeming" name="Seeming" description="You gain a +4 heritage bonus to skill checks made to disguise yourself. At any time, you can choose to appear as your normal height, or that of an average human. This is an illusion effect; your actual height and game statistics do not change." compset="Feat">
+    <fieldval field="reqText" value="Firbolg"/>
+    <usesource source="Squareballs"/>
+    <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqRace" tag="rFirbolg"/>
+    </thing>
+  <thing id="ftSkillDef" name="Skilled Deflection" description="You gain a heritage bonus to all defences against ranged and area attacks. The bonus equals +1 per tier." compset="Feat">
+    <fieldval field="reqText" value="Firbolg"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rFirbolg"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftSkulkPhan" name="Skulking Phantom" description="When you make a stealth check at the end of an action where you teleported, you can treat concealment as full concealment, and cover as superior cover, for the purpose of becoming hidden." compset="Feat">
+    <fieldval field="reqText" value="Gruuwar"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqRace" tag="rGruuwar"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftIntuitDirect" name="Intuit Direction" description="You always know which direction is North. You receive a heritage bonus, equal to your charisma modifier, to skill checks made to navigate natural terrain." compset="Feat">
+    <fieldval field="reqText" value="Pooka or Firbolg"/>
+    <tag group="Tier" tag="Heroic"/>
+    <tag group="ReqRace" tag="rFirbolg"/>
+    <tag group="ReqRace" tag="rPooka"/>
+    </thing>
+  <thing id="pwGruGruBliEx" name="Gruuwar Blink" description="{b}Effect:{/b} You teleport 2 squares.\n\n{b}Special:{/b} You can only use this power once per turn." compset="Power">
+    <comment><![CDATA[Extra version of this power to accomdate the "Reflexive Blink" feat]]></comment>
+    <fieldval field="pwFlavor" value="You slip through the feywild for the briefest of moments."/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="Encounter"/>
+    <tag group="ActionType" tag="ImmedInt"/>
+    <tag group="EffectType" tag="Teleport"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    </thing>
+  <thing id="ftFaceBite" name="Face Biter" description="{b}Benefit:{/b} You count as medium size for the purpose of grabs you initiate. If a creature you are grabbing would be pushed, pulled or slid away from you, the creature pulls you a number of squares equal to the distance it travels." compset="Feat">
+    <fieldval field="reqText" value="Size small or smaller"/>
+    <tag group="Tier" tag="Heroic"/>
+    </thing>
+  </document>

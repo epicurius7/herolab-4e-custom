@@ -51,13 +51,6 @@ Changes this version:
 These data files were written by Lone Wolf Development, but have been released into the public domain for example purposes. You are free to copy them and make any changes you wish.
 
 Maintenance and debugging of these data files are now maintained at http://hl4e.cryptoknight.org  If you have new bugs with the data, please join us in trying to squash them!
-    <launch nature="brief"><![CDATA[{b}{text ffff80}Retrieving 4e Data{text 010101}{/b}
-
-If you're seeing this, you no longer need to use the downloader.
-
-We've moved management of the data and files to http://hl4e.cryptoknight.org
-	
-	]]></launch>
     </release>
 
   <!-- The "structure" element defines special structural details about the data files

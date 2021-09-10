@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="dtyStBaldw" name="St Baldwin" compset="Deity" uniqueness="unique">
+    <fieldval field="dtyFlavor" value="Saint"/>
+    <fieldval field="dtySphere" value="War"/>
+    <fieldval field="dtyDomin" value="Warrior&apos;s Rest"/>
+    <fieldval field="dtyPriests" value="Battleguards"/>
+    <fieldval field="dtyAdject" value="Tempuran"/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Deity" tag="dtyKord" name="Kord" abbrev="Kord"/>
+    <tag group="Alignment" tag="LawGood"/>
+    <tag group="Gender" tag="Male" name="Male" abbrev="Male"/>
+    <tag group="Deity" tag="dtyTempus"/>
+    </thing>
+  <thing id="dtyAcydea" name="Acydea" description="Acydea is generally regarded as being the most beautiful of all the gods in Cobrin&apos;Seil. Indeterminate of either race or gender, Acydea appears simply as a humanoid of varying heights whose beauty transcends gender, and is only ever found in natural areas. Acydea is said to dance in the rain of a moonlight night, and by Acydea&apos;s hands, the music of the forests echoes back and forth.\n\nThe church of Acydea is very strong in the wild places of the world, but even stronger in those areas near civilisation. In Kyngdom, the people are too practical to generally consider a god whose portfolio does include artistry, but in Corrindale, the flighty and charismatic wu-kan typically regard Acydea with at least some degree of devotion. The church is surprisingly strong in the lands of Horandi, where the harshness of the natural lands make excessive expansion difficult, and the sunsets are particularly beautiful.\n\nAcydea&apos;s clerics pray for spells at noon of each day, or at midnight. Acydea is a god of centers, of middles, and of balances - he wishes to be esteemed and in his followers&apos; thoughts when the sun or moon is highest in the sky.\n\nAcydea does not have any gods beneath him, or any secondary pantheon over which he holds sway. His dominion of nature is almost unchallenged in the Greater Pantheon, and his beauty is completely unmatched. As a being so purely embodying a philosophy, he does not distribute his power, nor does he feel any need or desire to achieve a pantheon of allies." compset="Deity" uniqueness="unique">
+    <fieldval field="dtySphere" value="Beauty, Nature, Artistry"/>
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtyDomin" value="Animal, Good, Healing, Plant, Renewal, Travel"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Good"/>
+    <tag group="Gender" tag="Male" name="Male" abbrev="Male"/>
+    </thing>
+  <thing id="dtyBeinjar" name="Beinjar" description="Dancing and laughing through history, Beinjar is the eternal observor, the greatest gossip and the monger of rumours. Whether true or not, people love a good story, and Beinjar is happy to satisfy them. Perhaps embellished, perhaps reimagined, and perhaps in some cases outright fabricated, the stories told by Beinjar and his followers are supposedly designed to host a kernel of honesty, some truism about how life works. Lighthearted, lightfingered and lightfooted, Beinjar travels the realms telling and making stories, in song and in verse.\n\nBeinjar&apos;s avatar is actually a hat, with an extravagent feather in it. People who wear the hat find themself overtaken by the deity, and given his quick tongue and ease with people and his hands, it&apos;s not difficult at all for Beinjar to tie himself to a particular individual. The colour of the feather varies as per Beinjar&apos;s mood - black if he feels more wicked, white if he feels more lighthearted. Stories are told of individuals whose own personality influences the colour of the feather, though this being related to Beinjar, perhaps they are just stories.\n\nBeinjar&apos;s followers are much in the same mould as he is - wanderers and jesters who can&apos;t find satisfaction being fixed in place. At their finest, they&apos;re rogues and wanderers who move from place to place, helping people; at their worst, they&apos;re serial con-artists and tricksters, swindling people out of charms and coin and moving on, one step ahead of the consequences.\nHistory/Relationships\n\nBeinjar&apos;s status as a hat is something of a curse, inflicted upon him by Gwynm. During the first days after the Death of Kurtulmak, the deities returned to the world to meet with their followers, Beinjar - who had a long and speckled history as a laughing, wandering rogue in competition with the Nimble One - found himself interested in wooing a lady in a library he thought attractive. Suffice to say, this did not work out for him well.\n\nBeinjar&apos;s friends in the pantheon are those who can keep up with or appreciate him. Inseus is a bit too murderous, but Beinjar appreciates a good villain, and the Nimble One&apos;s penchant for focusing on her own race to the exclusion of others is something he feels is a bit of a loss. He still gets along fine with the more relaxed members of the pantheon, such as Yojandur and Uilian.\nDogma\n\nWhatever the story, remember - people are people, and no story, truth or lie, works where people don&apos;t act like people. Keep moving, always keep moving. You don&apos;t own anything you can&apos;t carry at a dead run, you don&apos;t know anyone who can&apos;t keep up. And always carry a claw hammer - sometimes they nail things down." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtyDomin" value="Chaos, Fate, Glory, Luck, Lust, Trickery "/>
+    <fieldval field="dtySphere" value="Stories, romance, and entertainment"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Chaotic"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyBellada" name="Belladan" description="While Palescai brings to mind the image of a classic Paladin, astride horse, lance in hand, longsword readied, and armour gleaming, Belladan embodies all that is foul in a battle. Terrorism, fear, heaping bodies, charnel foulness, and the ever-present stench of death, all are hallmarks of a deed well done to a cleric of Belladan. She is a harsh and cruel mistress, given to almost insane fury in battle, despite her lawful alignment, and is not above exploiting more chaotic forces.\n\nBelladan appears as a voluptuous, impractically clad woman with a pair of longswords and a longbow. She is always remarkably beautiful, after a harsh, angular fashion, and her hands are always stained slightly with blood. Belladan appears to be almost naked on a battlefield, but she also knows the value of intimidation, and always wears invisible armour. Her faith is on the rise amongst the expansionists in Nbyana, who perceive her as a great goddess of war and power. Particularly the Leopardmen of the Nbyana rainforests revere her.\n\nBelladan&apos;s clerics pray for spells immediately after waking - before eating or performing any other deeds. Belladan demands absolute dedication from her clerics, and demands to be the foremost in the minds of any follower." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Battle and dominion"/>
+    <fieldval field="dtyDomin" value="Domination, Evil, Hatred, Knowledge, Law, Planning, Tyranny, War"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Evil"/>
+    <tag group="Gender" tag="Female"/>
+    <tag group="Deity" tag="dtyKord" name="Kord" abbrev="Kord"/>
+    </thing>
+  <thing id="dtyBriarho" name="Briarhorn" description="Of all the greater gods, Briarhorn is the one who has most resisted the position of their own authority. Even Schwarzstrom, with her capricious nature, assumed the mantle of responsibility by choice when she realised that others would threaten the things she wished to protect. Briarhorn appears to have no greater desire than to be left alone. Of course, this solitary nature - much like Schwarzstrom&apos;s own aggressive candor - has an appeal to certain people, even those who do not know of suh a god directly. Thus Briarhorn has become the icon for the solitary, the contemplative, the survivalistic and the fatalistic.\n\nBriarhorn&apos;s avatar is rare in its incarnation. Due to the Titan&apos;s fundamentally solitary nature, it can be very difficult to glean anything but the most fleeting of glances; many accounts of Briarhorn&apos;s avatar are the result of second or third hand relays, and may be mixed in with a large quantity of myth, hearsay, or simple mistakes. Typically Briarhorn is noted as a large, mountain-shaped humanoid, who has a pair of deer&apos;s antlers, long, wild hair, tusks like a musk deer and a tail like an alligator. It is commonly said to be covered in greenery, as if it is growing there, and is most often described as being as much animal as human. Briarhorn&apos;s gender - if the god has one - is a question unto itself, but in the absence of evidence most mortals presume whatever they prefer.\n\nFollowers of Briarhorn come from all walks of life. Contrary to popular wisdom, the Survivor does not exclusively patron those who live out in the edges of civilization; Briarhorn&apos;s defining aspect is solitude, not barbarism. The Titan has patrons amongst all walks of life, typically those who are driven to the point of obsession - people who have realised they have a skill that is so important to them it becomes all-consuming. These are the people to whom the pursuit of their individual distinction is much more important than ordinary needs or desires, whether their own or those of others. Unknowingly or otherwise, more than a few engineers and artists patron Briarhorn, alone in the midst of a city and content with their craft and their craft alone.\nHistory/Relationships\n\nUnsurprisingly, Briarhorn has no real relationships amongst the pantheon. The Survivor has occasionally appeared in times of great need - such as in the opposition of Edih - but it was to pursue a personal goal, to be tested against a most powerful hunter. Most of the greater gods believe that Briarhorn worked at times with Schwarzstrom, though she claims she has nothing to do with her fellow individualist, respecting Briarhorn&apos;s desire to be left alone.\nDogma\n\nLearn to be alone. You do not need others to define you; you are not your goals, you are not your pursuits. There is no such thing as completion, merely varying stages of abandonment, and there is no such thing as true connection. You are born alone into this world and you will die alone, and only you will ever be able to judge your worth. Concern yourself not with transient things like the laws of man or the directives of kingdoms, instead taking to that which you feel makes you you." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Independence, survivalism"/>
+    <fieldval field="dtyDomin" value="Strength, Travel"/>
+    <usesource source="SkEscarnum"/>
+    <tag group="Alignment" tag="Chaotic"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyEl" name="El" description="El isn&apos;t really considered to be a god. To many gods, he&apos;s simply an incredibly ancient and enormously powerful Dragon who has been upstart enough to sit in on occasional meetings of the Greater Pantheon. Given to incredible stealth, El is only known to be a god by a handful of people in the entire world - and that is a situation he intends to maintain. Given his own origins - being a god that was created in the very primordial facets of time itself - he sees himself as possibly more powerful and in turn, more dangerous, than any force in Cobrin&apos;Seil but for Erhymn himself.\n\nEl appears as a colossal force dragon, transparent but for his white eyes and the faint shadows of his enormous body. He takes on, from this form, various humanoid forms to better manoeuvre through the world, and a favourite is a white-haired adolescent. El, despite being a god, is surprisingly self-conscious, and seems to occasionally need reassurance. This is typically because while El is a being of immense power, he also holds immense responsibility. Unlike other gods of Cobrin&apos;Seil, whose power hinges on their worshippers, he owns to slightly elevated status with his power being derived from time itself, and as such, he wonders often if he is indeed, worthy of this power.\n\nThe church of El is nonexistent. El does not need worshippers to increase in power - he is the representation of time itself, and his unseeable, unknowable and ineffable power stems from the fact that he is as close to a Primal Force as can be in Cobrin&apos;Seilwithout being one of them. El does not see this as a reason to feel too superior, however. He maintains a very small, select clergy, and selects only those who he believes agree with him in issues of importance to him - freedom, life, love, liberty, and the right of all to truth, no matter how harsh. If El approaches an individual who rejects his offer, he simply undoes the event in history - it becomes nothing more than a tangent in time that El alone can see and therefore remember.\n\nEl&apos;s church, being as small as it is, has little to no forms of ritual, but El does exhort his followers to research and study the ritual of other faiths.\n\nEl does not expect his followers to wield his favoured weapons, and he often suggests to each of them a weapon that best befits their stature and abilities. This does not confer on the follower any particular proficiency or similar, but it does remove what El feels to be an unnecessary straitjacket." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Time"/>
+    <fieldval field="dtyDomin" value="Chaos, Fate, Good, Knowledge, Luck, Planning, Time, Trickery"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Good"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyErallab" name="Erallabein Delfae" description="The elves of Cobrin&apos;Seil run a gamut of alignments, from the Good-aligned Sun elf nation to the almost Lawful Evil High elf enclaves. However, regardless of god or personal position, the elves of Cobrin&apos;Seil all revere Erallabein, the god of all the elven gods.\n\nErallabein appears as a one-eyed elf of much greater height than normal, with incredibly pale skin and a trio of longswords slung over one shoulder and a longbow over the other. He has a ruggedly handsome look rather than the typically fey appearance of many elves, though this is often attributed to the fact that, as a god, he is closer in form to a LeShay, the primal elven race, than what is commonly understood to be an elf.\n\nErallabein&apos;s clerics pray for spells before they go to sleep at night, or, in the case of pure elves, trance. Erallabein wishes to watch over his people as they rest, and he wishes to aid them swiftly if their sleep is disturbed.\n\nErallabein imposes on every elven creature that doesn&apos;t flagrantly reject him a minor habit, a ritual, or some might say, a quirk. This is usually a very minor aspect of a character&apos;s life - they are forbidden from eating fish, drinking liquors of non-elven make, or are not permitted to wear blue with green - but they are, to Erallabein, a reminder of his ownership of the elven race, and in the way of the elves, a thanks for the freedom he granted them from the tyranny of the Forerunners." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Elves and Eladrin"/>
+    <fieldval field="dtyDomin" value="Elf, Fate, Law, Magic, Plant, War"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Lawful"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyGwynm" name="Gwynm" description="Gwynm, unlike many of the gods in the pantheon, is almost completely secular. She makes no particular commands of her followers, trusting them to work things out for themself. She does not issue a list of commandments, but instead proposes what is known as The Method - a system for determining the truth of something, with evidence. It is therefore no great surprise that her followers tend to be relaxed, rarely hold holy wars (preferring a sort of holy debate), and generally are good-natured, positive people. Not nearly as competitive or combative as other deities, Gwynm goes for long stretches of time doing nothing but studying. She&apos;s a reactive goddess, and so are her followers - more likely to defend a town than conquer a new land.\n\nGwynm&apos;s avatar tends to be a suited, bookish woman, with her hair done up tidily in a bun, with glasses and more often than not, a book in her hand. She does not make any real concessions to fashion or beauty, and simply is. In times of protracted study, she will often be slightly dishevilled, and can generally be found in areas focused heavily on learning. Due to the understated nature of Gwynm&apos;s avatar, she is often found in mortal libraries, researching in the same way as her followers.\n\nGwynm&apos;s followers are typically scholars and educators. The church of Gwynm has been recently cemented in the educational facilities of Kyngdom, roaming priests that arrive at towns and teach people things - and how to teach other things - before moving on. Every act of study for its own sake, every researcher buried in his work and every explorer who muses, &quot;that&apos;s funny&quot;, is in some small way contributing to Gwynm&apos;s spheres.\nHistory/Relationships\n\nDuring the Second Age, worship of Gwynm became stifled, as priests and scholars alike lauded The Method as divinely inspired. When the Third Age began and the gods returned to the world, she made it eminently clear - that Gwynm was merely an avatar for human understanding, and that the Method was something that humanity understood before she came to be. This led to a very brief, but very polite holy debate, during which the church of Gwynm settled itself down and got back to reading.\n\nGwynm has a bit of an odd relationship with Yojandur, finding his trusting nature foolish and exasperating. Because Yojandur is always willing to give another a chance at redemption, there have been many times when the plans of the good god have struck upon the rocks, halted due to his unwillingness to consider the chances that he&apos;s being deceived.\nDogma\n\nTrust, but verify. Within each individual is the potential to understand the universe, and each individual is part of the universe. Therefore, these vast wonders that we see, this manifold place of colour and sound, is but an aspect of ourselves, and we are that same thing, trying to understand ourselves. Find beauty in science, find science in art, and do not feel ashamed to say you do not know." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Education and inquiry"/>
+    <fieldval field="dtyDomin" value="Air, Earth, Fire, Good, Knowledge, Law, Water"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="LawGood"/>
+    <tag group="Gender" tag="Female"/>
+    </thing>
+  <thing id="dtyInseus" name="Inseus" description="Stories are told of a madman who travels the land, kidnapping men on their wedding nights and feeding them their own innards. Or of a ghost that recounts her tale of woe, as all her family were locked in their rooms, the house set alight, and she driven to suicide by the revelations that ensued. Behind every macabre campfire story, you can usually find the hand of Inseus, the eternally reincarnate. Somewhere in history, Inseus started his life as a mortal man, reincarnated after his death by some other deity&apos;s whimsy. With the death of Edih, it&apos;s believed he inherited some of that bleak god&apos;s power, and his new lives become a kind of monument to deific taint.\n\nTo wit, he murders because he enjoys it, travelling the land and finding new and interesting ways to be the villain of a tale, before being cut down and dying in some terrible fashion, taking out as many people as he can on the way. If these deaths were at all permanent, it would be grand - but alas, Inseus merely lies subdued for a while, reborn in a new mortal frame after each death. Sometimes there&apos;s a rhyme or a reason, an attempt at showing some kind of object lesson to people, in Inseus&apos; horrible acts. But for the most part, they are just random and self-serving.\n\nThe avatar of Inseus is as capricious and whimsical as his horrific practices, and changes traits like race and gender on an irregular basis. It tends to follow a certain style, however - slightly old-fashioned clothing, typically in black and red, with lace and often ruffles. Inseus usually appears as something of a dandy, diabolically playful and carefree. That&apos;s not to say he doesn&apos;t sometime dispense with the formalities and take the form of a burly man with a pick; the problem is that Inseus is too unpredictable to have a distinct persona.\n\nInseus doesn&apos;t have worshippers as much as he has fans. Morbid and macabre individuals, obssessed with death, blood and mayhem, either recreate his stories, become convinced that they&apos;re touched by him and repeat his actions, or attempt to emulate his own ridiculous escapades. This further muddies the waters for mortal adventurers, who sometimes find that the mad dentist who had been stealing all the teeth of children then fleeing town was in fact Inseus himself, while the mighty warriors of Palescai tracking the black god realise they&apos;ve cornered a late adolescent with heavy delusions and a taste for bloodletting.\nHistory/Relationships:\n\nUnsurprisingly, nobody likes Inseus. Not even the most bloodstained of evil gods can appreciate him - given the small scale in which he works, Vhaulun sees him as too weak as a force of genocide, and given the artless way in which he follows his desires, Sicario regards him as an idiot. While all the evil gods share some stake in Inseus&apos; realm, nobody&apos;s too keen to associate with him. The good gods are just as much annoyed by him - the little madman represents the worst combination of a mortal&apos;s capacity for cruelty and a deity&apos;s persistant nature.\nDogma\n\nI do what I want. Get out of my way. If you&apos;re one of the lucky ones, you&apos;ll taste your own blood. What are you looking at? Get your face out of mine or I&apos;ll take it off you!" compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Murder, persistence"/>
+    <fieldval field="dtyDomin" value="Chaos, Corruption, Death, Evil, Hatred, Renewal"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="ChaotEvil" name="Chaotic Evil" abbrev="Chaotic Evil"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyKheiSze" name="Khei&apos;Szeiya" description="When the god Edih walked the earth for a year, a month and a day, he suppressed his power, binding his divinity within himself in a spark that nobody, not even he himself, could touch without slaying him first. This step to humanity, he felt, would let him ascend to godhood twice over, and therefore, become a mightier force than the other gods combined. He was stopped in this goal by Ravid Godslayer, but as he went to commit a rampage of destruction on the world in his hubris, a simple street mugger stepped out from an alleyway and struck him down with a blackjack.\n\nWith his death, Edih&apos;s divine energy was released, and that mugger attained godhood, claiming the throne deserted by Edih - that of darkness, of pain, of savagery, and of murder. Rather than submit to a greater god, such as Erhymn, she demanded the place on the Pantheon that Edih himself deserted, and was granted it - but along with this power, she was granted the ails and failings of Edih. Without worshippers, the other gods forced the upstart godling to dwell in the Underdeep.\n\nKhei&apos;Szeiya was not cowed or humbled by this treatment, however, and she drew with her a fragment of the elven society of the Crystal City, and a number of dwarven miners who toiled at the mountain Grimspire itself. Whispering to them of power and temptations, she took the seeds of the Drow and Deep Dwarven races. Millennia later, Khei&apos;Szeiya owns to power unheeded, and seems to command a powerful pantheon of the Drow and their connected slave races.\n\nKhei&apos;Szeiya appears as a harsh-featured Drow woman with human ears and a scarred face. When she does appear, however, it is typically in as ostentatious a manner as possible; the subtleties the former thief once lived by have since been destroyed. Khei&apos;Szeiya&apos;s belief in her own superiority as a god has led to immense arrogance and recklessness on her part, and in turn, the creation of the Deep elven race - the runaway fodder of war.\n\nKhei&apos;Szeiya&apos;s clerics pray for spells at midnight, when the sunless sky no longer taunts and the stars themself stud the body of the lady of darkness in all her glory." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Darkness, pain"/>
+    <fieldval field="dtyDomin" value="Chaos, Domination, Evil, Hatred, Lust, Magic"/>
+    <tag group="Gender" tag="Female"/>
+    <tag group="Alignment" tag="Evil"/>
+    </thing>
+  <thing id="dtyMror" name="Mror" description="The world economy of Bidestra is a mostly-representative economy where a gold coin has roughly the same gold content as does seawater. The basis for this economy stems from the Mror holdings, a pledge made in the weeks after Godsday by the dwarven kingdoms to the humans of seven different human nations. These pledges were written out with a promise that they could be exchanged for platinum from the bottomless Mror holds after a period of years has passed. Since that time, the idea of representative currency spread through Bidestra, with every single platinum coin that passes between hands being much more economical than the &apos;real&apos; thing (a platinum coin weighing a fifteenth what a real coin of pure platinum would). This signalled the end of protracted barter and trade, and with that change came the silent, creeping force that was economics - finally and eventually incarnated in the deity Mror, whose first appearance was to many moneylenders and godless mercantile priests on Godsday.\n\nThe avatar of Mror is a single, ten-foot-wide coin that hovers in the air. It does not speak, but the writing around the edge of the coin changes into a readable script. Wherever the coin is, it&apos;s a negotiable currency of some variety - even if only in theory, such as a King&apos;s Perfect Crown (a coin only theoretically minted in Kyngdom and never circulated, worth one hundred million platinum coins). Most temples to Mror - which operate like banks and hospitals at the same time - are decorated with some similar design, some artistic centerpiece that shows an arbitary representation of the most valuable piece of individual currency in a particular country.\n\nThe modern followers of Mror tend to be polite, economical and quite patient. They can assign an account to a deity and know full well that potentially thousands of years to come, it will be paid back, handled by another follower of their deity, and in doing so, the economy of the world is benefitted. They reap profits, then slough those profits back into the economy. Rarely are Mror priests and Mror worshippers wealthy, but they are never uncomfortable when in matters of money. Viewing the world&apos;s economy as a living creature that must be kept healthy, they both save and spend in periods when it helps to ease businesses along.\nHistory/Relationships\n\nMror is one of the most modern of the gods, who came into being and ascended into power in a meteoric rise during the middle of the Second Age, when the Mror Holds Slips were first used as a kind of tradeable currency. Because people began to believe in the slips as having value beyond their actual material value, coinage across Cobrin&apos;Seil slowly underwent a massive change, leading to the economy of the modern world.\n\nMror is therefore a relative newcomer - it was being worshipped with every written banknote, with every clarified business speculation. With the Third Age, Mror did not return to worshippers who had fallen out of its favour, but instead introduced itself to those bankers and priests who had been worshipping it, without realising, for years. To the rest of the gods, Mror is a rather boring entity - as long as the numbers work out in the end, it&apos;s quite happy to take losses ormake sacrifice, and it&apos;s amazingly patient compared to most of the gods. This has, of course, made it right at odds with the Nimble One, who believes the purpose of all forms of currency is to be stolen.\nDogma\n\nA thing is worth exactly what a person will pay for it - no more, no less. Fair trade and good practices serve you in stead over time, and nobody wins in the long term if you cheat. Everything must add up in the end, and I will be there to count every stolen penny." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Commerce"/>
+    <fieldval field="dtyDomin" value="Creation, Law, Nobility, Planning"/>
+    <tag group="Alignment" tag="Lawful"/>
+    </thing>
+  <thing id="dtyPalesca" name="Palescai" description="Palescai is the god to whom many who engage in valorous acts pray. Populous and well known in the world of men, Palescai is closer in some ways to Erhymn to being a true god of humankind. However, his lawfulness and predilection towards order mean that some races of humanity find his service onerous.\n\nPalescai appears as a willowy human male, whose left leg is always crippled. He walks with the aid of a quarterstaff. Palescai&apos;s avatar is in fact one of the most commonly seen in Cobrin&apos;Seil, picking through battlefields, roaming roadsides past the fields of famous battles in great wars, or simply considering such things in large, dusty libraries.\n\nPalescai resents the implication that he is inflexible, and as such, his clerics are free to pray for spells at any time provided they do it once a day. However, most clerics of Palescai prefer to do it at the rising of the sun.\n\nPalescai&apos;s presence is often sought by generals, and his religion revere a tome written by Palescai&apos;s first student, Tenshin of the Way. This tome, known as the Scripture of Shin, speaks of many simple things and teaches of complicated things through simplicity.\n\nPalescai&apos;s worshippers frequently take up the mantle of lawkeepers, and have an almost vigilante-like method of doing so. Frequently, clerics or Paladins of Palescai roam the streets at night, thwarting crimes they find, and depositing their perpetrators in guardhouses in the morning. This sort of behaviour tends to be curbed in societies where it is frowned upon." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="War"/>
+    <fieldval field="dtyDomin" value="Divination, Glory, Good, Knowledge, Law, Planning, War"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="LawGood"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyRalsanL" name="Ralsan&apos;Lour" description="Ralsan&apos;Lour is the goddess of the sun. While other deities own some connection through her, she is the oldest and the first, the original deity whose myth connects to stories of harvest, of renewal, and of beautiful, shimmering dawns. As the first of many such deities, her church is equally old, but dynamic, changing through the generations. Once, she had pyramids built in her name. Then, in time, they built cairns and henges to observe the stars and the sun. In the modern days, she has been seen around observatories, inscribed upon the dome. Ralsan&apos;Lour is a goddess who moves with the times, valuing tradition but embracing change, and she goes where she is most needed; she tends to those who live in the day, the farmers and travellers, but also to those who must brave the night.\n\nRalsan&apos;Lour&apos;s avatar is typically a floating woman, whose legs vanish into a golden, shimmering robe that reflects light in an ever-shifting pattern, surrounded by a nimbus of bright, golden light. She also never has been known to appear between sunset and sunrise, instead opting to send Crescent Guards - or, failing their availability, Moonhounds and Moonlit creatures - to protect sites or work as her intermediary. Just as the moon is the reflection of the sun, so do Ralsan&apos;Lour&apos;s followers carry her light where she herself cannot reach.\n\nRalsan&apos;Lour&apos;s followers within the church tend to be hierarchal and devoted, but she also counts a number of individuals who view the night as theirs to guard. It&apos;s not uncommon to find members of night watches, midnight patrols, search parties or sailors who kiss a small, sun-shaped pendant with a quiet prayer to the Unseen Sister. Those who live in darkness most appreciate the light, and it is to these that Ralsan&apos;Lour lends her strength.\nHistory/Relationships\n\nRalsan&apos;Lour is an old god who has gone by other names in the past, with temples to her worship having been discovered even in the forgotten ruins of Jarrath. The Savalyne of Arnea have even gone so far as to worship her openly, something that flies in the face of their normally insular nature. Her worship has evolved over time, once calling for flowers and moonlit sacrifices of valuables. In time, these sacrifices fell out of favour - Ralsan&apos;Lour discovered a number of sects devoted to her who took her edicts too far, engaging in sacrificing their fellowmen to her in their darkest times. It was due to this practice, it is suggested, that the Crescent Guard were formed, travelling devotees of the sun god that patrol the night for those black acts that lend strength to her enemies.\n\nRalsan&apos;Lour was the deity worshipped - at least in part - by Rheiltan Ducoris when he was a mortal (known as &apos;Lour&apos; at the time), and it is not without anguish that she opposes him now. Lour&apos;s stance on undead is unfortunately tainted by this relationship - she believes that while the possibility of good-aligned and virtuous undead exist, the process of the creation of undead lends strength to Rheiltan, and therefore must be prevented.\n\nRalsan&apos;Lour&apos;s Crescent Guard are often seen working as intermediaries with Schwarzstromites, and with the warriors of Palescai. This relationship is not imagined - due to her neutral stance between the two, Ralsan&apos;Lour is often called upon to play the role of intermediary and peacemaker between the two more volatile, proactive gods.\nDogma\n\nJoy is that most important thing, the light of the sun and life in every one of us. Life is precious, enjoying it moreso; wheresoever you go, carry the light of hope into the darkness. Fear not the undead, for those who walk in darkness cannot touch the faithful. Create not undead, lend no strength to the Fallen Paladin.\n\nHave patience in times of trial, and let adversity be that which draws you together, not divides you. I protect the day and lend strength at night, giving to you, that you might make the night your own. And at dawn and sunset, offer aside a little something of that day and that night to me, as I to you." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="The Sun and Moon"/>
+    <fieldval field="dtyDomin" value="Good, Glory, Renewal, Sun, Travel"/>
+    <usesource source="LostLibram"/>
+    <tag group="Gender" tag="Female"/>
+    <tag group="Alignment" tag="Good"/>
+    </thing>
+  <thing id="dtyRheilta" name="Rheiltan Ducoris" description="In the unseen and hidden places of graveyards, mad ghouls dance in whirling patterns, piping with their breathless lungs choruses to a power unseen and unknown… thus is the worship of Rheiltahn. Esteemed by almost exclusively the undead, and holding sway over the ways of death and life, Rheiltahn is at one and the same time the most renowned and despised god that exists.\n\nRheiltahn appears as a tall, imperious vampire, surrounded by a whirling network of spiked chains and dressed in regal finery. Those who have met him and lived have described him as cordial, even sardonic, and only the perpetual stench of death around him indicates he is anything but the paragon of societal virtue. However, he has a furious temper, and flies into extraordinary fits of rage with little to no provocation at times.\n\nRheiltahn&apos;s clerics pray for spells at sunset - when the night and day clash borders, and the day is neither one thing nor another." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Undeath"/>
+    <fieldval field="dtyDomin" value="Chaos, Death, Evil, Fire, Hatred, Shadow, Undeath"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="ChaotEvil"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtySchwarz" name="Schwarzstrom" description="The churning of the clouds, the boom of thunder and the crackle of lightning call out the name of the mighty Mother of Storms, Schwarzstrom. A defender of freedom and passion as well as goodness, the God of Strength demands integrity and virtue from those who would stand at her side. Once a half-elven hero of Cobrin&apos;Seil&apos;s First Age, Schwarzstrom is still rather &quot;mortal&quot; in her attitude; it is her feeling that the standoffish &quot;divine wisdom&quot; and &quot;big picture&quot; views of other deities are poor excuses for not helping their followers. To this end, she spends most of her time roaming the material plane in a mortal body, an inexorable paragon of her own ideals.\n\nSchwarzstrom takes the form of a towering warrior woman with a powerful build, broad shoulders and a proud bearing. Her black hair is wild and unkempt, and her eyes are a dark grey-blue, the colour of deep thunderclouds. She wears sturdy adventuring clothes and myriad battle scars, and wields a preposterously large stone mallet. In artistic works, Schwarzstrom is usually depicted in the midst of a raging storm, representative of her wild nature.\n\nThe Schwarzstrom does not so much hate the concept of Law as think it a distraction from the importance of personal conduct - she seeks not to destroy it, but to prove it unecessary by encouraging each individual to treat others well out of their own goodness, not for fear of repercussion. Her philosophy toward evildoers is one of forgiveness, but not foolishness; redemption should not be denied, but one should never allow the desire for fairness to blind them to true evil.\n\nHer followers are both many and few. Anarchists and idealists the world over add to the Schwarzstrom&apos;s voice by agreeing with her philosophy, though it is most often unknown to them. Those who actively follow her are usually rebels after her own heart, those who are already ill-suited to society&apos;s rules. Schwarzstrom&apos;s clerics (though she has few clerics, in favour of more simple warriors) pray for new spells at varying times of day, each individual choosing the time appropriate for his or her communion.\n\nSchwarzstrom will never grant charm or compulsion spells to any of her followers, and will not accept followers who utilise such effects. A follower may choose to use such effects, but in doing so, must break from her worship. Such an individual may never return to her, even by virtue of an atonement spell. Schwarzstrom does not wish to impose her will on others, so - without resentment - she simply parts ways with those who do not fully embrace her philosophy.\nHistory/Relationships\n\nSchwarzstrom is a staunch opposer of all evil gods, though she has a special place of hatred reserved for the Lord and his impenetrable lies. Vhaulun holds an ages-old grudge against her, but she regards him largely with pity rather than hate. She is regarded as a general nuisance by most of the older good deities, particularly the lawful ones, given her all-too-human penchant for drunken misconduct and unwelcome carousing.\nDogma\n\nChaos is freedom. Do not let the laws of others dictate morality or reason; instead do as you will, without harming the undeserving. Embrace personal responsibility; take no action, make no choice, of which you cannot be proud, and in turn demand accountability from others. In this way will you not destroy law, but render it useless; if every individual is good, law has no purpose, and all can be truly free.\n\nRefuse compromise with evil. There is no acceptable sacrifice, and there is no ends which justifies ill means. Defend those who need you and do not hesitate to destroy what you know is wrong. Yet, do not cause unecessary suffering, even to the truly vile; kill in the name of protection, not in the name of punishment or hatred. Love without fear, and live without regret." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Strength, freedom, rebellion"/>
+    <fieldval field="dtyDomin" value="Chaos, Community, Glory, Good, Liberation, Strength, Weather"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Good"/>
+    <tag group="Gender" tag="Female"/>
+    <tag group="Deity" tag="dtyKord"/>
+    </thing>
+  <thing id="dtySeit" name="Seit" description="Seit is an all-pervading force of nature, a constant in the lives of many, and a ubiquitous part of the common man&apos;s worship. With no great commitment, Seit and his worshippers are often accused of evil through complacency, but it is greater than that; Seit is dedicated to the cycles, and the ends of things. Seit does not fight that which happens - he merely observes its happening.\n\nSeit appears, and very rarely, as a black-haired, white-skinned human woman in black robes with white eyes and black pupils in which occasional stars twinkle. His clerics frequently take it upon themself to mirror their god&apos;s appearance, and it is this uniform design that helps identify them.\n\nClerics of Seit pray for new spells in the middle of the night. This often leads to odd sleep patterns, and indeed, the interrupted sleep can make such clerics haggard and disgruntled. This is Seit&apos;s way of reminding his clerics that ills visit upon all, and personal health and hygiene deserve attention as much as one can.\n\nClerics of Seit run a gamut of utterly insane, cackling madmen who spread disease and pain for no adequate reason to benevolent, self-sacrificing healers who bestow upon those around them their own health and heartiness. This disparate nature seems to be no concern of Seit&apos;s - he gives spells and powers to all his children." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Death"/>
+    <fieldval field="dtyDomin" value="Death, Fate, Healing, Plant, Repose"/>
+    <tag group="Deity" tag="dtyRaveQue"/>
+    </thing>
+  <thing id="dtySicario" name="Sicario" description="Unique amongst the gods of the greater pantheon, Sicario has made a promise to his followers. Exhorting them to emulate his behaviour, he has rendered a pledge in his solitary fortress - that any of his followers who slay him alone will earn his godhead. Of course, equal to that, the person must be considered a follower of his, and a number of powerful heroes have pooled their resources and slain Sicario in the past, only to find that the pledge unmakes them, killing them to restore the deity to life.\n\nAnyone can approach the avatar of Sicario. He sits on a throne in the depths of a fortress in Gehenna, a fortress that is itself, completely empty. Supplied with traps that he never seems to need to replenish and mindless &apos;guards&apos; such as oozes and demonic roaming living spells, Sicario has a perfect defence that must be assaulted alone. In theory, a visitor is free to consult with him and leave, but he just as much reminds people that he is a liar, and a traitor, and has no reason to trust or appreciate another person.\n\nWhile Sicario has a number of followers, he has very no churches and very few actual sites of power. The true individualism he preaches is acommunal and homicidal, teaching his followers to use everyone else, even one another, as he uses them. Subverted, quiet sociopaths that exist in normal societies and use other people for their own joys, the followers of Sicario can seem as subtle as a rude and obnoxious beaurocrat to a genuine serial murderer. It is just a distinction of degrees. He does not tell his followers how to worship him, nor would they listen if they adhered to his beliefs.\nHistory/Relationships:\n\nLike so many evil gods, Sicario is often opposed by Schwarzstrom. While she embraces the idea of a lawless existence, one where every unnecessary stipulation from a legal perspective does nothing to facilitate happiness and good in the world, Sicario&apos;s fundamentally traitorous and selfish perspective flies in the face of the storm god.\nDogma\n\nIn the end, we are all a faction of one. Have no love for anyone who does not benefit yourself. Do as thou wilt as long as no harm comes to yourself - adhere to laws as long as the consequences are worth it, and pay no heed to those laws that do not have any opportunity to bother you. You are special, you are the finest, and anyone else is therefore just meat for your consumption. Prepare and brace yourself, for one day you will make an assault, solitary, against me, on my throne." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Betrayal"/>
+    <fieldval field="dtyDomin" value="Evil, Lust, Trickery"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Evil"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyTheBlac" name="The Black That Knows" description="Deep within a planar demesne that was once a prison, the Black that Knows gibbers to itself in its eternal darkness. Considered the Abomination of Knowledge, the Black that Knows knows no actual origin, but speaks in stuttered lies and secrets of a Father and a Mother. Whatever lies hidden and unknown, the worshipers of the Black that Knows seek out, and they are completely dispassionate and uncaring in their relentless pursuit of knowledge.\n\nThe Black That Knows appears as a black, free-floating sphere, its surface boiling with jawed mouths, fleshy pseudopodia, fang-ringed eyes, and other abominable forms. The Black That Knows cannot manifest an avatar, however, in Cobrin&apos;Seil, for it is bound forever in a Planar Prison that, as far as can be told, is of th creature&apos;s own making. Whatever its aims, the Black That Knows speaks only to its worshipers, whispering obscene and lustful secrets to them, hidden desires long-unfulfilled, and long-untouched magic.\n\nClerics of The Black That Knows pray for spells only at night, once the sun has set. Only when the cleric blindfolds him or herself does the Black That Knows respond, refusing to grant visions of true reality to one who relies on a false sight." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Secrets, madness"/>
+    <fieldval field="dtyDomin" value="Corruption, Divination, Evil, Knowledge, Planning"/>
+    <tag group="Alignment" tag="Evil"/>
+    </thing>
+  <thing id="dtyDeepMou" name="The Deep Mountain King" description="Utterly unconcerned with the comings and goings of other, flightier races, the Deep Mountain King is the overgod of the Dwarven Pantheon. While the predominant bent of the Dwarven Pantheon is lawful, the Deep Mountain King himself cares not for law, at least not too much. Moderate in all things, the Deep Mountain King is slow to consider, and slower still to stir to action. Prodigiously old, the Deep Mountain King&apos;s followers speak of a time when all life was as the Deep Mountain King - a sort of pseudo-life, half a living creature, half living stone.\n\nThe Deep Mountain King appears as a fifteen-foot tall giant, brawny in the extremes and composed of equal parts flesh and stone. His enormous hands are always seen gripping a warhammer, and he constantly mines the depths of his undermountain home, seeking out new and interesting forms of gemstone and metal. His hide is constantly studded with gemstones and precious metals, and his beard is as a thick coat of lichen upon a stone.\n\nThe clerics of the Deep Mountain King pray for spells when the earth sighs loudest - which is usually the sixth hour of the evening. His clerics never rebuke undead, deeming such things a hateful aberration against the domain of the Deep Mountain King. While Seit is a god of death, and Rheiltahn a god of the dead, the Deep Mountain King is a god of burials and graves - that any would escape his eternal embrace is an affront. For this reason, he despises undead almost unquestioningly, and that some elven races have given rise to voluntary undead - Baelnorn and Woven Ones - he sees as a personal slight." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Dwarvenkind"/>
+    <fieldval field="dtyDomin" value="Dwarf, Earth, Fire, Law, Repose, Rune, Strength"/>
+    <usesource source="LostLibram"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyFortune" name="The Fortuneseeker" description="The Fortuneseeker holds a delightfully unique presence on the Pantheon. Evil and merciless, it pursues unrelentingly those it has in its grasp - gamblers down on their luck, a man desperately trying to increase his chance of survival, the lover betraying her spouse. And yet, at some time or another, everyone calls upon its name, hoping to see it smile back at them as they turn over the cards. They may see it and they may not - but if it smiling, chances are the joke is on them.\n\nThe Fortuneseeker appears not as a creature but as an object - a single glove, red and black, begemmed and bejewelled on the right hand of gamblers, card sharks, or con men. It is often mistaken, in this guise, for a Demilich. While it is not such a creature itself, it has a great many such agents in its employ, plumbing the depths of probability for those truly impossible things, finding them in the Far Realms.\n\nThe Fortuneseeker&apos;s Clerics pray for spells at sundown or sunrise - standing on the edges of night. While the Fortuneseeker is capricious, it always follows rules - just as random chance follows a mathematical pattern that is a very faint aspect of the great Primal Order itself." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Misfortune"/>
+    <fieldval field="dtyDomin" value="Corruption, Evil, Fate, Law, Luck, Lust"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Evil"/>
+    </thing>
+  <thing id="dtyTheLord" name="The Lord" description="In the primal days of the Pantheon, before the great Balance, a lone godling seized upon the power of the words men used, and bent them to a permanent disjunction. Now, woven into the fabric of mankind&apos;s knowledge is the assumption that one thing is simply as it should be, even as all the while it is not. The Lord, the Great Deceiver, ascended to the state of Greater Godhood that day, and has since held the position, the False Paladin ever-lying to the world around him. The Lord is worshipped by many common people as a Lawful Neutral deity, never realising the tyrant their god happens to be. All the gods know of the Lord&apos;s great deceit, but beyond their own worshippers and clerics they are powerless to inform others - the Great Deceit remains embedded in the very fabric of Cobrin&apos;Seil.\n\nThe Lord appears, at all times, as a tall, imposing, man with a fine-trimmed black beard and warm, loving eyes. He typically wears silver-enamelled full plate mail, and is rarely without his bastard sword, though it is not unknown for him to appear without it. Given to cordial speech and beautiful wordplay, he can appear for all the world to be an ultimately good man, simply cursed by an inability to adequately communicate, which leads to him being considered abrupt and brash by those who are unwilling to give him a proper chance.\n\nThe Lord&apos;s clerics pray for spells at sunset, when the night is not begun nor the day ended. He relishes this quiet lie, the curious fact that people try to apply yes and no answers to a complex - and yet simple - fact of life." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Law"/>
+    <fieldval field="dtyDomin" value="Corruption, Domination, Evil, Law, Nobility, Planning, Tyranny"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Evil"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyNimbleO" name="The Nimble One" description="Few adventuring characters are as archetypal as the ubiquitous halfling rogue. Matched only by the half-orc for overall dungeoneering expertise and outstripping the latter in people skills and intellect, Halflings in Cobrin&apos;Seil, despite their racial division remain excellent rogues and footpads. And this, according to the Nimble One, is how things should be.\n\nThe Nimble One appears as an androgynous halfling, wearing hundreds of knives on and around various places around her body, and decked out in a bright red tunic with brown leathers. The smiling, ever-dancing goddess of the halfling race, the Nimble One indulges her race&apos;s ever-present mischievous side, granting them luck when needed, and aid when called.\n\nThe Church of the Nimble One is almost as ever-present as halflings themself. Hearth wisdom, passed on through generations of halflings, tell of her tales, and the act of telling a story alone sends whispers of power to add to her divinity. As such, she has and wants no organised church hierarchy, though she has been known to call the occasional Hierophant. The Nimble One is flighty and hedonistic, and feels no shame in being flagrant. More than a few attractive male halfling bards have found themself pregnant (to their astonishment) after a dalliance, and these children - Dunnelm, as they are known - grow to be excellent rogues and dungeoneers." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Thievery"/>
+    <fieldval field="dtyDomin" value="Chaos, Fate, Glory, Halfling, Luck, Trickery"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Chaotic"/>
+    <tag group="Gender" tag="Female"/>
+    </thing>
+  <thing id="dtySeafath" name="The Seafather" description="A ship leaves port, and hurried prayers are spoken, desperate last-minute sacrifices are made, and fish guts are inspected before the highly superstitious sailors will allow the ship to leave harbour. Foremost amongst the appeals are those calling on the mercy of the Seafather, Patron of the Waves.\n\nThe Seafather, who appears as a preposterously huge ocean giant, wearing full studded leather armour and carrying two longswords, is a dispassionate god of balances who is more interested in the well-being of the seas than he is with those who travel on it. Genuine worshippers of his ways are often distant and almost truculent, and no wonder. As a god of the oceans, the Seafather is also a god of the truly enormous psionic minds that reside in the depths - of the Great Silent Ones, and worse.\n\nThe Seafather whispers to his worshipers, giving them the faintest steel of mental resolve about them. He is otherwise as a raging storm, given to great tumult, but calming quickly. His temper is easily riled, but just as easily calmed, and as such, he is often considered something of a child amongst others. Strange, though, given that he himself is an enormously strong god, and ancient beyond reckoning to many other gods." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="The Sea"/>
+    <fieldval field="dtyDomin" value="Air, Animal, Providence, Protection, Life, Travel, Water, Weather"/>
+    <usesource source="LostLibram"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyTanTaro" name="The Tan&apos;Tarock" description="There are few creatures as apparently paradoxical as the Tan&apos;Tarock. An ancient god emerging from a sea of protoplasmic slime, seemingly born of a roiling chaos unseen since, the Tan&apos;Tarock established itself as The First Order - a creature of law and order, of discipline, of rules. And these rules, the Tan&apos;Tarock claims, have since been upheld.\n\nThe Tan&apos;Tarock appears in depictions and avatar as a gargantuan dinosaur of purple-enamelled scales, with surprisingly muscular arms and an almost humanoid gait. The Tan&apos;Tarock&apos;s scripture speaks of the Tan&apos;Tar, a race of creatures who were once mortal, but ascended to a state of law and order.\n\nThe Tan&apos;Tarock is concerned with law over all else. While Tan&apos;Tarock does not profess to favouritism of good over evil, it can be observed that evil creatures are more prone to go against the spirit (if not the word) of the law than good creatures, and thus the Tan&apos;Tarock has come to favour good clerics.\n\nClerics of the Tan&apos;Tarock pray for new spells in the seventh hour of the day, for it was at this time the Tan&apos;Tarock emerged from the oceans of old." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Order"/>
+    <fieldval field="dtyDomin" value="Destruction, Divination, Glory, Knowledge, Law, Repose"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Lawful"/>
+    </thing>
+  <thing id="dtyTriune" name="The Triune" description="For every action, there is an equal and opposite reaction. For every up, there is a down, and for every point there is a counterpoint. This order is how the Triune builds. Systems are structures in the mind, and his long history of helping legal systems function has been well-known. Revered by engineers for his reasoned approach, and followed by police for his legal process, The Triune is one of CobrinSeil&apos;s more understated deities.\n\nThe Triune&apos;s avatar is, despite his somewhat archaic and official manner, one of two common forms; either a bronze armour, with a helm that shows three faces on either side of the head, or, and this is more common, a perpetually busy looking man wearing a flanelette shirt, rolled at the sleeves, with a pad bulging in the roll of one sleeve and a pencil tucked behind his ear. Smelling lightly of something industrial, Triune&apos;s avatar goes by a variety of names, such as Mr Trix and Mr San, but generally is always found observing or overseeing something ornate.\n\nMost police officers give credence to Triune. His optimistic perspective on law enforcement - that most people are good, but the laws are there to catch the problems - help to overcome the burden they feel at spending all day dealing with criminals. Judges often read Triune texts, and often Triune churches are the centre of heated discussion after services, as the many legal experts there &apos;talk shop.&apos; Engineers and other craftsmen, people who need to build things to last, people who understand a &apos;margin of safety&apos; often heed to Triune, though it is generally regarded as a failing of an engineer to pray over a design to improve it.\nHistory/Relationships\n\nTo nobody&apos;s great surprise, Triune and Schwarzstrom don&apos;t get along. Worse, because he and she both work towards the betterment of people in general, she finds she can&apos;t deal with him in her normal way - that being a good, old-fashioned booting. Triune finds her exhasperating, but well-meaning, so he tries to make sure he&apos;s patient when a Schwartstromite blusters through a tidy legal structure and steals all the pies.\n\nOf course, the real enemy of the Triune - and the reason he and Schwarzstrom operate alongside one another so much - is the Lord, who he finds has successfully and cleverly corrupted the systems of mortalkind. The Lord&apos;s deceit and his abuse of systems is one of the reasons that Triune refuses to allow lawful neutral clerics - a person has to be truly following the spirit and the letter of the law.\nDogma\n\nFreedom is the right of all beings - and that includes the freedom to fit in. Only a small number of people are really wicked, deep down, and we set up rules and structures to give us ways to find them. Have faith in people, but be careful with a person. Lies destroy themself. Create and be proud of your creation. Whatever you put your hand to, keep at until it is complete." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Engineering"/>
+    <fieldval field="dtyDomin" value="Creation, Family, Good, Law, Protection"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="LawGood"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyUilian" name="Uilian the Everflowing" description="It has been the plight of a great many fertility gods and goddesses across Cobrin&apos;Seilto have their ways and means decidedly bent towards a particular directions that many worshipers prefer. It is therefore slightly surprising to find what was once a minor god of children occupying the position of the great god of fertility in Cobrin&apos;Seil.\n\nUilian The Everflowing appears in avatar form as a beautiful child, wide-eyed and fair-haired, seemingly astonished at all that is new. This guise, however, is simply to keep the mind of his worshippers focused, rather than on the cause of new birth, on the result. While Uilian is not against recreational enjoyments of the flesh, he knows that many mortals can get a bit overly focused on it. As such, he attempts to be as innocent as possible in his dealings with his worshippers.\n\nUilian&apos;s Worshippers pray for new spells every morning before they see the sun rise. This observance of the new day helps to remind worshippers that everything ascends towards a point, at least to Uilian&apos;s philosophy." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Reproduction"/>
+    <fieldval field="dtyDomin" value="Creation, Family, Glory, Good, Planning, Sun"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Good"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyVhaulun" name="Vhaulun" description="In secluded cults strewn across the lands of humans, small-minded and weak men, hate-filled and narrow in their dealings, congregate in back alleys and hidden storerooms to give praise to the one god that truly revels in their blackened souls. The Lord of Ravagers, Vhaulun, while worshipped openly in the lands of trolls and giants, has recently begun to prey on the bigotry of mankind, granting power to those who are xenophobic enough to engage in random acts of hate and slaughter. Vhaulun cares not for racial purity - but the mindless, unthinking destruction of others that it tends to promote pleases him greatly.\n\nVhaulun&apos;s clerics pray for spells at evening, though this stricture of faith is almost an afterthought to the lengthy and hate-filled ranting of the tenets of the Troll-God&apos;s faith.\n\nVhaulun appears, in effigy and avatar, as a black-skinned troll with demonic wings, almost twice the size of a normal troll. His might is prodigious, and second only to Schwarzstrom amongst the gods (though El, the Hidden One, can lay claims to greater might than Vhaulun). The might of Vhaulun manifests itself in outbursts of fury and rage, insanely destroying all around him. He is known at times as the Lone God, for his court know best to avoid close contact with him." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Destruction"/>
+    <fieldval field="dtyDomin" value="Chaos, Destruction, Evil, Fire, Hatred, Strength, War"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="ChaotEvil"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="dtyYojandu" name="Yojandur the Accepting" description="The nature of inherently evil beings has always been one of hot debate amongst scholars. It is a well-known fact that demons, devils, and their various permutations are so intimately bound with the nature of evil that it pervades their very being. These creatures, however, are not ultimately forbidden from changing - it is merely that the idea of a life that is different is often so very strange to them that it can send them mad. However, there are those, occasional creatures who rebel against their parentage and heritage, and to them, the secret of such things is revealed - that to the soul, a Solar is but a Pit Fiend of a differing predilection.\n\nYojandur the Accepting was not a god at first. He was a Devil Lord, the Pit Fiend Kohlund. However, history has proven that the ranker the heart, the greater the redemption. An unknowable event prompted a single, solitary spark of neutrality in the mighty beast, and so, he was redeemed by steps, until finally, he stood in the Pantheon, ready to assume the mantle of redemption, opening the gates to all outcasts and lost. He appears, despite his transition, as a Pit Fiend with glowing yellow eyes and beautiful white wings.\n\nYojandur&apos;s clerics pray for new spells every morning, before the sun rises, that they may glory in the appearance of a new dawn with the memory of communion fresh in their mind - that no matter what the day holds, there is a moment of peace and joy at the beginning." compset="Deity">
+    <fieldval field="dtyFlavor" value="Greater Inner God"/>
+    <fieldval field="dtySphere" value="Redemption"/>
+    <fieldval field="dtyDomin" value="Chaos, Creation, Glory, Good, Healing, Renewal, Sun"/>
+    <usesource source="LostLibram"/>
+    <tag group="Alignment" tag="Good"/>
+    <tag group="Gender" tag="Male"/>
+    </thing>
+  <thing id="bgOrdTzar" name="Tzarum Order" description="{b}{i}Order And Peace{/i}{/b}\n\nThe Tzarum have two common roles in their place in the cities of the Eresh Protectorate. Simultaneously a group of holy warriors regarded as high-impact shock troopers, the Tzarum are also integrated heavily into the City Watch. \n\nOstensibly the Tzarum serve at the request of the Church and the Crown, but as all the knightly orders, they are fiercely independent. This can be a problem for city watches, which may have conflicts with the Knighthouse as to protocols and rules. Similarly, Church soldiers often regard Tzarum as indolent, because of their unwillingness to go where the Church demands without what they see as an acceptable reason.\n\nTzarum knights tend to be well equipped and well trained, and in many cases live in the same Chapterhouse for long stretches of time. \n\nAt Their Best: Tzarum are a terrifying high-impact force who arrive in time to save people and destroy evil.\n\nAt Their Worst: Tzarum are inflexible and rigid, refusing to communicate with others because of the rules.\n\n{i}Effect:{/i} Choose one:\n * Training in Streetwise or Insight\n * +2 skill bonus to Streetwise or Insight\n * You can use Streetwise in place of Diplomacy" compset="Background" uniqueness="unique">
+    <usesource source="LostLibram"/>
+    <tag group="BackSkill" tag="skInsight" name="Insight" abbrev="Insight"/>
+    <tag group="BackSkill" tag="skStreetwi" name="Streetwise" abbrev="Streetwise"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="BackCamp" tag="General" name="General" abbrev="General"/>
+    </thing>
+  <thing id="thTzaChar" name="Tzarum Charger" description="{i}“When the Tzarum charge, thunder chases.”{/i}\n\nThe elite shock troops of the Tzarum Order. While the Tzarum like to promote the idea their order simply spring into existence as perfect military units, the truth is most chargers have to spend a lot of time traning for the role. Mostly, this involves drilling, training, and getting kicked in the face and chest a lot.\n\n{b}Building a Tzarum Charger{/b}\nTzarum Chargers want to be in melee. They’re people who are used to throwing themselves face-first into combat, hard. It’s best to not bother with a charger if you intend to play at range, or if you’re interested in implement powers. Fighters, Warlords, Paladins and Wardens all make fine chargers." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthTzaCha1"></bootstrap>
+    <bootstrap thing="fthTzaCha5"></bootstrap>
+    <bootstrap thing="fthTzaCh10"></bootstrap>
+    </thing>
+  <thing id="fthTzaCha1" name="Tzarum Charger Starting Feature" description="The Tzarum practice charging to the point as a basic element of their regimen.\n\n{i}Charge Expertise:{/i} Choose one of your level 1 At-Will melee attack powers. When charging, you can use that power in place of a basic attack." compset="ThemeFeat" uniqueness="unique">
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    </thing>
+  <thing id="fthTzaCha5" name="Tzarum Charger Level 5 Feature" description="{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour Expertise feats." compset="ThemeFeat" uniqueness="unique">
+    <tag group="ReqLevel" tag="5" name="5" abbrev="5"/>
+    </thing>
+  <thing id="pthTzaChaU2" name="Charger&apos;s Poise" description="{b}Effect:{/b} Until the beginning of your next turn, you gain resistance to all damage from opportunity attacks equal to your Strength modifier." compset="Power">
+    <fieldval field="pwFlavor" value="It takes a lot to convince a person to charge face-first into a teeming mass of blades and rage."/>
+    <fieldval field="pwSpecial" value="Whenever you hit with a charge attack, this power recharges."/>
+    <usesource source="LostLibram"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="PowerSrc" tag="Martial"/>
+    <tag group="AttackType" tag="Personal"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="PowerType" tag="Utility"/>
+    <tag group="PowerTheme" tag="thPandChar"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="fthTzaCh10" name="Tzarum Charger Level 10 Feature" description="\nWhen a Tzarumite charger strikes, they knock foes over or back with the sheer force of arms.\n\n{b}Battlefield Terror:{/b} Whenever you hit with a charge attack, you knock the target prone or push the target 1 square." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="pthTzaChaU6" name="Charger&apos;s Pride" description="{b}Effect:{/b} You end any effect that slows, dazes, or immobilises you." compset="Power">
+    <fieldval field="pwFlavor" value="It takes a lot to convince a person to charge face-first into a teeming mass of blades and rage."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thPandChar" name="Pandion Charger" abbrev="Pandion Charger"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="ReqLevel" tag="6"/>
+    </thing>
+  <thing id="pthTzaChU10" name="Charger&apos;s Pivot" description="{b}Effect:{/b} You move your speed. If any creature makes an opportunity attack against you during this movement, they take damage equal to your Strength, Dexterity, or Charisma modifier.\n{i} Level 21:{/i} The damage is equal to 10 + your Strength, Dexterity or Charisma modifier." compset="Power">
+    <fieldval field="pwFlavor" value="Sometimes, Chargers need to reposition."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thPandChar" name="Pandion Charger" abbrev="Pandion Charger"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="thTzaThie" name="Tzarum Thieftaker" description="\n{i}“Alright, mate, what do you think’s going on here?”{/i}\n\nThe Tzarum are inextricably linked with the Watch in Eresh. While the classic image of a Tzarum is a black-armoured soldier on a horseback, they’re incredibly common in the day-to-day operations of the city. Thanks to being members of the nobility, Tzarum are allowed to enter certain areas in pursuit of justice, something that the common Watch officers can’t normally do. Thieftakers tend to be focused, therefore, on the capture of enemies and the prevention of escape.\n\n{b}Building a Thieftaker{/b}\nIf you’re trying to add some stickiness to a melee character, the ability to chase foes down and keep in melee range, the Thieftaker serves you well. Thieftakers make good weapon-users, but if you can’t handle being slowed from time to time, maybe look elsewhere." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthTzaThi5"></bootstrap>
+    <bootstrap thing="fthTzaTh10"></bootstrap>
+    <bootstrap thing="fthTzaThi1"></bootstrap>
+    </thing>
+  <thing id="pthTzaThie1" name="Crushing Smash" description="{b}Requirement:{/b} You must have successfully hit the target with a melee attack this turn\nTarget: The creature you just hit\nLevel 21:  Up to two target creatures including the one you just hit\nAttack: Highest ability modifier vs. Reflex\nHit: [W] damage and the target is knocked prone.\nLevel 11: 2[W] damage and the target is knocked prone.\nEffect: You’re slowed until the end of your next turn." compset="Power">
+    <fieldval field="pwFlavor" value="After bearing down upon your opponent you haul them to the ground, even at the cost of your own balance."/>
+    <fieldval field="pwTarget" value="The creature you just hit ({i}Level 21:{/i}  Up to two target creatures including the one you just hit)"/>
+    <usesource source="LostLibram"/>
+    <tag group="AtLevel" tag="1"/>
+    <tag group="PowerTheme" tag="thTzaThie"/>
+    <tag group="PowerSrc" tag="Martial"/>
+    <tag group="AttackVs" tag="defRef"/>
+    <tag group="Damage" tag="Weapon1"/>
+    <tag group="AttackType" tag="MeleeWep"/>
+    <tag group="PowerAcc" tag="Weapon"/>
+    <tag group="PowerType" tag="Encounter"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="ActionType" tag="Minor"/>
+    <eval phase="Traits" priority="5000"><![CDATA[var bonus as number
+var attidstr as string
+
+~ Use Int as default - this might not be necessary
+bonus = #attrbonus[attrInt]
+attidstr = "attrInt"
+
+~ Find highest bonus
+foreach pick in hero from Attribute
+  if (eachpick.field[attrBonus].value > bonus) then
+    bonus = eachpick.field[attrBonus].value
+    attidstr = eachpick.idstring
+  endif
+nexteach
+
+~ Use that as the damage and attack attributes
+perform assignstr["DamageAttr." & attidstr]
+perform assignstr["Attack." & attidstr]]]>
+      <after name="Calc attrBonus"/>
+      </eval>
+    </thing>
+  <thing id="pthTzaThiU2" name="Hot Pursuit" description="{b}Trigger:{/b} An enemy that started its turn within burst 2 of you ends its turn outside that range.\n\n{b}Effect:{/b} You can move up to your speed as long as every square of movement makes you closer towards the triggering enemy." compset="Power">
+    <fieldval field="pwFlavor" value="“Oi! Oi you, get back here!”"/>
+    <usesource source="LostLibram"/>
+    <tag group="ActionType" tag="Free"/>
+    <tag group="PowerTheme" tag="thTzaThie"/>
+    <tag group="PowerSrc" tag="Martial"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="AttackType" tag="Personal"/>
+    <tag group="PowerType" tag="Utility"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="pthTzaThiU6" name="You’re Nicked" description="{b}Trigger:{/b} An enemy grabbed by you escapes your grab.\n\n{b}Effect:{/b} You grab the opponent. You lose your move action and minor action next turn." compset="Power">
+    <fieldval field="pwFlavor" value="“Slippery bastard, ain’t ya?”"/>
+    <tag group="PowerType" tag="Utility"/>
+    <tag group="ActionType" tag="Standard"/>
+    <tag group="PowerSrc" tag="Martial"/>
+    <tag group="PowerUse" tag="AtWill"/>
+    <tag group="AttackType" tag="MeleeTouch"/>
+    <tag group="PowerTheme" tag="thTzaThie"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="ReqLevel" tag="6"/>
+    </thing>
+  <thing id="pthTzaThU10" name="There You Are" description="{b}Trigger:{/b} An enemy within 10 squares of you hits you with a ranged attack.\n\n{b}Effect:{/b} You shift up to double your speed, as long as every square of movement makes you closer towards the triggering enemy." compset="Power">
+    <fieldval field="pwFlavor" value="“I said, you are under arrest.”"/>
+    <tag group="PowerType" tag="Utility"/>
+    <tag group="ActionType" tag="ImmedInt"/>
+    <tag group="PowerSrc" tag="Martial"/>
+    <tag group="PowerUse" tag="Daily"/>
+    <tag group="AttackType" tag="Personal"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="PowerTheme" tag="thTzaThie"/>
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="fthTzaThi1" name="Tzarum Thieftaker Starting Feature" description="It’s not graceful, but Thieftakers need to be able to capitalise on chances to stop escaping criminals. More than once a would-be escape on the streets of Eresh is interrupted by a knight in armour crash-tackling them to the ground." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1"/>
+    <bootstrap thing="pthTzaThie1"></bootstrap>
+    </thing>
+  <thing id="fthTzaThi5" name="Tzarum Thieftaker Level 5 Feature" description="As all Knights, you have been drilled and trained in the proper and efficient use of armour.\n\n{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour Expertise feats." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5" name="5" abbrev="5"/>
+    </thing>
+  <thing id="fthTzaTh10" name="Tzarum Thieftaker Level 10 Feature" description="{b}Benefit:{/b} You get a +1 bonus to saving throws against effects that slow, immobilise or daze." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="bgLethOrde" name="Lethenite Order" description="{b}{i}Aid Through Understanding{/i}{/b}\n\nThe Lethenites are commonly found managing and maintaining church sites dedicated to complex magical problems, such as holy relics or bound fiends. They are also commonly involved in the work of magical and holy libraries, transporting important books and icons from one place to another with a degree of understanding how the things work. Lethenites also often serve guarding care posts for church services like poorhouses and rest homes. \n\nLethenites do not have as much integration in other organisations as much as they tend to have a member of the Lethenite order whose duty is to liaise with a group. This can be a specific responsibility and tends to come with a lot of infrastructural knowledge - Knights often finish a task with detailed reports for the next knight to handle.\n\nThe Lethenite order is the most likely to have access to strange magic or research, and arcane testing facilities. If you want to have a magical accident or a curse the Order are attempting to fix, this is the place to be.\n\nAt Their Best: Lethenites are scholarly experts in many interconnected fields who protect other researchers through force of arms.\nAt Their Worst: Lethenites are slow to react and unlikely to take a good solution because they’re seeking a best solution.\n\n{b}Benefit:{/b} Choose one: \n* Training in Dungeoneering, Arcana or Thievery\n* +2 skill bonus to Dungeoneering, Arcana, or Theivery\n* +1 skill bonus to Dungeoneering, Arcana and Thievery" compset="Background">
+    <usesource source="LostLibram"/>
+    <tag group="Hide" tag="Special"/>
+    <tag group="BackSkill" tag="sklDungeon" name="sklDungeon"/>
+    <tag group="BackSkill" tag="sklArcana" name="sklArcana"/>
+    <tag group="BackSkill" tag="sklThiever" name="sklThiever"/>
+    </thing>
+  <thing id="thLethArch" name="Lethenite Archivist" description="{i}“Now then, young one, we could fill a cathedral with what you don’t know.” {/i}\n\nThe Lethenite order are the ones first called upon to deal with powerful, unstable, or dangerous magical artifacts that the Church has neither the human resources nor infrastructural knowledge to address. The Archivists are the ones who both gather things to add to the archives, seek to catalogue what’s already there, and return what’s lost.\n\n{b}Building A Lethenite Archivist{/b}\nThe Lethenite Archivist is a tinkerer’s character. They’re people who want more options, who want ways to build with options. If your class hasn’t got a lot of At-Will powers, or lacks for interesting powers that you may want sometimes there’s not necessarily that much in the Archivist for your character." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthLetAr10"></bootstrap>
+    <bootstrap thing="fthLetArc1"></bootstrap>
+    <bootstrap thing="fthLetArc5"></bootstrap>
+    </thing>
+  <thing id="fthLetArc1" name="Lethenite Archivist Starting Feature" description="Archivists are capable of putting information into proper contexts. This can be important for skills you can see or rare opportunities for tactics you may not always need.\n\n{b}Varied Study:{/b} Choose a 1st-level at-will attack power from your own class. You can use this power as an encounter power." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    </thing>
+  <thing id="fthLetArc5" name="Lethenite Archivist Level 5 Feature" description="As all Knights, you have been drilled and trained in the proper and efficient use of armour.\n\n{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour Expertise feats." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5" name="5" abbrev="5"/>
+    </thing>
+  <thing id="fthLetAr10" name="Lethenite Archivist Level 10 Feature" description="Your study has infused the skills you have and what you know. \n\n{b}Skill Synthesis:{/b} Choose one of your at-will attack powers and a power source. That power gains that power source in addition to its other types." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10" name="10" abbrev="10"/>
+    </thing>
+  <thing id="pthLeArcU2" name="Exceptional Talent" description="{b}Trigger:{/b} You succeed on a skill check in a skill challenge.\n\n{b}Effect:{/b} You’re considered to have succeeded on two skill checks." compset="Power">
+    <fieldval field="pwFlavor" value="Anyone can achieve. You can excel."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thLethArch" name="Lethenite Archivist" abbrev="Pandion Thieftaker"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="ActionType" tag="Free" name="Free Action" abbrev="Free Action"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="pthLeArcU6" name="Archivist’s Scrutiny" description="{b}Efffect:{/b} Choose an opponent and make an appropriate knowledge check against their lowest defence. If you succeed, each of that creature’s vulnerabilities are doubled until the end of your next turn." compset="Power">
+    <fieldval field="pwFlavor" value="You can capitalise on your knowledge at just the right moment."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thLethArch" name="Lethenite Archivist" abbrev="Lethenite Archivist"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="ActionType" tag="Free" name="Free Action" abbrev="Free Action"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="ReqLevel" tag="6"/>
+    </thing>
+  <thing id="pthLeArU10" name="Impossible Secret" description="Effect: Make an appropriate knowledge check against the tagret&apos;s highest defence. If you succeed, you choose one of that enemy’s abilities that can recharge. Until the beginning of your next turn, that ability can’t recharge." compset="Power">
+    <fieldval field="pwFlavor" value="With the right, deeply cryptic word or gesture, you can hold back even an enemy’s thoughts."/>
+    <fieldval field="pwRange1" value="1"/>
+    <fieldval field="pwTarget" value="One enemy in the burst"/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="AtWill"/>
+    <tag group="PowerTheme" tag="thLethArch" name="Lethenite Archivist" abbrev="Lethenite Archivist"/>
+    <tag group="ActionType" tag="Move"/>
+    <tag group="AttackType" tag="CloseBurst"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="thLethSieg" name="Lethenite Siegecrafter" description="{b}{i}“Every wall comes down, but ours is the task of saying ‘not yet.’”{/i}{/b}\n\nTzarum are the people who put up their shields and walk forward into the fire, but the Lethenites are the people who erect shields that will never need to move. The Lethenite Siegecrafters are the members of the order who study most assiduously the task of engineering and designing the world around them to be \n\n{b}Building A Lethenite Siegecrafter{/b}\nSiegecrafters are martial, typically, since they need to be capable of installing and defending spaces to some extent by themselves. They also favour some degree of melee ability, and sometimes come from ranks of Rogues, Fighters, Warlords and Paladins." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthLetSie1"></bootstrap>
+    <bootstrap thing="fthLetSie5"></bootstrap>
+    <bootstrap thing="fthLetSi10"></bootstrap>
+    </thing>
+  <thing id="fthLetSie1" name="Lethenite Siegecrafter Starting Feature" description="You know how to wait for an opening from your opponents – and can capitalise on their distractions, even if that means they’re distracted by your allies." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <bootstrap thing="pthLetSie1"></bootstrap>
+    </thing>
+  <thing id="pthLetSie1" name="Spring the Trap" description="{b}Trigger:{/b} An enemy within 2 squares of you targets an ally with an attack that does not target you.\n\n{b}Effect:{/b} You shift up to 2 squares and make a melee basic attack against the triggering enemy." compset="Power">
+    <fieldval field="pwTarget" value="The triggering enemy"/>
+    <fieldval field="pwRange1" value="2"/>
+    <fieldval field="pwFlavor" value="The battlefield around you is yours to control, and enemies attacking your allies present themselves to you."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thLethSieg" name="Lethenite Siegemaker" abbrev="Lethenite Siegemaker"/>
+    <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="AttackType" tag="CloseBurst"/>
+    <tag group="ActionType" tag="ImmedInt"/>
+    <tag group="AtLevel" tag="1" name="1" abbrev="1"/>
+    <tag group="PowerClass" tag="ThemePower"/>
+    <tag group="PowerAcc" tag="Weapon" name="Weapon" abbrev="Weapon"/>
+    </thing>
+  <thing id="fthLetSie5" name="Lethenite Siegecrafter Level 5 Feature" description="{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour Expertise feats." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5"/>
+    </thing>
+  <thing id="fthLetSi10" name="Lethenite Siegecrafter Level 10 Feature" description="You know to be ready for anything.\n\n{b}Forewarned and Forearmed:{/b} You get a +1 bonus to Initiative." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="bgRaguzOrd" name="Raguzan Order" description="{b}{i}COME HAVE A GO IF YOU THINK YOU’RE HARD ENOUGH{/i}{/b}\n\nRaguzans are the cunning, brawly, slightly drunken sibling of the other orders. They are most often found guarding highways by travelling with strangers, retaliating to threats or incursions on towns, or presenting force and strength in church locations where infrastructure is modest. They’re commonly involved in protecting pilgrims or in questing duties, when not called upon as a military force.\n\nThe Raguzan relationship with other orders is pretty simple; they’re louts. They’re wild and rarely disciplined, without much record keeping or reports, and they prefer to handle violations of knightly code in-house. Since the Raguzan justice system is largely focused on good outcomes and not protocol, this means some sketchy behaviour gets cleared, and it irritates the other orders a great deal. Nonetheless, while Raguzans can often only be relied upon to attack things, they do it very well. \n\nRaguzans have the most working class individuals, people who became knights from battlefield promotions or honouring for some special deeds and have the least access to money and resources. Notably, the Raguzans do have access to Royal Kennel rights, meaning that their chapterhouses often have stables, kennels, mews, and other facilities. Raguzans have some of the best animal trainers in the Protectorate, with specialised tools like dire war ferrets and messenger rats.\n\nRaguzans are also renowned for being siegebreakers, and it’s there that a strange second side of sophisticated genius comes to bear. Raguzans don’t just throw themselves at sieges, as they have a trained corps of disciplined but practical engineers skilled in disarming and disabling traps and explosives, dismantling barricades, routing water and other liquids and all sorts of other useful skills for forcing an end to a siege.\n\nAt Their Best: Raguzan are knights of the commoners, people who stand up to and break systems that crush the weak underfoot.\nAt Their Worst: Raguzan fight for the sake of fighting and cause more problems than they solve.\n\n{b}Benefit:{/b} Your starting hit points are increased by 5." compset="Background">
+    <eval phase="Traits" priority="1000"><![CDATA[
+      #traitmodify[trHealth,trtBonus,5,""]]]>
+      <before name="Derived trtFinal"/>
+      </eval>
+    </thing>
+  <thing id="pthLetSieU2" name="Patient Engagement" description="{b}Trigger:{/b} You roll an initiative check and don’t like the result.\n\n{b}Effect:{/b} Roll a History check and use the result as your initiative, even if it’s worse." compset="Power">
+    <fieldval field="pwFlavor" value="Knowing many battles enables you in knowing this battle."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thLethSieg"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Daily"/>
+    <tag group="ActionType" tag="Free" name="Free Action" abbrev="Free Action"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="pthLetSieU6" name="Swift Formation" description="{b}Effect:{/b} As long as you and each ally in burst maintain your positions, you can’t grant Combat Advantage until the end of your next turn, and have combat advantage on all attacks made against an enemies in the burst." compset="Power">
+    <fieldval field="pwFlavor" value="Many different positions and tactical opportunities present themselves at different times, if you can but commit to them."/>
+    <fieldval field="pwRange1" value="2"/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thLethSieg"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="AttackType" tag="CloseBurst"/>
+    <tag group="ReqLevel" tag="6"/>
+    </thing>
+  <thing id="pthLetSieU10" name="Advance As One" description="{b}Effect:{/b} You slide yourself and each willing ally in the burst a distance equal to your movement. Each ally affected by this loses their move action on their next turn." compset="Power">
+    <fieldval field="pwFlavor" value="The capacity to control yourself and your allies in their positions brings with it rare opportunities for a perfect advance."/>
+    <fieldval field="pwRange1" value="3"/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thLethSieg"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Daily"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="AttackType" tag="CloseBurst" name="Close Burst" abbrev="Close Burst"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="thRaguSieg" name="Raguzan Siegebreaker" description="{b}{i}“The way out is through.”{/i}{/b}\n\nBreaking a siege is a time consuming business and it brings out the strangest of Raguzan virtues - patience. Raguzans who take to siegebreaking therefore tend to be tightly wound until the time to act happens, when they spring into action. They’re specialised in dealing with extremely tight quarters, and the ways to maximise opportunities.\n\n{b}Building A Raguzan Siegebreaker{/b}\nThe Raguzan Siegebreaker is someone who cares about opportunity attacks; both provoking them and exploiting them. This means they want to position themselves in tight quarters with large groups of enemies. Some leaders and strikes like the sound of this, and there are even Raguzan druids who can take advantage of it, but it is a role well suited to melee weapon-wielding defenders." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthRagSie1"></bootstrap>
+    <bootstrap thing="fthRagSie5"></bootstrap>
+    <bootstrap thing="fthRagSie10"></bootstrap>
+    </thing>
+  <thing id="fthRagSie1" name="Raguzan Siegebreaker Starting Feature" description="Raguzan fighters are experts in making the most of the moment. Snap decisions can lead to wildly improved results, even at the risk of life and limb.\n\n{b}Dangerous Expertise:{/b} Choose one of your level 1 At-Will melee attack powers. You can use it as an opportunity attack. If you do, you suffer a -2 penalty to AC until the beginning of your next turn." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    </thing>
+  <thing id="fthRagSie5" name="Raguzan Siegebreaker Level 5 Feature" description="{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour" compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5" name="5" abbrev="5"/>
+    </thing>
+  <thing id="fthRagSie10" name="Raguzan Siegebreaker Level 10 Feature" description="When you spend as much time as Raguzan do in melee quarters, you learn how to exploit enemies in a crush together.\n\n{b}Close Quarters Expert:{/b} Whenever you provoke attacks of opportunity from multiple enemies with the same movement, only one enemy gets to make an attack." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10" name="10" abbrev="10"/>
+    </thing>
+  <thing id="pthRagSieU2" name="Battle Stamina" description="{b}Effect:{/b} You make a saving throw against a single effect." compset="Power">
+    <fieldval field="pwSpecial" value="Whenever you hit with a daily attack power, this power recharges."/>
+    <fieldval field="pwFlavor" value="It takes a lot to convince a person to charge face-first into a teeming mass of blades and rage."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerTheme" tag="thRaguSieg"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Minor" name="Minor Action" abbrev="Minor Action"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="pthRagSieU6" name="Clear a Line" description="{b}Effect:{/b} You move your speed and push each enemy you pass during this movement 1 square." compset="Power">
+    <fieldval field="pwFlavor" value="It’s not just enough to get yourself in position, you need to make positions for your allies available too."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thRaguSieg"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="AttackType" tag="Personal"/>
+    <tag group="ReqLevel" tag="6"/>
+    </thing>
+  <thing id="pthRagSieU10" name="Pushing Outwards" description="{b}Effect:{/b} You lose a healing surge and the next close burst or blast power you use this turn has its size increased by 1." compset="Power">
+    <fieldval field="pwFlavor" value="You can push yourself just that little bit further, to do that little bit more."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thRaguSieg"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="AttackType" tag="Personal"/>
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="thRaguWayf" name="Raguzan Wayfinder" description="{b}{i}“Long roads, new friends, and always one by my side.”{/i}{/b}\n\nRaguzan Wayfinders are the highway travellers of the Eresh Protectorate. For most outlying areas, they are the very vision of a Church Knight - inevitably a figure, in armour, who solves problems a little recklessly, watches over travellers, and is almost always followed by one or more animal companions.\n\n{b}Building A Raguzan Wayfinder{/b}\nRaguzan Wayfinders are much like the Fey Beast Tamer, in that they can benefit almost all roles. Defenders can benefit from having an extra area of control on the battlefield, leaders can buff their pets as another ally, Strikers can benefit from flanking opportunities, and controllers can always make use of another body to impose on the battlefield." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthRagWay5"></bootstrap>
+    <bootstrap thing="fthRagWay10"></bootstrap>
+    <bootstrap thing="fthRagWay1"></bootstrap>
+    </thing>
+  <thing id="fthRagWay1" name="Raguzan Wayfinder Starting Feature" description="Raguzan Wayfinders use animal companions. These are usually animals trained from Raguzan stock, with a number of small companions for specialised tasks and one larger companion for generalised tasks.\n\n Choose one of the following creatures:\n* Journeyhound, strong hardworking war dogs.\n* Grifkin, smaller, more agile griffons for combat scenarios.\n* Carcaj, a type of wolverine bred for travel.\n* Guardbadger, sturdy and stubborn badgers that heed a companion.\n\nYou gain it as your Wayfinder Beast Companion. If you wish, you can select a Beast Companion from the Wayfinder Beast Companion list.\n\nThemes and Flavour: If you find you would rather a type of beast not included in this list, it is definitely worth considering re-flavouring the existing beasts as options. For example:\n* Journeyhounds can be used to represnt wolves, dingoes, or dholes\n* Grifkin can be used to represent large bats or immense hunting birds\n* Carcaj can be used to represent animals like Tasmanian Devils or Dire Weasels\n* Guardbadgers can be used to represent heavy animals like monitor lizards or small bears\n\nYour Wayfinder Beast Companion is considered an ally of you and your allies. It can be affected by powers in the same way that any other creature can be. It has animal intelligence, so you can communicate with it only at a basic level (like a trained pet), and it doesn&apos;t understand complex ideas.\n\nYour Wayfinder Beast Companion&apos;s level is equal to yours, and its hit points, defenses, and attack values are determined by your level, as noted in its statistics.\n\nYour companion shares your healing surge total. Whenever an effect requires your Wayfinder Beast Companion to spend a healing surge, the surge is deducted from your total. Whenever you use your second wind, your companion also regains hit points equal to your healing surge value. At the end of a short rest, your Wayfinder Beast Companion regains all its hit points.\n\nIf you die or your companion drops below 1 hit point, it retreats from the battlefield and preserves itself safely. If that occurs, you can use one of these two ways to call it back.\n\n* {b}Minor Action:{/b} You lose a healing surge, and your companion appears in the nearest unoccupied space, with hit points equal to your healing surge value; your companion derives strength from your resolve, and recovers, coming back to the battlefield to fight alongside you.\n* {b}Short Rest or Extended Rest:{/b} At the end of the rest, you lose a healing surge, and your companion appears in the nearest unoccupied space, with full hit points.\n\n{b}Journeyhound Companion{/b}\nRaguzans have almost as many types of hound available as they have chapterhouses, but the defining traits of a Raguzan Journeyhound are pretty consistent. They are hardworking, tough dogs, somewhere in size near a wolf, intelligent enough to take a variety of commands and take to a variety of purposes, like hunting, covering, sheltering, seeking, fetching and fighting. \n\n{b}Grifkin Companion{/b}\nOnce an endangered species, the Grifkin are small relatives of the griffon; while a griffon has a prominent, entirely birdlike head, the Grifkin look more like large housecats, with feathered wings and antlers, and prominent birdlike hindclaws. Primarily trained by the Raguzan for anti-cavalry purposes, Grifkin are extremely mobile, often hunting around battlefields to attack enemies that present opportunities.\n\n{b}Carcaj Companion{/b}\nRaguzans that travel often need companions that are capable of independent survival. A type of wolverine, Carcajs are hard to train to most of the needs of a knight, but when bound to a Wayfinder with love, understanding, and stubbornness, they thrive. Carcajs fight fiercely for their companion and can subsist on almost anything, making them excellent companions for Wayfinders in cold climates. \n\n{b}Guardbadger Companion{/b}\nRaguzans don’t always exist in harsh environments. Many Wayfinders travel along well-peopled highways and need a companion that is capable of navigating a city somewhat competently and protecting people while waiting for the knight to reach them. Guardbadgers, larger and more solid relatives of the badger, serve this purpose admirably, often blocking enemies with their bodies, and keeping a single foe from making meaningful progress." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    </thing>
+  <thing id="fthRagWay5" name="Raguzan Wayfinder Level 5 Feature" description="{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour" compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5" name="5" abbrev="5"/>
+    </thing>
+  <thing id="fthRagWay10" name="Raguzan Wayfinder Level 10 Feature" description="Your animal companion has taken to its training well, and as a result is even tougher than normal.\n\n{b}Animal Companion Fortification:{/b} Your Wayfinder Beast Companion gets a +1 to all defenses, and has an additional 5 hit points." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10" name="10" abbrev="10"/>
+    </thing>
+  <thing id="pthRagWayU2" name="Raguzan Principles" description="{b}Effect:{/b} Your Wayfinder Beast Companion takes a move action." compset="Power">
+    <fieldval field="pwFlavor" value="Being a Raguzan Wayfinder involves a lot of reinforcing training, which can sometimes involve giving complex orders."/>
+    <fieldval field="pwSpecial" value="As long as you have this power, you have mastered the Animal Messenger ritual and can cast it once per day for free.{br}Often, Raguzan Wayfinders send the same animal as their animal messenger, such as having a particular messenger rat, ferret, bird, or insect."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thRaguWayf"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Minor" name="Minor Action" abbrev="Minor Action"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="pthRagWayU6" name="Brace for Impact" description="{b}Effect:{/b} You and your Wayfinder Beast Companion both gain 10 temporary hit points." compset="Power">
+    <fieldval field="pwFlavor" value="Knowing an attack is coming gives you an opportunity to protect yourself, and your companion."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thRaguSieg" name="Raguzan Siegebreaker" abbrev="Raguzan Siegebreaker"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="ReqLevel" tag="6"/>
+    </thing>
+  <thing id="pthRagWayU10" name="Aggressive Opportunity" description="{b}Trigger:{/b} An enemy provokes an opportunity attack from you or your Wayfinder Beast Companion/\n\n{b}Effect:{/b} You and your Wayfinder Beast Companion both make a basic attack against the provoking enemy." compset="Power">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thRaguSieg" name="Raguzan Siegebreaker" abbrev="Raguzan Siegebreaker"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Opportun"/>
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="bgChardOrd" name="Chardunite Order" description="{b}Secret Sins Need Secret Saviors{/b}\n\nThe Chardunists are known as the secret fourth order. Originally the Church’s arm of Inquisition created to eradicate sources of Psionic power (known once as the Shandrelle Heresy), their power grew and, and so to their ability to hide from oversight until eventually, they re-emerged (then just as quickly hid themselves again) as a Knightly Order protecting psionic entities from oppression, which they refer to as The Task. Chardunists are sometimes referred to as ‘The secret police’ of the nation, which isn’t correct. They see their roles as creating safe spaces for psionic individuals to exist safely away from church oppression, and acting in the name of the Crown to oppose problems that can’t be dealt with by throwing military force at it. \n\nChardunists keep their actions extremely covert, and even going so far as to use psionic powers to make people forget the locations of their chapterhouses and meeting halls. Chardunist writing includes ethical application of psionic powers, and come down extremely hard on those they see as violating these rules. This means that they seem inscrutable to other orders - Pandions don’t trust them for their secrecy, Lethenites don’t see why they can’t be trusted with the threats they contain, and Raguzans have strong views against mind influencing magic in the first place. Chardunists often regard the other orders as painfully unaware of the kinds of problems they deal with.\n\nChardunists are however, the least obviously knightly of the orders - most Chardunists need to be able to blend into normal societies, and therefore tend to favour roles and identities that seem extremely vague or unimportant. Coopers and wagon drivers, couriers and minor officials, Chardunists are also the most likely to be an inhuman or unnatural race thanks to the order’s stance of recruitment for the Task.\n\nAt Their Best: Chardunists are the salvation of the invisible, the saviors of people who think they have nobody to turn to, never needing to be asked or thanked.\nAt Their Worst: Chardunists are secretive and untrustworthy agents whose inability to communicate leads to worse outcomes for others that they can’t ever explain.\n\n{b}Benefit:{/b}:\n* Training in Arcana, Streetwise, or Stealth\n* +2 skill bonus to Arcana, Streetwise, or Stealth" compset="Background" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="BackSkill" tag="skInsight" name="Insight" abbrev="Insight"/>
+    <tag group="BackSkill" tag="skStreetwi" name="Streetwise" abbrev="Streetwise"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="BackCamp" tag="General" name="General" abbrev="General"/>
+    </thing>
+  <thing id="thCharInf" name="Chardunist Infiltrator" description="{b}{i}“We’re not everywhere, despite what we may make you think. But we are good at lying.”{/i}{/b}\n\nThe Chardunists don’t operate like the other orders. Many Chardunists spend large amounts of time out of armour, doing completely mundane tasks in mundane jobs. This builds their reputation as a complex network of spies, which they of course deny. Infiltrators are the Chardunists who have done the most to maintain this spy network, people who can blend into enemy groups and put themselves in the right place at the right time. \n\n{b}Building an Infiltrator{/b}\nThe Chardunist Infiltrator is the best option for Chardunists who have no interest in power points. It’s mobile and well protected. Notably, if you play a melee character who doesn’t have a great melee basic attack but wants to benefit from granted attacks, and can reliably stay close to a melee-capable ally, this lets you make the most of it." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthChaInf5"></bootstrap>
+    <bootstrap thing="fthChaInf10"></bootstrap>
+    <bootstrap thing="fthChaInf1"></bootstrap>
+    </thing>
+  <thing id="fthChaInf1" name="Chardunist Infiltrator Starting Feature" description="The Chardunist infiltrators are absolute experts at inducing in-fighting, including in drawing allies into the right space and time in combat.\n\n{b}Infiltrator’s Opportunity:{/b} Whenever you are adjacent to an ally and you can make a basic attack from an opportunity attack or granted basic attack, you can use that adjacent ally’s basic attack instead provided they can reach your target. This takes your action and not theirs." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1"/>
+    </thing>
+  <thing id="fthChaInf5" name="Chardunist Infiltrator Level 5 Feature" description="As all Knights, you have been drilled and trained in the proper and efficient use of armour.\n\n{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour" compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5"/>
+    </thing>
+  <thing id="fthChaInf10" name="Chardunist Infiltrator Level 10 Feature" description="The Chardunists are experts at being in the right place at the right time. Sometimes they blend in with others and reveal themselves as combat starts, sometimes they’re just excellent at knowing when a fight’s about to start.\n\n{b}Infiltrator’s Initiative:{/b} Whenever you roll initiative, you can shift up to your speed, before combat starts but after the battlefield and the enemies present on it has been determined. Enemies in the first round of combat treat you as if you are hidden, assuming you are one of them." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10"/>
+    </thing>
+  <thing id="pthChaInfU2" name="Foil Attention" description="{b}Effect:{/b} You are no longer marked. You can’t be marked again until the end of your next turn." compset="Power">
+    <fieldval field="pwFlavor" value="What, you were targeting me? You sure of that?"/>
+    <fieldval field="pwRequire" value="You must be marked."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thCharInf"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="AtWill"/>
+    <tag group="ReqLevel" tag="2" name="2" abbrev="2"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    </thing>
+  <thing id="pthChaInfU6" name="Baffle Sense" description="{b}Effect:{/b} You assume the Infiltrator’s Evasive Stance. When you do, pick darkvision, blindsight, or tremorsense. As long as you remain in that stance, enemies can’t use the chosen sense to detect you." compset="Power">
+    <fieldval field="pwFlavor" value="For the skilled infiltrator, there is no perfect foil, no lock that cannot be, in some way, circumvented, and no sense that cannot be, in some way, defeated."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thCharInf"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="6" name="6" abbrev="6"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="EffectType" tag="Stance"/>
+    </thing>
+  <thing id="pthChaInfU10" name="Confuse Target" description="{b}Trigger:{/b} You miss an opponent with a melee attack.\n\n{b}Effect:{/b} You make a Bluff check. If your result equals or exceeds the target&apos;s highest defense, that enemy is dominated until the end of your next turn. This effect ends when you or the enemy move away from one another." compset="Power">
+    <fieldval field="pwFlavor" value="There’s a lot of risk to staying close in the Chardunist philosophy, but being able to redirect enemy attacks to more deserving targets is one of the rewards."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerClass" tag="ThemePower" name="Theme Power" abbrev="Theme Power"/>
+    <tag group="PowerSrc" tag="Martial" name="Martial" abbrev="Martial"/>
+    <tag group="PowerTheme" tag="thCharInf"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="10" name="10" abbrev="10"/>
+    <tag group="ActionType" tag="Free"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    </thing>
+  <thing id="thCharMind" name="Chardunist Mindhunter" description="{b}{i}“We who have taken to the Task do so knowing that we may never be known for our deeds.”{/i}{/b}\n\nThe Chardunists grew out of a secret church inquisition sent to commit genocide against a psychic race under the Holy City. This started the Chardunists on a path that eventually led to their rejection of church dogma about psionics, and adoption into their own ranks those who they once hunted. The Chardunist Mindhunters are Chardunists with psionic talent that specialise in dealing with either the recover of psionic individuals or dealing with hostile psionic monsters.\n\n{b}Building A Chardunist Mindhunter{/b}\nIf you’re building a character who wants power points, the Mindhunter has an extra point, which is very desirable. If you want to play a non-psionic character who gets a few psionic abilities, though, the Mindhunter is a great way to expand your options. Regardless, the Chardunist Mindhunter cares about enemies being near to them, and about opportunity attacks (as both attacker and defender)." compset="Theme" uniqueness="unique">
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <bootstrap thing="fthChaMin5"></bootstrap>
+    <bootstrap thing="fthChaMin10"></bootstrap>
+    <bootstrap thing="fthChaMin1"></bootstrap>
+    </thing>
+  <thing id="fthChaMin1" name="Chardunist Mindhunter Starting Feature" description="{b}Power Point:{/b} You gain 1 power point. You regain all your power points when you take a short rest or an extended rest.\n\n{b}Between Blinks:{/b} You gain the Between Blinks power." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="1" name="1" abbrev="1"/>
+    <bootstrap thing="pthChaMin1"></bootstrap>
+    </thing>
+  <thing id="pthChaMin1" name="Between Blinks" description="{b}Trigger:{/b} You are hit by an attack on your own turn.\n\n{b}Effect:{/b} You become invisible to the attacking enemy until the end of your next turn.\n\n{b}Augment 1{/b}\n{b}Effect:{/b} The attacking enemy is blinded until the end of your next turn." compset="Power">
+    <fieldval field="pwFlavor" value="Mindhunters have to put themselves in harm’s way—but that focus gives them an opportunity for a psychic attack."/>
+    <usesource source="LostLibram"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerTheme" tag="thCharMind"/>
+    <tag group="PowerType" tag="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Free" name="Free Action" abbrev="Free Action"/>
+    <tag group="EffectType" tag="Augment"/>
+    <tag group="AttackType" tag="Personal"/>
+    </thing>
+  <thing id="fthChaMin5" name="Chardunist Mindhunter Level 5 Feature" description="As all Knights, you have been drilled and trained in the proper and efficient use of armour.\n\n{b}Knightly Armour Training:{/b} You get a bonus Armour Proficiency of Armour Expertise feat. You must fulfil the prerequisites of the feat you choose. You can retrain this feat when you level up but only into other Armour Proficiency or Armour" compset="ThemeFeat">
+    <tag group="ReqLevel" tag="5" name="5" abbrev="5"/>
+    </thing>
+  <thing id="fthChaMin10" name="Chardunist Mindhunter Level 10 Feature" description="Chardunists often have to expose themselves to mental effects, which comes with a degree of hardening and practice surviving mental attacks.\n\n{b}Steady Mind:{/b} You gain a +1 bonus to Will." compset="ThemeFeat">
+    <tag group="ReqLevel" tag="10" name="10" abbrev="10"/>
+    </thing>
+  <thing id="pthChaMinU2" name="Meshed Defenses" description="{b}Effect:{/b} You and each adjacent ally get +1 to all defenses until end of turn.\n\n{b}Augment 1{/b}\n{b}Effect:{/b} You and each adjacent ally get +2 to all defenses until end of turn." compset="Power">
+    <fieldval field="pwFlavor" value="Connecting your minds to others around you, you fortify your defenses through mental power."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerTheme" tag="thCharMind" name="Chardunist Mindhunter" abbrev="Chardunist Mindhunter"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    <tag group="ReqLevel" tag="2"/>
+    </thing>
+  <thing id="pthChaMinU6" name="Recoiling Shock" description="{b}Trigger:{/b} You hit an enemy with an at-will unaugmented power when it’s not your turn.\n\n{b}Effect:{/b} The target and every enemy adjacent to them is slowed until the end of your next turn.\n\n{b}Augment 1{/b}\n{b}Effect:{/b} The target and every enemy adjacent to them is slowed and gains vulnerable 5 to all damage until the end of your next turn." compset="Power">
+    <fieldval field="pwFlavor" value="You strike at an enemy at a surprising time, and in so doing, disrupt their course of action."/>
+    <fieldval field="pwTarget" value="The triggering enemy."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="PowerTheme" tag="thCharMind" name="Chardunist Mindhunter" abbrev="Chardunist Mindhunter"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ReqLevel" tag="6"/>
+    <tag group="ActionType" tag="Minor" name="Minor Action" abbrev="Minor Action"/>
+    <tag group="EffectType" tag="Augment" name="Augmentable" abbrev="Augmentable"/>
+    </thing>
+  <thing id="pthChaMinU10" name="Bottomless Will" description="{b}Trigger:{/b} You fail a saving throw.\n\n{b}Effect:{/b} You can make a saving throw. You take 10 damage, which cannot be reduced in any way.:" compset="Power">
+    <fieldval field="pwFlavor" value="What’s more important; health, or freedom?"/>
+    <fieldval field="pwSpecial" value=" Whenever you fail a saving throw, this power recharges."/>
+    <usesource source="LostLibram" parent="UserParent" name="The Lost Libram"/>
+    <tag group="PowerTheme" tag="thCharMind" name="Chardunist Mindhunter" abbrev="Chardunist Mindhunter"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Daily"/>
+    <tag group="ReqLevel" tag="10"/>
+    <tag group="ActionType" tag="Free"/>
+    <tag group="PowerSrc" tag="Psionic" name="Psionic" abbrev="Psionic"/>
+    <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
+    </thing>
+  <thing id="eqRagJouHou" name="Journeyhound Companion" description="Raguzans have almost as many types of hound available as they have chapterhouses, but the defining traits of a Raguzan Journeyhound are pretty consistent. They are hardworking, tough dogs, somewhere in size near a wolf, intelligent enough to take a variety of commands and take to a variety of purposes, like hunting, covering, sheltering, seeking, fetching and fighting.{br}{br}{b}Raguzan Journeyhound - Medium natural beast (Raguzan Wayfinder beast companion){/b}{br}{b}Initiative{/b} equal to yours {b}Senses{/b} Perception equal to yours +2, Low-light vision{br}{b}HP{/b} your Bloodied Value{b}{br}AC{/b} 15 + your level; {b}Fortitude{/b} 13 + your level, {b}Reflex{/b} 13 + your level, {b}Will{/b} 13 + your level{br}{b}Speed{/b} 7{br}{b}TRAITS{/b}{br}{b}Worrying Pack (Aura 1){/b} When the Journeyhound or an ally in its aura hits an enemy with an attack, the Journeyhound pulls each enemy struck by the attack it can reach 1 square.{br}{b}STANDARD ACTIONS{/b} {br}{b}Bite (At-will; basic){/b} {i}Attack:{/i} Melee 1 (one creature); your level +5 vs AC {i}Hit:{/i} 1d8 + one-half your level damage, and the target can&apos;t shift until the end of your next turn. {i}Level 21:{/i} 2d8 + one-half your level damage. {br}{b}Str{/b} 14 {b}Dex{/b} 20 {b}Wis{/b} 14 {b}Con{/b} 17 {b}Int{/b} 2 {b}Cha{/b} 6" compset="Mount">
+    <fieldval field="grCost" value="0"/>
+    </thing>
+  <thing id="eqRagGrifkin" name="Grifkin Companion" description="Once an endangered species, the Grifkin are small relatives of the griffon; while a griffon has a prominent, entirely birdlike head, the Grifkin look more like large housecats, with feathered wings and antlers, and prominent birdlike hindclaws. Primarily trained by the Raguzan for anti-cavalry purposes, Grifkin are extremely mobile, often hunting around battlefields to attack enemies that present opportunities.{br}{br}{b}Raguzan Grifkin - Medium natural beast (Raguzan Wayfinder beast companion){/b}{br}{b}Initiative{/b} equal to yours {b}Senses{/b} Perception equal to yours +2, Low-light vision{br}{b}HP{/b} your Bloodied Value{b}{br}AC{/b} 15 + your level; {b}Fortitude{/b} 13 + your level, {b}Reflex{/b} 15 + your level, {b}Will{/b} 11 + your level{br}{b}Speed{/b} 8{br}{b}TRAITS{/b}{br}{b}Harrying Hunt (Aura 1){/b} When the Grifkin or an ally in its aura hits an enemy with an attack, the Grifkin may shift up to 3 squares.{br}{b}STANDARD ACTIONS{/b} {br}{b}Talons (At-will; basic){/b} {i}Attack:{/i} Melee 1 (one creature); your level +5 vs AC {i}Hit:{/i} 1d8 + one-half your level damage, +3 if the attack was an opportunity attack. {i}Level 21:{/i} 2d8 + one-half your level damage, +3 if the attack was an opportunity attack.{br}{b}Str{/b} 13 {b}Dex{/b} 20 {b}Wis{/b} 18 {b}Con{/b} 13 {b}Int{/b} 2 {b}Cha{/b} 6" compset="Mount">
+    <fieldval field="grCost" value="0"/>
+    </thing>
+  <thing id="eqRagCarcaj" name="Carcaj Companion" description="Raguzan often need companions that are capable of independent survival. A type of wolverine, Carcajs are hard to train to most of the needs of a knight, but when bound to a Wayfinder with love, understanding, and stubbornness, they thrive. Carcajs fight fiercely for their companion and can subsist on almost anything, making them excellent companions for Wayfinders in cold climates.{br}{br}{b}Raguzan Carcaj - Medium natural beast (Raguzan Wayfinder beast companion){/b}{br}{b}Initiative{/b} equal to yours {b}Senses{/b} Perception equal to yours +2, Low-light vision{br}{b}HP{/b} your Bloodied Value{b}{br}AC{/b} 13 + your level; {b}Fortitude{/b} 15 + your level, {b}Reflex{/b} 11 + your level, {b}Will{/b} 15 + your level{br}{b}Speed{/b} 7{br}{b}TRAITS{/b}{br}{b}Flurry of Teeth (Aura 1){/b} When the Carcaj or an ally in its aura hits an enemy with an attack, that enemy takes 2 points of damage for each target hit by the attack.{br}{b}STANDARD ACTIONS{/b} {br}{b}Bite (At-will; basic){/b} {i}Attack:{/i} Melee 1 (one creature); your level +5 vs AC {i}Hit:{/i} 1d12 + one-half your level damage. {i}Level 21:{/i} 2d12 + one-half your level damage. {br}{b}Str{/b} 20 {b}Dex{/b} 12 {b}Wis{/b} 12 {b}Con{/b} 14 {b}Int{/b} 2 {b}Cha{/b} 6" compset="Mount">
+    <fieldval field="grCost" value="0"/>
+    </thing>
+  <thing id="eqRagGuaBad" name="Guardbadger Companion" description="Raguzans don&apos;t always exist in harsh environments. Many Wayfinders travel along well-peopled highways and need a companion that is capable of navigating a city somewhat competently and protecting people while waiting for the knight to reach them. Guardbadgers, larger and more solid relatives of the badger, serve this purpose admirably, often blocking enemies with their bodies, and keeping a single foe from making meaningful progress.{br}{br}{b}Raguzan Guardbadger - Medium natural beast (Raguzan Wayfinder beast companion){/b}{br}{b}Initiative{/b} equal to yours {b}Senses{/b} Perception equal to yours +2, Low-light vision{br}{b}HP{/b} your Bloodied Value{b}{br}AC{/b} 17 + your level; {b}Fortitude{/b} 13 + your level, {b}Reflex{/b} 11 + your level, {b}Will{/b} 13 + your level{br}{b}Speed{/b} 7{br}{b}TRAITS{/b}{br}{b}Bristling Mien (Aura 1){/b} When the Guardbadger or an ally in its aura hits an enemy with an attack, each enemy hit by the attack gets -2 to attack rolls until the end of the attacker’s next turn.{br}{b}STANDARD ACTIONS{/b} {br}{b}Rake (At-will; basic){/b} {i}Attack:{/i} Melee 1 (one creature); your level +5 vs AC {i}Hit:{/i} 1d8 + one-half your level damage, and the Guardbadger gains 3 temporary hit points. {i}Level 21:{/i} 2d8 + one-half your level damage, and the Guardbadger gains 3 temporary hit points.{br}{b}Str{/b} 18 {b}Dex{/b} 12 {b}Wis{/b} 14 {b}Con{/b} 18 {b}Int{/b} 2 {b}Cha{/b} 6" compset="Mount">
+    <fieldval field="grCost" value="0"/>
+    </thing>
+  </document>

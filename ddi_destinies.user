@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document signature="Hero Lab Data">
   <thing id="edAdamaSol" name="Adamantine Soldier" description="Throughout your career, you have been an unstoppable force in heavy armor. In your coat of metal, you have stood against the weapons and powers of creatures that could lay waste to cities. In the end, your armor might have been a little worse for wear, and maybe you were, too. But still you stood unbowed.{br}You know that armor is more than just a piece of equipment. It&apos;s a second skin, and it&apos;s the face you show the world. You&apos;ve made it a hallmark of your legend. When your helmed silhouette appears on the horizon, your admirers take hope and your enemies quail. Those same folk might fail to recognize your face, but they easily identify your superhuman shell.{br}{br}Immortality?{br}The adamantine warrior must prove the hardest of fighters. Your saga might make you an eternal symbol, your armor&apos;s distinctive shape and markings burned into the world&apos;s iconography. Already, people hold you up as the exemplar of the soldier who is unbreakable in body and spirit.{br}Armored Icon: When you complete your final quest, you stand as an immaculate example of the knight in shining armor. All armored warriors throughout time recall your story. Your armored form is the ultimate gauge by which all other armored juggernauts measure themselves.{br}To become this icon of indestructibility, you must stand fast in your last battle. You cannot fall, give in to pain, or break in any way. Prove that your armor is like your skin, and your skin is like your armor. It can&apos;t slow you down; instead, it holds you up; Unbreakable, you carry each other into fable. Perhaps your armor even takes you to the side of a deity, such as Kord, who forever holds you up as an exarch of glorious and fearless battle. You then become the patron saint of all such warriors.{br}Your name becomes synonymous with toughness and resilience. It develops into a word with which fighters compliment one another for bold exploits in heavy armor. When you hear echoes of your name spoken in the world, you pound your gauntlet-clad fist to your breastplate. You know that those who aspire to be like you hear the ringing sound with spiritual ears and take heart.{br}{br}ADAMANTINE SOLDIER  FEATURES{b}Armor Supremacy (21st level){/b}: You gain a +2 bonus to AC while wearing heavy armor. You also ignore any check penalty or speed penalty normally imposed by heavy armor.{br}{b}Unbreakable Skin (24th level){/b}: While wearing heavy armor, you gain resistance to all damage equal to your Constitution modifier.{br}{b}Hard to Kill (30th level){/b}: Once per day, you can treat any saving throw you just rolled as if you had rolled a natural 20." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You are as solid as the foundations of the world. Nothing can break you - ever."/>
@@ -21,8 +21,7 @@
       doneif (state.isfocus = 0)
       #traitmodify[defAC,trtBonus,2,""]
       focus.field[arCheck].value = 0
-      focus.field[arSpeed].value = 0
-      ]]>
+      focus.field[arSpeed].value = 0]]>
       <before name="Armor effects final"/>
       <before name="Derived trtFinal"/>
       <after name="arMagic copy"/>
@@ -37,8 +36,7 @@
       doneif (state.isfocus = 0)
       var bonus as number
       bonus = #attrbonus[attrCon]
-      #traitmodify[rsAll,rsTotal,bonus,""]
-      ]]>
+      #traitmodify[rsAll,rsTotal,bonus,""]]]>
       <after name="Calc attrBonus"/>
       </eval>
     </thing>
@@ -66,14 +64,12 @@
   <thing id="fEpcSpePer" name="Spellsword Perfection" description="Choose one swordmage encounter attack power that you know. You can now use that power as an at-will power rather than an encounter power." compset="ClassFeat">
     <fieldval field="usrCandid1" value="component.Power &amp; PowerClass.clsSwordma &amp; PowerType.Encounter"/>
     <tag group="ReqLevel" tag="30"/>
-    <eval phase="Traits" priority="1000">
-      doneif (activated = 0)
+    <eval phase="Traits" priority="1000">doneif (activated = 0)
 
       perform field[usrChosen1].chosen.setfocus
       doneif (state.isfocus = 0)
       perform focus.delete[PowerType.Encounter]
       perform focus.assign[PowerType.AtWill]
-      
       <before name="spcUsed bounded"/>
       </eval>
     </thing>
@@ -96,8 +92,7 @@
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrInt,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrInt,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -112,8 +107,7 @@
       var bonus as number
       bonus = 5 + #halflevel[]
       #traitmodify[rsNecrotic,rsTotal,bonus,""]
-      #traitmodify[rsPoison,rsTotal,bonus,""]
-      ]]>
+      #traitmodify[rsPoison,rsTotal,bonus,""]]]>
       <after name="Calc attrBonus"/>
       </eval>
     </thing>
@@ -139,13 +133,11 @@
   <thing id="fEpcSpeRec" name="Spell Recall" description="At the beginning of each day, choose one daily attack spell that you know (and have prepared today, if you prepare spells). You can use that spell two times that day, rather than only once." compset="ClassFeat">
     <fieldval field="usrCandid1" value="component.Power &amp; PowerClass.clsWizard &amp; PowerType.Daily"/>
     <tag group="ReqLevel" tag="21"/>
-    <eval phase="Traits" priority="1000">
-      doneif (activated = 0)
+    <eval phase="Traits" priority="1000">doneif (activated = 0)
 
       perform field[usrChosen1].chosen.setfocus
       doneif (state.isfocus = 0)
       focus.field[spcMax].value += 1
-      
       <before name="spcUsed bounded"/>
       </eval>
     </thing>
@@ -156,14 +148,12 @@
   <thing id="fEpcArchsp" name="Archspell" description="Your comprehension of the ultimate arcane formula and of the spells that constitute it reaches a new threshold. Choose one daily spell that you know. You can now cast that spell as an encounter spell (rather than as a daily spell)." compset="ClassFeat">
     <fieldval field="usrCandid1" value="component.Power &amp; PowerClass.clsWizard &amp; PowerType.Daily"/>
     <tag group="ReqLevel" tag="30"/>
-    <eval phase="Setup" priority="400">
-      doneif (activated = 0)
+    <eval phase="Setup" priority="400">doneif (activated = 0)
 
       perform field[usrChosen1].chosen.setfocus
       doneif (state.isfocus = 0)
       perform focus.delete[PowerType.Daily]
       perform focus.assign[PowerType.Encounter]
-      
       <before name="PowerUse tag added"/>
       </eval>
     </thing>
@@ -185,8 +175,7 @@
 
       perform field[usrChosen1].chosen.setfocus
       doneif (state.isfocus = 0)
-      perform focus.field[pwAtkMod].modify[+,2,""]
-      ]]>
+      perform focus.field[pwAtkMod].modify[+,2,""]]]>
       <before name="spcUsed bounded"/>
       </eval>
     </thing>
@@ -196,14 +185,12 @@
     </thing>
   <thing id="fEpcLivSpe" name="Living Spell" description="You can use your Signature Spell as an encounter power rather than a daily power." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
-    <eval phase="Traits" priority="1000">
-      doneif (activated = 0)
+    <eval phase="Traits" priority="1000">doneif (activated = 0)
 
       perform hero.child[fEpcSigSpe].field[usrChosen1].chosen.setfocus
       doneif (state.isfocus = 0)
       perform focus.delete[PowerType.Daily]
       perform focus.assign[PowerType.Encounter]
-      
       <before name="spcUsed bounded"/>
       </eval>
     </thing>
@@ -231,18 +218,15 @@
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
   <thing id="fEpcAvaTra" name="Avangion Transformation" description="You gain low-light vision and a fly speed equal to your speed. In addition, you can speak Supernal and understand speech and writing in all languages.{br}You can use a free action to illuminate squares within 5 squares of you with bright light. While providing this illumination, you can choose to have your attacks deal radiant damage in addition to any other damage types they might have. For example, if your scorching burst normally deals fire damage, you can choose to instead deal fire and radiant damage when you hit." compset="ClassFeat">
     <tag group="ReqLevel" tag="24"/>
-    <eval phase="Traits" priority="10000">
-      doneif (activated = 0)
+    <eval phase="Traits" priority="10000">doneif (activated = 0)
 
-      perform hero.assign[Vision.Lowlight]
-      </eval>
+      perform hero.assign[Vision.Lowlight]</eval>
     </thing>
   <thing id="fEpcAvaRis" name="Avangion Rising" description="Whenever you or an ally you can see drops to 0 hit points or fewer, you can spend a healing surge as a free action to restore hit points to that character equal to your healing surge value plus your highest ability modifier." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
@@ -341,8 +325,7 @@
       doneif (activated = 0)
 
       #traitmodify[attrStr,trtBonus,2,""]
-      #traitmodify[attrCha,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrCha,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -468,8 +451,7 @@
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -522,8 +504,7 @@ call ReqFeature]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      #traitmodify[trSpeed,trtBonus,1,""]
-      ]]>
+      #traitmodify[trSpeed,trtBonus,1,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -553,8 +534,7 @@ call ReqFeature]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -605,8 +585,7 @@ call ReqFeature]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -637,8 +616,7 @@ call ReqFeature]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[trInit,trtBonus,5,""]
-      ]]>
+      #traitmodify[trInit,trtBonus,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -701,8 +679,7 @@ call ReqFeature]]></validate>
     <eval phase="Traits" priority="10000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[rsPsychic,rsTotal,10,""]
-      ]]></eval>
+      #traitmodify[rsPsychic,rsTotal,10,""]]]></eval>
     </thing>
   <thing id="fEpcDivIns" name="Divine Insight" description="Your Wisdom or Charisma score increases by 2." compset="ClassFeat">
     <fieldval field="usrCandid1" value="component.Attribute &amp; (thingid.attrWis | thingid.attrCha)"/>
@@ -710,8 +687,7 @@ call ReqFeature]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -748,7 +724,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <tag group="ReqLevel" tag="30"/>
     <tag group="PowerUse" tag="Daily"/>
     </thing>
-  <thing id="edDemigod" name="Demigod" description="Your flesh becomes more than mortal and partakes of the divine vigor enjoyed by the gods themselves. Your epic-level companions are fast, strong, and smart, but you have the spark of godhood that sets you ever so slightly above all mortals.{br}Deities from every plane eventually learn your name, your nature, and your goals. Some might monitor your progress to observe whether you possess the mettle of a true demigod, and a few could throw roadblocks in your path. It is in your hands to impress the lords of creation, or disappoint them.{br}If you survive, overcome all challenges put before you, and reach the heights of ability achieved by few mortals, you are worthy to ascend to the ranks of the divine.{br}{br}Exarch or Free Agent?{br}One or more gods might ask that you serve them as a probationary exarch while you work toward your own divine goals. You do not gain any additional abilities for accepting such a position, though you do gain access to a divine connection that might grant you information helpful for completing your quests. On the other hand, you might be required to perform tasks that delay your own goals, or even work at cross-purposes to your goals. No one said godhood would be easy, and acting as a free agent has its own problems as various astral beings take your measure.{br}Route to Immortality{br}At least one Demigod has chosen the path to ascension outlined below. Your own route to divinity might be different.{br}Divine Ascension: When you complete your final quest, your divine nature yearns to complete your apotheosis. Upon ordering your mortal affairs, the astral flame smoldering within you detonates, consuming all that remains of your mortal flesh.{br}The astral flame leaves behind a fledgling god, flush with the power only the truly divine can comprehend and wield. You ascend, blazing like the sunrise (or darkening the skies like an eclipse, if your inclinations run dark). Streaking into the Astral Sea, you are taken up into the realm of an established god who welcomes your strength. You join that god&apos;s pantheon and take on an aspect of the god&apos;s portfolio.{br}Soon enough, your transcendent senses discern mortal prayers directed at you.{br}{br}DEMIGOD  FEATURESAll Demigods have the following class features.{br}{br}{b}Divine Spark (21st level){/b}: Increase two ability scores of your choice by 2 each.{br}{b}Divine Recovery (24th level){/b}: The first time you are reduced to 0 hit points or fewer each day, you regain hit points equal to half your maximum hit points.{br}{b}Divine Miracle (30th level){/b}: The first time you expend your last remaining encounter attack power during an encounter, you regain the use of one encounter attack power of your choice." compset="EpicDest" uniqueness="unique">
+  <thing id="edDemigod" name="Demigod" description="Your flesh becomes more than mortal and partakes of the divine vigor enjoyed by the gods themselves. Your epic-level companions are fast, strong, and smart, but you have the spark of godhood that sets you ever so slightly above all mortals.\nDeities from every plane eventually learn your name, your nature, and your goals. Some might monitor your progress to observe whether you possess the mettle of a true demigod, and a few could throw roadblocks in your path. It is in your hands to impress the lords of creation, or disappoint them.\nIf you survive, overcome all challenges put before you, and reach the heights of ability achieved by few mortals, you are worthy to ascend to the ranks of the divine.\n\nExarch or Free Agent?\nOne or more gods might ask that you serve them as a probationary exarch while you work toward your own divine goals. You do not gain any additional abilities for accepting such a position, though you do gain access to a divine connection that might grant you information helpful for completing your quests. On the other hand, you might be required to perform tasks that delay your own goals, or even work at cross-purposes to your goals. No one said godhood would be easy, and acting as a free agent has its own problems as various astral beings take your measure.\nRoute to Immortality\nAt least one Demigod has chosen the path to ascension outlined below. Your own route to divinity might be different.\nDivine Ascension: When you complete your final quest, your divine nature yearns to complete your apotheosis. Upon ordering your mortal affairs, the astral flame smoldering within you detonates, consuming all that remains of your mortal flesh.\nThe astral flame leaves behind a fledgling god, flush with the power only the truly divine can comprehend and wield. You ascend, blazing like the sunrise (or darkening the skies like an eclipse, if your inclinations run dark). Streaking into the Astral Sea, you are taken up into the realm of an established god who welcomes your strength. You join that god&apos;s pantheon and take on an aspect of the god&apos;s portfolio.\nSoon enough, your transcendent senses discern mortal prayers directed at you.\n\nDEMIGOD  FEATURESAll Demigods have the following class features.\n\n{b}Divine Spark (21st level){/b}: Increase two ability scores of your choice by 2 each.\n{b}Divine Recovery (24th level){/b}: The first time you are reduced to 0 hit points or fewer each day, you regain hit points equal to half your maximum hit points.\n{b}Divine Regeneration (26th level){/b}: You gain regeneration equal to your highest ability score until the end of the encounter.\n{b}Divine Miracle (30th level){/b}: The first time you expend your last remaining encounter attack power during an encounter, you regain the use of one encounter attack power of your choice." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="A divine spark ignites your soul, setting you on the path to apotheosis."/>
     <fieldval field="reqText" value="21st level"/>
     <tag group="ReqLevel" tag="21"/>
@@ -776,8 +752,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      #traitmodify[attrCha,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrCha,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -789,8 +764,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[trSave,trtBonus,5,""]
-      ]]>
+      #traitmodify[trSave,trtBonus,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -812,8 +786,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -827,9 +800,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       ~+1 to attack with all powers
       foreach pick in hero from Power
         perform eachpick.field[pwAtkMod].modify[+,1,""]
-        nexteach
-      
-      ]]>
+        nexteach]]>
       <before name="Derived trtFinal"/>
       <after name="Calc attrBonus"/>
       </eval>
@@ -857,8 +828,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform hero.child[attrDex].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrDex].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -870,8 +840,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[trSpeed,trtBonus,2,""]
-      ]]>
+      #traitmodify[trSpeed,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -900,8 +869,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -959,8 +927,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1001,8 +968,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
 
       var bonus as number
       bonus = #attrbonus[attrCon]
-      #traitmodify[trSurgeVal,trtBonus,bonus,""]
-      ]]>
+      #traitmodify[trSurgeVal,trtBonus,bonus,""]]]>
       <before name="Derived trtFinal"/>
       <after name="Calc attrBonus"/>
       </eval>
@@ -1017,8 +983,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1042,8 +1007,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrCon,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrCon,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1055,8 +1019,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="10000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[trSurgeVal,trtBonus,10,""]
-      ]]>
+      #traitmodify[trSurgeVal,trtBonus,10,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -1080,7 +1043,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
   <thing id="fEpcNatRes" name="Nature Restored" description="When you reduce an aberrant creature to 0 hit points, choose one of the following effects.{br}* You regain hit points as if you had spent a healing surge.{br}* Each enemy within 3 squares of the aberrant creature takes 10 psychic and radiant damage and is dazed until the end of your next turn." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edElfHig" name="Elf High Mage" description="For twenty thousand years the elves of Faerun have created wonders of magic greater and more enduring than any work in stone or wood. Dimensional gates, invisible roadways linking distant points, hidden vaults, mighty mythal wards to protect kingdoms, cities buttressed by unfailing spells - all these things and more were crafted by high magic, the very pinnacle of the elven arcane arts. With high magic the elves of old sundered Evermeet from the world, created the extradimensional realm of Sild&#195;&#171;yuir, and broke the power of Faerun&apos;s draconic rulers by binding them to the Rage. Others have harnessed magic of similar power at different times in Faerun&apos;s history - the Netherese, the Imaskari, the Shoon - but few of their works ever matched the longevity, the artistry, or the world-changing scope of the spells wrought by elven high magic.{br}The secrets of this powerful and dangerous lore are in the keeping of the selutaar, or the Elf High Mages. In the days of the great elven kingdoms of the Crown Wars there were hundreds of Elf High Mages, but today only a handful remains in the world. (Most of the Elf High Mages are sun elves, moon elves, and star elves, so they might more properly be called Eladrin High Mages, but such distinctions are lost on those who aren&apos;t elves.) Usually the path to high magic is a long one indeed; an elf or eladrin is rarely considered ready for instruction in this ancient art before he or she reaches 300 years of age, and many begin their instruction decades later. However, a few exceptional individuals - for example, the sun elf Araevin Teshurr, who reshaped the mythal of Myth Drannor in the years following the reconquest of that realm - have defied this custom in the past.{br}Although any Elf High Mage is a potent arcane spellcaster by definition, an Elf High Mage&apos;s true power does not lie in mastery of battle magic. Elven high magic consists of a set of rare and powerful rituals, mostly dealing with the creation of mythals, which are permanent magical wardings woven over a wide area in which the mage can anchor many different protective or useful effects. The most powerful such rituals require multiple Elf High Mages to combine their efforts for months of arduous spellcasting.{br}{br}Immortality {br}By the time your life&apos;s works are finished and your destiny is accomplished, little remains of your mortal shell. You have become a flame of living magic,shining through a fragile veil of flesh. All who look upon you can sense the unseen radiance that floods your form. The call of Arvandor grows stronger with each passing day, as does the promise of blissful rest in the Elvenhome. With nothing more than a simple act of will, you allow your body to fall away into nothingness and take up your place as one of the wisest and most honored of Arvandor&apos;s shining hosts.{br}Some Elf High Mages choose to deny themselves the rest of Arvandor and instead use their last act to bind themselves to a great work of high magic. Joining yourself to a mythal, you greatly strengthen an ancient work, infusing it with an arcane lifeforce so that it can heal, grow, and change over time. From time to time your people summon your consciousness to the fore to seek your advice and to honor the memory of your living wisdom and heroism.{br}{br}ELF HIGH MAGE  FEATURES{b}High Magic (21st level){/b}: You enact arcane rituals with greater skill and efficiency than any other spellcaster. You gain a +5 bonus to Arcana checks made to perform rituals. When you perform a ritual, you pay only half the normal cost. You can wield high magic (see the sidebar).{br}{b}One with Magic (21st level){/b}: You develop an intuitive connection to the currents of arcane power surrounding you. Increase your Wisdom score by 2. You can use the detect magic function of the Arcana skill as a free action on your turn. After an extended rest, roll three d20 and keep the results. At any time before your next extended rest, you can substitute one of these results for that of an arcane attack roll or Arcana check you make. Doing so expends that saved result.{br}{b}Sustained by Magic (24th level){/b}: Once per day when you become bloodied or reach 0 hit points, you can heal yourself by expending an arcane attack power. If you expend an encounter attack power, you can spend a healing surge, end one condition currently affecting you, and teleport up to 10 squares. If you expend a daily attack power, you can spend 1 or 2 healing surges, end all conditions currently affecting you, and teleport up to 20 squares. The power you expend has no other effect.{br}{b}Empowered by Life (30th level){/b}: When you have no healing surges left, you can choose to use the tension of the boundary between your life and your death to power your magic. You can use an encounter power you have already expended or gain a +4 bonus to any attack roll with a spell. At the end of your turn after doing either, you lose hit points equal to one-quarter your maximum hit points. You can use a daily power you have already expended or turn a hit with a spell into a critical hit. At the end of your turn after doing either, you lose hit points equal to one-half your maximum hit points. You can do more than one of these in a single turn." compset="EpicDest" uniqueness="unique">
+  <thing id="edElfHig" name="Elf High Mage" description="For twenty thousand years the elves of Faerun have created wonders of magic greater and more enduring than any work in stone or wood. Dimensional gates, invisible roadways linking distant points, hidden vaults, mighty mythal wards to protect kingdoms, cities buttressed by unfailing spells - all these things and more were crafted by high magic, the very pinnacle of the elven arcane arts. With high magic the elves of old sundered Evermeet from the world, created the extradimensional realm of SildÃ«yuir, and broke the power of Faerun&apos;s draconic rulers by binding them to the Rage. Others have harnessed magic of similar power at different times in Faerun&apos;s history - the Netherese, the Imaskari, the Shoon - but few of their works ever matched the longevity, the artistry, or the world-changing scope of the spells wrought by elven high magic.{br}The secrets of this powerful and dangerous lore are in the keeping of the selutaar, or the Elf High Mages. In the days of the great elven kingdoms of the Crown Wars there were hundreds of Elf High Mages, but today only a handful remains in the world. (Most of the Elf High Mages are sun elves, moon elves, and star elves, so they might more properly be called Eladrin High Mages, but such distinctions are lost on those who aren&apos;t elves.) Usually the path to high magic is a long one indeed; an elf or eladrin is rarely considered ready for instruction in this ancient art before he or she reaches 300 years of age, and many begin their instruction decades later. However, a few exceptional individuals - for example, the sun elf Araevin Teshurr, who reshaped the mythal of Myth Drannor in the years following the reconquest of that realm - have defied this custom in the past.{br}Although any Elf High Mage is a potent arcane spellcaster by definition, an Elf High Mage&apos;s true power does not lie in mastery of battle magic. Elven high magic consists of a set of rare and powerful rituals, mostly dealing with the creation of mythals, which are permanent magical wardings woven over a wide area in which the mage can anchor many different protective or useful effects. The most powerful such rituals require multiple Elf High Mages to combine their efforts for months of arduous spellcasting.{br}{br}Immortality {br}By the time your life&apos;s works are finished and your destiny is accomplished, little remains of your mortal shell. You have become a flame of living magic,shining through a fragile veil of flesh. All who look upon you can sense the unseen radiance that floods your form. The call of Arvandor grows stronger with each passing day, as does the promise of blissful rest in the Elvenhome. With nothing more than a simple act of will, you allow your body to fall away into nothingness and take up your place as one of the wisest and most honored of Arvandor&apos;s shining hosts.{br}Some Elf High Mages choose to deny themselves the rest of Arvandor and instead use their last act to bind themselves to a great work of high magic. Joining yourself to a mythal, you greatly strengthen an ancient work, infusing it with an arcane lifeforce so that it can heal, grow, and change over time. From time to time your people summon your consciousness to the fore to seek your advice and to honor the memory of your living wisdom and heroism.{br}{br}ELF HIGH MAGE  FEATURES{b}High Magic (21st level){/b}: You enact arcane rituals with greater skill and efficiency than any other spellcaster. You gain a +5 bonus to Arcana checks made to perform rituals. When you perform a ritual, you pay only half the normal cost. You can wield high magic (see the sidebar).{br}{b}One with Magic (21st level){/b}: You develop an intuitive connection to the currents of arcane power surrounding you. Increase your Wisdom score by 2. You can use the detect magic function of the Arcana skill as a free action on your turn. After an extended rest, roll three d20 and keep the results. At any time before your next extended rest, you can substitute one of these results for that of an arcane attack roll or Arcana check you make. Doing so expends that saved result.{br}{b}Sustained by Magic (24th level){/b}: Once per day when you become bloodied or reach 0 hit points, you can heal yourself by expending an arcane attack power. If you expend an encounter attack power, you can spend a healing surge, end one condition currently affecting you, and teleport up to 10 squares. If you expend a daily attack power, you can spend 1 or 2 healing surges, end all conditions currently affecting you, and teleport up to 20 squares. The power you expend has no other effect.{br}{b}Empowered by Life (30th level){/b}: When you have no healing surges left, you can choose to use the tension of the boundary between your life and your death to power your magic. You can use an encounter power you have already expended or gain a +4 bonus to any attack roll with a spell. At the end of your turn after doing either, you lose hit points equal to one-quarter your maximum hit points. You can use a daily power you have already expended or turn a hit with a spell into a critical hit. At the end of your turn after doing either, you lose hit points equal to one-half your maximum hit points. You can do more than one of these in a single turn." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You have embarked on the study of the most powerful magic known to mortals: arselu tel-quessir, the Great Art of the People. Your arcane works might endure for millennia."/>
     <fieldval field="reqText" value="21st-level wizard; eladrin or elf"/>
     <usesource source="Dragon"/>
@@ -1099,8 +1062,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrWis,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrWis,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1111,24 +1073,49 @@ validif (#trait[attrCha] >= 21)]]></validate>
   <thing id="fEpcEmpby" name="Empowered by Life" description="When you have no healing surges left, you can choose to use the tension of the boundary between your life and your death to power your magic. You can use an encounter power you have already expended or gain a +4 bonus to any attack roll with a spell. At the end of your turn after doing either, you lose hit points equal to one-quarter your maximum hit points. You can use a daily power you have already expended or turn a hit with a spell into a critical hit. At the end of your turn after doing either, you lose hit points equal to one-half your maximum hit points. You can do more than one of these in a single turn." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edEmergPri" name="Emergent Primordial" description="There is no full accounting of the primordials sealed away in the Elemental Chaos and elsewhere in the planes. Their roster is endless, their exploits too terrible to dwell upon. They are too powerful to die, too dangerous to live. The gods sealed them in the deepest depths to ensure that they would trouble the planes no more. During their imprisonment, the primordials have never ceased their efforts to escape and to resume the struggle against the gods they hate. {br}In exploring elemental magic, you have been touched by a primordial&apos;s essence. Perhaps only a dream has settled in your mind, or maybe a shard of a fallen primordial became lodged inside you. When you attain the epic tier, the shard awakens and begins merging its identity with yours until one day you become like a primordial.{br}{br}Living the Destiny{br}Although the primordial within you seeks to annihilate your identity, it has no choice but to bend to your will. At the same time, your growing power awakens the primordial in your thoughts, gradually drawing it out from its long slumber until its presence pervades your consciousness. By the time you complete your final quest, you might be ready to surrender your body and soul to the primordial - or descend into the Elemental Chaos to confront and destroy it for good.{br}{br}EMERGENT PRIMORDIAL  FEATURES{b}Primordial Rebirth (21st level){/b}: You increase one ability score of your choice by 2.{br}Your origin changes to elemental if it is not elemental already, and you can speak, read, and write Primordial.{br}In addition, choose one of the following: acid, cold, fire, lightning, or thunder. You gain resist 15 to the chosen damage type, and you gain a +3 bonus to damage rolls that include that type.{br}{b}Primordial Rebirth (Level 24) (24th level){/b}: Once per day when you start your turn at 0 hit points or fewer, you regain hit points equal to your bloodied value. When you do so, each ally within 5 squares of you can spend a healing surge. In addition, each ally within 10 squares of you who has this epic destiny gains 20 temporary hit points and can shift 1 square as a free action.{br}{b}Primordial Ascendance (30th level){/b}: Whenever you score a critical hit or reduce a nonminion enemy to 0 hit points, each ally within 5 squares of you gains 10 temporary hit points, and each one gains a +2 power bonus to attack rolls until the end of your next turn." compset="EpicDest" uniqueness="unique">
+  <thing id="edEmergPri" name="Emergent Primordial" description="There is no full accounting of the primordials sealed away in the Elemental Chaos and elsewhere in the planes. Their roster is endless, their exploits too terrible to dwell upon. They are too powerful to die, too dangerous to live. The gods sealed them in the deepest depths to ensure that they would trouble the planes no more. During their imprisonment, the primordials have never ceased their efforts to escape and to resume the struggle against the gods they hate. \nIn exploring elemental magic, you have been touched by a primordial&apos;s essence. Perhaps only a dream has settled in your mind, or maybe a shard of a fallen primordial became lodged inside you. When you attain the epic tier, the shard awakens and begins merging its identity with yours until one day you become like a primordial.\n\nLiving the Destiny\nAlthough the primordial within you seeks to annihilate your identity, it has no choice but to bend to your will. At the same time, your growing power awakens the primordial in your thoughts, gradually drawing it out from its long slumber until its presence pervades your consciousness. By the time you complete your final quest, you might be ready to surrender your body and soul to the primordial - or descend into the Elemental Chaos to confront and destroy it for good.\n\nEMERGENT PRIMORDIAL FEATURES\n{b}Primordial Rebirth (21st level):{/b} You increase one ability score of your choice by 2. Your origin changes to elemental if it is not elemental already, and you can speak, read, and write Primordial.\nIn addition, choose one of the following: acid, cold, fire, lightning, or thunder. You gain resist 15 to the chosen damage type, and you gain a +3 bonus to damage rolls that include that type.\n{b}Primordial Rebirth (24th level):{/b} Once per day when you start your turn at 0 hit points or fewer, you regain hit points equal to your bloodied value. When you do so, each ally within 5 squares of you can spend a healing surge. In addition, each ally within 10 squares of you who has this epic destiny gains 20 temporary hit points and can shift 1 square as a free action.\n{b}Primordial Form (26th level):{/b} Once per day as a minor action, you can assume the form of a Huge Elemental, in which form you gain +2 Reach, Resist 5 to all damage, and a +4 damage rolls with melee attacks and attacks that have the Acid, Cold, Fire, Lightning or Thunder keywords.\n{b}Primordial Ascendance (30th level):{/b} Whenever you score a critical hit or reduce a nonminion enemy to 0 hit points, each ally within 5 squares of you gains 10 temporary hit points, and each one gains a +2 power bonus to attack rolls until the end of your next turn." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You carry the essence of an imprisoned primordial, a being so vast, so terrible, that the gods imprisoned it in the Elemental Chaos."/>
     <fieldval field="reqText" value="21st level; elemental origin, Born of the Elements feat, or any elemental power"/>
     <usesource source="HeroElemCh"/>
     <tag group="ReqLevel" tag="21"/>
     <bootstrap thing="fEpcPriAsc"></bootstrap>
     <bootstrap thing="fEpcPriReb"></bootstrap>
-    <bootstrap thing="fEpcPriReb"></bootstrap>
+    <bootstrap thing="fEpcPriRe2"></bootstrap>
     <bootstrap thing="pEpcPriFor"></bootstrap>
     <exprreq message="Feat &apos;Born of the Elements&apos; required"><![CDATA[hero.tagis[Feat.ftBornEle] <> 0]]></exprreq>
     </thing>
   <thing id="fEpcPriReb" name="Primordial Rebirth" description="You increase one ability score of your choice by 2.{br}Your origin changes to elemental if it is not elemental already, and you can speak, read, and write Primordial.{br}In addition, choose one of the following: acid, cold, fire, lightning, or thunder. You gain resist 15 to the chosen damage type, and you gain a +3 bonus to damage rolls that include that type." compset="ClassFeat">
+    <fieldval field="usrCandid1" value="thingid.rsAcid | thingid.rsCold | thingid.rsFire | thingid.rsLightn | thingid.rsThunder"/>
     <tag group="ReqLevel" tag="21"/>
+    <eval phase="Traits" priority="1000"><![CDATA[doneif (activated = 0)
+doneif (field[usrChosen1].ischosen = 0)
+
+perform field[usrChosen1].chosen.field[rsTotal].modify[+,15,""]
+
+var expr as string
+expr = "PowerSrc.Arcane & DamageType."
+if (compare(field[usrChosen1].chosen.idstring,"rsAcid") = 0) then
+  expr &= "Acid"
+elseif(compare(field[usrChosen1].chosen.idstring,"rsCold") = 0) then
+  expr &= "Cold"
+elseif(compare(field[usrChosen1].chosen.idstring,"rsFire") = 0) then
+  expr &= "Fire"
+elseif(compare(field[usrChosen1].chosen.idstring,"rsLightn") = 0) then
+  expr &= "Lightning"
+else
+  expr &= "Thunder"
+endif
+
+foreach pick in hero from Power where expr
+  perform eachpick.field[pwDamBonus].modify[+,3,""]
+nexteach]]>
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="fEpcPriAsc" name="Primordial Ascendance" description="Whenever you score a critical hit or reduce a nonminion enemy to 0 hit points, each ally within 5 squares of you gains 10 temporary hit points, and each one gains a +2 power bonus to attack rolls until the end of your next turn." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edEternDef" name="Eternal Defender" description="You have taken the defender ideal to heart. This devotion might have started at childhood, when you stood up for those weaker than you. Perhaps the ideal of the mighty protecting the weak was culturally instilled in you, as it is in all good-hearted dwarves. Whatever the case, rather than using your strength and power solely for personal gain, you willingly placed yourself in harm&apos;s way to make sure that others had a chance to survive and thrive.{br}At the core of your personal morals and beliefs is the certainty that it is your job to protect your allies. When among them, you stand in the forefront in times of danger, no matter how dire the foe. Your skill and courage ever prove an anchor for your companions during the tumult of battle.{br}{br}Immortality?{br}Bravery and immovability define you as a champion to your friends and the people you have saved over the course of your chronicle. To many, you are the mountain holding back the onrush of a monstrous tide.{br}Everlasting Bulwark: You have laid low your final and greatest adversary. During the fight you, as always, formed the steady center around which your allies could operate, taking the brunt of the punishment without bending or complaining. Ever more will you be the supreme standard for those on the front line of any battle.{br}The world always needs someone of your strength and stature at the ready to come to its defense. Those wishing to take up sword or hammer to defend others refer to you as if you were a saint. Although your name might be spoken as a universally recognized synonym for the ultimate guardian, you&apos;re not ready to just lay down your shield and axe.{br}Perhaps, then, you take a place in divine dominions, next to or in service to a godly stalwart such as Moradin. Building a post somewhere in the cosmos, you might take it upon yourself to stand vigil over a primordial threat or against the machinations of evil deities. If something stirs or threatens, you herald the coming danger and stand the first to face it. Perhaps instead some power helps you eternally watch over a chosen people, infusing your watchful spirit into the land. Or you might make a pact to pass away but instill your defender&apos;s heart into your folk, awakening a new profusion of heroes.{br}{br}ETERNAL DEFENDER  FEATURES{b}Unending Strength (21st level){/b}: Increase your Strength score by 2. Your normal load, heavy load, and maximum drag load are twice their normal values (Strength &#195;&#151; 20, Strength &#195;&#151; 40, and Strength &#195;&#151; 100 pounds, respectively). Once per day, you gain a +10 bonus to a Strength ability check or a Strengthbased skill check of your choice.{br}{b}Godlike Stature (24th level){/b}: Your size doesn&apos;t change, but your height and weight increase to 25 percent and 100 percent above the normal range for your race, respectively. You can wield weapons as if you were one size larger, and if you are normally Medium or larger, your melee reach increases by 1 square.{br}{b}Great Power (30th level){/b}: Once per day, you can treat any successful melee attack roll you just made as if it were a natural 20, or you can treat any unsuccessful melee attack roll you just made as if it were a hit." compset="EpicDest" uniqueness="unique">
+  <thing id="edEternDef" name="Eternal Defender" description="You have taken the defender ideal to heart. This devotion might have started at childhood, when you stood up for those weaker than you. Perhaps the ideal of the mighty protecting the weak was culturally instilled in you, as it is in all good-hearted dwarves. Whatever the case, rather than using your strength and power solely for personal gain, you willingly placed yourself in harm&apos;s way to make sure that others had a chance to survive and thrive.{br}At the core of your personal morals and beliefs is the certainty that it is your job to protect your allies. When among them, you stand in the forefront in times of danger, no matter how dire the foe. Your skill and courage ever prove an anchor for your companions during the tumult of battle.{br}{br}Immortality?{br}Bravery and immovability define you as a champion to your friends and the people you have saved over the course of your chronicle. To many, you are the mountain holding back the onrush of a monstrous tide.{br}Everlasting Bulwark: You have laid low your final and greatest adversary. During the fight you, as always, formed the steady center around which your allies could operate, taking the brunt of the punishment without bending or complaining. Ever more will you be the supreme standard for those on the front line of any battle.{br}The world always needs someone of your strength and stature at the ready to come to its defense. Those wishing to take up sword or hammer to defend others refer to you as if you were a saint. Although your name might be spoken as a universally recognized synonym for the ultimate guardian, you&apos;re not ready to just lay down your shield and axe.{br}Perhaps, then, you take a place in divine dominions, next to or in service to a godly stalwart such as Moradin. Building a post somewhere in the cosmos, you might take it upon yourself to stand vigil over a primordial threat or against the machinations of evil deities. If something stirs or threatens, you herald the coming danger and stand the first to face it. Perhaps instead some power helps you eternally watch over a chosen people, infusing your watchful spirit into the land. Or you might make a pact to pass away but instill your defender&apos;s heart into your folk, awakening a new profusion of heroes.{br}{br}ETERNAL DEFENDER  FEATURES{b}Unending Strength (21st level){/b}: Increase your Strength score by 2. Your normal load, heavy load, and maximum drag load are twice their normal values (Strength Ã— 20, Strength Ã— 40, and Strength Ã— 100 pounds, respectively). Once per day, you gain a +10 bonus to a Strength ability check or a Strengthbased skill check of your choice.{br}{b}Godlike Stature (24th level){/b}: Your size doesn&apos;t change, but your height and weight increase to 25 percent and 100 percent above the normal range for your race, respectively. You can wield weapons as if you were one size larger, and if you are normally Medium or larger, your melee reach increases by 1 square.{br}{b}Great Power (30th level){/b}: Once per day, you can treat any successful melee attack roll you just made as if it were a natural 20, or you can treat any unsuccessful melee attack roll you just made as if it were a hit." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You stand in the path of those who would rend the defenseless world. That world is safe behind your ever-vigilant shield."/>
     <fieldval field="reqText" value="21st level, fighter"/>
     <usesource source="Martial"/>
@@ -1139,24 +1126,21 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <bootstrap thing="fEpcGrePow"></bootstrap>
     <bootstrap thing="pEpcImpDes"></bootstrap>
     </thing>
-  <thing id="fEpcUneStr" name="Unending Strength" description="Increase your Strength score by 2. Your normal load, heavy load, and maximum drag load are twice their normal values (Strength &#195;&#151; 20, Strength &#195;&#151; 40, and Strength &#195;&#151; 100 pounds, respectively). Once per day, you gain a +10 bonus to a Strength ability check or a Strengthbased skill check of your choice." compset="ClassFeat">
+  <thing id="fEpcUneStr" name="Unending Strength" description="Increase your Strength score by 2. Your normal load, heavy load, and maximum drag load are twice their normal values (Strength Ã— 20, Strength Ã— 40, and Strength Ã— 100 pounds, respectively). Once per day, you gain a +10 bonus to a Strength ability check or a Strengthbased skill check of your choice." compset="ClassFeat">
     <tag group="ReqLevel" tag="21"/>
     <tag group="PowerUse" tag="Daily"/>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrStr,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrStr,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
   <thing id="fEpcGodSta" name="Godlike Stature" description="Your size doesn&apos;t change, but your height and weight increase to 25 percent and 100 percent above the normal range for your race, respectively. You can wield weapons as if you were one size larger, and if you are normally Medium or larger, your melee reach increases by 1 square." compset="ClassFeat">
     <tag group="ReqLevel" tag="24"/>
-    <eval phase="Setup" priority="10000">
-      doneif (activated = 0)
+    <eval phase="Setup" priority="10000">doneif (activated = 0)
 
       perform hero.assign[Hero.Oversized]
-      
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1276,8 +1260,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrCha,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrCha,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1325,8 +1308,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1420,11 +1402,9 @@ validif (#trait[attrCha] >= 21)]]></validate>
   <thing id="fEpcWelMen" name="Wellspring of Mental Power" description="You gain 4 additional power points." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     <tag group="Hide" tag="Special"/>
-    <eval phase="Traits" priority="1000">
-      doneif (activated = 0)
+    <eval phase="Traits" priority="1000">doneif (activated = 0)
 
       hero.child[trkPower].field[trkMax].value += 4
-      
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -1449,8 +1429,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrDex,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrDex,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1475,8 +1454,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1561,8 +1539,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1598,8 +1575,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
 
       #traitmodify[skDiplomac,trtBonus,2,""]
       #traitmodify[skInsight,trtBonus,2,""]
-      #traitmodify[skIntimida,trtBonus,2,""]
-      ]]>
+      #traitmodify[skIntimida,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1650,8 +1626,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1665,7 +1640,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <tag group="ReqLevel" tag="30"/>
     <tag group="PowerUse" tag="Encounter"/>
     </thing>
-  <thing id="edImmanenc" name="Immanence" description="Magic is less complex than most believe it to be. Beneath the incantations, the beautifully fashioned implements, the intricately carved circles and sigils, and the lore scribbled in tomes unnumbered lies one simple truth: Everything is energy. Energy comes in many forms, but once the first fundamental truth is grasped, all later use of magic becomes applied manipulation of energy. Energy can be tuned, directed, drawn away, or multiplied. It can be slowed so that it seems to be a solid, or converted to an insubstantial fluid of potential.{br}Others who lack your understanding find you obscure or mystical, but in fact you could not be more practical. In the grand scheme of things, only energy is eternal and true; all its shapes and flows are temporary, and will shift into unrecognizable patterns as time advances.{br}Your comprehension of these truths grants you exceptional and growing power over the world that others believe is mostly physical. Hazardous discharges flow around you like water. You can even extend a fraction of your protection to your allies. So powerful is your control over energy that when your body takes too much hurt, you can convert yourself to a field of substanceless particles.{br}{br}Immortality?{br}When you complete your final quest, your understanding over the nature of energy expands. You suddenly grasp the final truth with which you have so long struggled: Only one energy field exists, and the entirety of the cosmos is made up of this undulating, many-layered expanse. The cosmos and you are one and the same. The same field that makes up everything else is part of you.{br}After putting your mortal affairs in order, you transform spontaneously into a being of pure energy, leapfrogging the state of divinity to become a fixture of the cosmos itself. After all, even the gods and the primordials are made of energy. You are an Immanence; you are everywhere.{br}{br}IMMANENCE  FEATURES{b}Immanence Variable Resistance (21st level){/b}: After the first time you take damage of a particular type during an encounter, you gain resist 20 to that damage type until the end of the encounter.{br}{b}Spirit of Energy (24th level){/b}: Once per day, when you drop to 0 hit points or fewer, you regain hit points equal to half your maximum hit points and become a spirit of energy. Until you regain hit points from a healing power or take a short rest, you are insubstantial and have phasing.{br}Also, at the start of your next turn, each enemy adjacent to you takes 20 damage of one of the following types, chosen when you take this form: acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder.{br}{b}Shared Resistance (30th level){/b}: While any ally is adjacent to you, he or she gains your resistances and immunities." compset="EpicDest" uniqueness="unique">
+  <thing id="edImmanenc" name="Immanence" description="Magic is less complex than most believe it to be. Beneath the incantations, the beautifully fashioned implements, the intricately carved circles and sigils, and the lore scribbled in tomes unnumbered lies one simple truth: Everything is energy. Energy comes in many forms, but once the first fundamental truth is grasped, all later use of magic becomes applied manipulation of energy. Energy can be tuned, directed, drawn away, or multiplied. It can be slowed so that it seems to be a solid, or converted to an insubstantial fluid of potential.\nOthers who lack your understanding find you obscure or mystical, but in fact you could not be more practical. In the grand scheme of things, only energy is eternal and true; all its shapes and flows are temporary, and will shift into unrecognizable patterns as time advances.\nYour comprehension of these truths grants you exceptional and growing power over the world that others believe is mostly physical. Hazardous discharges flow around you like water. You can even extend a fraction of your protection to your allies. So powerful is your control over energy that when your body takes too much hurt, you can convert yourself to a field of substanceless particles.\n\nImmortality?\nWhen you complete your final quest, your understanding over the nature of energy expands. You suddenly grasp the final truth with which you have so long struggled: Only one energy field exists, and the entirety of the cosmos is made up of this undulating, many-layered expanse. The cosmos and you are one and the same. The same field that makes up everything else is part of you.\nAfter putting your mortal affairs in order, you transform spontaneously into a being of pure energy, leapfrogging the state of divinity to become a fixture of the cosmos itself. After all, even the gods and the primordials are made of energy. You are an Immanence; you are everywhere.\n\nIMMANENCE  FEATURES\n{b}Immanence Variable Resistance (21st level){/b}: After the first time you take damage of a particular type during an encounter, you gain resist 20 to that damage type until the end of the encounter.\n{b}Spirit of Energy (24th level){/b}: Once per day, when you drop to 0 hit points or fewer, you regain hit points equal to half your maximum hit points and become a spirit of energy. Until you regain hit points from a healing power or take a short rest, you are insubstantial and have phasing.\nAlso, at the start of your next turn, each enemy adjacent to you takes 20 damage of one of the following types, chosen when you take this form: acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder.\n{b}Vary Resistance (26th level){/b}: You gain the {i}Vary Resistance{/i} encounter utility power, allowing you to change your current Variable Resistance to one of the following types: acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder.\n{b}Shared Resistance (30th level){/b}: While any ally is adjacent to you, he or she gains your resistances and immunities." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="All life is energy. You can see the flows and associations where others see only inanimate matter."/>
     <fieldval field="reqText" value="21st level, any arcane class"/>
     <usesource source="Arcane"/>
@@ -1702,8 +1677,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       #traitmodify[defFort,trtBonus,1,""]
       #traitmodify[defRef,trtBonus,1,""]
       #traitmodify[defWill,trtBonus,1,""]
-      #traitmodify[trHealth,trtBonus,20,""]
-      ]]>
+      #traitmodify[trHealth,trtBonus,20,""]]]>
       <before name="Derived trtFinal"/>
       <after name="Calc attrBonus"/>
       </eval>
@@ -1727,8 +1701,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
       #traitmodify[trInit,trtBonus,10,""]
       foreach pick in hero from WeaponBase
         perform eachpick.field[wpBonus].modify[+,2,""]
-        nexteach
-      ]]>
+        nexteach]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -1754,8 +1727,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrStr,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrStr,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1781,8 +1753,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1865,8 +1836,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[attrCha,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrCha,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1878,7 +1848,7 @@ validif (#trait[attrCha] >= 21)]]></validate>
     <fieldval field="usrCandid1" value="component.Power &amp; PowerAcc.Weapon &amp; PowerType.Encounter"/>
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edLordCha" name="Lord of Chaos" description="Long ago, an ancient race of mighty sorcerers abandoned the material world for the Elemental Chaos, drawn by the plane&apos;s infinite mutability. These were the Reigar, a humanlike people who revered personal freedom, expression, and artistry above all other values. In time they mastered the secrets of immortality and became a race of godlings in mortal form - self-centered, capricious, driven only by the desire to experience new sensations and outdo each other in creative works. Foreseeing that their race would eventually dwindle and stagnate, the Reigar created one last masterwork of cooperative magic: a sentient, self-guiding force that would seek out the most brilliant and worthy souls among mortals and gift them with the powers of the Reigar, thus renewing the race across the ages.{br}In the course of your mortal adventures, you have developed into that one person in a million who embodies the exquisitely rare mix of brilliance, beauty, willfulness, and creativity that characterizes the immortal ranks of the Reigar. The ancient lore of the Reigar has revealed itself to you and given you the ability to shape the world to suit your whims.{br}{br}Living the Destiny{br}Few of your kind remain anywhere in the multiverse. You and your kindred souls are not mortals, nor gods, nor elemental beings; you are something else. As a Lord of Chaos, you might commit yourself to shaping a vast swath of the elemental plane into a domain of your own. You or your descendants could rule over an extraplanar kingdom forged by your will and imagination. Or you might choose to roam the multiverse, immersing yourself in every interest and experience that catches your eye. Whatever path you take, you eventually leave your adventuring career behind, drawn by the challenge of shaping and ordering your own private universe.{br}{br}LORD OF CHAOS  FEATURES{b}Awakening (21st level){/b}: You increase your Charisma by 2, and your origin becomes immortal.{br}In addition, you gain a shakti, an ancient tool of the Reigar that takes the form of a small statuette or token that is representative of you. As a minor action, you can transform it into a +5 magic weapon, magic implement, magic armor, or amulet of protection (+6 at 26th level). If the shakti leaves your person or is destroyed somehow, it turns to dust. You can create it again as a minor action, and it appears on your person in the desired form.{br}{b}Rapid Reincarnation (24th level){/b}: Once per day when you would make a death saving throw, you can instead choose to become disincarnate. Your body disappears in motes of golden light, and you can then reincarnate anywhere within 1 mile, between 1 minute and 1 hour later. You reincarnate with hit points equal to your bloodied value.{br}{b}Master of Chaos (30th level){/b}: When you bloody an enemy or score a critical hit against an enemy, you can teleport yourself or the enemy up to 10 squares as a free action." compset="EpicDest" uniqueness="unique">
+  <thing id="edLordCha" name="Lord of Chaos" description="Long ago, an ancient race of mighty sorcerers abandoned the material world for the Elemental Chaos, drawn by the plane&apos;s infinite mutability. These were the Reigar, a humanlike people who revered personal freedom, expression, and artistry above all other values. In time they mastered the secrets of immortality and became a race of godlings in mortal form - self-centered, capricious, driven only by the desire to experience new sensations and outdo each other in creative works. Foreseeing that their race would eventually dwindle and stagnate, the Reigar created one last masterwork of cooperative magic: a sentient, self-guiding force that would seek out the most brilliant and worthy souls among mortals and gift them with the powers of the Reigar, thus renewing the race across the ages.\nIn the course of your mortal adventures, you have developed into that one person in a million who embodies the exquisitely rare mix of brilliance, beauty, willfulness, and creativity that characterizes the immortal ranks of the Reigar. The ancient lore of the Reigar has revealed itself to you and given you the ability to shape the world to suit your whims.\n\nLiving the Destiny\nFew of your kind remain anywhere in the multiverse. You and your kindred souls are not mortals, nor gods, nor elemental beings; you are something else. As a Lord of Chaos, you might commit yourself to shaping a vast swath of the elemental plane into a domain of your own. You or your descendants could rule over an extraplanar kingdom forged by your will and imagination. Or you might choose to roam the multiverse, immersing yourself in every interest and experience that catches your eye. Whatever path you take, you eventually leave your adventuring career behind, drawn by the challenge of shaping and ordering your own private universe.\n\nLORD OF CHAOS  FEATURES\n{b}Awakening (21st level){/b}: You increase your Charisma by 2, and your origin becomes immortal.\nIn addition, you gain a shakti, an ancient tool of the Reigar that takes the form of a small statuette or token that is representative of you. As a minor action, you can transform it into a +5 magic weapon, magic implement, magic armor, or amulet of protection (+6 at 26th level). If the shakti leaves your person or is destroyed somehow, it turns to dust. You can create it again as a minor action, and it appears on your person in the desired form.\n{b}Rapid Reincarnation (24th level){/b}: Once per day when you would make a death saving throw, you can instead choose to become disincarnate. Your body disappears in motes of golden light, and you can then reincarnate anywhere within 1 mile, between 1 minute and 1 hour later. You reincarnate with hit points equal to your bloodied value.\n{b}Whim of Creation (26th level){/b}: You gain the {i}Whim of Creation{/i} Daily Utility power, which lets you use a minor action to remove difficult terrain, create difficult terrain, or create nondamaging weather conditions of your choice in a close burst 5. Whichever effect you desire, it lasts as long as you wish.\n{b}Master of Chaos (30th level){/b}: When you bloody an enemy or score a critical hit against an enemy, you can teleport yourself or the enemy up to 10 squares as a free action." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You incarnate a creative force that can shape the Elemental Chaos into continent-sized wonders and sculpt kingdoms. The multiverse itself is your canvas."/>
     <fieldval field="reqText" value="21st level"/>
     <usesource source="HeroElemCh"/>
@@ -1890,6 +1860,10 @@ validif (#trait[attrCha] >= 21)]]></validate>
     </thing>
   <thing id="fEpcAwaken" name="Awakening" description="You increase your Charisma by 2, and your origin becomes immortal.{br}In addition, you gain a shakti, an ancient tool of the Reigar that takes the form of a small statuette or token that is representative of you. As a minor action, you can transform it into a +5 magic weapon, magic implement, magic armor, or amulet of protection (+6 at 26th level). If the shakti leaves your person or is destroyed somehow, it turns to dust. You can create it again as a minor action, and it appears on your person in the desired form." compset="ClassFeat">
     <tag group="ReqLevel" tag="21"/>
+    <eval phase="Traits" priority="1000"><![CDATA[doneif (activated = 0)
+#traitmodify[attrCha,trtBonus,2,""]]]>
+      <before name="Calc trtFinal"/>
+      </eval>
     </thing>
   <thing id="fEpcRapRei" name="Rapid Reincarnation" description="Once per day when you would make a death saving throw, you can instead choose to become disincarnate. Your body disappears in motes of golden light, and you can then reincarnate anywhere within 1 mile, between 1 minute and 1 hour later. You reincarnate with hit points equal to your bloodied value." compset="ClassFeat">
     <tag group="ReqLevel" tag="24"/>
@@ -1941,7 +1915,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
   <thing id="fEpcLorRev" name="Lorekeeper&apos;s Revelation" description="Choose two of your daily utility powers. Those two powers are now encounter powers for you. If you do not have two daily utility powers, you can immediately retrain your utility powers until you have two daily utility powers that then become encounter powers." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edMagister" name="Magister" description="Your reputation as a powerful spellcaster has only grown in the telling, perhaps sometimes even outpacing your actual abilities. Indeed, some credulous few have gone so far as to call you the &quot;mouth of magic,&quot; implying that you are the ultimate expert on all things arcane.{br}You don&apos;t go out of your way to dissuade such talk. After all, you are a powerful practitioner of the arcane arts. You are a prot&#195;&#169;g&#195;&#169; of powerful wizards, sorcerers, and warlocks (if not in the f lesh, at least in the study of their lives, their rituals, and the spells they preferred to cast). Furthermore, spells and rituals have been your daily fare for longer than you can recall. You are mortal, yes, but the f lux of magic that daily f lows through your form lifts you closer and closer to something finer with each arcane utterance.{br}Any wizard, warlock, or other spellcaster can study hard and eventually master a wide variety of magical stratagems. It is not impossible to grow in power and ability. But a few who do so sense an underlying unity to magic, a thread that connects apparently disparate magical functions. Those few, like you, claim the title of Magister and the enhanced magical prowess that goes with it.{br}Regardless of what others say or what you believe, empirical evidence has proved it: You have become one of the most powerful spellcasters in history. You manipulate magic as easily as you breathe.{br}{br}Immortality?{br}Your ultimate destiny is certain to be colorful, but is otherwise open-ended. It is likely to be whatever best suits the unique expression of your class. You might be a chaos sorcerer who decides to live deep within the Elemental Chaos, returning in some future age to help assuage the world&apos;s need. You might be a great bard whose magic eventually challenges the immortals, and perhaps wins you a place in the courts of the gods on your own terms. You might be a wizard whose studies have rewarded you with a natural fluency that none could have predicted early in your career, but whose popularity and notoriety live on for centuries afterward - aided by the fact that you remain accessible, if inactive, in a grand tower hidden in a Feywild mountain pass.{br}{br}MAGISTER  FEATURES{b}Magic&apos;s Flow (21st level){/b}: Whenever you use an arcane encounter or daily attack power, you gain a +4 bonus to the defense or defenses that power attacks until the end of your next turn.{br}{b}Magister&apos;s Knack (21st level){/b}: One ability score of your choice increases by 2.{br}{b}Return of the Magister (24th level){/b}: Once per day when you drop to 0 hit points or fewer or are about to take enough damage to kill you, you can spend a healing surge, teleport 15 squares as a free action, and roll saving throws against all effects on you that a save can end.{br}{b}Magic&apos;s Master (30th level){/b}: Twice per day, you can perform any ritual you have mastered as a standard action. The ritual you perform cannot directly affect an enemy. For example, you could perform Raise Dead and revive an ally who could then rejoin the fight. However, you could not perform Imprisonment, which directly affects an enemy." compset="EpicDest" uniqueness="unique">
+  <thing id="edMagister" name="Magister" description="Your reputation as a powerful spellcaster has only grown in the telling, perhaps sometimes even outpacing your actual abilities. Indeed, some credulous few have gone so far as to call you the &quot;mouth of magic,&quot; implying that you are the ultimate expert on all things arcane.{br}You don&apos;t go out of your way to dissuade such talk. After all, you are a powerful practitioner of the arcane arts. You are a protÃ©gÃ© of powerful wizards, sorcerers, and warlocks (if not in the flesh, at least in the study of their lives, their rituals, and the spells they preferred to cast). Furthermore, spells and rituals have been your daily fare for longer than you can recall. You are mortal, yes, but the f lux of magic that daily f lows through your form lifts you closer and closer to something finer with each arcane utterance.{br}Any wizard, warlock, or other spellcaster can study hard and eventually master a wide variety of magical stratagems. It is not impossible to grow in power and ability. But a few who do so sense an underlying unity to magic, a thread that connects apparently disparate magical functions. Those few, like you, claim the title of Magister and the enhanced magical prowess that goes with it.{br}Regardless of what others say or what you believe, empirical evidence has proved it: You have become one of the most powerful spellcasters in history. You manipulate magic as easily as you breathe.{br}{br}Immortality?{br}Your ultimate destiny is certain to be colorful, but is otherwise open-ended. It is likely to be whatever best suits the unique expression of your class. You might be a chaos sorcerer who decides to live deep within the Elemental Chaos, returning in some future age to help assuage the world&apos;s need. You might be a great bard whose magic eventually challenges the immortals, and perhaps wins you a place in the courts of the gods on your own terms. You might be a wizard whose studies have rewarded you with a natural fluency that none could have predicted early in your career, but whose popularity and notoriety live on for centuries afterward - aided by the fact that you remain accessible, if inactive, in a grand tower hidden in a Feywild mountain pass.{br}{br}MAGISTER  FEATURES{b}Magic&apos;s Flow (21st level){/b}: Whenever you use an arcane encounter or daily attack power, you gain a +4 bonus to the defense or defenses that power attacks until the end of your next turn.{br}{b}Magister&apos;s Knack (21st level){/b}: One ability score of your choice increases by 2.{br}{b}Return of the Magister (24th level){/b}: Once per day when you drop to 0 hit points or fewer or are about to take enough damage to kill you, you can spend a healing surge, teleport 15 squares as a free action, and roll saving throws against all effects on you that a save can end.{br}{b}Magic&apos;s Master (30th level){/b}: Twice per day, you can perform any ritual you have mastered as a standard action. The ritual you perform cannot directly affect an enemy. For example, you could perform Raise Dead and revive an ally who could then rejoin the fight. However, you could not perform Imprisonment, which directly affects an enemy." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="Magic flows through you as it flows through all the worlds. Magic that flows through you once is yours forever."/>
     <fieldval field="reqText" value="21st level, any arcane class"/>
     <usesource source="Arcane"/>
@@ -1962,8 +1936,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -1991,8 +1964,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2048,8 +2020,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2100,18 +2071,15 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
   <thing id="fEpcFauTra" name="Faultless Tracker" description="You gain darkvision and tremorsense 10." compset="ClassFeat">
     <tag group="ReqLevel" tag="24"/>
-    <eval phase="Traits" priority="1000">
-      doneif (activated = 0)
+    <eval phase="Traits" priority="1000">doneif (activated = 0)
 
       perform hero.assign[Vision.Darkvision]
-      
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2136,8 +2104,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="10000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[rsPsychic,rsTotal,15,""]
-      ]]></eval>
+      #traitmodify[rsPsychic,rsTotal,15,""]]]></eval>
     </thing>
   <thing id="fEpcOrdEnl" name="Ordered Enlightenment" description="Your Intelligence and Wisdom scores increase by 2." compset="ClassFeat">
     <tag group="ReqLevel" tag="21"/>
@@ -2146,8 +2113,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform hero.child[attrInt].field[trtBonus].modify[+,2,""]
-      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2194,8 +2160,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2287,8 +2252,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform hero.child[attrDex].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrDex].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2310,6 +2274,10 @@ validif (#trait[attrWis] >= 21)]]></validate>
     </thing>
   <thing id="fEpcUltAda" name="Ultimate Adaptation" description="You increase your Intelligence by 2, and after an extended rest you can choose one encounter power. You can use that encounter power twice per encounter. When you take another extended rest, you can choose a different encounter power." compset="ClassFeat">
     <tag group="ReqLevel" tag="21"/>
+    <eval phase="Traits" priority="1000"><![CDATA[doneif (activated = 0)
+#traitmodify[attrInt,trtBonus,2,""]]]>
+      <before name="Calc trtFinal"/>
+      </eval>
     </thing>
   <thing id="fEpcAstCri" name="Astral Critical" description="Whenever you score a critical hit against an enemy, you can choose to also remove the enemy from play by sending it to your astral seed. The target vanishes from its space and reappears at the start of your next turn." compset="ClassFeat">
     <tag group="ReqLevel" tag="24"/>
@@ -2317,7 +2285,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
   <thing id="fEpcShaRea" name="Shape Reality" description="Your transcendent understanding of the universe empowers you with the ability to bend and warp your environment. You gain an aura 10 that allows you to reshape reality as you see fit. During your turn, you can alter the environment in any of the following ways by spending a minor action:{br}* Change the temperature. Creatures that start their turns within your aura automatically take 15 cold damage or 15 fire damage (your choice). You can spend another minor action to return the temperature to normal, eliminating this damaging effect.{br}* Permanently transform any squares of difficult terrain within your aura into normal terrain.{br}* Permanently transform any squares of normal terrain within your aura into difficult terrain.{br}* Create breathable air in any or all squares.{br}* Fill 9 unoccupied squares with a solid surface, such as stone or wood. If you fill a square with a solid surface that is not attached to another surface (in other words, you create a stone slab 5 squares up in the air), the surface hovers in place." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edPrimaAva" name="Primal Avatar" description="You are one with the world around you. You hear the whispers of the trees as they speak of their ancient dreams, you taste the change of seasons carried on the four winds, and you understand the thoughts of beasts nearby. The world of spirit that exists alongside the physical world is as real to you as your own body; you perceive and move in both realms at the same time. Like the wisest and most powerful barbarians, druids, shamans, and wardens who have gone before you, you have no fear of death, for when you die, you will reside in the spirit world that you already know.{br}Many primal spirits are benign. Some are heedless of mortal concerns, and others are actively malevolent. Your power and attunement to their world draws these spirits&apos; attention, for they perceive you even as you perceive them. Hostile spirits see you as a threat and seek to hamper your progress. But you have allies in the spirit realm too, friendly powers who nurture you, lending a measure of their own strength to support your cause. As your power grows, so too does your connection to the spirits of nature, until its sustaining power accompanies you wherever you go.{br}Your presence in the world has such resonance that a great primal spirit might seek you out to recruit you for a greater purpose. Whether you choose to bind yourself to the entity or not has no effect on your abilities, but service might result in physical manifestations that evoke qualities held by your patron. For example, if you ally yourself with a spirit of the woodlands, your hair might take on a leafy appearance that changes with the passing of the seasons; if you choose to serve a spirit of the hunt, you might acquire a bestial appearance and a shaggy mane; and if you serve an animal spirit of wisdom and guidance, you might grow a stag&#195;&#173;s antlers or develop hooves for feet.{br}{br}Immortality{br}When your body&apos;s life comes to its end, you will continue to exist as one of the spirits of nature.{br}Mighty Among the Spirits: As you near the completion of your Destiny Quest, you feel the tug of something greater, some deeper force drawing you on and goading you to bring your mission to its conclusion quickly. Not long after finishing your final task, you walk from the world into the spirit realm, leaving your mortality behind. Freed from the bonds of your body, you join the host of spirits that protect the natural order and guide new champions to follow the trail you blazed.{br}{br}PRIMAL AVATAR  FEATURES{b}Primal Travel (21st level){/b}: When any enemy hits you with a melee attack, you can teleport 3 squares as an immediate reaction.{br}{b}Spirit Boon (24th level){/b}: After each extended rest, choose one ability score. Until the end of your next extended rest, you gain a +1 bonus to attack rolls, skill checks, and ability checks related to that ability.{br}{b}Eternal Return (30th level){/b}: Once per day, when you die and have at least two healing surges remaining, you can will yourself back to life. At the start of one of your turns within 10 rounds of your death, you can spend two healing surges to return to life. You return with hit points equal to your bloodied value and free of any effects that a save can end. You then take your turn normally." compset="EpicDest" uniqueness="unique">
+  <thing id="edPrimaAva" name="Primal Avatar" description="You are one with the world around you. You hear the whispers of the trees as they speak of their ancient dreams, you taste the change of seasons carried on the four winds, and you understand the thoughts of beasts nearby. The world of spirit that exists alongside the physical world is as real to you as your own body; you perceive and move in both realms at the same time. Like the wisest and most powerful barbarians, druids, shamans, and wardens who have gone before you, you have no fear of death, for when you die, you will reside in the spirit world that you already know.{br}Many primal spirits are benign. Some are heedless of mortal concerns, and others are actively malevolent. Your power and attunement to their world draws these spirits&apos; attention, for they perceive you even as you perceive them. Hostile spirits see you as a threat and seek to hamper your progress. But you have allies in the spirit realm too, friendly powers who nurture you, lending a measure of their own strength to support your cause. As your power grows, so too does your connection to the spirits of nature, until its sustaining power accompanies you wherever you go.{br}Your presence in the world has such resonance that a great primal spirit might seek you out to recruit you for a greater purpose. Whether you choose to bind yourself to the entity or not has no effect on your abilities, but service might result in physical manifestations that evoke qualities held by your patron. For example, if you ally yourself with a spirit of the woodlands, your hair might take on a leafy appearance that changes with the passing of the seasons; if you choose to serve a spirit of the hunt, you might acquire a bestial appearance and a shaggy mane; and if you serve an animal spirit of wisdom and guidance, you might grow a stagÃ­s antlers or develop hooves for feet.{br}{br}Immortality{br}When your body&apos;s life comes to its end, you will continue to exist as one of the spirits of nature.{br}Mighty Among the Spirits: As you near the completion of your Destiny Quest, you feel the tug of something greater, some deeper force drawing you on and goading you to bring your mission to its conclusion quickly. Not long after finishing your final task, you walk from the world into the spirit realm, leaving your mortality behind. Freed from the bonds of your body, you join the host of spirits that protect the natural order and guide new champions to follow the trail you blazed.{br}{br}PRIMAL AVATAR  FEATURES{b}Primal Travel (21st level){/b}: When any enemy hits you with a melee attack, you can teleport 3 squares as an immediate reaction.{br}{b}Spirit Boon (24th level){/b}: After each extended rest, choose one ability score. Until the end of your next extended rest, you gain a +1 bonus to attack rolls, skill checks, and ability checks related to that ability.{br}{b}Eternal Return (30th level){/b}: Once per day, when you die and have at least two healing surges remaining, you can will yourself back to life. At the start of one of your turns within 10 rounds of your death, you can spend two healing surges to return to life. You return with hit points equal to your bloodied value and free of any effects that a save can end. You then take your turn normally." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You are the living embodiment of nature&apos;s power, a mighty primal spirit veiled in living flesh."/>
     <fieldval field="reqText" value="21st level, any primal class"/>
     <usesource source="PHB2"/>
@@ -2418,8 +2386,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen2].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2430,7 +2397,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
   <thing id="fEpcPyrRes" name="Pyreen&apos;s Restoration" description="Whenever any ally starts his or her turn adjacent to you, he or she can make a saving throw against one effect that a save can end. If the ally fails this saving throw, you can transfer that effect to yourself as a free action. The effect you take cannot be transferred to any of your allies." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edRadiaOne" name="Radiant One" description="Lesser souls than you were overwhelmed by their study of the uncaring stars. Instead of commanding their own fate, they were transformed into mere pawns and cultists. With features shadowed under voluminous hoods, they toppled glare-eyed and drool-speckled into the clutch of mad entities. That is not to be your fate. You&apos;ve divined a different truth in the cold pinpricks in night&apos;s endless void. Instead of pawn, you intend to be the master. You plan to have your force of will shine, burning forever. Unlike other stars that serve as windows, perhaps, to monstrous entities of an impossibly distant realm, your radiance is merely your own cognizance spreading ever outward.{br}The unschooled believe a radiant one is nothing more than a servitor to the vast enigmatic creatures you court. True, others who have traveled your path have burned out, unleashing cataclysms that killed allies, corrupted monarchs, and even laid waste to kingdoms (and some whisper, previous ages of the world). You know these cautionary tales, and so forewarned you are forearmed should any of the powers from whom you draw your strength seek to suborn your will. Your allies have nothing to fear from you - if you are careful.{br}{br}Immortality {br}Ultimate knowledge, bereft of all filters, easy illusions, and misleading metaphors is what you seek. Soon enough, it will all be yours.{br}First Light: When you complete your final quest, the last pieces of the puzzle of reality begin to fall into place. The stars themselves begin to sing to you, their sibling. You begin to gleam, as if your skin is but a shell covering a mighty lamp. Upon putting your affairs in order, you travel to a far place. Finally, you ignite in an explosion of stellar glory. Like a demigod, you ascend into the night sky, becoming finally a star yourself - one associated with eldritch wisdom. Or, perhaps, madness. Either way, your name takes its rightful place among the constellations.{br}{br}RADIANT ONE  FEATURES{b}Starborn (21st level){/b}: You gain resistance to fire damage and radiant damage equal to 10 + your level. Whenever you deal damage to a target that is granting combat advantage to you, you deal extra fire and radiant damage to the target equal to your Intelligence modifier.{br}{b}Starburst (24th level){/b}: The first time you are reduced to 0 hit points or fewer each day, you gain the immediate use of a healing surge and deal radiant and fire damage of equal value to all enemies within 3 squares of you.{br}{b}Starry Rift (30th level){/b}: Your dawning understanding of reality and the facadelike nature of time and space allows you to take &quot;shortcuts&quot; through time itself. Once per day you can tell the DM that your turn has come up again. Treat this action as if you had chosen to take the delay action (even if you took your last turn normally without delaying)." compset="EpicDest" uniqueness="unique">
+  <thing id="edRadiaOne" name="Radiant One" description="Lesser souls than you were overwhelmed by their study of the uncaring stars. Instead of commanding their own fate, they were transformed into mere pawns and cultists. With features shadowed under voluminous hoods, they toppled glare-eyed and drool-speckled into the clutch of mad entities. That is not to be your fate. You&apos;ve divined a different truth in the cold pinpricks in night&apos;s endless void. Instead of pawn, you intend to be the master. You plan to have your force of will shine, burning forever. Unlike other stars that serve as windows, perhaps, to monstrous entities of an impossibly distant realm, your radiance is merely your own cognizance spreading ever outward.\nThe unschooled believe a radiant one is nothing more than a servitor to the vast enigmatic creatures you court. True, others who have traveled your path have burned out, unleashing cataclysms that killed allies, corrupted monarchs, and even laid waste to kingdoms (and some whisper, previous ages of the world). You know these cautionary tales, and so forewarned you are forearmed should any of the powers from whom you draw your strength seek to suborn your will. Your allies have nothing to fear from you - if you are careful.\n\nImmortality \nUltimate knowledge, bereft of all filters, easy illusions, and misleading metaphors is what you seek. Soon enough, it will all be yours.\nFirst Light: When you complete your final quest, the last pieces of the puzzle of reality begin to fall into place. The stars themselves begin to sing to you, their sibling. You begin to gleam, as if your skin is but a shell covering a mighty lamp. Upon putting your affairs in order, you travel to a far place. Finally, you ignite in an explosion of stellar glory. Like a demigod, you ascend into the night sky, becoming finally a star yourself - one associated with eldritch wisdom. Or, perhaps, madness. Either way, your name takes its rightful place among the constellations.\n\nRADIANT ONE  FEATURES\n{b}Starborn (21st level){/b}: You gain resistance to fire damage and radiant damage equal to 10 + your level. Whenever you deal damage to a target that is granting combat advantage to you, you deal extra fire and radiant damage to the target equal to your Intelligence modifier.\n{b}Starburst (24th level){/b}: The first time you are reduced to 0 hit points or fewer each day, you gain the immediate use of a healing surge and deal radiant and fire damage of equal value to all enemies within 3 squares of you.\n{b}Starburst (26th level):{/b} Once per day you can become fiery until the end of the encounter.  All spaces around you are brightly lit, you get a bonus to all defenses equal to your intelligence modifier.  If a ranged, area or close attack hits you, you get to roll a saving throw to avoid all effects.\n{b}Starry Rift (30th level){/b}: Your dawning understanding of reality and the facadelike nature of time and space allows you to take &quot;shortcuts&quot; through time itself. Once per day you can tell the DM that your turn has come up again. Treat this action as if you had chosen to take the delay action (even if you took your last turn normally without delaying)." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="The world and its echoes are but motes in the eye of a far grander, if more terrifyingly incomprehensible, vista. You are unafraid, nay eager, to risk even madness unending, if only you can learn the underlying truth of existence."/>
     <fieldval field="reqText" value="21st level"/>
     <usesource source="Dragon"/>
@@ -2448,8 +2415,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       var bonus as number
       bonus = 10 + hero.tagvalue[Level.?]
       #traitmodify[rsRadiant,rsTotal,bonus,""]
-      #traitmodify[rsFire,rsTotal,bonus,""]
-      ]]>
+      #traitmodify[rsFire,rsTotal,bonus,""]]]>
       <after name="Calc attrBonus"/>
       </eval>
     </thing>
@@ -2505,8 +2471,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       #traitmodify[attrCon,trtBonus,2,""]
       #traitmodify[attrDex,trtBonus,2,""]
       #traitmodify[trSpeed,trtBonus,2,""]
-      perform hero.assign[Vision.Darkvision]
-      ]]>
+      perform hero.assign[Vision.Darkvision]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2547,6 +2512,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <bootstrap thing="fEpcSacDut"></bootstrap>
     <bootstrap thing="fEpcLifHer"></bootstrap>
     <bootstrap thing="pEpcLigHea"></bootstrap>
+    <pickreq thing="rDrow"/>
     </thing>
   <thing id="fEpcSacDut" name="Sacred Duty" description="Whenever you make an attack that reduces a creature with the demon or spider keyword to 0 or fewer hit points, you can spend a healing surge as a free action." compset="ClassFeat">
     <tag group="ReqLevel" tag="21"/>
@@ -2584,8 +2550,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2628,8 +2593,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform hero.child[attrStr].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrStr].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2639,7 +2603,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
   <thing id="fEpcRunImm" name="Rune of Immortality" description="When you fail your third death saving throw during an encounter, you don&apos;t die. You instead vanish, appearing in your god&apos;s dominion. All conditions and harmful effects on you end, you are considered to have failed no death saving throws, and you can spend a healing surge. At the start of your next turn, you reappear within 10 squares of the space you left." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edSageAge" name="Sage of Ages" description="Knowledge is power, freedom, life, and love. With the proper information, you can unravel the secrets of the universe and be the master of your own fate. You have always believed this. Your curiosity about all things is legendary. Even as a child, you asked &quot;why?&quot; more often than any other question. As you matured, you sought knowledge about harder-to-reach places, traveling first the world, then other planes of existence. Knowledge is your solace, your hope, and your support. Faith might be fine for others, but you see it as a shallow edifice. Only objective study and the knowledge gained thereby allows one to see things as they truly are.{br}The petty bickering of kings and nobles holds less and less interest for you, and as you learn more and more about the facade of flesh that mortals wear to hide their souls, even earthly delights begin to lose their flavor. All else pales before the pursuit of pure knowledge.{br}{br}Immortality?{br}When you complete your final quest, you make your plans to withdraw from the world. You have accumulated so much knowledge that you have become a force of nature itself. As one of a select few who have earned the title Sage of Ages, you take up the lonely task of a keeper of secrets, history, and unfettered knowledge.{br}When the time is right, you retreat to a secret place only you know of, a place where you find knowledge within the natural bends and crevices in space and time. You begin to observe a river of events and store them away in your mind. Age, cares, and the needs of the flesh flow around you, not through you. You are a fountainhead of knowledge that other creatures, sometimes even gods, seek out because of your perfect enlightenment.{br}{br}SAGE OF AGES  FEATURES{b}Paragon of Learning (21st level){/b}: You gain a +6 bonus to Arcana checks, Dungeoneering checks, History checks, Nature checks, and Religion checks.{br}{b}Keeper&apos;s Prescience (24th level){/b}: At the start of each of your turns, roll a d20. You can use the result of that roll in place of any one d20 roll you make before the start of your next turn.{br}{b}Reverse Time (30th level){/b}: Once per day, when an attack would normally drop you to 0 hit points or fewer or kill you, you do not die. Instead, you regain maximum hit points and move your place in the initiative order to directly after the creature that made the attack." compset="EpicDest" uniqueness="unique">
+  <thing id="edSageAge" name="Sage of Ages" description="Knowledge is power, freedom, life, and love. With the proper information, you can unravel the secrets of the universe and be the master of your own fate. You have always believed this. Your curiosity about all things is legendary. Even as a child, you asked &quot;why?&quot; more often than any other question. As you matured, you sought knowledge about harder-to-reach places, traveling first the world, then other planes of existence. Knowledge is your solace, your hope, and your support. Faith might be fine for others, but you see it as a shallow edifice. Only objective study and the knowledge gained thereby allows one to see things as they truly are.\nThe petty bickering of kings and nobles holds less and less interest for you, and as you learn more and more about the facade of flesh that mortals wear to hide their souls, even earthly delights begin to lose their flavor. All else pales before the pursuit of pure knowledge.\n\nImmortality?\nWhen you complete your final quest, you make your plans to withdraw from the world. You have accumulated so much knowledge that you have become a force of nature itself. As one of a select few who have earned the title Sage of Ages, you take up the lonely task of a keeper of secrets, history, and unfettered knowledge.\nWhen the time is right, you retreat to a secret place only you know of, a place where you find knowledge within the natural bends and crevices in space and time. You begin to observe a river of events and store them away in your mind. Age, cares, and the needs of the flesh flow around you, not through you. You are a fountainhead of knowledge that other creatures, sometimes even gods, seek out because of your perfect enlightenment.\n\nSAGE OF AGES  FEATURES\n{b}Paragon of Learning (21st level){/b}: You gain a +6 bonus to Arcana checks, Dungeoneering checks, History checks, Nature checks, and Religion checks.\n{b}Keeper&apos;s Prescience (24th level){/b}: At the start of each of your turns, roll a d20. You can use the result of that roll in place of any one d20 roll you make before the start of your next turn.\n{b}Trick of Knowledge (26th level){/b}: You gain the {i}Trick of Knowledge{/i} encounter utility power. This lets you roll an arcana check for a special result based on the result of your roll: \n  30 or lower: No effect\n  31–35: +5 bonus to saving throws\n  36–40: +2 bonus to all defenses\n  41–45: +2 bonus to attack rolls with arcane powers\n  46–50: Make saving throws at the start of your turn instead of the end of your turn\n  51–55: Pick two benefits you can gain from a roll of 31 through 50\n  56–60: Pick three benefits you can gain from a roll of 31 through 50\n  61 or higher: Gain all four benefits you can gain from a roll of 31 through 50\n{b}Reverse Time (30th level){/b}: Once per day, when an attack would normally drop you to 0 hit points or fewer or kill you, you do not die. Instead, you regain maximum hit points and move your place in the initiative order to directly after the creature that made the attack." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="Knowledge is power. Once that fact is understood, the power of the gods themselves becomes something knowable."/>
     <fieldval field="reqText" value="21st level, any arcane class"/>
     <usesource source="Arcane"/>
@@ -2659,8 +2623,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       #traitmodify[skDungeone,trtBonus,6,""]
       #traitmodify[skHistory,trtBonus,6,""]
       #traitmodify[skNature,trtBonus,6,""]
-      #traitmodify[skReligion,trtBonus,6,""]
-      ]]>
+      #traitmodify[skReligion,trtBonus,6,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2688,8 +2651,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2758,8 +2720,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform hero.child[attrInt].field[trtBonus].modify[+,2,""]
-      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]
-      ]]>
+      perform hero.child[attrWis].field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2813,8 +2774,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
 
       #traitmodify[attrCon,trtBonus,2,""]
       #traitmodify[skAcrobati,trtBonus,2,""]
-      #traitmodify[skAthletic,trtBonus,2,""]
-      ]]>
+      #traitmodify[skAthletic,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2824,7 +2784,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
   <thing id="fEpcSigCha" name="Sign of Challenge" description="You gain the sign of challenge power." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
     </thing>
-  <thing id="edStormSov" name="Storm Sovereign" description="You are the scion of storms, the master of thunder and lightning, and a prince of the Elemental Chaos. Others are like you - others who feel an uncommon bond with the elemental forces who spawned the world and who harbor a measure of elemental power within them. Some don&apos;t yet realize the fate in store for them, while others might never attain their potential, but you are different, because your eyes crackle with lightning, your hair stirs as if in a breeze, and your voice thunders. The primordial heirs, as some might call you and those like you, might find comfort in the mountain heights or in the ocean&apos;s deeps, but your connection is within the savage storm and those blistering explosions of wind and rain, of blinding lightning and deafening thunder - storms in which you feel truly free and your purpose never more clear.{br}As you come to know your place in the wider world, you connections to mortal creatures strains. Your home is not among the civilized cities or in the darkened wilds, but it is in the sea of possibility that is the Elemental Chaos. You seek to dance through drifting motes of boiling earth, to lash seas of fire with your rains, and to destroy any who do not kneel before you. Only your purpose can hold back these wild impulses, and only your sense of duty and the burden of responsibility can ground you. One day, though, you&apos;ll escape and embrace the nature you have long suppressed.{br}{br}Immortality{br}The primordial spirit rages against your self-imposed bonds. It will be free and when it does escape, you had better put distance between yourself and the world.{br}Primordial Power: Long have you endured the suffering caused by the angry presence inside you. You have fought back the unnatural urgings to destroy and rage, testing the limits of your self-control. In the final battle against your last foe, you nearly slipped and unleashed the primordial entity onto the world and only through a supreme act of discipline did you retain control of yourself.{br}When the dust settled, you knew you could confine the monster no longer and that it would soon break through your flesh and awaken, bringing utter ruin to everything around you. Knowing the only place you could loose the primordial without fear of the consequences, you quit the mortal world to seek out the{br}Elemental Chaos. Far from any living creature, you relaxed yourself, surrendering your body and soul to the primordial, allowing it to unleash the storm&apos;s fury. You thought this would mean your annihilation, and in a way, the freeing did end your life, but your consciousness lives on by merging with the elemental entity, to give a mind to the mindless storm, and life to the personification of violence. Thus do you become a new primordial - a master of the elements and agent of creation and destruction - and thus do you fade from the world to emerge as a great power in the Elemental Chaos.{br}{br}STORM SOVEREIGN  FEATURES{b}Stormborn (21st level){/b}: You increase your Constitution score by 2 and your origin changes to elemental. Additionally, you gain resist lightning and thunder equal to 15 + one-half your level.{br}{b}Thunder and Lightning (24th level){/b}: Once per day, when you die, your body discorporates into a storm of elemental fury. You heal to one-half hit points and gain the insubstantial and phasing qualities. You gain an aura 5, and when enemies begin their turns inside that aura they automatically take 15 lightning and thunder damage, and you can slide that enemy 3 squares. You can use encounter and atwill powers, but you cannot use daily powers, activate magic items, or perform rituals. If you die in elemental storm form, you are dead.{br}At the end of the encounter, after a short rest, you reconstitute yourself from the base elements. Your current hit point total is unchanged, but you no longer experience the other benefits and drawbacks from being in elemental storm form.{br}{b}Cyclone&apos;s Master (30th level){/b}: You gain a fly speed equal to your speed + 2 and can hover. You do not need to land at the end of your movement. Additionally, you gain an aura 5; any creature that enters or begins its turn within your aura loses any resistance to lightning or thunder. Whenever you deal damage with an attack, you can choose to have the attack deal lightning or thunder damage instead of its normal damage." compset="EpicDest" uniqueness="unique">
+  <thing id="edStormSov" name="Storm Sovereign" description="You are the scion of storms, the master of thunder and lightning, and a prince of the Elemental Chaos. Others are like you - others who feel an uncommon bond with the elemental forces who spawned the world and who harbor a measure of elemental power within them. Some don&apos;t yet realize the fate in store for them, while others might never attain their potential, but you are different, because your eyes crackle with lightning, your hair stirs as if in a breeze, and your voice thunders. The primordial heirs, as some might call you and those like you, might find comfort in the mountain heights or in the ocean&apos;s deeps, but your connection is within the savage storm and those blistering explosions of wind and rain, of blinding lightning and deafening thunder - storms in which you feel truly free and your purpose never more clear.\nAs you come to know your place in the wider world, you connections to mortal creatures strains. Your home is not among the civilized cities or in the darkened wilds, but it is in the sea of possibility that is the Elemental Chaos. You seek to dance through drifting motes of boiling earth, to lash seas of fire with your rains, and to destroy any who do not kneel before you. Only your purpose can hold back these wild impulses, and only your sense of duty and the burden of responsibility can ground you. One day, though, you&apos;ll escape and embrace the nature you have long suppressed.\n\nImmortality\nThe primordial spirit rages against your self-imposed bonds. It will be free and when it does escape, you had better put distance between yourself and the world.\nPrimordial Power: Long have you endured the suffering caused by the angry presence inside you. You have fought back the unnatural urgings to destroy and rage, testing the limits of your self-control. In the final battle against your last foe, you nearly slipped and unleashed the primordial entity onto the world and only through a supreme act of discipline did you retain control of yourself.\nWhen the dust settled, you knew you could confine the monster no longer and that it would soon break through your flesh and awaken, bringing utter ruin to everything around you. Knowing the only place you could loose the primordial without fear of the consequences, you quit the mortal world to seek out the\nElemental Chaos. Far from any living creature, you relaxed yourself, surrendering your body and soul to the primordial, allowing it to unleash the storm&apos;s fury. You thought this would mean your annihilation, and in a way, the freeing did end your life, but your consciousness lives on by merging with the elemental entity, to give a mind to the mindless storm, and life to the personification of violence. Thus do you become a new primordial - a master of the elements and agent of creation and destruction - and thus do you fade from the world to emerge as a great power in the Elemental Chaos.\n\nSTORM SOVEREIGN  FEATURES\n{b}Stormborn (21st level){/b}: You increase your Constitution score by 2 and your origin changes to elemental. Additionally, you gain resist lightning and thunder equal to 15 + one-half your level.\n{b}Thunder and Lightning (24th level){/b}: Once per day, when you die, your body discorporates into a storm of elemental fury. You heal to one-half hit points and gain the insubstantial and phasing qualities. You gain an aura 5, and when enemies begin their turns inside that aura they automatically take 15 lightning and thunder damage, and you can slide that enemy 3 squares. You can use encounter and atwill powers, but you cannot use daily powers, activate magic items, or perform rituals. If you die in elemental storm form, you are dead.\nAt the end of the encounter, after a short rest, you reconstitute yourself from the base elements. Your current hit point total is unchanged, but you no longer experience the other benefits and drawbacks from being in elemental storm form.\n{b}Scion of Chaos (26th level):{/b} Once a day as an immediate interrupt you make a close burst 5 when an enemy makes an attack against you. You choose a new target for the attack, which must be within the burst and the reach or range of the attack. Additionally, the attack roll for that attack is now considered to be a natural 20, regardless of what the original roll was. \n{b}Cyclone&apos;s Master (30th level){/b}: You gain a fly speed equal to your speed + 2 and can hover. You do not need to land at the end of your movement. Additionally, you gain an aura 5; any creature that enters or begins its turn within your aura loses any resistance to lightning or thunder. Whenever you deal damage with an attack, you can choose to have the attack deal lightning or thunder damage instead of its normal damage." compset="EpicDest" uniqueness="unique">
     <fieldval field="edsFlavor" value="You are the storm of vengeance - the manifestation of the Elemental Chaos&apos;s raw destructive potential."/>
     <fieldval field="reqText" value="21st level"/>
     <usesource source="Dragon"/>
@@ -2844,8 +2804,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       var bonus as number
       bonus = 15 + #halflevel[]
       #traitmodify[rsLightn,rsTotal,bonus,""]
-      #traitmodify[rsThunder,rsTotal,bonus,""]
-      ]]>
+      #traitmodify[rsThunder,rsTotal,bonus,""]]]>
       <after name="Calc attrBonus"/>
       </eval>
     </thing>
@@ -2898,8 +2857,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      #traitmodify[attrDex,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrDex,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2931,8 +2889,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      ]]>
+      perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -2961,8 +2918,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform hero.child[attrWis].field[trtBonus].modify[+,2,""]
-      perform hero.assign[Vision.Darkvision]
-      ]]>
+      perform hero.assign[Vision.Darkvision]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -3015,8 +2971,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
       doneif (activated = 0)
 
       perform field[usrChosen1].chosen.field[trtBonus].modify[+,2,""]
-      #traitmodify[attrCon,trtBonus,2,""]
-      ]]>
+      #traitmodify[attrCon,trtBonus,2,""]]]>
       <before name="Calc trtFinal"/>
       </eval>
     </thing>
@@ -3045,8 +3000,7 @@ validif (#trait[attrWis] >= 21)]]></validate>
     <eval phase="Traits" priority="1000"><![CDATA[
       doneif (activated = 0)
 
-      #traitmodify[trInit,trtBonus,5,""]
-      ]]>
+      #traitmodify[trInit,trtBonus,5,""]]]>
       <before name="Derived trtFinal"/>
       </eval>
     </thing>
@@ -3154,5 +3108,8 @@ validif (#trait[attrWis] >= 21)]]></validate>
     </thing>
   <thing id="fEpcWorTre" name="World Tree&apos;s Growth" description="You have regeneration equal to the number of healing surges you have remaining." compset="ClassFeat">
     <tag group="ReqLevel" tag="30"/>
+    </thing>
+  <thing id="fEpcPriRe2" name="Primordial Rebirth" description="Once per day when you start your turn at 0 hit points or fewer, you regain hit points equal to your bloodied value. When you do so, each ally within 5 squares of you can spend a healing surge. In addition, each ally within 10 squares of you who has this epic destiny gains 20 temporary hit points and can shift 1 square as a free action" compset="ClassFeat">
+    <tag group="ReqLevel" tag="24" name="24" abbrev="24"/>
     </thing>
   </document>

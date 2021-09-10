@@ -41,6 +41,7 @@
     </thing>
   <thing id="adjDerived" name="Derived Trait" description="Select this adjustment to change one of your derived traits." compset="Adjustment">
     <fieldval field="adjCandid" value="component.Derived &amp; User.CanAdjust"/>
+    <fieldval field="adjMaximum" value="99"/>
     <tag group="AdjustShow" tag="Increment"/>
     <tag group="AdjustShow" tag="Menu"/>
     <tag group="InPlay" tag="PermOK"/>
