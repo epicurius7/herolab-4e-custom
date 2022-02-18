@@ -2541,8 +2541,12 @@ validif (#trait[attrWis] >= 21)]]></validate>
     </thing>
   <thing id="fEpcPasSpi" name="Past Spirit" description="Choose a race other than your own. You are considered a member of that race for the purpose of meeting feat prerequisites. If that race has any racial encounter powers, you gain one of your choice.{br}At 24th level, you choose a second race and gain the same benefits with it." compset="ClassFeat">
     <fieldval field="usrCandid1" value="component.Race"/>
-    <tag group="ChooseSrc1" tag="Thing"/>
     <tag group="ReqLevel" tag="21"/>
+    <tag group="Hide" tag="Special" name="Special" abbrev="Special"/>
+    <tag group="ChooseSrc1" tag="Thing" name="All Things" abbrev="All Things"/>
+    <eval phase="Traits" priority="1000">perform field[usrChosen1].chosen.forward[Race.?]
+      <before name="Derived trtFinal"/>
+      </eval>
     </thing>
   <thing id="fEpcEpiVit" name="Epic Vitality" description="An ability score of your choice increases by 2." compset="ClassFeat">
     <fieldval field="usrCandid1" value="component.Attribute"/>
