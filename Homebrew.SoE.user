@@ -11,25 +11,21 @@ https://escarnum.invincible.ink</info_author>
   <thing id="fRJotImmun" name="Acquired Immunity" description="Your bizarre diet has left you inured to many toxins. You have resist poison 5." compset="RaceFeat">
     <usesource source="SkEscarnum"/>
     </thing>
-  <thing id="rSoEJotun" name="Jotun" description="{b}Fey Origin:{/b} You are considered a fey creature for the purpose of effects that relate to creature origin.\n{b}Weathered Soul:{/b} You do not need to make Endurance checks to resist the effects of natural environmental dangers.\n{b}Unfathomable Stomach:{/b} You can live on almost any &quot;food&quot; you can consume, regardless of whether or not it is intended for eating – twigs, sand, rocks and even coins can all make an adequate meal. You are immune to starvation, and the time you can go without water is measured in weeks rather than days.\n{b}Acquired Immunity:{/b} Your bizarre diet has left you inured to many toxins. You have resist poison 5.\n{b}Landfall:{/b} Your have the landfall racial power." compset="Race" uniqueness="unique">
+  <thing id="rSoEJotun" name="Jotun" description="{b}Native Fey:{/b} You are considered a fey creature for the purpose of effects that relate to creature origin.\n{b}Giantkin:{/b} You have the giant subtype.\n{b}Weathered Soul:{/b} You do not need to make Endurance checks to resist the effects of natural environmental dangers.\n{b}Unfathomable Stomach:{/b} You can live on almost any &quot;food&quot; you can consume, regardless of whether or not it is intended for eating – twigs, sand, rocks and even coins can all make an adequate meal. You are immune to starvation, and the time you can go without water is measured in weeks rather than days.\n{b}Acquired Immunity:{/b} Your bizarre diet has left you inured to many toxins. You have resist poison 5.\n{b}Landfall:{/b} Your have the landfall racial power." compset="Race" uniqueness="unique">
     <fieldval field="racFlavor" value="Proud, tribal fey infused with the spirit of the wilderness"/>
     <fieldval field="racHtMin" value="72"/>
     <fieldval field="racHtMax" value="96"/>
     <fieldval field="racWtMin" value="130"/>
     <fieldval field="racWtMax" value="170"/>
-    <fieldval field="racCon" value="2"/>
+    <fieldval field="racStr" value="2"/>
     <usesource source="SkEscarnum"/>
-    <tag group="SkillBonus" tag="skNature" name="Nature" abbrev="Nature"/>
     <tag group="SkillBonus" tag="skPercepti" name="Perception" abbrev="Perception"/>
     <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
     <tag group="Vision" tag="Darkvision" name="Darkvision" abbrev="Darkvision"/>
     <tag group="WeaponProf" tag="wpLongbow" name="Longbow" abbrev="Longbow"/>
     <tag group="WeaponProf" tag="wpShortbow" name="Shortbow" abbrev="Shortbow"/>
     <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
-    <bootstrap thing="fRPlusAb">
-      <autotag group="RaceBonus" tag="attrStr"/>
-      <autotag group="RaceBonus" tag="attrCha"/>
-      </bootstrap>
+    <tag group="SkillBonus" tag="skNature" name="Nature" abbrev="Nature"/>
     <bootstrap thing="lanCommon"></bootstrap>
     <bootstrap thing="lanSoESylv"></bootstrap>
     <bootstrap thing="fRJotImmun"></bootstrap>
@@ -37,6 +33,10 @@ https://escarnum.invincible.ink</info_author>
     <bootstrap thing="fRElFeyOri"></bootstrap>
     <bootstrap thing="pRacLndfll"></bootstrap>
     <bootstrap thing="fJotGiaKin"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrCha"/>
+      <autotag group="RaceBonus" tag="attrCon"/>
+      </bootstrap>
     </thing>
   <thing id="lanSoESylv" name="Sylvan" description="The language spoken by fey and their descendents. Elven is a dialect of the sylvan tongue." compset="Language" replaces="lanElven" uniqueness="useronce">
     <usesource source="SkEscarnum"/>
@@ -106,7 +106,7 @@ https://escarnum.invincible.ink</info_author>
     <tag group="ActionType" tag="Free"/>
     <tag group="AttackType" tag="Personal" name="Personal" abbrev="Personal"/>
     </thing>
-  <thing id="rSoEWuKan" name="Wu-kan" description="{b}Natural Acrobat:{/b} You gain a +2 bonus to Acrobatics checks, and may use Acrobatics in place of Athletics when climbing.\n{b}Blessed Fortune:{/b} You gain a +1 racial bonus to Will, Reflex and Fortitude defences.\n{b}Insatiable Curiosity:{/b} You have the insatiable curiosity racial power." compset="Race" uniqueness="unique">
+  <thing id="rSoEWuKan" name="Wu-kan" description="{b}Divine Beast:{/b} For the purpose of effects that relate to creature type, you are considered both a magical beast and a humanoid.\n{b}Natural Acrobat:{/b} You gain a +2 bonus to Acrobatics checks, and may use Acrobatics in place of Athletics when climbing.\n{b}Blessed Fortune:{/b} You gain a +1 racial bonus to Will, Reflex and Fortitude defences.\n{b}Insatiable Curiosity:{/b} You have the insatiable curiosity racial power." compset="Race" uniqueness="unique">
     <fieldval field="racHtMin" value="65"/>
     <fieldval field="racHtMax" value="72"/>
     <fieldval field="racWtMin" value="85"/>
@@ -140,7 +140,7 @@ https://escarnum.invincible.ink</info_author>
   <thing id="fRWukNAcro" name="Natural Acrobat" description="You gain a +2 bonus to Acrobatics checks, and may use Acrobatics in place of Athletics when climbing." compset="RaceFeat">
     <usesource source="SkEscarnum"/>
     </thing>
-  <thing id="rSoEAbilen" name="Abilen" description="{b}Feline Grace:{/b} You have a +1 racial bonus to Reflex and Will.\n{b}Beast Kin:{/b} Your ancestors were amongst the many bestial races who once ruled Alm. You are considered a beast for the purpose of effects that relate to creature type.\n{b}Cultural Savant:{/b} At first level, you gain training in one additional skill of your choice.\n{b}Through the Crowd:{/b} You have the through the crowd racial power." compset="Race" uniqueness="unique">
+  <thing id="rSoEAbilen" name="Abilen" description="{b}Feline Grace:{/b} You have a +1 racial bonus to Reflex and Will.\n{b}Cultural Savant:{/b} At first level, you gain training in one additional skill of your choice.\n{b}Through the Crowd:{/b} You have the through the crowd racial power." compset="Race" uniqueness="unique">
     <fieldval field="racFlavor" value="Gentle, civilised catfolk descended from primitive beasts"/>
     <fieldval field="racLang" value="1"/>
     <fieldval field="racHtMin" value="45"/>
@@ -177,30 +177,30 @@ https://escarnum.invincible.ink</info_author>
   <thing id="fRAbilCult" name="Cultural Savant" description="At first level, you gain training in one additional skill of your choice." compset="RaceFeat">
     <usesource source="SkEscarnum"/>
     </thing>
-  <thing id="rSoEAwaken" name="Awakened" description="{b}Familiar Blood:{/b} You can take feats and paragon paths that have human as a prerequisite, as long as you meet any other requirements.\n{b}Psionic Endowment:{/b} You gain one power point, which you can use to augment psionic powers and feats with the augmentable keyword, as if you had the psionic augmentation class feature. You are considered to have the psionic augmentation class feature for the sake of feats, paragon paths and other requirements.\n{b}Awakened Awe:{/b} You have the awakened awe racial power." compset="Race" uniqueness="unique">
+  <thing id="rSoEAwaken" name="Awakened" description="{b}Familiar Blood:{/b} You can take feats and paragon paths that have human as a prerequisite, as long as you meet any other requirements.\n{b}Aberrant Soul:{/b} Something in you is not of this world, so you are considered an aberrant creature for the purpose of effects that relate to creature origin.\n{b}Psionic Endowment:{/b} You gain one power point, which you can use to augment psionic powers and feats with the augmentable keyword, as if you had the psionic augmentation class feature. You are considered to have the psionic augmentation class feature for the sake of feats, paragon paths and other requirements.\n{b}Awakened Awe:{/b} You have the awakened awe racial power." compset="Race" uniqueness="unique">
     <fieldval field="racLang" value="1"/>
     <fieldval field="racHtMin" value="65"/>
     <fieldval field="racHtMax" value="74"/>
     <fieldval field="racWtMin" value="130"/>
     <fieldval field="racWtMax" value="190"/>
-    <fieldval field="racWis" value="2"/>
     <fieldval field="racFlavor" value="Gifted humans sensitive to psionics and emotions"/>
+    <fieldval field="racCha" value="2"/>
     <usesource source="SkEscarnum"/>
-    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
     <tag group="Vision" tag="Normal" name="Normal" abbrev="Normal"/>
     <tag group="Race" tag="rHuman" name="Human" abbrev="Human"/>
     <tag group="SkillBonus" tag="skPercepti"/>
     <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
     <tag group="SkillBonus" tag="skInsight" name="Insight" abbrev="Insight"/>
-    <bootstrap thing="fRPlusAb">
-      <autotag group="RaceBonus" tag="attrCha"/>
-      <autotag group="RaceBonus" tag="attrInt"/>
-      </bootstrap>
+    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
     <bootstrap thing="lanCommon"></bootstrap>
     <bootstrap thing="fRAwkFamil"></bootstrap>
     <bootstrap thing="fRSoEPsion"></bootstrap>
     <bootstrap thing="pRacAwaAwe"></bootstrap>
     <bootstrap thing="fRAwkAber"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrInt"/>
+      <autotag group="RaceBonus" tag="attrWis"/>
+      </bootstrap>
     </thing>
   <thing id="fRAwkFamil" name="Familiar Blood" description="You can take feats and paragon paths that have human as a prerequisite, as long as you meet any other requirements." compset="RaceFeat"></thing>
   <thing id="fRSoEPsion" name="Psionic Endowment" description="You gain one power point, which you can use to augment psionic powers and feats with the augmentable keyword, as if you had the psionic augmentation class feature. You are considered to have the psionic augmentation class feature for the sake of feats, paragon paths and other requirements." compset="RaceFeat">
@@ -238,7 +238,7 @@ https://escarnum.invincible.ink</info_author>
   <thing id="fREquiStub" name="Stubborn" description="You gain a +5 bonus to saving throws against effects that daze, stun or dominate." compset="RaceFeat">
     <usesource source="SkEscarnum"/>
     </thing>
-  <thing id="rSoEFelbrg" name="Felbraug" description="{b}Racial Memory:{/b} You gain a +2 to all Knowledge skills, and can make checks with Knowledge skills untrained.\n{b}Psionic Endowment:{/b} You gain one power point, which you can use to augment psionic powers and feats with the augmentable keyword, as if you had the psionic augmentation class feature. You are considered to have the psionic augmentation class feature for the sake of feats, paragon paths and other requirements.\n{b}Threads of Fate:{/b} You have the threads of fate racial power." compset="Race" uniqueness="unique">
+  <thing id="rSoEFelbrg" name="Felbraug" description="{b}Memory of the Weave:{/b} You gain a +2 to all Knowledge skills, and can make checks with Knowledge skills untrained.\n{b}Psionic Endowment:{/b} You gain one power point, which you can use to augment psionic powers and feats with the augmentable keyword, as if you had the psionic augmentation class feature. You are considered to have the psionic augmentation class feature for the sake of feats, paragon paths and other requirements.\n{b}Threads of Fate:{/b} You have the threads of fate racial power." compset="Race" uniqueness="unique">
     <fieldval field="racFlavor" value="Diminutive rat-folk with a racial knack for psionics"/>
     <fieldval field="racWis" value="2"/>
     <fieldval field="racHtMin" value="42"/>
@@ -262,7 +262,7 @@ https://escarnum.invincible.ink</info_author>
   <thing id="fRFelMemry" name="Racial Memory" description="You gain a +2 bonus to History, and a +2 bonus when using any skill to make a Knowledge check." compset="RaceFeat">
     <usesource source="SkEscarnum"/>
     </thing>
-  <thing id="rSoESorata" name="Soratami (Ancestral Eladrin)" description="{b}Eladrin Education{/b}: You gain training in one skill of your choice.{br}{b}Eladrin Weapon Proficiency{/b}: You gain proficiency with the longsword.{br}{b}Eladrin Will{/b}: You gain a +1 racial bonus to Will. In addition, you gain a +5 racial bonus to saving throws against charm effects.{br}{b}Fey Origin{/b}: Your ancestors were native to the Feywild, so you are considered a fey creature for the purpose of effects that relate to creature origin.{br}{b}Fey Step{/b}: You have the fey step power.{br}{b}Trance{/b}: Rather than sleep, you enter a meditative state known as trance. You need to spend 4 hours in this state to gain the same benefits other races gain from taking a 6-hour extended rest. While in a trance, you are fully aware of your surroundings and notice approaching enemies and other events as normal." compset="Race" uniqueness="unique">
+  <thing id="rSoESorata" name="Soratami (Ancestral Eladrin)" description="{b}Eladrin Education{/b}: You gain training in one skill of your choice.\n{b}Eladrin Weapon Proficiency{/b}: You gain proficiency with the longsword.\n{b}Eladrin Will{/b}: You gain a +1 racial bonus to Will. In addition, you gain a +5 racial bonus to saving throws against charm effects.\n{b}Stolen Life:{/b} Your distant ancestors linked their bloodlines to the magic of the feywild, giving you the fey origin.\n{b}Fey Step{/b}: You have the fey step power.\n{b}Trance{/b}: Rather than sleep, you enter a meditative state known as trance. You need to spend 4 hours in this state to gain the same benefits other races gain from taking a 6-hour extended rest. While in a trance, you are fully aware of your surroundings and notice approaching enemies and other events as normal." compset="Race" uniqueness="unique">
     <fieldval field="racFlavor" value="Insular fey-blooded aristocrats who value honour and tradition"/>
     <fieldval field="racInt" value="2"/>
     <fieldval field="racWill" value="1"/>
@@ -296,24 +296,24 @@ https://escarnum.invincible.ink</info_author>
     <fieldval field="racWtMin" value="155"/>
     <fieldval field="racWtMax" value="225"/>
     <fieldval field="racFlavor" value="Rare but powerful humanoids from far-off lands"/>
-    <fieldval field="racCon" value="2"/>
+    <fieldval field="racStr" value="2"/>
     <usesource source="SkEscarnum"/>
-    <tag group="Vision" tag="Lowlight" name="Low-light" abbrev="Low-light"/>
-    <tag group="SkillBonus" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
     <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
     <tag group="SkillBonus" tag="skIntimida" name="Intimidate" abbrev="Intimidate"/>
     <tag group="Race" tag="rOrc"/>
     <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
-    <bootstrap thing="fRPlusAb">
-      <autotag group="RaceBonus" tag="attrStr"/>
-      <autotag group="RaceBonus" tag="attrWis"/>
-      </bootstrap>
-    <bootstrap thing="lanCommon"></bootstrap>
+    <tag group="Vision" tag="Lowlight" name="Low-light" abbrev="Low-light"/>
+    <tag group="SkillBonus" tag="skEnduranc" name="Endurance" abbrev="Endurance"/>
     <bootstrap thing="fRSoEBeast"></bootstrap>
     <bootstrap thing="lanSoEBest"></bootstrap>
     <bootstrap thing="pRacFurAss"></bootstrap>
     <bootstrap thing="fRThulResl"></bootstrap>
     <bootstrap thing="fRHaSwiCha"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrWis"/>
+      <autotag group="RaceBonus" tag="attrDex"/>
+      </bootstrap>
+    <bootstrap thing="lanCommon"></bootstrap>
     </thing>
   <thing id="fRThulResl" name="Halfblood Resilience" description="The first time you are bloodied during an encounter, you gain 5 temporary hit points. The temporary hit points increase to 10 at 11th level and to 15 at 21st level." compset="RaceFeat"></thing>
   <thing id="ftAdrnRush" name="Adrenaline Rush" description="{b}Benefit:{/b} As long as you have at least 1 temporary hit point, whenever you hit with a bard attack, you may deal damage equal to your Charisma modifier to one enemy adjacent to one of the attack&apos;s primary targets." compset="Feat" summary="Bard attacks deal Cha mod damage to adjacent target while you have temp HP." uniqueness="useronce">
@@ -1084,31 +1084,34 @@ https://escarnum.invincible.ink</info_author>
   <thing id="fRJotWethr" name="Weathered Soul" description="You do not need to make Endurance checks to resist the effects of natural environmental dangers." compset="RaceFeat">
     <usesource source="SkEscarnum"/>
     </thing>
-  <thing id="rSoEKobold" name="Kobold (Almish)" description="{b}Shifty Manoeuvre{/b}: You have the Shifty Manoeuvre racial power.\n{b}Trap Sense{/b}: You gain a +2 bonus to defenses against traps.\n{b}Beast Kin:{/b} Your ancestors were amongst the many bestial races who once ruled Alm. You are considered a beast for the purpose of effects that relate to creature type." compset="Race" uniqueness="unique">
+  <thing id="rSoEKobold" name="Kobold (Almish)" description="{b}Beast Kin:{/b} Your ancestors were amongst the many bestial races who once ruled Alm. You are considered a beast for the purpose of effects that relate to creature type.\n{b}Reptile:{/b} You are considered a reptile for the purpose of effects that relate to the reptile keyword.\n{b}Godslayer’s Defiance:{/b} You gain a +1 heritage bonus to Will, and a +2 heritage bonus to saving throws against domination and charm effects. This replaces the Trap Sense feature.\n{b}Kobold Heritage Power{/b}: You gain your choice of the Shifty power  or the Shifty Manoeuvre power." compset="Race" uniqueness="unique">
     <fieldval field="racHtMin" value="42"/>
     <fieldval field="racHtMax" value="48"/>
     <fieldval field="racWtMin" value="60"/>
     <fieldval field="racWtMax" value="75"/>
     <fieldval field="racFlavor" value="Small but ingenious, pioneers of invention and engineering"/>
     <fieldval field="racInt" value="2"/>
+    <fieldval field="racWill" value="1"/>
     <usesource source="SkEscarnum"/>
-    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
     <tag group="Size" tag="Small" name="Small" abbrev="Small"/>
     <tag group="SkillBonus" tag="skStealth" name="Stealth" abbrev="Stealth"/>
     <tag group="SkillBonus" tag="skThievery" name="Thievery" abbrev="Thievery"/>
-    <tag group="Race" tag="rKobold"/>
     <tag group="Vision" tag="Darkvision" name="Darkvision" abbrev="Darkvision"/>
-    <bootstrap thing="fRPlusAb">
-      <autotag group="RaceBonus" tag="attrCon"/>
-      <autotag group="RaceBonus" tag="attrDex"/>
-      </bootstrap>
-    <bootstrap thing="fRSoEBeast"></bootstrap>
+    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
+    <tag group="Race" tag="rKobold"/>
     <bootstrap thing="lanDraconi"></bootstrap>
     <bootstrap thing="pRacShiMan"></bootstrap>
     <bootstrap thing="fRKoTraSen"></bootstrap>
     <bootstrap thing="lanSoEBest"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrCon"/>
+      <autotag group="RaceBonus" tag="attrDex"/>
+      </bootstrap>
+    <bootstrap thing="fRKobPow"></bootstrap>
+    <bootstrap thing="pRacKobShi"></bootstrap>
+    <bootstrap thing="fRSoEBeast"></bootstrap>
     </thing>
-  <thing id="rSoEGnoll" name="Gnoll (Almish)" description="{b}Blood Fury{/b}: While you&apos;re bloodied, you gain a +2 bonus to damage rolls. This increases to a +4 bonus at 21st level.\n{b}Ferocious Charge{/b}: You can use ferocious charge as an encounter power.\n{b}Pack Attack{/b}: You deal an extra 2 damage on melee attacks against an enemy that has two or more of your allies adjacent to it.\n{b}Beast Kin:{/b} Your ancestors were amongst the many bestial races who once ruled Alm. You are considered a beast for the purpose of effects that relate to creature type." compset="Race" uniqueness="unique">
+  <thing id="rSoEGnoll" name="Gnoll (Almish)" description="{b}Blood Fury{/b}: While you&apos;re bloodied, you gain a +2 bonus to damage rolls. This increases to a +4 bonus at 21st level.\n{b}Ferocious Charge{/b}: You can use ferocious charge as an encounter power.\n{b}Pack Attack{/b}: You deal an extra 2 damage on melee attacks against an enemy that has two or more of your allies adjacent to it.\n{b}Primal Beast:{/b} Your ancestors were amongst the many beast-kin who once ruled Alm. You are considered both a beast and a humanoid for the purpose of effects that relate to creature type. For the purpose of effects relating to beast form, you are considered to always be in beast form." compset="Race" uniqueness="unique">
     <fieldval field="racSpeed" value="7"/>
     <fieldval field="racHtMin" value="84"/>
     <fieldval field="racHtMax" value="90"/>
@@ -1132,7 +1135,7 @@ https://escarnum.invincible.ink</info_author>
     <bootstrap thing="fRGnBloFur"></bootstrap>
     <bootstrap thing="fRGnPacAtt"></bootstrap>
     <bootstrap thing="lanSoEBest"></bootstrap>
-    <bootstrap thing="fRSoEBeast"></bootstrap>
+    <bootstrap thing="fRGnoBeast"></bootstrap>
     </thing>
   <thing id="bgGearsmit" name="Gearsmith" description="{i}&quot;No no. Try{/i} this{i}.&quot;{/i}\n\nLike the Seventh Seeker Vaess, you have an uncanny knack for engineering and craftsmanship. Always looking for a new development, you&apos;re constantly furnishing your party with odd devices – and keeping their existing gear in working order. Why did you become an adventurer, when you could have had a successful career back home? Are you looking for new inspiration? Or stockpiling funds for a grand experiment?\n\n{b}Associated skills:{/b} Dungeoneering, arcana\n{b}Associated ritual:{/b} Enchant magic item (PHB)" compset="Background" uniqueness="useronce">
     <fieldval field="reqText" value="Kobold"/>
@@ -1555,7 +1558,7 @@ https://escarnum.invincible.ink</info_author>
     <tag group="ReqSkill" tag="skReligion"/>
     <tag group="Tier" tag="Heroic" name="Heroic Tier" abbrev="Heroic Tier"/>
     </thing>
-  <thing id="rBrannyr" name="Bannyr" description="{b}Cast-Iron Stomach{/b}: You have a +5 racial bonus to saving throws against poison.\n{b}Giantkin:{/b} You have the giant subtype.\n{b}Plowshares to Swords{/b}: Bannyr have a long tradition of turning peacetime tools into weapons of war. You gain proficiency with the battleaxe and the warhammer.\n{b}Encumbered Speed{/b}: You move at your normal speed even when it would be reduced by armor or a heavy load. Other effects that limit speed (such as difficult terrain or magic) affect you normally.\n{b}Stand Your Ground{/b}: When an effect forces you to move—through a pull, a push, or a slide—you can move 1 square less than the effect specifies. This means an effect that normally pulls, pushes, or slides a target 1 square does not force you to move unless you want to.\nIn addition, when an attack would knock you prone, you can make a saving throw to avoid falling prone.\n{b}Bannyri Resilience{/b}: You have the bannyri resilience power." compset="Race" replaces="rDwarf" uniqueness="unique">
+  <thing id="rBannyr" name="Bannyr" description="{b}Cast-Iron Stomach{/b}: You have a +5 racial bonus to saving throws against poison.\n{b}Giantkin:{/b} You have the giant subtype.\n{b}Plowshares to Swords{/b}: Bannyr have a long tradition of turning peacetime tools into weapons of war. You gain proficiency with the battleaxe and the warhammer.\n{b}Encumbered Speed{/b}: You move at your normal speed even when it would be reduced by armor or a heavy load. Other effects that limit speed (such as difficult terrain or magic) affect you normally.\n{b}Stand Your Ground{/b}: When an effect forces you to move—through a pull, a push, or a slide—you can move 1 square less than the effect specifies. This means an effect that normally pulls, pushes, or slides a target 1 square does not force you to move unless you want to.\nIn addition, when an attack would knock you prone, you can make a saving throw to avoid falling prone.\n{b}Bannyri Resilience{/b}: You have the bannyri resilience power." compset="Race" replaces="rDwarf" uniqueness="unique">
     <fieldval field="racCon" value="2"/>
     <fieldval field="racSpeed" value="5"/>
     <fieldval field="racHtMin" value="70"/>
@@ -1639,7 +1642,7 @@ https://escarnum.invincible.ink</info_author>
     <tag group="ReqRace" tag="rSoEJotun"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="rSoEGoblin" name="Gremblin (Almish Goblin)" description="{b}Gremblin Reflexes{/b}: You gain a +1 racial bonus to Reflex.\n{b}Trash Eater:{/b} Your remarkable digestion means no food is off limits. You are immune to disease and to consumable poisons.\n{b}Gremblin Scramble{/b}: : You gain the Gremblin Scramble racial power. This replaces the Goblin Tactics racial power." compset="Race" replaces="rGoblin" uniqueness="unique">
+  <thing id="rSoEGoblin" name="Gremblin (Almish Goblin)" description="{b}Gremblin Reflexes{/b}: You gain a +1 racial bonus to Reflex.\n{b}Trash Eater:{/b} Your remarkable digestion means no food is off limits. You are immune to disease and to consumable poisons.\n{b}Goblin Hoard:{/b} As long as you are not in combat, you can spend a few minutes to produce a mundane, non-living item of your choice from an unspecified location on your person. The item must be small and light enough for you to carry without exceeding a normal load. The item functions exactly as normal, except it has no sale value and breaks after your next short rest.\n{b}Gremblin Scramble{/b}: You gain the Gremblin Scramble racial power. This replaces the Goblin Tactics racial power." compset="Race" replaces="rGoblin" uniqueness="unique">
     <fieldval field="racFlavor" value="Pint-sized scroungers, full of community spirit"/>
     <fieldval field="racRef" value="1"/>
     <fieldval field="racHtMin" value="40"/>
@@ -1704,7 +1707,7 @@ https://escarnum.invincible.ink</info_author>
     <tag group="ReqRole" tag="Leader"/>
     <tag group="ReqRace" tag="rSoEGoblin"/>
     </thing>
-  <thing id="SoERealm" name="Realm (mixed heritage)" description="{b}Dual Heritage{/b}: You can take feats that have either elf or human as a prerequisite (as well as those specifically for half-elves), as long as you meet any other requirements.\n{b}Group Diplomacy{/b}: You grant allies within 10 squares of you a +1 racial bonus to Diplomacy checks.\n{b}Realm Power Selection{/b}: Select an option for your realm character.\n{i}Dilettante{/i}: At 1st level, you choose a 1st-level at-will attack power from a class different from yours. You can use that power as an encounter power.\n{i}Knack For Success{/i}: You have the knack for success power." compset="Race" replaces="rHalfElf" uniqueness="unique">
+  <thing id="SoERealm" name="Realm (mixed heritage)" description="{b}Cosmopolitan{/b}: Choose a heritage other than realm. For all race-based effects and requirements, you are considered to have the chosen heritage, as well as realm. This benefit replaces Dual Heritage.\n{b}Group Diplomacy{/b}: You grant allies within 10 squares of you a +1 racial bonus to Diplomacy checks.\n{b}Realm Power Selection{/b}: Select an option for your realm character.\n{i}Dilettante{/i}: At 1st level, you choose a 1st-level at-will attack power from a class different from yours. You can use that power as an encounter power.\n{i}Knack For Success{/i}: You have the knack for success power." compset="Race" replaces="rHalfElf" uniqueness="unique">
     <fieldval field="racFlavor" value="Born heroes and leaders who combine the best features of both humans and elves."/>
     <fieldval field="racCon" value="2"/>
     <fieldval field="racLang" value="2"/>
@@ -1746,7 +1749,6 @@ https://escarnum.invincible.ink</info_author>
     </thing>
   <thing id="fJotGiaKin" name="Giantkin" description="You have the giant subtype." compset="RaceFeat"></thing>
   <thing id="fBanGiaKin" name="Giantkin" description="You have the giant subtype." compset="RaceFeat"></thing>
-  
   <thing id="ftRadiScio" name="Savage Scion" description="{b}Benefit{/b}: You gain a +3 feat bonus to your healing surge value. The bonus increases to +4 at 11th level and +5 at 21st level.\n\nYour paladin powers and paladin paragon path powers are primal as well as divine." compset="Feat" uniqueness="useronce">
     <fieldval field="reqText" value="Gnoll or Jotun, Paladin"/>
     <usesource source="SkEscarnum"/>
@@ -1791,5 +1793,61 @@ https://escarnum.invincible.ink</info_author>
     <usesource source="SkEscarnum"/>
     <tag group="ReqRole" tag="Defender"/>
     <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="fRKobPow" name="Kobold Heritage Power" description="You gain your choice of the Shifty power or the Shifty Manoeuvre power." compset="RaceFeat">
+    <fieldval field="usrCandid1" value="thingid.pRacKobShi | thingid.pRacShiMan"/>
+    <usesource source="SkEscarnum"/>
+    <tag group="Hide" tag="Special"/>
+    </thing>
+  <thing id="pRacKobShi" name="Shifty" description="{b}Effect{/b}: You shift one square." compset="Power">
+    <fieldval field="pwFlavor" value="You skitter and scamper through the ranks of your enemies, much to their chagrin."/>
+    <usesource source="SkEscarnum"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Minor"/>
+    <tag group="AttackType" tag="Personal"/>
+    <tag group="User" tag="NeedChosen" name="NeedChosen" abbrev="NeedChosen"/>
+    </thing>
+  <thing id="pRacKoShiMa" name="Shifty Maneuver" description="{b}Effect{/b}: Each target can shift 1 square as a free action." compset="Power" replaces="pRacShiMan">
+    <fieldval field="pwTarget" value="You and each ally in the burst"/>
+    <fieldval field="pwFlavor" value="You call on your natural ability to dodge danger, taking your tribemates along for the ride."/>
+    <fieldval field="pwRange1" value="2"/>
+    <tag group="PowerType" tag="Utility" name="Utility Power" abbrev="Utility"/>
+    <tag group="PowerUse" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
+    <tag group="ActionType" tag="Move" name="Move Action" abbrev="Move Action"/>
+    <tag group="AttackType" tag="CloseBurst" name="Close Burst" abbrev="Close Burst"/>
+    <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
+    <tag group="User" tag="NeedChosen" name="NeedChosen" abbrev="NeedChosen"/>
+    </thing>
+  <thing id="fRGnoBeast" name="Beast Kin" description="Your ancestors were amongst the many beast-kin who once ruled Alm. You are considered both a beast and a humanoid for the purpose of effects that relate to creature type. For the purpose of effects relating to beast form, you are considered to always be in beast form." compset="RaceFeat">
+    <usesource source="SkEscarnum" parent="UserParent" name="Skies of Escarnum"/>
+    </thing>
+  <thing id="rSoEEladri" name="Eladrin (Almish)" description="{b}Eladrin Education{/b}: You gain training in one skill of your choice.\n{b}Eladrin Weapon Proficiency{/b}: You gain proficiency with the longsword.\n{b}Eladrin Will{/b}: You gain a +1 racial bonus to Will. In addition, you gain a +5 racial bonus to saving throws against charm effects.\n{b}Stolen Life:{/b} Your distant ancestors linked their bloodlines to the magic of the feywild, giving you the fey origin.\n{b}Fey Step{/b}: You have the fey step power.\n{b}Trance{/b}: Rather than sleep, you enter a meditative state known as trance. You need to spend 4 hours in this state to gain the same benefits other races gain from taking a 6-hour extended rest. While in a trance, you are fully aware of your surroundings and notice approaching enemies and other events as normal." compset="Race" replaces="rEladrin" uniqueness="unique">
+    <fieldval field="racFlavor" value="Insular fey-blooded aristocrats who value honour and tradition"/>
+    <fieldval field="racInt" value="2"/>
+    <fieldval field="racWill" value="1"/>
+    <fieldval field="racHtMin" value="65"/>
+    <fieldval field="racHtMax" value="73"/>
+    <fieldval field="racWtMin" value="130"/>
+    <fieldval field="racWtMax" value="180"/>
+    <tag group="SkillBonus" tag="skArcana" name="Arcana" abbrev="Arcana"/>
+    <tag group="SkillBonus" tag="skHistory" name="History" abbrev="History"/>
+    <tag group="User" tag="StdRace" name="StdRace" abbrev="StdRace"/>
+    <tag group="Vision" tag="Lowlight" name="Low-light" abbrev="Low-light"/>
+    <tag group="WeaponProf" tag="wpLongswor" name="Longsword" abbrev="Longsword"/>
+    <tag group="Size" tag="Medium" name="Medium" abbrev="Medium"/>
+    <bootstrap thing="pRacFeySte"></bootstrap>
+    <bootstrap thing="fRElElaEdu"></bootstrap>
+    <bootstrap thing="fRElElaWea"></bootstrap>
+    <bootstrap thing="fRElElaWil"></bootstrap>
+    <bootstrap thing="fRElFeyOri"></bootstrap>
+    <bootstrap thing="fRElTrance"></bootstrap>
+    <bootstrap thing="fRPlusAb">
+      <autotag group="RaceBonus" tag="attrCha"/>
+      <autotag group="RaceBonus" tag="attrDex"/>
+      </bootstrap>
+    <bootstrap thing="lanCommon"></bootstrap>
+    <bootstrap thing="lanSoESylv"></bootstrap>
     </thing>
   </document>

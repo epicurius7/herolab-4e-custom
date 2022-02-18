@@ -834,6 +834,7 @@
     <tag group="ClassName" tag="Ranger"/>
     <tag group="Class" tag="clsRanger"/>
     <tag group="PowerSrc" tag="Martial"/>
+    <tag group="PowerSrc" tag="Primal"/>
     <tag group="KeyAbility" tag="attrWis"/>
     <tag group="User" tag="RecomPower"/>
     <tag group="Hero" tag="HidePwrEnc"/>
@@ -1440,6 +1441,7 @@
     <tag group="ClassName" tag="Ranger"/>
     <tag group="Class" tag="clsRanger"/>
     <tag group="PowerSrc" tag="Martial"/>
+    <tag group="PowerSrc" tag="Primal"/>
     <tag group="KeyAbility" tag="attrWis"/>
     <tag group="User" tag="RecomPower"/>
     <tag group="Hero" tag="HidePwrEnc"/>
@@ -4468,7 +4470,7 @@ call FeatureDis
     <tag group="BuildOpt" tag="fHunRanWil"/>
     <tag group="AtLevel" tag="1"/>
     </thing>
-  <thing id="fHunWeaTal" name="Weapon Talent" description="You gain a +1 bonus to the attack rolls of weapon attacks.{br}{br}Level 2:{b}LEVEL 2 HUNTER UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fHunWeaTal" name="Weapon Talent" description="You gain a +1 bonus to the attack rolls of weapon attacks." compset="ClassFeat">
     <tag group="AtLevel" tag="1"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000"><![CDATA[
@@ -4490,7 +4492,7 @@ call FeatureDis
     <tag group="Hide" tag="Special"/>
     <tag group="AtLevel" tag="4"/>
     </thing>
-  <thing id="fHunWeaMas" name="Weapon Mastery" description="You gain a +1 bonus to the damage rolls of weapon attacks.{br}{br}Level 6:{b}LEVEL 6 HUNTER UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fHunWeaMas" name="Weapon Mastery" description="You gain a +1 bonus to the damage rolls of weapon attacks." compset="ClassFeat">
     <tag group="AtLevel" tag="5"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000"><![CDATA[
@@ -4504,18 +4506,18 @@ call FeatureDis
   <thing id="fHunAsWil7" name="Aspect Of The Wild (hunter)" description="You gain one additional aspect of the wild." compset="ClassFeat">
     <tag group="AtLevel" tag="7"/>
     </thing>
-  <thing id="fHunImDis7" name="Improved Disruptive Shot" description="You gain one more use of disruptive shot per encounter, but you can still use it only once per turn.{br}{br}Level 8:{b}LEVEL 8 WILDERNESS KNACK{/b}{br}You gain one additional wilderness knack chosen from the options given at level 1.{br}{br}Level 9:{b}CLOSE COMBAT ARCHERY{/b}{br}Your ranged attacks don&apos;t provoke opportunity attacks.{br}{br}Level 10:{b}LEVEL 10 HUNTER UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fHunImDis7" name="Improved Disruptive Shot" description="You gain one more use of disruptive shot per encounter, but you can still use it only once per turn." compset="ClassFeat">
     <tag group="AtLevel" tag="7"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000">doneif (activated = 0)
       hero.childfound[pRgrDisSho].field[spcMax].value += 1</eval>
     </thing>
-  <thing id="fHunWiKna8" name="Knack 4" description="You gain one additional wilderness knack chosen from the options given at level 1.{br}{br}Level 9:{b}CLOSE COMBAT ARCHERY{/b}{br}Your ranged attacks don&apos;t provoke opportunity attacks.{br}{br}Level 10:{b}LEVEL 10 HUNTER UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fHunWiKna8" name="Knack 4" description="You gain one additional wilderness knack chosen from the options given at level 1." compset="ClassFeat">
     <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fHunRanWil)"/>
     <tag group="Hide" tag="Special"/>
     <tag group="AtLevel" tag="8"/>
     </thing>
-  <thing id="fHunCloCom" name="Close Combat Archery" description="Your ranged attacks don&apos;t provoke opportunity attacks.{br}{br}Level 10:{b}LEVEL 10 HUNTER UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fHunCloCom" name="Close Combat Archery" description="Your ranged attacks don&apos;t provoke opportunity attacks." compset="ClassFeat">
     <tag group="AtLevel" tag="1"/>
     </thing>
   <thing id="fHunIDis13" name="Improved Disruptive Shot" description="When you hit with disruptive shot, you can blind the target until the end of your next turn, instead of immobilizing or dazing it.{br}In addition, you gain a feature depending on your choice of ranged weapon." compset="ClassFeat">
@@ -4546,7 +4548,7 @@ call FeatureDis
       <after name="Build option activated"/>
       </eval>
     </thing>
-  <thing id="fHunParWea" name="Paragon Weapon Mastery" description="The bonus to damage rolls granted by your Weapon Mastery class feature increases to +2.{br}{br}Level 16:{b}LEVEL 16 HUNTER UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fHunParWea" name="Paragon Weapon Mastery" description="The bonus to damage rolls granted by your Weapon Mastery class feature increases to +2." compset="ClassFeat">
     <tag group="AtLevel" tag="15"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000"><![CDATA[
@@ -4595,52 +4597,90 @@ call FeatureDis
     <arrayval field="ClPwrTable" index="6" column="1" value="1"/>
     <arrayval field="ClPwrTable" index="7" value="1"/>
     <arrayval field="ClPwrTable" index="7" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="7" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="8" value="1"/>
     <arrayval field="ClPwrTable" index="8" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="8" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="9" value="1"/>
     <arrayval field="ClPwrTable" index="9" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="9" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="10" value="1"/>
     <arrayval field="ClPwrTable" index="10" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="10" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="11" value="1"/>
     <arrayval field="ClPwrTable" index="11" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="11" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="12" value="1"/>
     <arrayval field="ClPwrTable" index="12" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="12" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="13" value="1"/>
     <arrayval field="ClPwrTable" index="13" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="13" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="14" value="1"/>
     <arrayval field="ClPwrTable" index="14" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="14" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="15" value="1"/>
     <arrayval field="ClPwrTable" index="15" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="15" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="16" value="1"/>
     <arrayval field="ClPwrTable" index="16" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="16" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="17" value="1"/>
     <arrayval field="ClPwrTable" index="17" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="17" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="17" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="18" value="1"/>
     <arrayval field="ClPwrTable" index="18" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="18" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="18" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="19" value="1"/>
     <arrayval field="ClPwrTable" index="19" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="19" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="19" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="20" value="1"/>
     <arrayval field="ClPwrTable" index="20" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="20" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="20" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="21" value="1"/>
     <arrayval field="ClPwrTable" index="21" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="21" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="21" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="22" value="1"/>
     <arrayval field="ClPwrTable" index="22" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="22" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="22" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="23" value="1"/>
     <arrayval field="ClPwrTable" index="23" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="23" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="23" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="24" value="1"/>
     <arrayval field="ClPwrTable" index="24" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="24" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="24" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="25" value="1"/>
     <arrayval field="ClPwrTable" index="25" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="25" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="25" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="26" value="1"/>
     <arrayval field="ClPwrTable" index="26" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="26" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="26" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="27" value="1"/>
     <arrayval field="ClPwrTable" index="27" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="27" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="27" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="28" value="1"/>
     <arrayval field="ClPwrTable" index="28" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="28" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="28" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="29" value="1"/>
     <arrayval field="ClPwrTable" index="29" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="29" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="29" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="30" value="1"/>
     <arrayval field="ClPwrTable" index="30" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="30" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="30" column="3" value="1"/>
     <tag group="Mechanics" tag="PwrAtWill"/>
     <tag group="User" tag="NoBootMech"/>
     </thing>
@@ -6506,13 +6546,13 @@ call FeatureDis
       <after name="Build option activated"/>
       </eval>
     </thing>
-  <thing id="fSctImPow3" name="Improved Power Strike" description="You gain one more use of power strike per encounter, but you can still use it only once per turn.{br}{br}Level 4:{b}LEVEL 4 WILDERNESS KNACK{/b}{br}You gain one additional wilderness knack.{br}{br}Level 5:{b}REACTIVE SHIFT{/b}{br}You gain the reactive shift power." compset="ClassFeat">
+  <thing id="fSctImPow3" name="Improved Power Strike" description="You gain one more use of power strike per encounter, but you can still use it only once per turn." compset="ClassFeat">
     <tag group="AtLevel" tag="3"/>
     <tag group="Hide" tag="Special"/>
     <eval phase="Setup" priority="1000">doneif (activated = 0)
       hero.childfound[pFtrPowStr].field[spcMax].value += 1</eval>
     </thing>
-  <thing id="fSctWiKna4" name="Knack 3" description="You gain one additional wilderness knack.{br}{br}Level 5:{b}REACTIVE SHIFT{/b}{br}You gain the reactive shift power." compset="ClassFeat">
+  <thing id="fSctWiKna4" name="Knack 3" description="You gain one additional wilderness knack." compset="ClassFeat">
     <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fSctRanWil)"/>
     <tag group="Hide" tag="Special"/>
     <tag group="AtLevel" tag="4"/>
@@ -6520,12 +6560,12 @@ call FeatureDis
   <thing id="fSctAsWil7" name="Aspect Of The Wild (scout)" description="You gain one additional aspect of the wild." compset="ClassFeat">
     <tag group="AtLevel" tag="7"/>
     </thing>
-  <thing id="fSctWiKna8" name="Knack 4" description="You gain one additional wilderness knack chosen from the options given at level 1.{br}{br}Level 9:{b}IMPROVED DUAL WEAPON ATTACK{/b}{br}You gain a +2 bonus to damage rolls with your dual weapon attack power.{br}{br}Level 10:{b}LEVEL 10 SCOUT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fSctWiKna8" name="Knack 4" description="You gain one additional wilderness knack chosen from the options given at level 1." compset="ClassFeat">
     <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fSctRanWil)"/>
     <tag group="Hide" tag="Special"/>
     <tag group="AtLevel" tag="8"/>
     </thing>
-  <thing id="fSctImpDua" name="Improved Dual Weapon Attack" description="You gain a +2 bonus to damage rolls with your dual weapon attack power.{br}{br}Level 10:{b}LEVEL 10 SCOUT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fSctImpDua" name="Improved Dual Weapon Attack" description="You gain a +2 bonus to damage rolls with your dual weapon attack power." compset="ClassFeat">
     <tag group="AtLevel" tag="9"/>
     <eval phase="Traits" priority="10000"><![CDATA[
       doneif (activated = 0)
@@ -6563,7 +6603,7 @@ call FeatureDis
       <after name="Build option activated"/>
       </eval>
     </thing>
-  <thing id="fSctParDua" name="Paragon Dual Weapon Attack" description="The bonus to weapon damage rolls granted by your Improved Dual Weapon Attack class feature increases to +4.{br}{br}Level 16:{b}LEVEL 16 SCOUT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fSctParDua" name="Paragon Dual Weapon Attack" description="The bonus to weapon damage rolls granted by your Improved Dual Weapon Attack class feature increases to +4." compset="ClassFeat">
     <tag group="AtLevel" tag="15"/>
     <eval phase="Traits" priority="10000"><![CDATA[
       doneif (activated = 0)
@@ -6573,7 +6613,7 @@ call FeatureDis
   <thing id="fSctAWil17" name="Aspect Of The Wild (scout)" description="You gain one additional aspect of the wild." compset="ClassFeat">
     <tag group="AtLevel" tag="17"/>
     </thing>
-  <thing id="fSctCauShi" name="Cautious Shift" description="Whenever you use your second wind or take the total defense action, you can shift 1 square as a free action before or after doing so.{br}{br}Level 22:{b}LEVEL 22 SCOUT UTILITY POWER{/b}{br}You gain one of the following powers of your choice." compset="ClassFeat">
+  <thing id="fSctCauShi" name="Cautious Shift" description="Whenever you use your second wind or take the total defense action, you can shift 1 square as a free action before or after doing so." compset="ClassFeat">
     <tag group="AtLevel" tag="19"/>
     </thing>
   <thing id="fSctPeePer" name="Peerless Perception" description="Whenever you make a Perception check, you can roll twice and use either result." compset="ClassFeat">
@@ -6604,52 +6644,90 @@ call FeatureDis
     <arrayval field="ClPwrTable" index="6" column="1" value="1"/>
     <arrayval field="ClPwrTable" index="7" value="1"/>
     <arrayval field="ClPwrTable" index="7" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="7" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="8" value="1"/>
     <arrayval field="ClPwrTable" index="8" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="8" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="9" value="1"/>
     <arrayval field="ClPwrTable" index="9" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="9" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="10" value="1"/>
     <arrayval field="ClPwrTable" index="10" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="10" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="11" value="1"/>
     <arrayval field="ClPwrTable" index="11" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="11" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="12" value="1"/>
     <arrayval field="ClPwrTable" index="12" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="12" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="13" value="1"/>
     <arrayval field="ClPwrTable" index="13" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="13" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="14" value="1"/>
     <arrayval field="ClPwrTable" index="14" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="14" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="15" value="1"/>
     <arrayval field="ClPwrTable" index="15" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="15" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="16" value="1"/>
     <arrayval field="ClPwrTable" index="16" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="16" column="2" value="1"/>
     <arrayval field="ClPwrTable" index="17" value="1"/>
     <arrayval field="ClPwrTable" index="17" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="17" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="17" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="18" value="1"/>
     <arrayval field="ClPwrTable" index="18" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="18" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="18" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="19" value="1"/>
     <arrayval field="ClPwrTable" index="19" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="19" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="19" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="20" value="1"/>
     <arrayval field="ClPwrTable" index="20" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="20" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="20" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="21" value="1"/>
     <arrayval field="ClPwrTable" index="21" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="21" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="21" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="22" value="1"/>
     <arrayval field="ClPwrTable" index="22" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="22" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="22" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="23" value="1"/>
     <arrayval field="ClPwrTable" index="23" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="23" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="23" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="24" value="1"/>
     <arrayval field="ClPwrTable" index="24" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="24" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="24" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="25" value="1"/>
     <arrayval field="ClPwrTable" index="25" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="25" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="25" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="26" value="1"/>
     <arrayval field="ClPwrTable" index="26" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="26" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="26" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="27" value="1"/>
     <arrayval field="ClPwrTable" index="27" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="27" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="27" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="28" value="1"/>
     <arrayval field="ClPwrTable" index="28" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="28" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="28" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="29" value="1"/>
     <arrayval field="ClPwrTable" index="29" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="29" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="29" column="3" value="1"/>
     <arrayval field="ClPwrTable" index="30" value="1"/>
     <arrayval field="ClPwrTable" index="30" column="1" value="1"/>
+    <arrayval field="ClPwrTable" index="30" column="2" value="1"/>
+    <arrayval field="ClPwrTable" index="30" column="3" value="1"/>
     <tag group="Mechanics" tag="PwrAtWill"/>
     <tag group="User" tag="NoBootMech"/>
     </thing>
@@ -8836,7 +8914,9 @@ call FeatureDis
       <before name="Disable class feature"/>
       </evalrule>
     </thing>
-  <thing id="fFtrComCha" name="Combat Challenge" description="In combat, it&apos;s dangerous to ignore a fighter. Every time you attack an enemy, whether the attack hits or misses, you can choose to mark that target. The mark lasts until the end of your next turn. While a target is marked, it takes a -2 penalty to attack rolls if its attack doesn&apos;t include you as a target. A creature can be subject to only one mark at a time. A new mark supersedes a mark that was already in place.{br}In addition, you gain the Combat Challenge power." compset="ClassFeat"></thing>
+  <thing id="fFtrComCha" name="Combat Challenge" description="In combat, it&apos;s dangerous to ignore a fighter. Every time you attack an enemy, whether the attack hits or misses, you can choose to mark that target. The mark lasts until the end of your next turn. While a target is marked, it takes a -2 penalty to attack rolls if its attack doesn&apos;t include you as a target. A creature can be subject to only one mark at a time. A new mark supersedes a mark that was already in place.{br}In addition, you gain the Combat Challenge power." compset="ClassFeat">
+	 <bootstrap thing="pFtrComCha"></bootstrap>
+  </thing>
   <thing id="fFtrComSup" name="Combat Superiority" description="You gain a bonus to the attack rolls of opportunity attacks. The bonus equals your Wisdom modifier.{br}An enemy hit by your opportunity attack stops moving, if a move provoked the attack. If the enemy still has actions remaining, it can use them to resume moving." compset="ClassFeat"></thing>
   <thing id="fFtrFigTal" name="Fighter Talents" description="Choose one of the following fighter talents." compset="ClassFeat">
     <fieldval field="usrCandid1" value="(component.BuildOpt) &amp; (BuildOpt.fFtrFigTal)"/>

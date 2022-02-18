@@ -396,8 +396,8 @@
     <tag group="Size" tag="Medium"/>
     <bootstrap thing="lanSoESylv"></bootstrap>
     <bootstrap thing="fRPlusAb">
-      <autotag group="RaceBonus" tag="attrDex"/>
       <autotag group="RaceBonus" tag="attrWis"/>
+      <autotag group="RaceBonus" tag="attrCon"/>
       </bootstrap>
     <bootstrap thing="lanCommon"></bootstrap>
     <bootstrap thing="fPooShaCha"></bootstrap>
@@ -408,7 +408,7 @@
   <thing id="fPooShaCha" name="Shapechanger" description="You have the shapechanger subtype." compset="RaceFeat"></thing>
   <thing id="fPooTruFey" name="True Fey" description="Your species is native to the feywild, not yet fully accustomed to the material plane. Your origin is fey." compset="RaceFeat"></thing>
   <thing id="pwPooPooPur" name="Pooka&apos;s Pursuit" description="{b}Trigger:{/b} A creature in range moves or teleports away from you.\n\n{b}Target:{/b} The triggering creature\n\n{b}Effect:{/b} When the target ends its movement or teleportation, you teleport to a square adjacent to the target." compset="Power">
-    <fieldval field="pwFlavor" value="You dance through the feywild to harry a retreating foe or accompany an advancing ally."/>
+    <fieldval field="pwFlavor" value="You slip outside time&apos;s flow to harry a retreating foe or accompany an advancing ally."/>
     <fieldval field="pwRange1" value="1"/>
     <tag group="PowerClass" tag="Race" name="Race" abbrev="Race"/>
     <tag group="PowerType" tag="Encounter" name="Encounter Power" abbrev="Encounter"/>
@@ -582,80 +582,80 @@ nexteach]]></eval>
     <tag group="WepDamage" tag="1d8" name="1d8" abbrev="1d8"/>
     <tag group="WepCat" tag="wgHeritage" name="Heritage" abbrev="Heritage"/>
     </thing>
-  <thing id="ftBarTheBon" name="Bare the Bones" description="As long as you wear light or no armour and do not wield a shield, you have resist all 2. This increases to resist all 4 at paragon tier and resist all 6 at epic tier. This stacks with your existing resistances." compset="Feat">
+  <thing id="ftBarTheBon" name="Bare the Bones" description="{b}Benefit:{/b} As long as you wear light or no armour and do not wield a shield, you have resist all 2. This increases to resist all 4 at paragon tier and resist all 6 at epic tier. This stacks with your existing resistances." compset="Feat">
     <fieldval field="reqText" value="Firbolg, proficient with hide armour"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rFirbolg"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="ftBeastSpeak" name="Beast Speaker" description="You can converse with natural and fey beasts, and gain a +4 heritage bonus to skill checks made to influence them." compset="Feat">
+  <thing id="ftBeastSpeak" name="Beast Speaker" description="{b}Benefit:{/b} You can converse with natural and fey beasts, and gain a +4 heritage bonus to skill checks made to influence them." compset="Feat">
     <fieldval field="reqText" value="Pooka"/>
     <usesource source="Squareballs"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rPooka"/>
     </thing>
-  <thing id="ftDreamWeave" name="Dream Weaver" description="You can master and perform rituals in the deception category as if you had the Ritual Caster feat, and without requiring a ritual book. In addition, your enemies take a -2 penalty to saving throws you impose with illusion or charm powers." compset="Feat">
+  <thing id="ftDreamWeave" name="Dream Weaver" description="{b}Benefit:{/b} You can master and perform rituals in the deception category as if you had the Ritual Caster feat, and without requiring a ritual book. In addition, your enemies take a -2 penalty to saving throws you impose with illusion or charm powers." compset="Feat">
     <fieldval field="reqText" value="Pooka"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rPooka"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="ftFeySight" name="Fey Sight" description="You gain a +2 heritage bonus to defences and saving throws against illusion, charm and sleep effects." compset="Feat">
+  <thing id="ftFeySight" name="Fey Sight" description="{b}Benefit:{/b} You gain a +2 heritage bonus to defences and saving throws against illusion, charm and sleep effects." compset="Feat">
     <fieldval field="reqText" value="Fey origin"/>
     <usesource source="Squareballs"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="ftFlickPhant" name="Flickering Phantom" description="When you make an attack after teleporting, you can use your gruuwar blink power as a free action immediately after the attack. You can do this even if you have already used your gruuwar blink power this turn." compset="Feat">
+  <thing id="ftFlickPhant" name="Flickering Phantom" description="{b}Benefit:{/b} When you make an attack after teleporting, you can use your gruuwar blink power as a free action immediately after the attack. You can do this even if you have already used your gruuwar blink power this turn." compset="Feat">
     <fieldval field="reqText" value="11th level, gruuwar, gruuwar blink heritage power"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rGruuwar"/>
     <tag group="Tier" tag="Paragon"/>
     </thing>
-  <thing id="ftHauntHarr" name="Haunting Harrier" description="When you use your pooka’s pursuit power targeting an enemy, you can make a melee basic attack against the target as a free action after you teleport." compset="Feat">
+  <thing id="ftHauntHarr" name="Haunting Harrier" description="{b}Benefit:{/b} When you use your pooka’s pursuit power targeting an enemy, you can make a melee basic attack against the target as a free action after you teleport." compset="Feat">
     <fieldval field="reqText" value=" Pooka, pooka’s pursuit power, paragon tier"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rPooka"/>
     <tag group="Tier" tag="Paragon"/>
     </thing>
-  <thing id="ftPicPocPort" name="Pickpocket’s Portal" description=" You can make thievery checks from up to 2 squares away from your target." compset="Feat">
+  <thing id="ftPicPocPort" name="Pickpocket’s Portal" description="{b}Benefit:{/b}  You can make thievery checks from up to 2 squares away from your target." compset="Feat">
     <fieldval field="reqText" value="Gruuwar"/>
     <usesource source="Squareballs"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rGruuwar"/>
     </thing>
-  <thing id="ftRefBlink" name="Reflexive Blink" description="Once per encounter, you can use your gruuwar blink power as an immediate interrupt." compset="Feat">
+  <thing id="ftRefBlink" name="Reflexive Blink" description="{b}Benefit:{/b} Once per encounter, you can use your gruuwar blink power as an immediate interrupt." compset="Feat">
     <fieldval field="reqText" value="Gruuwar, Gruuwar blink heritage power"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rGruuwar"/>
     <tag group="Tier" tag="Heroic"/>
     <bootstrap thing="pwGruGruBliEx"></bootstrap>
     </thing>
-  <thing id="ftSecSight" name="Second Sight" description="You can sense the presence of magic as if you were trained in Arcana. You can use Perception instead of Arcana for such checks, and you get a +4 heritage bonus to the check" compset="Feat">
+  <thing id="ftSecSight" name="Second Sight" description="{b}Benefit:{/b} You can sense the presence of magic as if you were trained in Arcana. You can use Perception instead of Arcana for such checks, and you get a +4 heritage bonus to the check" compset="Feat">
     <fieldval field="reqText" value="Pooka or Firbolg"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rFirbolg"/>
     <tag group="ReqRace" tag="rPooka"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="ftSeeming" name="Seeming" description="You gain a +4 heritage bonus to skill checks made to disguise yourself. At any time, you can choose to appear as your normal height, or that of an average human. This is an illusion effect; your actual height and game statistics do not change." compset="Feat">
+  <thing id="ftSeeming" name="Seeming" description="{b}Benefit:{/b} You gain a +4 heritage bonus to skill checks made to disguise yourself. At any time, you can choose to appear as your normal height, or that of an average human. This is an illusion effect; your actual height and game statistics do not change." compset="Feat">
     <fieldval field="reqText" value="Firbolg"/>
     <usesource source="Squareballs"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rFirbolg"/>
     </thing>
-  <thing id="ftSkillDef" name="Skilled Deflection" description="You gain a heritage bonus to all defences against ranged and area attacks. The bonus equals +1 per tier." compset="Feat">
+  <thing id="ftSkillDef" name="Skilled Deflection" description="{b}Benefit:{/b} You gain a heritage bonus to all defences against ranged and area attacks. The bonus equals +1 per tier." compset="Feat">
     <fieldval field="reqText" value="Firbolg"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rFirbolg"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="ftSkulkPhan" name="Skulking Phantom" description="When you make a stealth check at the end of an action where you teleported, you can treat concealment as full concealment, and cover as superior cover, for the purpose of becoming hidden." compset="Feat">
+  <thing id="ftSkulkPhan" name="Skulking Phantom" description="{b}Benefit:{/b} When you make a stealth check at the end of an action where you teleported, you can treat concealment as full concealment, and cover as superior cover, for the purpose of becoming hidden." compset="Feat">
     <fieldval field="reqText" value="Gruuwar"/>
     <usesource source="Squareballs"/>
     <tag group="ReqRace" tag="rGruuwar"/>
     <tag group="Tier" tag="Heroic"/>
     </thing>
-  <thing id="ftIntuitDirect" name="Intuit Direction" description="You always know which direction is North. You receive a heritage bonus, equal to your charisma modifier, to skill checks made to navigate natural terrain." compset="Feat">
+  <thing id="ftIntuitDirect" name="Intuit Direction" description="{b}Benefit:{/b} You always know which direction is North. You receive a heritage bonus, equal to your charisma modifier, to skill checks made to navigate natural terrain." compset="Feat">
     <fieldval field="reqText" value="Pooka or Firbolg"/>
     <tag group="Tier" tag="Heroic"/>
     <tag group="ReqRace" tag="rFirbolg"/>
@@ -673,5 +673,19 @@ nexteach]]></eval>
   <thing id="ftFaceBite" name="Face Biter" description="{b}Benefit:{/b} You count as medium size for the purpose of grabs you initiate. If a creature you are grabbing would be pushed, pulled or slid away from you, the creature pulls you a number of squares equal to the distance it travels." compset="Feat">
     <fieldval field="reqText" value="Size small or smaller"/>
     <tag group="Tier" tag="Heroic"/>
+    </thing>
+  <thing id="ftShiSte" name="Shining Steed" description="{b}Benefit:{/b} All damage dealt by your celestial steed’s attacks is radiant damage." compset="Feat">
+    <fieldval field="reqText" value="Paladin, call celestial steed power, 11th level"/>
+    <usesource source="Squareballs"/>
+    <tag group="ReqClass" tag="clsPaladin"/>
+    <tag group="ReqLevel" tag="11"/>
+    <tag group="Tier" tag="Paragon"/>
+    </thing>
+  <thing id="ftArmCavSpec" name="Armoured Cavalry Specialisation" description="{b}Benefit:{/b} While you are mounted and wearing heavy armour, you gain a +1 feat bonus to AC. In addition, you can mount or dismount a friendly mount as a minor action." compset="Feat">
+    <fieldval field="reqText" value="11th level, Con 15, Str 15, proficiency with scale armour"/>
+    <fieldval field="reqStr" value="15"/>
+    <fieldval field="reqCon" value="15"/>
+    <usesource source="Squareballs"/>
+    <tag group="Tier" tag="Paragon"/>
     </thing>
   </document>
